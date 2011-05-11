@@ -19,16 +19,16 @@ Input and output of the Perceiving
 ---------------------------------------
 
  - Input: Set of predicates from Stanford nlp adapter.
- - Output: Acceptance criteria in the form of How-to.
+ - Output: Acceptance criteria in the form of HowTo.
  
 ---------------
 Algorithm 
 ---------------
 
-Perceiving component maps the parts of the predicates (outbound of the linguistic) to the meta-model of how-to. 
-Consider the problem of the perceiving as the problem of the creation of the program that interprets the inbound predicates as meta-model of how-to. 
+Perceiving component maps the parts of the predicates (outbound of the linguistic) to the meta-model of HowTo. 
+Consider the problem of the perceiving as the problem of the creation of the program that interprets the inbound predicates as meta-model of HowTo. 
 Stochastic search provides required flexibility for the perceiving.
-Fitness function of the stochastic search is based on the [http://en.wikipedia.org/wiki/Conditional_random_field CRF] that calculates the probability of the generated mapping(perceiving) based on trained maps and the context.
+Fitness function of the stochastic search is based on the [CRF](http://en.wikipedia.org/wiki/Conditional_random_field) that calculates the probability of the generated mapping(perceiving) based on trained maps and the context.
 Context includes:
  1. Predicates parts annotations
  1. Semantic annotations (previously trained terms)
@@ -84,7 +84,7 @@ Is main source of new solutions that could be saved(memorised). This could be un
 
 #### Fitting function
 
-Fitting function is based on CRF that is based on the trained data, external dictionaries: [http://csc.media.mit.edu/conceptnet conceptNet], [http://ru.wikipedia.org/wiki/WordNet WordNet], [http://www.cyc.com/cyc/opencyc OpenCyc] that answers the question how probable is the generated mapping. All logical inference is done by [http://code.google.com/p/menta/wiki/ReasonerAdapter Reasoner].
+Fitting function is based on CRF that is based on the trained data, external dictionaries: [conceptNet](http://csc.media.mit.edu/conceptnet), [WordNetWordNet](http://ru.wikipedia.org/wiki/WordNet), [OpenCyc](http://www.cyc.com/cyc/opencyc) that answers the question how probable is the generated mapping. 
 
 #### Operation of the generator
 
@@ -93,22 +93,22 @@ Fitting function is based on CRF that is based on the trained data, external dic
 #### Probabilistic reasoning 
 
  * Input constraints (all input nodes should have connections to domain nodes)
- * Domain constraints (structure of the how-to meta-model)
+ * Domain constraints (structure of the HowTo meta-model)
  * Learned constraints (mapping learned previously as probabilistic rules)
 The set of constraints influences the fitting function during computation of the plausibility of the generated solution.
 
 ### Memo 
 
-Memo is actually the machine learning based on [http://en.wikipedia.org/wiki/Bayesian_network Bayes network].
+Memo is actually the machine learning based on [Bayes network](http://en.wikipedia.org/wiki/Bayesian_network).
 
 #### Memorizer (DAO) 
 
-Is just store the mapping in the form of how-to individual for the [http://en.wikipedia.org/wiki/Bayesian_network Bayesian network] rule.
+Is just store the mapping in the form of HowTo individual for the [Bayesian network](http://en.wikipedia.org/wiki/Bayesian_network) rule.
 
 #### Generalizer 
 
-Create general mapping how-to based on several specific mappings.
+Create general mapping HowTo based on several specific mappings.
 
 #### Specializer 
 
-Create specific mapping how-to based on the several general how-tos.
+Create specific mapping HowTo based on the several general HowTos.
