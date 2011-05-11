@@ -19,6 +19,7 @@ Input and output of the Perceiving
 
  - Input: Set of predicates from Stanford nlp adapter.
  - Output: Acceptance criteria in the form of How-to.
+ 
 ---------------
 Algorithm 
 ---------------
@@ -27,23 +28,24 @@ Consider the problem of the perceiving as the problem of the creation of the pro
 Stochastic search provides required flexibility for the perceiving.
 Fitness function of the stochastic search is based on the [http://en.wikipedia.org/wiki/Conditional_random_field CRF] that calculates the probability of the generated mapping(perceiving) based on trained maps and the context.
 Context includes:
- #. Predicates parts annotations
- #. Semantic annotations (previously trained terms)
- #. Analogy annotations
+ 1. Predicates parts annotations
+ 1. Semantic annotations (previously trained terms)
+ 1. Analogy annotations
+
 -----------------
 Decomposition 
 -----------------
- #. Analyser 
-  #. Classifier
-  #. Predicates annotator 
-  #. Semantic annotator (trained terms and external dictionaries)
-  #. Analogy annotator
- #. Mapping generator
-  #. Mapping checker(Fitting function) based on CRF, answers question how probable mapping is.
- #. Memo (machine learning)
-  #. Memorise
-  #. Generalisation
-  #. Specialisation
+ 1. Analyser 
+  1. Classifier
+  1. Predicates annotator 
+  1. Semantic annotator (trained terms and external dictionaries)
+  1. Analogy annotator
+ 1. Mapping generator
+  1. Mapping checker(Fitting function) based on CRF, answers question how probable mapping is.
+ 1. Memo (machine learning)
+  1. Memorise
+  1. Generalisation
+  1. Specialisation
 
 -----------------
 Main work-flow
@@ -74,9 +76,7 @@ Is main source of new solutions that could be saved(memorised). This could be un
 Fitting function is based on CRF that is based on the trained data, external dictionaries: [http://csc.media.mit.edu/conceptnet conceptNet], [http://ru.wikipedia.org/wiki/WordNet WordNet], [http://www.cyc.com/cyc/opencyc OpenCyc] that answers the question how probable is the generated mapping. All logical inference is done by [http://code.google.com/p/menta/wiki/ReasonerAdapter Reasoner].
 
 ==== Operation of the generator ====
-{{{
-addMapping($source, $destination) 
-}}}
+'addMapping($source, $destination)'
 
 ==== Probabilistic reasoning ====
  * Input constraints (all input nodes should have connections to domain nodes)
@@ -87,7 +87,7 @@ The set of constraints influences the fitting function during computation of the
 === Memo ===
 Memo is actually the machine learning based on [http://en.wikipedia.org/wiki/Bayesian_network Bayes network].
 
-==== Memorizer ====
+==== Memorizer (DAO) ====
 Is just store the mapping in the form of how-to individual for the [http://en.wikipedia.org/wiki/Bayesian_network Bayesian network] rule.
 
 ==== Generalizer ====
