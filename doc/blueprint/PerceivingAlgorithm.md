@@ -66,49 +66,49 @@ Classifier
 
 Determines whether the inbound predicates are the instruction what should be done, or the description of the problem according to the annotated word contents.
 
-==== Predicates annotator ====
+#### Predicates annotator
 
 Annotates the terms with the Typed dependencies tagging of the Lexical parser based on the structure of the predicate.
 
-==== Semantic annotator ====
+#### Semantic annotator
 
 Annotates the terms of the predicates with the semantic tags(mappings to the concepts) that are already done.
 
-==== Analogy annotator ====
+#### Analogy annotator
 
 Input Graph mapping could make use of the analogy based on context to set up the hypothesis of the semantics of the node.
 
-=== Mapping generator  ===
+### Mapping generator
 
 Is main source of new solutions that could be saved(memorised). This could be understood as the base of the machine learning. After the idea(hypothesis) is been confirmed Memo operations: memorize, generalize, specialise are performed.
 
-==== Fitting function ====
+#### Fitting function
 
 Fitting function is based on CRF that is based on the trained data, external dictionaries: [http://csc.media.mit.edu/conceptnet conceptNet], [http://ru.wikipedia.org/wiki/WordNet WordNet], [http://www.cyc.com/cyc/opencyc OpenCyc] that answers the question how probable is the generated mapping. All logical inference is done by [http://code.google.com/p/menta/wiki/ReasonerAdapter Reasoner].
 
-==== Operation of the generator ====
+#### Operation of the generator
 
-'addMapping($source, $destination)'
+`addMapping($source, $destination)`
 
-==== Probabilistic reasoning ====
+#### Probabilistic reasoning 
 
  * Input constraints (all input nodes should have connections to domain nodes)
  * Domain constraints (structure of the how-to meta-model)
  * Learned constraints (mapping learned previously as probabilistic rules)
 The set of constraints influences the fitting function during computation of the plausibility of the generated solution.
 
-=== Memo ===
+### Memo 
 
 Memo is actually the machine learning based on [http://en.wikipedia.org/wiki/Bayesian_network Bayes network].
 
-==== Memorizer (DAO) ====
+#### Memorizer (DAO) 
 
 Is just store the mapping in the form of how-to individual for the [http://en.wikipedia.org/wiki/Bayesian_network Bayesian network] rule.
 
-==== Generalizer ====
+#### Generalizer 
 
 Create general mapping how-to based on several specific mappings.
 
-==== Specializer ====
+#### Specializer 
 
 Create specific mapping how-to based on the several general how-tos.
