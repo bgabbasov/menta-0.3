@@ -18,4 +18,6 @@ Run through the NLP and concept mining frameworks sorted by importance and analy
  1. Ability to infer normalised statements in form:
   1. TODO: action = install, subject = FireFox version 4.1
   1. Current(wrong) state: subject = FireFox, disability = crashes; destination (correct): subject FireFox, ability= runs
+ 1. Ability to extend dictionaries.
  1. Ability to generate reasonable English sentences.
+ 
