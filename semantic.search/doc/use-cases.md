@@ -2,7 +2,6 @@
 
 ## User creates an article
  Search for the most recent and most interesting articles of the created article domain.
- 
 
 ## User analyses an article of another author 
  User submits an article into the system. System crates semantic description of the article and searches for analogical articles.
