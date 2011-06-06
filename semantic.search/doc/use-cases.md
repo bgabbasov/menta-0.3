@@ -1,8 +1,14 @@
 # Scientific semantic search use cases.
 
 ## User creates an article
- Search for the most recent and most interesting articles of the created article domain.
+ 1. System searches for the most recent and most interesting articles of the created article domain.
+ 1. System creates the extracts of newest and most rated articles.
  
+## User checks the problem
+ System searches for the previously described solutions, analogies of the problem.
+ 
+## User checks the result of his/her experiments
+ System searches for analogies of result set and checks it's confidence.  
 
 ## User analyses an article of another author 
  User submits an article into the system. System crates semantic description of the article and searches for analogical articles.
