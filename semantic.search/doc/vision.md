@@ -8,7 +8,9 @@ There are several use cases automated via approach described above:
 ## Analysis:
 
  1. Request analysis: Request is treated as virtual domain described as *cloud of trees*: system creates the list of documents references based on relevance to the virtual domain. User selecting the documents specifies additional descriptions to the request virtual domain.
- 1. Domain analysis: Damain name is treated as minimal description, an extra criterias are infered via domain *cloud of trees* constructed based on encyclopedical sources. System generates recommended list of references to start exploration of the domain staring from most simple and most trusted sources. System stores links of the virtual domain description and responses selected by user.
+ 
+ 1. Domain analysis: damain name is treated as minimal description, an extra criterias are infered via domain *cloud of trees* constructed based on encyclopedical sources. System generates recommended list of references to start exploration of the domain staring from most simple and most trusted sources. System stores links of the virtual domain description and responses selected by user.
+ 
    1.	Генерация возможных доменов
    1.	Генерация новых тем исследования
    1.	Кластеризация связей вопрос-ответ из разных доменов
@@ -22,6 +24,11 @@ There are several use cases automated via approach described above:
  1. User checks the result of his/her experiments: System searches for analogies of result set and checks it's confidence.
    
  1. User analyse the problem: System searches for the previously described solutions, analogies of the problem.
+  2.	Анализ абсурдности
+  2.	Генерация основного тезиса из документа
+  2.	Генерация рефератов
+  2.	Генерация методических пособий
+  2.	Генерация новых концепций (на основе данных из другого домена)
  
  1. User analyses an article of another author: User submits an article into the system. System crates semantic description of the article and searches for analogical articles.
  
@@ -32,11 +39,27 @@ There are several use cases automated via approach described above:
    1. System creates the extracts of newest and most rated articles.
 
  1. User searches for unknown term: System searches for the documents that contains term first in their description cloud, then in their nearest neighbor terms, then in full text.
-   1. *Modules:*
+ 
+   2.	*Search types:*
+      *	Семантический
+      *	Поиск по тегам (термины)
+      *	Полнотекстный
+      *	Доп фильтрация (поиск в результатах)
+         -	доменный (будут предлагаться близкие домены)
+         -	тип документа
+         -	язык
+         -	автор
+         
+      *	Доп фичи
+         -	Предложение информации из смежных доменов 
+         -	Граф термов
+         -	Поиск людей занимающихся этим
+         -	Поиск людей, которые тоже это искали
+         -	Подписка на новые результаты запроса (информация появляющаяся в будущем, отправка результата на почту)
+ 
+   1. *Helpers:*
      *	Модуль помощи пользователю при составлении запросов к системе
      *	Подсказывание «Возможно вы имели ввиду»
      *	Запросы формата «Что если?»
  
- 1. User searches for domain
- 
- System search for the domain terms and terms of nearest domains.
+ 1. User searches for domain: System search for the domain terms and terms of nearest domains.
