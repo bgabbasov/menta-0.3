@@ -11,15 +11,18 @@ There are several use cases automated via approach described above:
  
  1. Domain analysis: damain name is treated as minimal description, an extra criterias are infered via domain *cloud of trees* constructed based on encyclopedical sources. System generates recommended list of references to start exploration of the domain staring from most simple and most trusted sources. System stores links of the virtual domain description and responses selected by user.
  
-   1.	Генерация возможных доменов
-   1.	Генерация новых тем исследования
-   1.	Кластеризация связей вопрос-ответ из разных доменов
-   1.	Анализ текущих трендов и построение графиков
-   1.	Генерация экстраполяции текущего тренда на будущее
-   1.	Генерация «анти трендов»
-   1.	Генерация гипотез
-   1.	Использование обратной связи с пользователем для ускорения процесса генерации результатов поиска
-   1.	Использование обобщения запрос-результат
+   2.	Генерация возможных доменов
+
+Virtual domain could be created by the system via clastering. Virtual domains could be useful for further analysis and personalisation.
+
+   2.	Генерация новых тем исследования
+   2.	Кластеризация связей вопрос-ответ из разных доменов
+   2.	Анализ текущих трендов и построение графиков
+   2.	Генерация экстраполяции текущего тренда на будущее
+   2.	Генерация «анти трендов»
+   2.	Генерация гипотез
+   2.	Использование обратной связи с пользователем для ускорения процесса генерации результатов поиска
+   2.	Использование обобщения запрос-результат
  
  1. User checks the result of his/her experiments: System searches for analogies of result set and checks it's confidence.
    
@@ -35,8 +38,8 @@ There are several use cases automated via approach described above:
 ## Search:
  
  1. User creates an article
-   1. System searches for the most recent and most interesting articles of the created article domain.
-   1. System creates the extracts of newest and most rated articles.
+   2. System searches for the most recent and most interesting articles of the created article domain.
+   2. System creates the extracts of newest and most rated articles.
 
  1. User searches for unknown term: System searches for the documents that contains term first in their description cloud, then in their nearest neighbor terms, then in full text.
  
@@ -57,7 +60,7 @@ There are several use cases automated via approach described above:
          -	Поиск людей, которые тоже это искали
          -	Подписка на новые результаты запроса (информация появляющаяся в будущем, отправка результата на почту)
  
-   1. *Helpers:*
+   2. *Helpers:*
      *	Модуль помощи пользователю при составлении запросов к системе
      *	Подсказывание «Возможно вы имели ввиду»
      *	Запросы формата «Что если?»
