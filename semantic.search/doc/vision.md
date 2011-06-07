@@ -18,21 +18,24 @@ There are several use cases automated via approach described above:
    1.	Генерация гипотез
    1.	Использование обратной связи с пользователем для ускорения процесса генерации результатов поиска
    1.	Использование обобщения запрос-результат
- 1. User checks the result of his/her experiments: System searches for analogies of result set and checks it's confidence.  
- 1.User analyse the problem: System searches for the previously described solutions, analogies of the problem.
+ 
+ 1. User checks the result of his/her experiments: System searches for analogies of result set and checks it's confidence.
+   
+ 1. User analyse the problem: System searches for the previously described solutions, analogies of the problem.
+ 
  1. User analyses an article of another author: User submits an article into the system. System crates semantic description of the article and searches for analogical articles.
  
 ## Search:
  
  1. User creates an article
-  1. System searches for the most recent and most interesting articles of the created article domain.
-  1. System creates the extracts of newest and most rated articles.
+   1. System searches for the most recent and most interesting articles of the created article domain.
+   1. System creates the extracts of newest and most rated articles.
 
- 1. User searches for unknown term:  System searches for the documents that contains term first in their description cloud, then in their nearest neighbor terms, then in full text.
-   1. Modules:
-    *	Модуль помощи пользователю при составлении запросов к системе
-    *	Подсказывание «Возможно вы имели ввиду»
-    *	Запросы формата «Что если?»
+ 1. User searches for unknown term: System searches for the documents that contains term first in their description cloud, then in their nearest neighbor terms, then in full text.
+   1. *Modules:*
+     *	Модуль помощи пользователю при составлении запросов к системе
+     *	Подсказывание «Возможно вы имели ввиду»
+     *	Запросы формата «Что если?»
  
  1. User searches for domain
  
