@@ -11,10 +11,7 @@ There are several use cases automated via approach described above:
  
  1. Domain analysis: damain name is treated as minimal description, an extra criterias are infered via domain *cloud of trees* constructed based on encyclopedical sources. System generates recommended list of references to start exploration of the domain staring from most simple and most trusted sources. System stores links of the virtual domain description and responses selected by user.
  
-   2.	Генерация возможных доменов
-
-Virtual domain could be created by the system via clastering. Virtual domains could be useful for further analysis and personalisation.
-
+   2.	Генерация возможных доменов. Virtual domain could be created by the system via clastering. Virtual domains could be useful for further analysis and personalisation.
    2.	Генерация новых тем исследования
    2.	Кластеризация связей вопрос-ответ из разных доменов
    2.	Анализ текущих трендов и построение графиков
