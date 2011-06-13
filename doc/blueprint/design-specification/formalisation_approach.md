@@ -14,6 +14,6 @@ This way sentences subjects and subject's objects are selected.
    2. Terms are stemmed
    2. Terms and their annotations as well as context terms and annotations, produced by lexical parsers are used as the
    base for machine learning mapping(formalisation).
-   2. Formalisations are stored as probabilistic implications, ex.: ´function(subject, noun, ...) -> method´.
+   2. Formalisations are stored as probabilistic implications, ex.: `function(subject, noun, ...) -> method`.
    2. Generalisation is applied over a set of formalisation predicates.
    2. Further formalisations are inferred via induction, see ex.: ['Socrates' PLN Logic Examples](http://wiki.opencog.org/w/Walkthrough)
