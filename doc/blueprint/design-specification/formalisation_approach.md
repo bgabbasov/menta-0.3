@@ -1,4 +1,9 @@
-#Formalisation or generalisation in predefined ontology terms
+#Formalisation approach
+
+Formalisation consists of two parts:
+
+ 1. Structurisation of unstructured information
+ 1. Formalisation translation in formal language description.
 
 ## Linguistic level
  1. All sentences in paragraphs are analysed by linguistic parsers ex: http://nlp.stanford.edu/software/lex-parser.shtml,
