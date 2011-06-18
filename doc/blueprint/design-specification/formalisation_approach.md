@@ -39,6 +39,7 @@ This way sentences subjects and subject's objects are selected.
 ## Formalisation
 Structured information(fragments of domain graph) is projected into formal terms space.
 Formal terms space in our system is represented as HowTo-s(recipe), for example the recipe from workbooks.
+
  1. Incident descriptions(fragments of domain graph) are classified into groups: requests or problem descriptions (according to main subjects) or compounds.
   2. Requests are interpreted in to direct HowTo-s (possibly scripts) that runs what requested, for example installs the Firefox.
   2. Problem descriptions:
