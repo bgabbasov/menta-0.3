@@ -1,0 +1,41 @@
+# 1
+User gets Invalid Login when trying to logon to Exampleproject. He has got a new password and changed it on the new ID page but it still does not work.
+## Partly correct: 
+Incorrect parts: 
+     class Invalid_Login:
+          def when_try():
+               pass
+               
+          def get(new_password):
+               pass
+               
+          def change(new_password, new_CDSID_page):
+               pass
+Those methods should be in class User.
+Teamcenter was not mentioned.
+ 
+# 2
+Problem with 3G modems after migration. Mobile connection not possible. Ensure that no other programs are using your selected device, and try again in a short while. The user is a agent working at the UK helpdesk, please see the email attached to this ticket for more info.
+## Partly correct
+Output not mentioned: Problem with 3G modems after migration. Mobile connection not possible.
+
+# 3
+User is missing "Outlook pst file backup" icon on her desktop.
+## Not correct.
+Rephrase helps: User miss icon in her desktop.
+
+User has been on a trip and is now back, please install the application now.
+
+See attachment for error message. LAB95 - Provning rekveo planering Please assist user, and investigate! 
+
+User had received wrong application. User has ordered Wordfinder Business Economical for her service tag 7Q4TC3J, there is completed order in LOT with number 18125. However she received wrong version, she received Wordfinder Tehcnical instead of Business Economical. Please assist.
+
+Laptop - user has almost full C:\ but when he looks in the properties of the files and folders on C:\ they are only 40GB and he has a 55GB drive.
+
+User cannot find Produkt Manageron start menyplease reinstall. 
+                                             
+User needs to have pdf 995 re-installed please.
+
+Failed LOT. 
+
+           
