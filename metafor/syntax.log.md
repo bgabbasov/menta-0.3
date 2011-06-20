@@ -19,7 +19,7 @@ Incorrect parts:
           def change(new_password, new_CDSID_page):
                pass
 Those methods should be in class User. 
-Teamcenter was not mentioned.
+Exampleproject was not mentioned.
 
 ## Montylingua
 (NX User/NNP NX) (VX gets/VBZ VX) (NX Invalid/NNP Login/NNP NX) (VX when/WRB trying/VBG VX) to/TO logon/RB to/TO (NX Exampleproject/NNP NX) ./.
