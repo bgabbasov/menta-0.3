@@ -163,6 +163,11 @@ class MetaforGUI:
         self.clisp_viewer.insert(Tkinter.END, self.theMetafor.render_code(full_name='__main__', flavor='clisp'))
         self.clisp_viewer.update_idletasks()
         
+        # b) model
+        self.model_viewer.clear()
+        self.model_viewer.insert(Tkinter.END, self.theMetafor.render_code(full_name='__main__', flavor='model'))
+        self.model_viewer.update_idletasks()
+        
         # update debug view
         self.visualizer.clear()
         self.visualizer.insert(Tkinter.END, self.theMetafor.pp_state_information())

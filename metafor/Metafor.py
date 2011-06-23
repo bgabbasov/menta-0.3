@@ -9,7 +9,7 @@ class Metafor:
     def __init__(self):
         print('Loading Metafor...')
         self.nl = MetaforNL.MetaforNL(self)
-	
+
         # make the global function object called __main__
         sys_args = [] # none
         main_object = self.new_function_object('__main__',sys_args)
@@ -18,7 +18,7 @@ class Metafor:
         # set focus on main
         self.focus = '__main__'
         self.top_level_focus = '__main__'
-	
+
         # define a focus stack, in case we move in and out of focii
         self.focus_stack = ['__main__']
 
@@ -26,7 +26,7 @@ class Metafor:
         # returns one of two contexts: descriptive and procedural
         # e.g. descriptive if in __main__ or inside a class
         # e.g. procedural if inside a function
-	
+
         if self.focus == '__main__' or self.type(self.focus) == 'ClassType':
             return 'descriptive'
         else:
