@@ -120,6 +120,71 @@ class Metafor:
             return self.render_code_howTo(full_name) 
         else:
             return self.render_code_python(full_name)
+        
+    def render_code_howTo(self, full_name='__main__'):
+        cur_flavor = 'howTo'
+        indent = '     '
+        # recursively generates the code below a given object
+        cur_object = self.get_object_ptr(full_name)
+        #print "DEBUG2",full_name,cur_object
+        cur_object_full_name,cur_object_type,cur_object_header,cur_object_body = cur_object
+        if cur_object_type == 'ExecutionType':
+            # e.g. "pacman.eat(dot)" ==> [SOMEGENERATEDNAME,'ExecutionType',['pacman.eat','FunctionType',[arguments list]],[]]
+            output = self.relativize_name(cur_object_header[0],cur_object_full_name)
+            if cur_object_header[1]=='FunctionType':
+                args = string.join(cur_object_header[2],', ')
+                function_ending = '('+args+')'
+                output += function_ending
+        elif cur_object_type == 'DefinitionType':
+            short_var_name = self.local_name(cur_object_full_name)
+            value = cur_object_header[0]
+            #print "DEBUG4:",value
+            output = short_var_name + ' = ' + value
+#        elif cur_object_type == 'CondType':
+#            if cur_object_header.strip(' ()')=='':
+#                output = 'else: '+'\n'
+#            else:
+#                output = 'if '+cur_object_header+':' + '\n'
+#            body_output = ''
+#            for child_full_name in self.children(full_name):
+#                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+#            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
+#            output += body_output
+#        elif cur_object_type == 'LoopType':
+#            output = 'for '+cur_object_header[0]+' in '+cur_object_header[1]+':' + '\n'
+#            body_output = ''
+#            for child_full_name in self.children(full_name):
+#                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+#            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
+#            output += body_output
+        elif cur_object_type == 'FunctionType':
+            output = 'call '+self.local_name(cur_object_full_name)+'('+string.join(cur_object_header,', ')+') {' + '\n'
+            body_output = ''
+            for child_full_name in self.children(full_name):
+                #print "DEBUG child_full_name",child_full_name,"self.children(full_name):",self.children(full_name),"full_name",full_name
+                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+            if not body_output:
+                body_output = '\n'
+            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
+            output += body_output + '\n}'
+        elif cur_object_type == 'ClassType':
+            if len(cur_object_header) > 0:
+                inheritance_string = '('+string.join(cur_object_header,', ')+')'
+            else:
+                inheritance_string = ''
+            output = 'module '+self.local_name(cur_object_full_name)+inheritance_string+':' + '\n'
+            body_output = ''
+            for child_full_name in self.children(full_name):
+                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+            if not  body_output:
+                body_output += '\n'
+            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
+            output += body_output
+        elif cur_object_type == 'ListType':
+            output = self.local_name(cur_object_full_name) + ' = ['+string.join(cur_object_header,', ')+']'
+        else:
+            output = 'ERROR: Unknown type can\'t be rendered!'
+        return output
 
     def render_code_cl(self,full_name='__main__'):
         cur_flavor = 'clisp'
