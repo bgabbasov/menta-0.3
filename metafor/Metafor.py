@@ -116,6 +116,8 @@ class Metafor:
         # defaults to python
         if flavor=='clisp':
             return self.render_code_cl(full_name)
+        elif flavor=='howTo':
+            return self.render_code_howTo(full_name) 
         else:
             return self.render_code_python(full_name)
 

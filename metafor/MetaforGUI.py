@@ -118,9 +118,9 @@ class MetaforGUI:
         self.clisp_viewer.pack(fill='both', expand=1, padx=5, pady=5)
         
         # c) create model viewer
-        self.model_viewer_page = self.code_viewer.add('model')
-        self.code_viewer.tab('model').focus_set()
-        self.model_viewer = Pmw.ScrolledText(self.model_viewer_page, text_wrap='word')
+        self.howTo_viewer_page = self.code_viewer.add('howTo')
+        self.code_viewer.tab('howTo').focus_set()
+        self.model_viewer = Pmw.ScrolledText(self.howTo_viewer_page, text_wrap='word')
         self.model_viewer.pack(fill='both', expand=1, padx=5, pady=5)
 
         # look and feel
@@ -165,7 +165,7 @@ class MetaforGUI:
         
         # b) model
         self.model_viewer.clear()
-        self.model_viewer.insert(Tkinter.END, self.theMetafor.render_code(full_name='__main__', flavor='model'))
+        self.model_viewer.insert(Tkinter.END, self.theMetafor.render_code(full_name='__main__', flavor='howTo'))
         self.model_viewer.update_idletasks()
         
         # update debug view
