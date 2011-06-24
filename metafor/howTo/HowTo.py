@@ -21,7 +21,7 @@ class HowTo(object):
 
 class Install(HowTo):
     
-    def __init__(self, applicationName, filepath):
+    def __init__(self, applicationName='Firefox', filepath='./'):
         self.applicationName = applicationName
         self.filepath = filepath
         
@@ -31,7 +31,7 @@ class Install(HowTo):
 
 class CleanDisk(HowTo):
     
-    def __init__(self, diskPath):
+    def __init__(self, diskPath = './'):
         self.disk = diskPath
     
     def apply(self):

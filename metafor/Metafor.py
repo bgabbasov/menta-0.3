@@ -185,7 +185,7 @@ class Metafor:
                 # analyze function call here, imperative 
                 howTo = self.create_call(child_full_name)
                 body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
-                body_output += howTo.apply().getContents + '\n'
+                body_output += str(howTo.apply().getContents()) + '\n'
             if not  body_output:
                 body_output += '\n'
             body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')

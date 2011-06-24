@@ -15,10 +15,10 @@ class HowToFactory(object):
         '''
         Constructor
         '''
-        pass
+        self.prefix = u'__main__.Menta.'
     
     def createHowTo(self, howToId):
-        if howToId == 'Install':
+        if howToId == self.prefix + 'Install':
             return Install()
         elif howToId == 'CleanDisk':
             return CleanDisk()
