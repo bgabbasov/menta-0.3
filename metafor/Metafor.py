@@ -198,6 +198,9 @@ class Metafor:
     
     # HowTo-s
     def create_call(self, full_name):
+        '''
+        Creates HowTo to implement request.
+        '''
         cur_object = self.get_object_ptr(full_name)
         cur_object_full_name,cur_object_type,cur_object_header,cur_object_body = cur_object
         if cur_object_type == 'FunctionType':
@@ -205,6 +208,7 @@ class Metafor:
             htf = HowToFactory.HowToFactory()
             howTo = htf.createHowTo(cur_object_full_name)
             return howTo
+    
             
 
     def render_code_cl(self,full_name='__main__'):

@@ -20,5 +20,5 @@ class HowToFactory(object):
     def createHowTo(self, howToId):
         if howToId == self.prefix + 'Install':
             return Install()
-        elif howToId == 'CleanDisk':
+        elif howToId == self.prefix + 'CleanDisk':
             return CleanDisk()
