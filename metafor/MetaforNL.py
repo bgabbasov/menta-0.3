@@ -42,7 +42,7 @@ class MetaforNL:
         self.lookup = {}
         self.deictic_stack = [] # entry: [('Pacman',('he','singular')),...]
         self.questions_queue = [] # if active, active_question = {'!question':'Can x do y?','!question_asked':0,'!question_requires_answer_p':1,'yes'(possible responses):['actions to do',...],'no':['actions to do',...]}
-        self.selfReference = u'System'
+        
 
     def process(self,query):
         # were we expecting a response? (check if questions_queue is active
@@ -303,7 +303,7 @@ class MetaforNL:
         print "DEBUG process_pp ", pp
         # Request case:
         if(pp[1][0] == None or pp[1][0] == '' or pp[1][0] == 'please' or pp[1][0] == 'Please') :
-           pp[1] = [self.selfReference, []]
+            pp[1] = [self.m.selfReference, []]
          
         subj,subj_features = pp[1]
         print ("DEBUG process_pp ", pp)

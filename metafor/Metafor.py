@@ -1,6 +1,7 @@
 import os, string, re, random, time
 import MetaforNL
 from types import *
+from howTo import HowToFactory
 
 class Metafor:
 
@@ -21,6 +22,8 @@ class Metafor:
 
         # define a focus stack, in case we move in and out of focii
         self.focus_stack = ['__main__']
+        self.selfReference = u'Menta'
+        self.request_map = {}
 
     def get_context(self):
         # returns one of two contexts: descriptive and procedural
@@ -158,7 +161,7 @@ class Metafor:
 #            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
 #            output += body_output
         elif cur_object_type == 'FunctionType':
-            output = 'call '+self.local_name(cur_object_full_name)+'('+string.join(cur_object_header,', ')+') {' + '\n'
+            output = 'call '+self.local_name(cur_object_full_name)+'('+string.join(cur_object_header,', ')+') :' + '\n'
             body_output = ''
             for child_full_name in self.children(full_name):
                 #print "DEBUG child_full_name",child_full_name,"self.children(full_name):",self.children(full_name),"full_name",full_name
@@ -166,16 +169,23 @@ class Metafor:
             if not body_output:
                 body_output = '\n'
             body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
-            output += body_output + '\n}'
+            output += body_output + '\n'
+            
         elif cur_object_type == 'ClassType':
             if len(cur_object_header) > 0:
                 inheritance_string = '('+string.join(cur_object_header,', ')+')'
             else:
                 inheritance_string = ''
-            output = 'module '+self.local_name(cur_object_full_name)+inheritance_string+':' + '\n'
+            # HowTo-s
+            if (cur_object_full_name == self.selfReference):
+                self.request_map = {cur_object_full_name: []}
+            output = 'module '+self.local_name(cur_object_full_name)+inheritance_string+': ' + '\n'
             body_output = ''
             for child_full_name in self.children(full_name):
+                # analyze function call here, imperative 
+                howTo = self.create_call(child_full_name)
                 body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+                body_output += howTo.apply().getContents + '\n'
             if not  body_output:
                 body_output += '\n'
             body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
@@ -185,6 +195,17 @@ class Metafor:
         else:
             output = 'ERROR: Unknown type can\'t be rendered!'
         return output
+    
+    # HowTo-s
+    def create_call(self, full_name):
+        cur_object = self.get_object_ptr(full_name)
+        cur_object_full_name,cur_object_type,cur_object_header,cur_object_body = cur_object
+        if cur_object_type == 'FunctionType':
+            # create HowTo here
+            htf = HowToFactory.HowToFactory()
+            howTo = htf.createHowTo(cur_object_full_name)
+            return howTo
+            
 
     def render_code_cl(self,full_name='__main__'):
         cur_flavor = 'clisp'

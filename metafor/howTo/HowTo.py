@@ -26,6 +26,14 @@ class Install(HowTo):
         self.filepath = filepath
         
     def apply(self):
-        reportContents = "installing application: " + self.applicationName
-        return Report.Report(reportContents)
-                
+        r = "installing application: " + self.applicationName
+        return Report.Report(r)
+
+class CleanDisk(HowTo):
+    
+    def __init__(self, diskPath):
+        self.disk = diskPath
+    
+    def apply(self):
+        r = "cleaning disk " + self.disk
+        return Report.Report(r)                
