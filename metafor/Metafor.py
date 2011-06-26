@@ -143,16 +143,16 @@ class Metafor:
             value = cur_object_header[0]
             #print "DEBUG4:",value
             output = short_var_name + ' = ' + value
-#        elif cur_object_type == 'CondType':
-#            if cur_object_header.strip(' ()')=='':
-#                output = 'else: '+'\n'
-#            else:
-#                output = 'if '+cur_object_header+':' + '\n'
-#            body_output = ''
-#            for child_full_name in self.children(full_name):
-#                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
-#            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
-#            output += body_output
+        elif cur_object_type == 'CondType':
+            if cur_object_header.strip(' ()')=='':
+                output = 'else: '+'\n'
+            else:
+                output = 'if '+cur_object_header+':' + '\n'
+            body_output = ''
+            for child_full_name in self.children(full_name):
+                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+            body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
+            output += body_output
 #        elif cur_object_type == 'LoopType':
 #            output = 'for '+cur_object_header[0]+' in '+cur_object_header[1]+':' + '\n'
 #            body_output = ''

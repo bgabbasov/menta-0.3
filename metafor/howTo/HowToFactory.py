@@ -10,7 +10,6 @@ class HowToFactory(object):
     It is the factory to crate HowTo-s.
     '''
 
-
     def __init__(self):
         '''
         Constructor
