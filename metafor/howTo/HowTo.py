@@ -20,13 +20,22 @@ class HowTo(object):
 
 
 class Install(HowTo):
+    applicationsToInstall = ['Firefox', 'firefox', 'Chrome', 'Google Chrome', 'Microsoft Word', 'Word']
     
-    def __init__(self, applicationName='Firefox', filepath='./'):
-        self.applicationName = applicationName
-        self.filepath = filepath
-        
+    def __init__(self, parameters=[]):
+        inListApplications = []
+        for par in parameters:
+            if (par in self.applicationsToInstall):
+                inListApplications.append(par)
+        if(len(inListApplications) < 0):
+            raise ValueError("Application is not in supported list")
+        else:
+            self.applicationName = inListApplications
+            
     def apply(self):
-        r = "installing application: " + self.applicationName
+        r = ""
+        for a in self.applicationName: 
+            r += "installing application: " + a + "...\n"
         return Report.Report(r)
 
 class CleanDisk(HowTo):

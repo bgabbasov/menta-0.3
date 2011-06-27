@@ -206,7 +206,7 @@ class Metafor:
         if cur_object_type == 'FunctionType':
             # create HowTo here
             htf = HowToFactory.HowToFactory()
-            howTo = htf.createHowTo(cur_object_full_name)
+            howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
             return howTo
     
             

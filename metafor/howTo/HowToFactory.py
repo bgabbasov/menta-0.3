@@ -4,6 +4,7 @@ Created on 24.06.2011
 @author: talanov max
 '''
 from howTo.HowTo import Install, CleanDisk
+import howTo
 
 class HowToFactory(object):
     '''
@@ -16,8 +17,13 @@ class HowToFactory(object):
         '''
         self.prefix = u'__main__.Menta.'
     
-    def createHowTo(self, howToId):
-        if howToId == self.prefix + 'Install':
-            return Install()
-        elif howToId == self.prefix + 'CleanDisk':
-            return CleanDisk()
+    def createHowTo(self, howToId, parameters):
+        # use introspection to create HowTo
+        ht = getattr(howTo.HowTo, howToId.replace(self.prefix, ""))
+        return ht(parameters)
+        
+        
+#        if howToId == self.prefix + 'Install':
+#            return Install(parameters)
+#        elif howToId == self.prefix + 'CleanDisk':
+#            return CleanDisk()
