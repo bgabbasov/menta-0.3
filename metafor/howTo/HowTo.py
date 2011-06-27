@@ -18,8 +18,10 @@ class HowTo(object):
     def apply(self):
         return Report.Report()
 
-
-class Install(HowTo):
+'''
+HowTo class name must be in lower case
+'''
+class install(HowTo):
     applicationsToInstall = ['Firefox', 'firefox', 'Chrome', 'Google Chrome', 'Microsoft Word', 'Word']
     
     def __init__(self, parameters=[]):
@@ -38,11 +40,16 @@ class Install(HowTo):
             r += "installing application: " + a + "...\n"
         return Report.Report(r)
 
-class CleanDisk(HowTo):
+class cleandisk(HowTo):
     
     def __init__(self, diskPath = './'):
         self.disk = diskPath
     
     def apply(self):
         r = "cleaning disk " + self.disk
-        return Report.Report(r)                
+        return Report.Report(r)
+
+class ask_(HowTo):
+    
+    def apply(self):
+        return Report.Report("What does that mean ?")                
