@@ -302,7 +302,7 @@ class MetaforNL:
         # syntactic parse of predicate
         print "DEBUG process_pp ", pp
         # Request case:
-        if(pp[1][0] == None or pp[1][0] == '' or pp[1][0] == 'please' or pp[1][0] == 'Please') :
+        if(pp[1][0] == None or pp[1][0] == '' or pp[1][0].lower() == 'please') :
             pp[1] = [self.m.selfReference, []]
          
         subj,subj_features = pp[1]
