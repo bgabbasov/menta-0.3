@@ -4,7 +4,9 @@ Created on 24.06.2011
 @author: talanov max
 '''
 from howTo.HowTo import Install, CleanDisk
+from exceptions import Exception 
 import howTo
+import logging
 
 class HowToFactory(object):
     '''
@@ -19,8 +21,12 @@ class HowToFactory(object):
     
     def createHowTo(self, howToId, parameters):
         # use introspection to create HowTo
-        ht = getattr(howTo.HowTo, howToId.replace(self.prefix, ""))
-        return ht(parameters)
+        try :
+            ht = getattr(howTo.HowTo, howToId.replace(self.prefix, ""))
+            return ht(parameters)
+        except:
+            pass
+            
         
         
 #        if howToId == self.prefix + 'Install':
