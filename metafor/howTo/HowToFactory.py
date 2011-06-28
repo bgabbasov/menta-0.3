@@ -4,7 +4,9 @@ Created on 24.06.2011
 @author: talanov max
 '''
 from howTo.HowTo import install, cleandisk
+from exceptions import Exception 
 import howTo
+import logging
 
 class HowToFactory(object):
     '''
@@ -25,8 +27,7 @@ class HowToFactory(object):
             ht = getattr(howTo.HowTo, 'ask_')
         return ht(parameters)
         
-        
-#        if howToId == self.prefix + 'Install':
-#            return Install(parameters)
-#        elif howToId == self.prefix + 'CleanDisk':
-#            return CleanDisk()
+#        if howToId == self.prefix + 'install':
+#            return install(parameters)
+#        elif howToId == self.prefix + 'cleandisk':
+#            return cleanDisk()

@@ -2,12 +2,15 @@ import os, string, re, random, time
 import MetaforNL
 from types import *
 from howTo import HowToFactory
+from pprint import pformat
+import logging
 
 class Metafor:
 
     objects = [] 
 
     def __init__(self):
+        logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s')
         print('Loading Metafor...')
         self.nl = MetaforNL.MetaforNL(self)
 
@@ -84,11 +87,18 @@ class Metafor:
         return response
         
     def pp_state_information(self):
-        output = 'FOCUS: '+self.focus + '\n\n'
-        output = 'FOCUS STACK: '+str(self.focus_stack) + '\n\n'
-        output = 'DEICTIC STACK: '+str(self.nl.deictic_stack) +'\n\n'
-        output += 'DIR: '+str(self.dir()) + '\n\n'
-        output += 'CODETREE: '+str(self.objects)
+        output = 'FOCUS: '+ pformat(self.focus) + '\n\n'
+        output = 'FOCUS STACK: ' + pformat(str(self.focus_stack)) + '\n\n'
+        output = 'DEICTIC STACK: ' + pformat(str(self.nl.deictic_stack)) +'\n\n'
+        logging.debug('DEICTIC STACK:')
+        logging.debug(pformat(str(self.nl.deictic_stack)))
+        output += 'DIR: '+ pformat(str(self.dir())) + '\n\n'
+        
+        # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
+        # add proper formatting here.
+        output += 'CODETREE: '+ pformat(str(self.objects))
+        logging.debug('CODETREE:')
+        logging.debug(pformat(self.objects))
         return output
 
     def type(self,full_name):
@@ -184,8 +194,9 @@ class Metafor:
             for child_full_name in self.children(full_name):
                 # analyze function call here, imperative 
                 howTo = self.create_call(child_full_name)
-                body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
-                body_output += str(howTo.apply().getContents()) + '\n'
+                # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
+                if (howTo != None):
+                    body_output += str(howTo.apply().getContents()) + '\n'
             if not  body_output:
                 body_output += '\n'
             body_output = string.join(map(lambda x:indent+x,body_output.split('\n')),'\n')
