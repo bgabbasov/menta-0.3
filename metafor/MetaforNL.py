@@ -68,6 +68,7 @@ class MetaforNL:
         self.process_deixis(sequence_of_pps_ptr)
         # resolve complementizers (e.g. who, that)
         self.resolve_complementizers(sequence_of_pps_ptr)
+        # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
         print "DEBUG sequence of pps",'\n'.join(map(str,sequence_of_pps_ptr))
         responses = []
         for cur_index in range(len(sequence_of_pps_ptr)):
