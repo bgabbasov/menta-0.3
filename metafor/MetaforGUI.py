@@ -181,7 +181,7 @@ class MetaforGUI:
 
 if __name__ == '__main__':
     # logging.basicConfig(filename='MetaforGUI.log', level=logging.INFO)
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s')
     logging.info('Started')
     
     root = Tkinter.Tk()
