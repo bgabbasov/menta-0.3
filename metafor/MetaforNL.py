@@ -68,6 +68,7 @@ class MetaforNL:
         self.process_deixis(sequence_of_pps_ptr)
         # resolve complementizers (e.g. who, that)
         self.resolve_complementizers(sequence_of_pps_ptr)
+        # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
         print "DEBUG sequence of pps",'\n'.join(map(str,sequence_of_pps_ptr))
         responses = []
         for cur_index in range(len(sequence_of_pps_ptr)):
@@ -302,7 +303,7 @@ class MetaforNL:
         # syntactic parse of predicate
         print "DEBUG process_pp ", pp
         # Request case:
-        if(pp[1][0] == None or pp[1][0] == '' or pp[1][0] == 'please' or pp[1][0] == 'Please') :
+        if(pp[1][0] == None or pp[1][0] == '' or pp[1][0].lower() == 'please') :
             pp[1] = [self.m.selfReference, []]
          
         subj,subj_features = pp[1]
@@ -324,6 +325,11 @@ class MetaforNL:
         
         # recognize what's defined
         print 'context: ',self.m.get_context()
+        logging.debug((verb in ss_have)) 
+        logging.debug(self.m.resolve_name(subj_escaped)) 
+        logging.debug(len(objs))
+        logging.debug('prep=' not in map(lambda x:x[:5],objs_features[0]))
+        
         # 6) e.g. (context: procedural, like inside a function) pacman scores a point
         if self.m.get_context()=='procedural' and (verb not in ss_reserved_verbs) and self.m.resolve_name(subj_escaped):
             objs_decoded = map(self.normalize_execution_arg,objs_escaped)
@@ -476,6 +482,7 @@ class MetaforNL:
         
         # 3) e.g. PACMAN has a color / PACMAN has some sizes
         #    i.e. have(KNOWN_THING/CLASS,direct_object)
+        # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
         elif (verb in ss_have) and (self.m.resolve_name(subj_escaped)) and len(objs) >= 1 and ('prep=' not in map(lambda x:x[:5],objs_features[0])):
             output = "ok."
             known_thing_full_name = self.m.resolve_name(subj_escaped)
