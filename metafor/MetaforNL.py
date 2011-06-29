@@ -42,7 +42,7 @@ class MetaforNL:
         self.lookup = {}
         self.deictic_stack = [] # entry: [('Pacman',('he','singular')),...]
         self.questions_queue = [] # if active, active_question = {'!question':'Can x do y?','!question_asked':0,'!question_requires_answer_p':1,'yes'(possible responses):['actions to do',...],'no':['actions to do',...]}
-        
+        self.default_object = "actor"
 
     def process(self,query):
         # were we expecting a response? (check if questions_queue is active
@@ -483,9 +483,16 @@ class MetaforNL:
         # 3) e.g. PACMAN has a color / PACMAN has some sizes
         #    i.e. have(KNOWN_THING/CLASS,direct_object)
         # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
-        elif (verb in ss_have) and (self.m.resolve_name(subj_escaped)) and len(objs) >= 1 and ('prep=' not in map(lambda x:x[:5],objs_features[0])):
+        elif (verb in ss_have) and len(objs) >= 1 and ('prep=' not in map(lambda x:x[:5],objs_features[0])):
             output = "ok."
-            known_thing_full_name = self.m.resolve_name(subj_escaped)
+            if ((self.m.resolve_name(subj_escaped))) :
+                known_thing_full_name = self.m.resolve_name(subj_escaped)
+            elif not self.m.resolve_name(subj_escaped):
+                new_object = self.m.new_class_object(self.m.focus+'.'+subj_escaped,[self.default_object])
+                self.m.add_object(new_object)
+                output += "  i created a new agent "+subj+" that is a kind of "+objs[0]+" agent."
+                known_thing_full_name = self.m.resolve_name(subj_escaped)  
+
             if self.m.type(known_thing_full_name) != 'ClassType': # if not a class yet, cast it
                 known_thing_cast_to_class_object = self.m.new_class_object(known_thing_full_name,[])
                 self.m.replace_object(known_thing_full_name,known_thing_cast_to_class_object)
