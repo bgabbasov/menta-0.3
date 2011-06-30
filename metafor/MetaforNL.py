@@ -79,9 +79,11 @@ class MetaforNL:
     def process_deixis(self,pp_list_ptr):
         # resolve each pp against deictic stack
         # and update deictic stack with new entries
+        # /20
+        #TODO This should be a dictionaries classes or some model.
         male_fnames = ['Hugo','Push','Marvin','Nick','James','Jim','John','Johnny','Robert','Bob','Michael','Mike','William','Bill','Billy','David','Dave','Richard','Dick','Charles','Charlie','Joseph','Joe','Joey','Thomas','Tom','Tommy','Christopher','Chris','Daniel','Dan','Paul','Mark','Donald','Don','George','Kenneth','Ken','Steven','Stephen','Steve','Edward','Eddie','Ed','Brian','Ronald','Ron','Anthony','Tony','Kevin','Jason','Matthew','Matt','Gary','Timothy','Tim','Jose','Larry','Jeffrey','Jeff','Frank','Fred','Scott','Eric','Stephen','Andrew','Andy','Raymond','Ray','Gregory','Greg','Gregg','Joshua','Josh','Jerry','Dennis','Walter','Patrick','Pat','Peter','Harold','Harry','Douglas','Henry','Carl','Arthur','Ryan','Roger','Sam','Dwight','Melvin','Juan']
         female_fnames = ['Briana','Lea','Eileen','Belinda','Juanita','Julie','Sally','Cindy','Jane','Joyce','Judy','Alyssa','Mary','Patricia','Patty','Linda','Barbara','Elizabeth','Jennifer','Maria','Susan','Margaret','Dorothy','Lisa','Nancy','Karen','Betty','Helen','Sandra','Donna','Carol','Ruth','Sharon','Michelle','Laura','Laurie','Sarah','Sara','Kimberly','Kim','Deborah','Jesse','Jessica','Shirley','Cynthia','Angela','Angie','Melissa','Brenda','Amy','Anna','Rebecca','Becky','Virginia','Kathleen','Kathy','Pamela','Martha','Debra','Amanda','Stephanie','Carolyn','Carol','Christine','Marie','Janet','Catherine','Cathy','Frances','Ann','Annie','Diane','Diana','Dianna']
-        common_agents = ['bartender','milkman','pacman','customer','boss']
+        common_agents = ['bartender','milkman','pacman','customer','boss','user','server','disk','drive','computer','program','file','folder']
         stop_words = ['there','that','one','which']
         key_words = ['LIST','QUOTE','ANTECEDENT','SCOPE']
         

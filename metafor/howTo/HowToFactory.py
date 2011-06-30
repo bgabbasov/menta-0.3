@@ -24,6 +24,8 @@ class HowToFactory(object):
         try:
             ht = getattr(howTo.HowTo, howToId.replace(self.prefix, "").lower())
         except Exception:
+            
+            
             ht = getattr(howTo.HowTo, 'ask_')
         return ht(parameters)
         
