@@ -330,7 +330,6 @@ class MetaforNL:
         logging.debug((verb in ss_have)) 
         logging.debug(self.m.resolve_name(subj_escaped)) 
         logging.debug(len(objs))
-        logging.debug('prep=' not in map(lambda x:x[:5],objs_features[0]))
         
         # 6) e.g. (context: procedural, like inside a function) pacman scores a point
         if self.m.get_context()=='procedural' and (verb not in ss_reserved_verbs) and self.m.resolve_name(subj_escaped):
