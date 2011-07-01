@@ -1,4 +1,4 @@
-title = 'Metafor Interactive Natural Language Programming (hugo@media.mit.edu)'
+title = 'Menta 0.3.0.1 Demo based on Metafor'
 
 import Tkinter
 import Pmw

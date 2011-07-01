@@ -11,7 +11,7 @@ class Metafor:
 
     def __init__(self):
         logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s')
-        print('Loading Metafor...')
+        print('Loading Menta...')
         self.nl = MetaforNL.MetaforNL(self)
 
         # make the global function object called __main__
