@@ -4,6 +4,7 @@ Created on Jun 23, 2011
 @author: talanov max
 '''
 import Report
+import string
 
 class HowTo(object):
     '''
@@ -42,11 +43,16 @@ class install(HowTo):
 
 class cleandisk(HowTo):
     
-    def __init__(self, diskPath = './'):
-        self.disk = diskPath
-    
+    def __init__(self, parameters=[]):
+        self.default_disk = 'C'
+        self.disk = self.default_disk
+        
+        # extract disk name from parameters
+        if (len(parameters) > 0 and parameters[0][1:] in string.letters):
+            self.disk = parameters[0][1:]
+        
     def apply(self):
-        r = "cleaning disk " + self.disk
+        r = "cleaning disk " + str(self.disk)
         return Report.Report(r)
 
 class ask_(HowTo):

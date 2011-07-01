@@ -240,6 +240,11 @@ class Metafor:
         '''
         cur_object = self.get_object_ptr(full_name)
         cur_object_full_name, cur_object_type, cur_object_header, cur_object_body = cur_object
+        if cur_object_type == 'ClassType': 
+            htf = HowToFactory.HowToFactory()
+            #TODO hard-coded here should be relocated to mapping constants.
+            howTo = htf.createHowTo('cleanDisk', cur_object)
+            return howTo
         if cur_object_type == 'FunctionType':
             # create HowTo here
             # in case of clean disk substitute here to clean disk
