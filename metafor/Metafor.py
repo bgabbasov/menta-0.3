@@ -153,17 +153,6 @@ class Metafor:
             value = cur_object_header[0]
             #print "DEBUG4:",value
             logging.debug(value)
-            for child_full_name in self.children(full_name):
-                # analyze insufficient disc space on drive C
-                #TODO: add disks list in a model
-                insufficient_indicator = "full"
-                string_delimiter = "_"
-                disks_indicator = "C" 
-                if child_full_name.endswith(insufficient_indicator + string_delimiter + disks_indicator):
-                    howTo = self.create_call("cleandisk")
-                # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
-                if (howTo != None):
-                    output += str(howTo.apply().getContents()) + '\n'
                     
             output = short_var_name + ' = ' + value
             
@@ -210,8 +199,8 @@ class Metafor:
             #TODO: add disks list in a model
             insufficient_indicator = "full"
             string_delimiter = "_"
-            disks_indicator = "C" 
-            if cur_object_full_name.endswith(insufficient_indicator + string_delimiter + disks_indicator):
+            
+            if ((insufficient_indicator + string_delimiter) in cur_object_full_name):
                 howTo = self.create_call(cur_object_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):

@@ -44,12 +44,12 @@ class install(HowTo):
 class cleandisk(HowTo):
     
     def __init__(self, parameters=[]):
-        self.default_disk = 'C'
+        self.default_disk = 'Z'
         self.disk = self.default_disk
         
         # extract disk name from parameters
-        if (len(parameters) > 0 and parameters[0][1:] in string.letters):
-            self.disk = parameters[0][1:]
+        if (len(parameters) > 0 and parameters[0][len(parameters[0])-1] in string.letters):
+            self.disk = parameters[0][len(parameters[0])-1]
         
     def apply(self):
         r = "cleaning disk " + str(self.disk)
