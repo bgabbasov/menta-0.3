@@ -526,8 +526,8 @@ class MetaforNL:
             return output
             
         # 2) e.g. PACMAN eats dots / PACMAN can eat / there is a way for PACMAN to eat dots
-        #    i.e. verb_not_passive(KNOWN_THING,optional object,optional object)
-        elif (verb not in ss_reserved_verbs) and ('passive_voice' not in verb_features):# and (self.m.resolve_name(subj_escaped)):
+        #    i.e. verb_not_passive(KNOWN_THING,optional object,optional object)     
+        elif (verb not in ss_reserved_verbs):# and ('passive_voice' not in verb_features):# and (self.m.resolve_name(subj_escaped)):
             output = "ok."
             known_thing_full_name = self.m.resolve_name(subj_escaped)
             # HANDLE CLASS CREATION/UPDATE
