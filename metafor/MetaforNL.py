@@ -45,6 +45,7 @@ class MetaforNL:
         self.default_object = "actor"
 
     def process(self,query):
+        responses = []
         # were we expecting a response? (check if questions_queue is active
         if self.questions_queue and self.questions_queue[0]['!question_asked'] and self.questions_queue[0]['!question_requires_answer']:
             response_or_followup_question = self.process_response(query)
@@ -62,6 +63,9 @@ class MetaforNL:
         # logging.debug("conditionals resolved to:\n " + preprocessed_query)
         sentence_digests = self.ml.jist(preprocessed_query)
         sentences_and_their_pps = map(lambda x:x['parameterized_predicates'],sentence_digests)
+        if (sentences_and_their_pps == None or  len(sentences_and_their_pps)):
+            responses.append("I could not recognize the sentence, please rephrase.")
+             
         # collapse each sentence's pps into a single stream of pps
         sequence_of_pps_ptr = reduce(lambda x,y:x+y,sentences_and_their_pps)
         # resolve deixis
@@ -70,7 +74,7 @@ class MetaforNL:
         self.resolve_complementizers(sequence_of_pps_ptr)
         # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
         print "DEBUG sequence of pps",'\n'.join(map(str,sequence_of_pps_ptr))
-        responses = []
+        
         for cur_index in range(len(sequence_of_pps_ptr)):
             response = self.process_pp(sequence_of_pps_ptr,cur_index)
             responses.append(response)
@@ -641,7 +645,7 @@ class MetaforNL:
                     
         
 
-    def process_response(query):
+    def process_response(self, query):
         if not self.questions_queue or not self.questions_queue[0]['!question_asked'] or not self.questions_queue[0]['!question_requires_answer_p']:
             return
         trimmed_query = query.lower().strip()
