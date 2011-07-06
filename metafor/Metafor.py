@@ -89,6 +89,8 @@ class Metafor:
     def pp_state_information(self):
         output = 'FOCUS: ' + pformat(self.focus) + '\n\n'
         output = 'FOCUS STACK: ' + pformat(str(self.focus_stack)) + '\n\n'
+        logging.debug('FOCUS STACK: ')
+        logging.debug(pformat(str(self.focus_stack)))
         output = 'DEICTIC STACK: ' + pformat(str(self.nl.deictic_stack)) + '\n\n'
         logging.debug('DEICTIC STACK:')
         logging.debug(pformat(str(self.nl.deictic_stack)))
