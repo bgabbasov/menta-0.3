@@ -203,7 +203,7 @@ class Metafor:
             string_delimiter = "_"
             
             if ((insufficient_indicator + string_delimiter) in cur_object_full_name):
-                howTo = self.create_call(cur_object_full_name)
+                howTo = self.create_call_from_class(cur_object_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):
                     body_output += str(howTo.apply().getContents()) + '\n'
@@ -231,11 +231,7 @@ class Metafor:
         '''
         cur_object = self.get_object_ptr(full_name)
         cur_object_full_name, cur_object_type, cur_object_header, cur_object_body = cur_object
-        if cur_object_type == 'ClassType': 
-            htf = HowToFactory.HowToFactory()
-            #TODO hard-coded here should be relocated to mapping constants.
-            howTo = htf.createHowTo('cleanDisk', cur_object)
-            return howTo
+        
         if cur_object_type == 'FunctionType':
             # create HowTo here
             # in case of clean disk substitute here to clean disk
@@ -243,7 +239,18 @@ class Metafor:
             howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
             return howTo
     
-            
+    def create_call_from_class(self, full_name):
+        '''
+        Creates HowTo based on class name to implement request.
+        '''
+        cur_object = self.get_object_ptr(full_name)
+        cur_object_full_name, cur_object_type, cur_object_header, cur_object_body = cur_object
+        
+        if cur_object_type == 'ClassType': 
+            htf = HowToFactory.HowToFactory()
+            #TODO hard-coded here should be relocated to mapping constants.
+            howTo = htf.createHowTo('cleanDisk', cur_object)
+            return howTo        
 
     def render_code_cl(self, full_name='__main__'):
         cur_flavor = 'clisp'
