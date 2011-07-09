@@ -188,7 +188,7 @@ if __name__ == '__main__':
     Pmw.initialise(root, fontScheme='pmw1', size=18)
     root.title(title)
 #    root.option_add('*Font',('Courier',14,'bold'))
-    root.option_add('*Font', ('Serif', 10))
+    root.option_add('*Font', ('Sans', 10))
 
     widget = MetaforGUI(root)
     root.mainloop()
