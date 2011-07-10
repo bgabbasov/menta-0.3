@@ -5,6 +5,7 @@ Created on Jun 23, 2011
 '''
 import Report
 import string
+import logging
 
 class HowTo(object):
     '''
@@ -19,18 +20,33 @@ class HowTo(object):
     def apply(self):
         return Report.Report()
 
+class ErrorHowTo(HowTo):
+    
+    def __init__(self, parameter):
+        if (parameter != None):
+            self.report = parameter
+        else:
+            self.report = Report.Report("Empty Error report")
+            
+    def apply(self):
+        return self.report 
+
 '''
 HowTo class name must be in lower case
 '''
 class install(HowTo):
-    applicationsToInstall = ['Firefox', 'firefox', 'Chrome', 'Google Chrome', 'Microsoft Word', 'Word']
+    applicationsToInstall = ['Firefox', 'firefox', 'Chrome', "chrome", 'Google_Chrome', "google_chrome", 'Microsoft_Word', 'Word', "word"]
     
     def __init__(self, parameters=[]):
         inListApplications = []
+        if (len(parameters) < 1):
+            logging.error("Parameters of install HowTo are not specified.")
+            raise ValueError("Please specify application to install.")
         for par in parameters:
             if (par in self.applicationsToInstall):
                 inListApplications.append(par)
-        if(len(inListApplications) < 0):
+        if(len(inListApplications) < 1):
+            logging.error("Application is not in list")
             raise ValueError("Application is not in supported list")
         else:
             self.applicationName = inListApplications
@@ -58,4 +74,4 @@ class cleandisk(HowTo):
 class ask_(HowTo):
     
     def apply(self):
-        return Report.Report("What does that mean ?")                
+        return Report.Report("Error: What does it mean?")                

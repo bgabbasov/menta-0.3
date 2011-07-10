@@ -3,10 +3,10 @@ Created on 24.06.2011
 
 @author: talanov max
 '''
-from howTo.HowTo import install, cleandisk
-from exceptions import Exception 
-import howTo
 import logging
+import howTo
+from howTo.HowTo import ErrorHowTo
+from howTo.Report import Report
 
 class HowToFactory(object):
     '''
@@ -24,12 +24,13 @@ class HowToFactory(object):
         try:
             ht = getattr(howTo.HowTo, howToId.replace(self.prefix, "").lower())
         except Exception:
-            
-            
             ht = getattr(howTo.HowTo, 'ask_')
-        return ht(parameters)
+        try:
+            return ht(parameters)
+        except ValueError as e:
+            logging.error(str(e))
+            r = Report("Error:" + str(e))
+            e = ErrorHowTo(r)   
+            return e
+            
         
-#        if howToId == self.prefix + 'install':
-#            return install(parameters)
-#        elif howToId == self.prefix + 'cleandisk':
-#            return cleanDisk()

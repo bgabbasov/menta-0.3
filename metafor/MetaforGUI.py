@@ -196,10 +196,10 @@ if __name__ == '__main__':
     logging.info('Started')
     
     root = Tkinter.Tk()
-    Pmw.initialise(root, fontScheme='pmw1', size=18)
+    Pmw.initialise(root, fontScheme='pmw1', size=10)
     root.title(title)
 #    root.option_add('*Font',('Courier',14,'bold'))
-    root.option_add('*Font', ('Serif', 10))
+    root.option_add('*Font', ('Sans', 9))
 
     widget = MetaforGUI(root)
     root.mainloop()
