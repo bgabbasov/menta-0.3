@@ -198,7 +198,6 @@ class Metafor:
             body_output = ''
             
             # analyze insufficient disc space on drive C
-            #TODO: add disks list in a model
             insufficient_indicator = "full"
             string_delimiter = "_"
             
@@ -236,7 +235,8 @@ class Metafor:
             # create HowTo here
             # in case of clean disk substitute here to clean disk
             htf = HowToFactory.HowToFactory()
-            howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
+            howTo = htf.createHowTo(cur_object_full_name, cur_object_header) 
+            logging.debug(str(howTo))               
             return howTo
     
     def create_call_from_class(self, full_name):
