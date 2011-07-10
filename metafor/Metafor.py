@@ -206,6 +206,8 @@ class Metafor:
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):
                     body_output += str(howTo.apply().getContents()) + '\n'
+            if (insufficient_indicator in cur_object_full_name):
+                body_output += "Error: Please specify disk." 
             
             for child_full_name in self.children(full_name):
                 # analyze function call here, imperative 

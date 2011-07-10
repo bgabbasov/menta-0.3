@@ -62,6 +62,8 @@ class MetaforNL:
         print "DEBUG conditionals resolved to:\n",preprocessed_query
         # logging.debug("conditionals resolved to:\n " + preprocessed_query)
         sentence_digests = self.ml.jist(preprocessed_query)
+        logging.debug("sentence_digests ")
+        logging.debug(sentence_digests)
         sentences_and_their_pps = map(lambda x:x['parameterized_predicates'],sentence_digests)
         if (sentences_and_their_pps == None or  len(sentences_and_their_pps)):
             responses.append("I could not recognize the sentence, please rephrase.")

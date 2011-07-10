@@ -29,7 +29,7 @@ class HowToFactory(object):
             return ht(parameters)
         except ValueError as e:
             logging.error(str(e))
-            r = Report(str(e))
+            r = Report("Error:" + str(e))
             e = ErrorHowTo(r)   
             return e
             
