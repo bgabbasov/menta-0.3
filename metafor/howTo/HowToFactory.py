@@ -27,7 +27,7 @@ class HowToFactory(object):
             ht = getattr(howTo.HowTo, 'ask_')
         try:
             return ht(parameters)
-        except ValueError as e:
+        except ValueError, e:
             logging.error(str(e))
             r = Report("Error:" + str(e))
             e = ErrorHowTo(r)   
