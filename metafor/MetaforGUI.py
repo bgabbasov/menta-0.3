@@ -20,17 +20,16 @@ class MetaforGUI:
         #                      background='#C0C0C0')
 
         # menu
-        Pmw.Color.changecolor(self.menuBar.component('hull'),
-                              background='#4682B4',
-                              foreground='black')
+        #Pmw.Color.changecolor(self.menuBar.component('hull'),
+        #                      background='#4682B4',
+        #                      foreground='black')
         # frame inbetween
-        Pmw.Color.changecolor(self.panedWidgetOutside.component('hull'),
-                              background='#4682B4')
+        Pmw.Color.changecolor(self.panedWidgetOutside.component('hull'),background='gray')
         # four windows
         #self.dialog_history.component('text').config(bg='#CCC2CC')
-        self.dialog_history.component('text').config(bg='gray',fg='blue')
+        self.dialog_history.component('text').config(bg='white',fg='black')
         #self.query.component('text').config(bg='#C0C0C0')
-        self.query.component('text').config(bg='gray',fg='blue')
+        self.query.component('text').config(bg='white',fg='black')
         #self.python_viewer.component('text').config(bg='#C1C1C1')
         #self.clisp_viewer.component('text').config(bg='#D2D2D2')
         #self.model_viewer.component('text').config(bg='#E3E3E3')
@@ -45,18 +44,18 @@ class MetaforGUI:
         Pmw.Color.setscheme(self.parent, background='#C0C0C0', foreground="blue")
 
         # create the menubar
-        menuBar = Pmw.MenuBar(parent,
-                hull_relief='raised',
-                hull_borderwidth=1,
-                balloon=self.balloon)
-        menuBar.pack(fill='x')
-        self.menuBar = menuBar
+        #menuBar = Pmw.MenuBar(parent,
+        #        hull_relief='raised',
+        #        hull_borderwidth=1,
+        #        balloon=self.balloon)
+        #menuBar.pack(fill='x')
+        #self.menuBar = menuBar
 
         # file pulldown
-        menuBar.addmenu('File', 'Close this window or exit')
-        menuBar.addmenuitem('File', 'command', 'Exit the application',
-                command=parent.destroy,
-                label='Exit')
+        #menuBar.addmenu('File', 'Close this window or exit')
+        #menuBar.addmenuitem('File', 'command', 'Exit the application',
+        #        command=parent.destroy,
+        #        label='Exit')
 
         # create the main container below the menu bar
         #panedWidgetOutside = Pmw.PanedWidget(parent,
@@ -68,21 +67,24 @@ class MetaforGUI:
         panedWidgetOutside = Pmw.PanedWidget(parent,
                                              orient='vertical',
                                              hull_height=540,
-                                             hull_width=960)
-        panedWidgetOutside.add('dialoghistory', size=0.8)
-        panedWidgetOutside.add('query', min=0.05, size=0.2)
+                                             hull_width=960,
+                                             separatorthickness=0,
+                                             separatorrelief='flat',
+                                             handlesize=0)
+        panedWidgetOutside.add('dialoghistory', size=0.9)
+        panedWidgetOutside.add('bottom', min=0.05, size=0.1)
         panedWidgetOutside.pack(fill='both', expand=1)
         self.panedWidgetOutside = panedWidgetOutside
 
-        # the left panes: dialog history and query
-        #panedWidgetLeft = Pmw.PanedWidget(panedWidgetOutside.pane('left'),
-        #        orient='vertical',
-        #        hull_height=500,
-        #        hull_width=400)
-        #panedWidgetLeft.add('dialoghistory', size=0.8)
-        #panedWidgetLeft.add('query', min=0.05, size=0.2)
-        #panedWidgetLeft.pack(fill='both', expand=1)
-        #self.left_panel = panedWidgetLeft
+        panedWidgetBottom = Pmw.PanedWidget(panedWidgetOutside.pane('bottom'),
+                                            orient='horizontal',
+                                            separatorthickness=0,
+                                            separatorrelief='flat',
+                                            handlesize=0)
+        panedWidgetBottom.add('query', min=0.05, size=0.9)
+        panedWidgetBottom.add('bpanel', min=0.05, size=0.1)
+        panedWidgetBottom.pack(fill='both', expand=1)
+        self.bottom_panel = panedWidgetBottom
         
         # the right panes: visualizer and code_viewer
         #panedWidgetRight = Pmw.PanedWidget(panedWidgetOutside.pane('right'),
@@ -93,17 +95,18 @@ class MetaforGUI:
         #panedWidgetRight.add('codeviewer', size=0.5)
         #panedWidgetRight.pack(fill='both', expand=1)
         #self.right_panel = panedWidgetRight
-
+        
         # the dialog history pane
-        self.dialog_history = Pmw.ScrolledText(panedWidgetOutside.pane('dialoghistory'),
-                                               text_wrap='word')
+        self.dialog_history = Pmw.ScrolledText(panedWidgetOutside.pane('dialoghistory'),text_wrap='word')
         self.dialog_history.pack(padx=5, pady=2, fill='both', expand=1)
         
         # the query pane
-        self.query = Pmw.ScrolledText(panedWidgetOutside.pane('query'), text_wrap='word')
+        self.query = Pmw.ScrolledText(panedWidgetBottom.pane('query'), text_wrap='word')
         self.query.pack(padx=5, pady=2, fill='both', expand=1)
         self.query.component('text').bind('<Return>', self.execute_query)
-
+        
+        self.button= Tkinter.Button(panedWidgetBottom.pane('bpanel'),text='Алга...', command=self.execute_query)
+        self.button.pack(padx=5, pady=5, fill='both', expand=1)
         # the visualizer
         #        self.visualizer = Pmw.ScrolledCanvas(panedWidgetRight.pane('visualizer'))
         #self.visualizer = Pmw.ScrolledText(panedWidgetRight.pane('visualizer'))
@@ -140,10 +143,11 @@ class MetaforGUI:
     def push_dialog_history(self, statement, author):
         # author = user | computer
         if author == 'user':
-            header = '[user] (' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
+            header = '[user]\n  ' #(' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
         else:
             time.sleep(0.0) # delay
-            header = '['+author+'] (' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
+            header = '['+author+']\n  '# (' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
+    
         self.dialog_history.see('end')
         self.dialog_history.insert(Tkinter.END, header)
         self.dialog_history.update_idletasks()
@@ -153,7 +157,7 @@ class MetaforGUI:
             self.dialog_history.see('end')
             self.dialog_history.insert(Tkinter.END, c)
             self.dialog_history.update_idletasks()
-            time.sleep(0.0) # typematic delay
+            time.sleep(0.005) # typematic delay
         self.dialog_history.see('end')            
         return
     
@@ -184,7 +188,7 @@ class MetaforGUI:
         
         if response:
             self.push_dialog_history(response, 'agent')
-            self.push_dialog_history(self.theMetafor.render_code(full_name='__main__', flavor='python'),'STRUCTURE')
+            print 'STRUCTURE:\n' + self.theMetafor.render_code(full_name='__main__', flavor='python')
             self.push_dialog_history(self.theMetafor.render_code(full_name='__main__', flavor='howTo'),'EXECUTE')
         self.query.clear()
         
