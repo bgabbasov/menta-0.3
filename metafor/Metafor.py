@@ -83,6 +83,7 @@ class Metafor:
         return ''
         
     def handle_query(self, query):
+        
         response = self.nl.process(query)
         return response
         

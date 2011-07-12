@@ -43,9 +43,13 @@ class MetaforNL:
         self.deictic_stack = [] # entry: [('Pacman',('he','singular')),...]
         self.questions_queue = [] # if active, active_question = {'!question':'Can x do y?','!question_asked':0,'!question_requires_answer_p':1,'yes'(possible responses):['actions to do',...],'no':['actions to do',...]}
         self.default_object = "actor"
+        self.please = "please"
 
     def process(self,query):
         responses = []
+        
+        #truncate please word -- often is identified as verb
+        ## TODO debug query = self.truncate_please(query)
         # were we expecting a response? (check if questions_queue is active
         if self.questions_queue and self.questions_queue[0]['!question_asked'] and self.questions_queue[0]['!question_requires_answer']:
             response_or_followup_question = self.process_response(query)
@@ -81,6 +85,13 @@ class MetaforNL:
             response = self.process_pp(sequence_of_pps_ptr,cur_index)
             responses.append(response)
         return string.join(responses,'  ')
+
+    def truncate_please(self, request):
+        index = request.lower().find(self.please)
+        res = request
+        if (index > -1 and index < len(request)):
+            res = request[0:index] + res[index+len(self.please)+1:]
+        logging.debug(res)
 
     def process_deixis(self,pp_list_ptr):
         # resolve each pp against deictic stack
