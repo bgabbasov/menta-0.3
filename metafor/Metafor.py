@@ -207,7 +207,7 @@ class Metafor:
                 if (howTo != None):
                     body_output += str(howTo.apply().getContents()) + '\n'
             if (insufficient_indicator in cur_object_full_name):
-                body_output += "Error: Please specify disk." 
+                body_output += "Please specify disk." 
             
             for child_full_name in self.children(full_name):
                 # analyze function call here, imperative 
