@@ -139,6 +139,7 @@ class Metafor:
         
     def render_code_howTo(self, full_name='__main__'):
         cur_flavor = 'howTo'
+        natural_lang_output=''
         indent = '     '
         # recursively generates the code below a given object
         cur_object = self.get_object_ptr(full_name)
@@ -186,6 +187,7 @@ class Metafor:
                 body_output = '\n'
             body_output = string.join(map(lambda x:indent + x, body_output.split('\n')), '\n')
             output += body_output + '\n'
+            natural_lang_output=body_output
             
         elif cur_object_type == 'ClassType':
             if len(cur_object_header) > 0:
@@ -206,16 +208,23 @@ class Metafor:
                 howTo = self.create_call_from_class(cur_object_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):
-                    body_output += str(howTo.apply().getContents()) + '\n'
+                    temp=str(howTo.apply().getContents())
+                    body_output += temp
+                    natural_lang_output= temp
+                    
             if (insufficient_indicator in cur_object_full_name):
-                body_output += "Please specify disk." 
+                temp="Please specify disk."
+                body_output +=temp
+                natural_lang_output= temp  
             
             for child_full_name in self.children(full_name):
                 # analyze function call here, imperative 
                 howTo = self.create_call(child_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):
-                    body_output += str(howTo.apply().getContents()) + '\n'
+                    temp=str(howTo.apply().getContents())
+                    body_output += temp
+                    natural_lang_output= temp
             if not  body_output:
                 body_output += '\n'
             body_output = string.join(map(lambda x:indent + x, body_output.split('\n')), '\n')
@@ -223,8 +232,9 @@ class Metafor:
         elif cur_object_type == 'ListType':
             output = self.local_name(cur_object_full_name) + ' = [' + string.join(cur_object_header, ', ') + ']'
         else:
-            output = 'ERROR: Unknown type can\'t be rendered!'
-        return output
+            output = 'Unknown type can\'t be rendered!'
+        print output
+        return natural_lang_output
     
     # HowTo-s
     def create_call(self, full_name):
@@ -439,7 +449,7 @@ class Metafor:
         elif cur_object_type == 'ListType':
             output = self.local_name(cur_object_full_name) + ' = [' + string.join(cur_object_header, ', ') + ']'
         else:
-            output = 'ERROR: Unknown type can\'t be rendered!'
+            output = 'Unknown type can\'t be rendered!'
         return output
             
 

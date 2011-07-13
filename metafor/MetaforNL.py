@@ -39,11 +39,15 @@ class MetaforNL:
     def __init__(self,metafor_handle):
         self.ml = MontyLingua.MontyLingua()
         self.m = metafor_handle
-        self.lookup = {}
-        self.deictic_stack = [] # entry: [('Pacman',('he','singular')),...]
-        self.questions_queue = [] # if active, active_question = {'!question':'Can x do y?','!question_asked':0,'!question_requires_answer_p':1,'yes'(possible responses):['actions to do',...],'no':['actions to do',...]}
+        self.clear_model
+    
+    def clear_model(self):
         self.default_object = "actor"
         self.please = "please"
+        self.questions_queue = [] # if active, active_question = {'!question':'Can x do y?','!question_asked':0,'!question_requires_answer_p':1,'yes'(possible responses):['actions to do',...],'no':['actions to do',...]}
+        self.lookup = {}
+        self.deictic_stack = [] # entry: [('Pacman',('he','singular')),...]
+            
 
     def process(self,query):
         responses = []

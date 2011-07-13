@@ -32,10 +32,12 @@ class ErrorHowTo(HowTo):
         return self.report 
 
 '''
-HowTo class name must be in lower case
+HowTo class name must be in lower case 
+&
+applicationsToInstall must be in lower case to
 '''
 class install(HowTo):
-    applicationsToInstall = ['Firefox', 'firefox', 'Chrome', "chrome", 'Google_Chrome', "google_chrome", 'Microsoft_Word', 'Word', "word"]
+    applicationsToInstall = ['firefox', 'chrome', 'google_chrome', 'microsoft_word', 'word', 'microsoft_office', 'ms_office']
     
     def __init__(self, parameters=[]):
         inListApplications = []
@@ -43,7 +45,7 @@ class install(HowTo):
             logging.error("Parameters of install HowTo are not specified.")
             raise ValueError("Please specify application to install.")
         for par in parameters:
-            if (par in self.applicationsToInstall):
+            if (par.lower() in self.applicationsToInstall):
                 inListApplications.append(par)
         if(len(inListApplications) < 1):
             logging.error("Application is not in list")
@@ -74,4 +76,4 @@ class cleandisk(HowTo):
 class ask_(HowTo):
     
     def apply(self):
-        return Report.Report("Error: What does it mean?")                
+        return Report.Report("What does it mean?")                
