@@ -142,12 +142,12 @@ class MetaforGUI:
 
     def push_dialog_history(self, statement, author):
         # author = user | computer
-        if author == 'user':
-            header = '[user]\n  ' #(' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
-        else:
-            time.sleep(0.0) # delay
-            header = '['+author+']\n  '# (' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
-    
+        #if author == 'user':
+        #    header = '[user]\n  ' #(' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
+        #else:
+        #    time.sleep(0.0) # delay
+        #    header = '['+author+']\n  '# (' + string.join(map(lambda x:string.zfill(str(x), 2), time.localtime()[3:6]), ':') + ')  '
+        header = '['+author+']\n  '
         self.dialog_history.see('end')
         self.dialog_history.insert(Tkinter.END, header)
         self.dialog_history.update_idletasks()
@@ -162,8 +162,10 @@ class MetaforGUI:
         return
     
     def execute_query(self, *args):
+        self.theMetafor.nl.clear_model()
+        self.theMetafor.objects =  [['__main__', 'FunctionType', [], []]]
         query = self.query.get().strip()
-        self.push_dialog_history(query, 'user')
+        self.push_dialog_history(query, 'Начальника')
         response = self.theMetafor.handle_query(query)
         # update code views
         # a) python
@@ -187,10 +189,13 @@ class MetaforGUI:
         # post response
         
         if response:
-            self.push_dialog_history(response, 'agent')
+            self.push_dialog_history(response, 'Джамшут')
             print 'STRUCTURE:\n' + self.theMetafor.render_code(full_name='__main__', flavor='python')
-            self.push_dialog_history(self.theMetafor.render_code(full_name='__main__', flavor='howTo'),'EXECUTE')
-        self.query.clear()
+            temp=self.theMetafor.render_code(full_name='__main__', flavor='howTo')
+            self.push_dialog_history(temp,'Раушан')
+            if temp.__len__()>11:
+                self.query.settext('')
+        #self.query.clear()
         
 ######################################################################
 
