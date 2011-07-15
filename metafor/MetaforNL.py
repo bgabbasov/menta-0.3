@@ -744,7 +744,7 @@ class MetaforNL:
                 else:
                     escaped_text += text[i]
             # Task 37 +'. '
-            sentences[j]=escaped_text.strip('. ')
+            sentences[j]=escaped_text.strip('. ') + "."
         return ' '.join(sentences)
     
     def escape_phrase(self,phrase):
