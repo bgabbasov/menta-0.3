@@ -6,6 +6,8 @@ Created on 14.07.2011
 import unittest
 import subprocess
 import logging
+import os
+from howTo.HowTo import install
 
 class TestHowTo(unittest.TestCase):
     
@@ -27,14 +29,22 @@ class TestHowTo(unittest.TestCase):
 #        for element in random.sample(self.seq, 5):
 #            self.assert_(element in self.seq)
 
-
-    def test_command_call(self):
-        retcode = subprocess.call(["ls", "-l"])
-        logging.debug(retcode)
+#    def test_command_call(self):
+#        retcode = subprocess.call(["ls", "-l"])
         
     def test_bat_call(self):
-        retcode = subprocess.call(["test.bat"])
+        # cmd /c "test.bat"
+        retcode = subprocess.call(["cmd", "/c", "test.bat"])
         logging.debug(retcode)
+    
+    def test_current_os(self):
+        os_name = os.name
+        logging.debug(os_name)
+        
+    def test_install_howTo(self):
+        iht = install(["Firefox"])
+        iht.apply()
+        
 
 if __name__ == '__main__':
     unittest.main()
