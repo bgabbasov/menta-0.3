@@ -544,8 +544,8 @@ class Metafor:
         # stores it inside its parent object
         parent_object_ptr = self.get_object_ptr(parent_full_name)
         print "DEBUG add object", parent_object_ptr, " : ", parent_full_name, " : ", child_object
-	if parent_object_ptr == None:
-	    print "Error empty parent object"
+        if parent_object_ptr == None:
+            print "Error empty parent object"
         parent_contents_ptr = parent_object_ptr[3]
         parent_contents_ptr.append(child_object)
         return
