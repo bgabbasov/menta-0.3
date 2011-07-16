@@ -6,6 +6,8 @@ Created on Jun 23, 2011
 import Report
 import string
 import logging
+import os
+import subprocess
 
 class HowTo(object):
     '''
@@ -34,10 +36,13 @@ class ErrorHowTo(HowTo):
 '''
 HowTo class name must be in lower case 
 &
-applicationsToInstall must be in lower case to
+applicationsToInstall must be in lower case
 '''
 class install(HowTo):
     applicationsToInstall = ['firefox', 'chrome', 'google_chrome', 'microsoft_word', 'word', 'microsoft_office', 'ms_office']
+    install_cmd_ending = ".bat"
+    install_cmd_prefix = "install_scripts"
+    cmd_delimiter = "\\"
     
     def __init__(self, parameters=[]):
         inListApplications = []
@@ -57,6 +62,23 @@ class install(HowTo):
         r = ""
         for a in self.applicationName: 
             r += "installing application: " + a + "...\n"
+            ending = self.install_cmd_ending
+            delimiter = self.cmd_delimiter
+            if (("nt" in os.name) or ("windows" in os.name) ):
+                delimiter = "\\" 
+                ending = ".bat"
+            else:
+                delimiter = "/"
+                ending = ".sh"
+            cmd = self.install_cmd_prefix + delimiter + a + ending
+            logging.debug(cmd)
+            try:
+                retcode = subprocess.call([cmd])
+            except ValueError, e:
+                retcode = str(e)
+            except OSError, e: 
+                retcode = str(e)
+            logging.debug(retcode)     
         return Report.Report(r)
 
 class cleandisk(HowTo):

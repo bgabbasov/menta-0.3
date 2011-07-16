@@ -222,7 +222,7 @@ class MetaforNL:
         # ==> pps: (examine "" __main__.pacman) .....all other pps.... (examine "" __main__)
         # this is a scoping wrapper
         sentences = map(lambda x:x.strip(),self.ml.split_sentences(text))
-        print "DEBUG sentences",sentences
+        print "DEBUG sentences", sentences
         for j in range(len(sentences)):
             m = re.search('^(when|whenever|When|Whenever|As|as) (?P<scopingphrase>[a-zA-Z][^,]+),(?P<scopedphrase>.+$)',sentences[j].strip())
             if m:
@@ -743,7 +743,8 @@ class MetaforNL:
                     cur_element += text[i]
                 else:
                     escaped_text += text[i]
-            sentences[j]=escaped_text.strip('. ')+'. '
+            # Task 37 +'. '
+            sentences[j]=escaped_text.strip('. ') + "."
         return ' '.join(sentences)
     
     def escape_phrase(self,phrase):
