@@ -86,9 +86,13 @@ class cleandisk(HowTo):
     def __init__(self, parameters=[]):
         self.default_disk = 'Z'
         self.disk = self.default_disk
+        self.disk_delimiter = "_"
         
         # extract disk name from parameters
-        if (len(parameters) > 0 and parameters[0][len(parameters[0])-1] in string.letters):
+        if (len(parameters) > 0
+            and len(parameters[0]) > 1
+            and parameters[0][len(parameters[0])-1] in string.letters
+            and parameters[0][[len(parameters[0])-2]] == self.disk_delimiter):
             self.disk = parameters[0][len(parameters[0])-1]
         else:
             self.disk = None
