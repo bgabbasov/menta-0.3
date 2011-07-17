@@ -90,9 +90,15 @@ class cleandisk(HowTo):
         # extract disk name from parameters
         if (len(parameters) > 0 and parameters[0][len(parameters[0])-1] in string.letters):
             self.disk = parameters[0][len(parameters[0])-1]
+        else:
+            self.disk = None
         
     def apply(self):
-        r = "cleaning disk " + str(self.disk)
+        r = ""
+        if (self.disk == None):
+            r = "Please specify disk"
+        else:
+            r = "cleaning disk " + str(self.disk)
         return Report.Report(r)
 
 class ask_(HowTo):

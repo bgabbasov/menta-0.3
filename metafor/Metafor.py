@@ -203,7 +203,7 @@ class Metafor:
             # analyze insufficient disc space on drive C
             insufficient_indicator = "full"
             string_delimiter = "_"
-            
+
             if ((insufficient_indicator + string_delimiter) in cur_object_full_name):
                 howTo = self.create_call_from_class(cur_object_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
@@ -211,8 +211,7 @@ class Metafor:
                     temp=str(howTo.apply().getContents())
                     body_output += temp
                     natural_lang_output= temp
-                    
-            if (insufficient_indicator in cur_object_full_name):
+            elif (insufficient_indicator in cur_object_full_name):
                 temp="Please specify disk."
                 body_output +=temp
                 natural_lang_output= temp  
