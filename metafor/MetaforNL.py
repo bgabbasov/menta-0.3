@@ -53,7 +53,7 @@ class MetaforNL:
         responses = []
         
         #truncate please word -- often is identified as verb
-        query = self.truncate_word(query, self.please)
+        # query = self.truncate_word(query, self.please)
         # were we expecting a response? (check if questions_queue is active
         if self.questions_queue and self.questions_queue[0]['!question_asked'] and self.questions_queue[0]['!question_requires_answer']:
             response_or_followup_question = self.process_response(query)
@@ -78,6 +78,9 @@ class MetaforNL:
              
         # collapse each sentence's pps into a single stream of pps
         sequence_of_pps_ptr = reduce(lambda x,y:x+y,sentences_and_their_pps)
+        # 39: Demo: deictic stack bug
+        # The depersonalized sentences should be interpreted as requests
+        self.resolve_requests(sequence_of_pps_ptr)
         # resolve deixis
         self.process_deixis(sequence_of_pps_ptr)
         # resolve complementizers (e.g. who, that)
@@ -98,6 +101,18 @@ class MetaforNL:
         logging.debug(res)
         return res
 
+
+    def resolve_requests(self, pp_list_ptr):
+        """
+        If there is no subject in pp_list_ptr setup default one self.m.selfReference
+        """
+        for i in pp_list_ptr:
+           if (len(i) > 1 and len(i[1]) > 0):
+               if (i[1][0]== ""):
+                   i[1][0] = self.m.selfReference
+        return
+
+    
     def process_deixis(self,pp_list_ptr):
         # resolve each pp against deictic stack
         # and update deictic stack with new entries
@@ -106,7 +121,7 @@ class MetaforNL:
         male_fnames = ['Hugo','Push','Marvin','Nick','James','Jim','John','Johnny','Robert','Bob','Michael','Mike','William','Bill','Billy','David','Dave','Richard','Dick','Charles','Charlie','Joseph','Joe','Joey','Thomas','Tom','Tommy','Christopher','Chris','Daniel','Dan','Paul','Mark','Donald','Don','George','Kenneth','Ken','Steven','Stephen','Steve','Edward','Eddie','Ed','Brian','Ronald','Ron','Anthony','Tony','Kevin','Jason','Matthew','Matt','Gary','Timothy','Tim','Jose','Larry','Jeffrey','Jeff','Frank','Fred','Scott','Eric','Stephen','Andrew','Andy','Raymond','Ray','Gregory','Greg','Gregg','Joshua','Josh','Jerry','Dennis','Walter','Patrick','Pat','Peter','Harold','Harry','Douglas','Henry','Carl','Arthur','Ryan','Roger','Sam','Dwight','Melvin','Juan']
         female_fnames = ['Briana','Lea','Eileen','Belinda','Juanita','Julie','Sally','Cindy','Jane','Joyce','Judy','Alyssa','Mary','Patricia','Patty','Linda','Barbara','Elizabeth','Jennifer','Maria','Susan','Margaret','Dorothy','Lisa','Nancy','Karen','Betty','Helen','Sandra','Donna','Carol','Ruth','Sharon','Michelle','Laura','Laurie','Sarah','Sara','Kimberly','Kim','Deborah','Jesse','Jessica','Shirley','Cynthia','Angela','Angie','Melissa','Brenda','Amy','Anna','Rebecca','Becky','Virginia','Kathleen','Kathy','Pamela','Martha','Debra','Amanda','Stephanie','Carolyn','Carol','Christine','Marie','Janet','Catherine','Cathy','Frances','Ann','Annie','Diane','Diana','Dianna']
         common_agents = ['bartender','milkman','pacman','customer','boss','user','server','disk','drive','computer','program','file','folder']
-        stop_words = ['there','that','one','which']
+        stop_words = ['there','that','one','which', "please"]
         key_words = ['LIST','QUOTE','ANTECEDENT','SCOPE']
         
         for i in range(len(pp_list_ptr)):

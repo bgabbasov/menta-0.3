@@ -194,7 +194,7 @@ class Metafor:
                 inheritance_string = '(' + string.join(cur_object_header, ', ') + ')'
             else:
                 inheritance_string = ''
-            # HowTo-s
+            # HowTo-s, the depersonalized sentences -> imperative 
             if (cur_object_full_name == self.selfReference):
                 self.request_map = {cur_object_full_name: []}
             output = 'module ' + self.local_name(cur_object_full_name) + inheritance_string + ': ' + '\n'
