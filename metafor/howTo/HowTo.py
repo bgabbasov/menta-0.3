@@ -89,11 +89,14 @@ class cleandisk(HowTo):
         self.disk_delimiter = "_"
         
         # extract disk name from parameters
-        if (len(parameters) > 0
-            and len(parameters[0]) > 1
-            and parameters[0][len(parameters[0])-1] in string.letters
-            and parameters[0][[len(parameters[0])-2]] == self.disk_delimiter):
-            self.disk = parameters[0][len(parameters[0])-1]
+        if (len(parameters) > 0):
+            first_parameter = parameters[0]
+            if (len(first_parameter) > 1
+                and first_parameter[len(first_parameter)-1] in string.letters
+                and first_parameter[len(first_parameter)-2] == self.disk_delimiter):
+                self.disk = first_parameter[len(first_parameter)-1]
+            else:
+                self.disk = None
         else:
             self.disk = None
         

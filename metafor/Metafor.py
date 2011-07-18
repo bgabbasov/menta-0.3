@@ -537,7 +537,12 @@ class Metafor:
         return
 
     def add_object(self, child_object):
+        # 37: Truncate last point, the object should not use dot in last place.
         full_name = child_object[0]
+        if (full_name.endswith(".")):
+            full_name = full_name[0:len(full_name)-1]
+            child_object[0] = full_name
+        
         parent_full_name = self.parent(full_name)
         #print "DEBUG5",full_name,parent_full_name
         # stores it inside its parent object
