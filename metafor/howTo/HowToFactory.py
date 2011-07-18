@@ -12,7 +12,7 @@ class HowToFactory(object):
     '''
     It is the factory to crate HowTo-s.
     '''
-
+    
     def __init__(self):
         '''
         Constructor
@@ -20,9 +20,23 @@ class HowToFactory(object):
         self.prefix = u'__main__.Menta.'
     
     def createHowTo(self, howToId, parameters):
+        
+        account_operations = ['i.block', 'block',  'unblock', '__main__.i.block']
+        password_operations = ['i.forget', 'reset', '__main__.i.forget']
+        
         # use introspection to create HowTo
+        HowToFuncName=howToId.replace(self.prefix, "").lower()
+        
+        
+        if HowToFuncName in account_operations and parameters[0]=='account':
+            HowToFuncName='unblock'
+        elif HowToFuncName in password_operations and parameters[0]=='password':
+            HowToFuncName='resetpassword'
+        elif HowToFuncName == 'please' and parameters[0]=='reset_password':
+            HowToFuncName='resetpassword'
+        
         try:
-            ht = getattr(howTo.HowTo, howToId.replace(self.prefix, "").lower())
+            ht = getattr(howTo.HowTo, HowToFuncName)
         except Exception:
             ht = getattr(howTo.HowTo, 'ask_')
         try:

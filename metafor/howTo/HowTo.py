@@ -108,7 +108,16 @@ class cleandisk(HowTo):
             r = "cleaning disk " + str(self.disk)
         return Report.Report(r)
 
+class unblock(HowTo):
+    
+    def apply(self):
+        return Report.Report("I reset your account to unlocked state !")
+    
+class resetpassword(HowTo):
+    def apply(self):
+        return Report.Report("I reset your password !")
+
 class ask_(HowTo):
     
     def apply(self):
-        return Report.Report("What does it mean?")                
+        return Report.Report("I understood you, but i have no idea how to help you !")                

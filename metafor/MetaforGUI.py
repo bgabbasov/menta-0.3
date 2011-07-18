@@ -105,7 +105,7 @@ class MetaforGUI:
         self.query.pack(padx=5, pady=2, fill='both', expand=1)
         self.query.component('text').bind('<Return>', self.execute_query)
         
-        self.button= Tkinter.Button(panedWidgetBottom.pane('bpanel'),text='Alga...', command=self.execute_query)
+        self.button= Tkinter.Button(panedWidgetBottom.pane('bpanel'),text='Run...', command=self.execute_query)
         self.button.pack(padx=5, pady=5, fill='both', expand=1)
         # the visualizer
         #        self.visualizer = Pmw.ScrolledCanvas(panedWidgetRight.pane('visualizer'))
@@ -165,7 +165,7 @@ class MetaforGUI:
         self.theMetafor.nl.clear_model()
         self.theMetafor.objects =  [['__main__', 'FunctionType', [], []]]
         query = self.query.get().strip()
-        self.push_dialog_history(query, 'Nachalnika')
+        self.push_dialog_history(query, 'user')
         response = self.theMetafor.handle_query(query)
         # update code views
         # a) python
@@ -189,10 +189,10 @@ class MetaforGUI:
         # post response
         
         if response:
-            self.push_dialog_history(response, 'Dzhamshut')
+            self.push_dialog_history(response, 'system')
             print 'STRUCTURE:\n' + self.theMetafor.render_code(full_name='__main__', flavor='python')
             temp=self.theMetafor.render_code(full_name='__main__', flavor='howTo')
-            self.push_dialog_history(temp,'Ravshan')
+            self.push_dialog_history(temp,'system')
             if temp.__len__()>11:
                 self.query.settext('')
         #self.query.clear()
