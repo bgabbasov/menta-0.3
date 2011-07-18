@@ -73,7 +73,9 @@ class MetaforNL:
         logging.debug("sentence_digests ")
         logging.debug(sentence_digests)
         sentences_and_their_pps = map(lambda x:x['parameterized_predicates'],sentence_digests)
-        if (sentences_and_their_pps == None or  len(sentences_and_their_pps)):
+        logging.debug("sentences_and_their_pps")
+        logging.debug(sentences_and_their_pps)
+        if (sentences_and_their_pps == None or  len(sentences_and_their_pps)< 1):
             responses.append("I could not recognize the sentence, please rephrase.")
              
         # collapse each sentence's pps into a single stream of pps
