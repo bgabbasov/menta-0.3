@@ -120,4 +120,4 @@ class resetpassword(HowTo):
 class ask_(HowTo):
     
     def apply(self):
-        return Report.Report("I understood you, but i have no idea how to help you !")                
+        return Report.Report("I understand you, but I have no idea how to help you, sorry!")
