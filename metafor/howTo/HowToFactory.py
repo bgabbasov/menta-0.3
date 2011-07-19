@@ -1,6 +1,6 @@
 '''
 Created on 24.06.2011
-
+Class to crate HowTo-s.
 @author: talanov max
 '''
 import logging
@@ -23,6 +23,9 @@ class HowToFactory(object):
         
         account_operations = ['i.block', 'block',  'unblock', '__main__.i.block']
         password_operations = ['i.forget', 'reset', '__main__.i.forget']
+
+#        class Menta:
+#          def Please(clean_disk_C):
         
         # use introspection to create HowTo
         HowToFuncName=howToId.replace(self.prefix, "").lower()
