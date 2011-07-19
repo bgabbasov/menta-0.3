@@ -261,7 +261,7 @@ class Metafor:
         if cur_object_type == 'ClassType': 
             htf = HowToFactory.HowToFactory()
             #TODO hard-coded here should be relocated to mapping constants.
-            howTo = htf.createHowTo('cleanDisk', cur_object)
+            howTo = htf.createHowTo('clean_disk', cur_object)
             return howTo        
 
     def render_code_cl(self, full_name='__main__'):

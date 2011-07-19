@@ -81,7 +81,7 @@ class install(HowTo):
             logging.debug(retcode)     
         return Report.Report(r)
 
-class cleandisk(HowTo):
+class clean_disk(HowTo):
     
     def __init__(self, parameters=[]):
         self.default_disk = 'Z'
