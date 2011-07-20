@@ -251,11 +251,12 @@ class Metafor:
             howTo = htf.createHowTo(cur_object_full_name, cur_object_header) 
             logging.debug(str(howTo))               
             return howTo
-        elif cur_object_type == 'Property':
+        elif cur_object_type == 'DefinitionType':
             htf = HowToFactory.HowToFactory()
+            cur_object_header.append(parent)
             howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
             logging.debug(str(howTo))
-            return HowTo
+            return howTo
     
     def create_call_from_class(self, full_name):
         '''

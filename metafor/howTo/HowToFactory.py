@@ -24,6 +24,8 @@ class HowToFactory(object):
         account_operations = ['i.block', 'block',  'unblock', '__main__.i.block']
         password_operations = ['i.forget', 'reset', '__main__.i.forget']
         clean_disk_operation = "clean_disk"
+        insufficient_disk_suffix = "c.insufficient_disk_space"
+        insufficient_disk_prefix = "__main__."
 
 #        class Menta:
 #          def Please(clean_disk_C):
@@ -40,12 +42,21 @@ class HowToFactory(object):
             HowToFuncName='resetpassword'
         elif HowToFuncName == 'please' and parameters[0].startswith(clean_disk_operation):
             HowToFuncName = "clean_disk"
+        elif HowToFuncName.endswith(insufficient_disk_suffix):
+            HowToFuncName = "clean_disk"
+            temp_parameters = []
+            for i in parameters:
+                if (i != None and i.startswith(insufficient_disk_prefix)):
+                    temp_parameters.append(i.replace(insufficient_disk_prefix,""))
+            parameters = temp_parameters
         
         try:
             ht = getattr(howTo.HowTo, HowToFuncName)
         except Exception:
             ht = getattr(howTo.HowTo, 'ask_')
         try:
+            logging.debug(ht)
+            logging.debug(parameters)
             return ht(parameters)
         except ValueError, e:
             logging.error(str(e))

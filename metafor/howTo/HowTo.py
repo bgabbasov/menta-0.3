@@ -95,6 +95,9 @@ class clean_disk(HowTo):
                 and first_parameter[len(first_parameter)-1] in string.letters
                 and first_parameter[len(first_parameter)-2] == self.disk_delimiter):
                 self.disk = first_parameter[len(first_parameter)-1]
+            elif (len(first_parameter) == 1
+                  and first_parameter in string.letters):
+                self.disk = first_parameter
             else:
                 self.disk = None
         else:
