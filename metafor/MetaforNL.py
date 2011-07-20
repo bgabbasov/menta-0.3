@@ -789,6 +789,9 @@ class MetaforNL:
         for ph in prep_headers:
             if arg[:len(ph)]==ph:
                 arg = arg[len(ph):]
+        # 25: truncate last dot.
+        if(arg[-1:] == "."):
+            arg = arg[:len(arg)-1]
         return arg
 
     def generalize_phrase(self,phrase):
