@@ -87,6 +87,7 @@ class clean_disk(HowTo):
         self.default_disk = 'Z'
         self.disk = self.default_disk
         self.disk_delimiter = "_"
+        log = logging.getLogger("clean_disk")
         
         # extract disk name from parameters
         if (len(parameters) > 0):
@@ -97,7 +98,7 @@ class clean_disk(HowTo):
                 self.disk = first_parameter[len(first_parameter)-1]
             elif (len(first_parameter) == 1
                   and first_parameter in string.letters):
-                logging("first parameter", first_parameter)
+                log.debug("first parameter %s", first_parameter)
                 self.disk = first_parameter
             else:
                 self.disk = None
