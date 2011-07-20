@@ -80,6 +80,8 @@ class MetaforNL:
              
         # collapse each sentence's pps into a single stream of pps
         sequence_of_pps_ptr = reduce(lambda x,y:x+y,sentences_and_their_pps)
+        logging.debug("sequence_of_pps_ptr")
+        logging.debug(sequence_of_pps_ptr)
         # 39: Demo: deictic stack bug
         # The depersonalized sentences should be interpreted as requests
         self.resolve_requests(sequence_of_pps_ptr)
@@ -628,15 +630,16 @@ class MetaforNL:
             output = "ok. "
             where_to_put = self.m.focus
             # is there a container (e.g. there is a pacman IN THE MAZE)?
-            if obj_count >= 2 and ('prep=in' in objs_features[1]):
+            # 25: There is insufficient disk space on C:
+            if obj_count >= 1 and (('prep=in' in objs_features[1]) or ('prep=on' in objs_features[1])):
                 # does container exist? if not make it so
                 if not self.m.resolve_name(objs_normalized[1]):
                     self.m.add_object(self.m.new_class_object(self.m.focus+'.'+objs_normalized[1],[]))
-                    output += "  i created a new structure called "+objs[1]+"."
+                    output += "  I created a new structure called "+objs[1]+"."
                 else: # ok, it exists, but is it a class object?  if not, make it so
                     if self.m.type(self.m.resolve_name(objs_normalized[1]))!='ClassType':
                         self.m.replace_object(self.m.resolve_name(objs_normalized[1]),self.m.new_class_object(self.m.focus+'.'+objs_normalized[1],[]))
-                        output += "  i changed "+objs[1]+" into a structure."
+                        output += "  I changed "+objs[1]+" into a structure."
                 where_to_put = self.m.focus+'.'+objs_normalized[1]
             # is thing singular or plural? 
             if 'determiner=some' in objs_features[0] or 'plural' in objs_features[0]: # plural

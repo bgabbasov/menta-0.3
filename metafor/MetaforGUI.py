@@ -1,4 +1,4 @@
-title = 'Menta 0.3.0.1 Demo based on Metafor'
+title = 'Menta 0.3.0.1 Demo based on MIT Metafor'
 
 import Tkinter
 import Pmw

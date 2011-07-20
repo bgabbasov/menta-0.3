@@ -200,7 +200,7 @@ class Metafor:
             output = 'module ' + self.local_name(cur_object_full_name) + inheritance_string + ': ' + '\n'
             body_output = ''
             
-            # analyze insufficient disc space on drive C
+            # analyze insufficient disc space on drive X
             insufficient_indicator = "full"
             string_delimiter = "_"
 
@@ -214,11 +214,12 @@ class Metafor:
             elif (insufficient_indicator in cur_object_full_name):
                 temp="Please specify disk."
                 body_output +=temp
-                natural_lang_output= temp  
-            
+                natural_lang_output= temp
+
+            # Call howTo from function or property description
             for child_full_name in self.children(full_name):
                 # analyze function call here, imperative 
-                howTo = self.create_call(child_full_name)
+                howTo = self.create_call(child_full_name, cur_object_full_name)
                 # body_output += self.render_code(child_full_name,flavor=cur_flavor) + '\n'
                 if (howTo != None):
                     temp=str(howTo.apply().getContents())
@@ -236,7 +237,7 @@ class Metafor:
         return natural_lang_output
     
     # HowTo-s
-    def create_call(self, full_name):
+    def create_call(self, full_name, parent=None):
         '''
         Creates HowTo to implement request.
         '''
@@ -250,6 +251,11 @@ class Metafor:
             howTo = htf.createHowTo(cur_object_full_name, cur_object_header) 
             logging.debug(str(howTo))               
             return howTo
+        elif cur_object_type == 'Property':
+            htf = HowToFactory.HowToFactory()
+            howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
+            logging.debug(str(howTo))
+            return HowTo
     
     def create_call_from_class(self, full_name):
         '''
