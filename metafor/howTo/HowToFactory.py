@@ -23,6 +23,7 @@ class HowToFactory(object):
         
         account_operations = ['i.block', 'block',  'unblock', '__main__.i.block']
         password_operations = ['i.forget', 'reset', '__main__.i.forget']
+        clean_disk_operation = "clean_disk"
 
 #        class Menta:
 #          def Please(clean_disk_C):
@@ -37,6 +38,8 @@ class HowToFactory(object):
             HowToFuncName='resetpassword'
         elif HowToFuncName == 'please' and parameters[0]=='reset_password':
             HowToFuncName='resetpassword'
+        elif HowToFuncName == 'please' and parameters[0].startswith(clean_disk_operation):
+            HowToFuncName = "clean_disk"
         
         try:
             ht = getattr(howTo.HowTo, HowToFuncName)
