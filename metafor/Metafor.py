@@ -214,7 +214,6 @@ class Metafor:
             elif (insufficient_indicator in cur_object_full_name):
                 temp="Please specify disk."
                 body_output +=temp
-                natural_lang_output= temp  
                 natural_lang_output= temp
 
             # Call howTo from function or property description
@@ -238,7 +237,6 @@ class Metafor:
         return natural_lang_output
     
     # HowTo-s
-    def create_call(self, full_name):
     def create_call(self, full_name, parent=None):
         '''
         Creates HowTo to implement request.

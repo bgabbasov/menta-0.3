@@ -48,6 +48,7 @@ class HowToFactory(object):
             for i in parameters:
                 if (i != None and i.startswith(insufficient_disk_prefix)):
                     temp_parameters.append(i.replace(insufficient_disk_prefix,""))
+                    logging.debug("temp_parameters", str(temp_parameters))
             parameters = temp_parameters
         
         try:
