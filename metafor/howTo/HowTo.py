@@ -98,6 +98,7 @@ class clean_disk(HowTo):
                 self.disk = first_parameter[len(first_parameter)-1]
             elif (len(first_parameter) == 1
                   and first_parameter in string.letters):
+                logging("first parameter", first_parameter)
                 log.debug("first parameter %s", first_parameter)
                 self.disk = first_parameter
             else:
@@ -115,6 +116,7 @@ class clean_disk(HowTo):
 
     
 class unblock(HowTo):
+    
     def apply(self):
         return Report.Report("I reset your account to unlocked state !")
     
@@ -128,6 +130,7 @@ class ask_(HowTo):
         self.params=parameters
         
     def apply(self):
+        return Report.Report("I understand you, but I have no idea how to help you, sorry!")
         if (len(self.params)==1):
             if (self.params[0]==''):
                 return Report.Report("Unable to do nothing")

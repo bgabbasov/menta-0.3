@@ -59,6 +59,7 @@ class HowToFactory(object):
             parameters.insert(0,HowToFuncName)
             logging.debug(ht)
             logging.debug(parameters)
+            return ht(parameters)
             iht = ht(parameters)
 
             return iht

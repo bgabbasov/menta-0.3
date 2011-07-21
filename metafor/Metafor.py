@@ -554,7 +554,7 @@ class Metafor:
         #print "DEBUG5",full_name,parent_full_name
         # stores it inside its parent object
         parent_object_ptr = self.get_object_ptr(parent_full_name)
-        print "DEBUG add object", parent_object_ptr, " : ", parent_full_name, " : ", child_object
+        print "DEBUG parent add object", parent_object_ptr, " : ", parent_full_name, " : ", child_object
         if parent_object_ptr == None:
             print "Error empty parent object"
         parent_contents_ptr = parent_object_ptr[3]
