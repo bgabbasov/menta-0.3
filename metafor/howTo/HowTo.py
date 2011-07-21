@@ -87,6 +87,7 @@ class clean_disk(HowTo):
         self.default_disk = 'Z'
         self.disk = self.default_disk
         self.disk_delimiter = "_"
+        log = logging.getLogger("clean_disk")
         
         # extract disk name from parameters
         if (len(parameters) > 0):
@@ -97,7 +98,7 @@ class clean_disk(HowTo):
                 self.disk = first_parameter[len(first_parameter)-1]
             elif (len(first_parameter) == 1
                   and first_parameter in string.letters):
-                logging("first parameter", first_parameter)
+                log.debug("first parameter %s", first_parameter)
                 self.disk = first_parameter
             else:
                 self.disk = None
@@ -112,8 +113,8 @@ class clean_disk(HowTo):
             r = "cleaning disk " + str(self.disk)
         return Report.Report(r)
 
-class unblock(HowTo):
     
+class unblock(HowTo):
     def apply(self):
         return Report.Report("I reset your account to unlocked state !")
     
@@ -123,5 +124,14 @@ class resetpassword(HowTo):
 
 class ask_(HowTo):
     
+    def __init__(self, parameters=[]):
+        self.params=parameters
+        
     def apply(self):
-        return Report.Report("I understand you, but I have no idea how to help you, sorry!")
+        if (len(self.params)==1):
+            if (self.params[0]==''):
+                return Report.Report("Unable to do nothing")
+            else:
+                return Report.Report("Can`t "+str(self.params[0]))
+        else:    
+            return Report.Report("Unable to produce "+str(self.params[0])+" with "+str(self.params[1]))
