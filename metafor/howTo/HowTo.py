@@ -130,7 +130,6 @@ class ask_(HowTo):
         self.params=parameters
         
     def apply(self):
-        return Report.Report("I understand you, but I have no idea how to help you, sorry!")
         if (len(self.params)==1):
             if (self.params[0]==''):
                 return Report.Report("Unable to do nothing")
