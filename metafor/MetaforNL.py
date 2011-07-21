@@ -80,8 +80,9 @@ class MetaforNL:
              
         # collapse each sentence's pps into a single stream of pps
         sequence_of_pps_ptr = reduce(lambda x,y:x+y,sentences_and_their_pps)
-        logging.debug("sequence_of_pps_ptr")
-        logging.debug(sequence_of_pps_ptr)
+        logging.debug("sequence_of_pps_ptr %s", sequence_of_pps_ptr)
+        if (sequence_of_pps_ptr == None or  len(sequence_of_pps_ptr)< 1):
+            responses.append("I could not recognize the sentence, please rephrase.")
         # 39: Demo: deictic stack bug
         # The depersonalized sentences should be interpreted as requests
         self.resolve_requests(sequence_of_pps_ptr)
