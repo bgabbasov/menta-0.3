@@ -1,4 +1,6 @@
 # Readme:
+Menta 0.3.0.1 is mainly MIT Metafor fork adapted to handle SE incidents requests.
+Please run MetaforGUI.exe for Win, or menta.sh under Linux.
 
 ## Installation of Metafor fork:
  1. Clone Menta repository from git://github.com/menta/menta-0.3.git (probably you have done this already).
