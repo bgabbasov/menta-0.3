@@ -190,7 +190,10 @@ class MetaforGUI:
         
         if response:
             self.push_dialog_history(response, 'system')
-            print 'STRUCTURE:\n' + self.theMetafor.render_code(full_name='__main__', flavor='python')
+            python_code = self.theMetafor.render_code(full_name='__main__', flavor='python')
+            # 47
+            # print 'STRUCTURE:\n' + python_code
+            logging.debug("STRUCTURE: \n %s", python_code)
             temp=self.theMetafor.render_code(full_name='__main__', flavor='howTo')
             self.push_dialog_history(temp,'system')
             if temp.__len__()>11:
