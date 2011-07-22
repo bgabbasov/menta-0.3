@@ -1,0 +1,1 @@
+Cogitative mechanism with 80-85% and decision making on the fly via KB.
