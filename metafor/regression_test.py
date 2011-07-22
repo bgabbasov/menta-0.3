@@ -54,20 +54,20 @@ class TestRegression(unittest.TestCase):
 
 # Clean disk tests:
     def test_clean_disk_operations_1(self):
-        query = "Laptop - user has almost full C:\\"
-        assertion = "     I reset your account to unlocked state !\n     "
+        query = "Laptop - user has almost full C:"
+        assertion = "     cleaning disk c\n     \n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 
     def test_clean_disk_operations_2(self):
         query = "Please clean disk C:"
-        assertion = "     I reset your account to unlocked state !\n     "
+        assertion = "     cleaning disk C\n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 
     def test_clean_disk_operations_3(self):
         query = "There is insufficient disk space on C:"
-        assertion = "     I reset your account to unlocked state !\n     "
+        assertion = "     cleaning disk C\n     \n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 
@@ -87,7 +87,7 @@ class TestRegression(unittest.TestCase):
 # Invalid HowTo test
     def test_inavalid_howTo_operations_2(self):
         query = "terminate now"
-        assertion = "     Can't terminate\n     \n     "
+        assertion = "     Can`t terminate\n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 

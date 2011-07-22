@@ -18,6 +18,7 @@ class HowToFactory(object):
         Constructor
         '''
         self.prefix = u'__main__.Menta.'
+        self.log = logging.getLogger(str(HowToFactory))
     
     def createHowTo(self, howToId, parameters):
         
@@ -26,6 +27,7 @@ class HowToFactory(object):
         clean_disk_operation = "clean_disk"
         insufficient_disk_suffix = "c.insufficient_disk_space"
         insufficient_disk_prefix = "__main__."
+        insufficient_disk_indicator = "_full_"
 
 #        class Menta:
 #          def Please(clean_disk_C):
@@ -43,20 +45,27 @@ class HowToFactory(object):
         elif HowToFuncName == 'please' and parameters[0].startswith(clean_disk_operation):
             HowToFuncName = "clean_disk"
         elif HowToFuncName.endswith(insufficient_disk_suffix):
-            HowToFuncName = "clean_disk"
+            HowToFuncName = clean_disk_operation
             temp_parameters = []
             for i in parameters:
                 if (i != None and i.startswith(insufficient_disk_prefix)):
                     temp_parameters.append(i.replace(insufficient_disk_prefix,""))
                     logging.debug("temp_parameters: %s", str(temp_parameters))
             parameters = temp_parameters
-        
+        # __main__.user.the_full_c
+        elif (HowToFuncName.startswith(insufficient_disk_prefix)
+            and HowToFuncName[-7:-1] == insufficient_disk_indicator):
+            parameters.insert(0,HowToFuncName[-1])
+            HowToFuncName = clean_disk_operation
+            
+        self.log.debug("HowToFuncName %s", HowToFuncName)
         try:
             ht = getattr(howTo.HowTo, HowToFuncName)
         except Exception:
             ht = getattr(howTo.HowTo, 'ask_')
-        try:
             parameters.insert(0,HowToFuncName)
+            
+        try:
             logging.debug(ht)
             logging.debug(parameters)
             return ht(parameters)

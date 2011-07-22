@@ -98,8 +98,7 @@ class clean_disk(HowTo):
                 self.disk = first_parameter[len(first_parameter)-1]
             elif (len(first_parameter) == 1
                   and first_parameter in string.letters):
-                logging("first parameter", first_parameter)
-                log.debug("first parameter %s", first_parameter)
+                log.debug("disk %s", first_parameter)
                 self.disk = first_parameter
             else:
                 self.disk = None
