@@ -3,3 +3,14 @@
 *.iml
 *.ipr
 *.iws
+*.*~3
+*.*~4
+*.idea
+*.project
+montylingua/
+*.MDF
+tcl/
+*.tcl
+*.pyd
+*.pydevproject
+library.zip

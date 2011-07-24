@@ -2,10 +2,3 @@
 Menta 0.3.0.1 is mainly MIT Metafor fork adapted to handle SE incidents requests.
 Please run MetaforGUI.exe for Win, or menta.sh under Linux.
 
-## Installation of Metafor fork:
- 1. Clone Menta repository from git://github.com/menta/menta-0.3.git (probably you have done this already).
- 1. Get the sources of MIT Metafor from http://web.media.mit.edu/~hugo/demos/MetaforWindows-WithSource-16Jun05.zip.
- 1. Copy all sources of MIT Metafor from downloaded zip into metafor directory of cloned repository WITHOUT overwriting.
- 1. Install Python 2.4 for Win(Linux tested with 2.7).
- 1. Use your favorite Python development environment, setup project sources directory in metafor folder.
- 
