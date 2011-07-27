@@ -32,9 +32,9 @@ class HowToFactory(object):
 #        class Menta:
 #          def Please(clean_disk_C):
         
-        # use introspection to create HowTo
+         # use introspection to create HowTo
         HowToFuncName=howToId.replace(self.prefix, "").lower()
-        
+ 
         
         if HowToFuncName in account_operations and parameters[0]=='account':
             HowToFuncName='unblock'

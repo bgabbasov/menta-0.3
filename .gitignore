@@ -9,6 +9,7 @@
 *.project
 montylingua/
 Results/
+*.MDF
 tcl/
 *.MDF
 *.tcl
@@ -19,4 +20,3 @@ library.zip
 *.pickle
 *.dvek
 *.dmat
-
