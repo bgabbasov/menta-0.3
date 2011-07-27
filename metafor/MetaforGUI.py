@@ -187,7 +187,8 @@ class MetaforGUI:
         #self.visualizer.insert(Tkinter.END, self.theMetafor.pp_state_information())
         #self.visualizer.update_idletasks()
         # post response
-        
+        self.theMetafor.pp_state_information()
+
         if response:
             self.push_dialog_history(response, 'system')
             python_code = self.theMetafor.render_code(full_name='__main__', flavor='python')
