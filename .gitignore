@@ -8,9 +8,11 @@
 *.idea
 *.project
 montylingua/
+Results/
 *.MDF
 tcl/
 *.tcl
 *.pyd
 *.pydevproject
 library.zip
+
