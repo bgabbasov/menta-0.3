@@ -15,4 +15,8 @@ tcl/
 *.pyd
 *.pydevproject
 library.zip
+*.smat
+*.pickle
+*.dvek
+*.dmat
 
