@@ -64,10 +64,10 @@ class MetaforNL:
         preprocessed_query = self.recognize_lists(preprocessed_query)
         # preprocess: recognise scoping statements
         preprocessed_query = self.resolve_scoping_statements(preprocessed_query)
-        print "DEBUG scoping resolved to:\n",preprocessed_query
+        #print "DEBUG scoping resolved to:\n",preprocessed_query
         # preprocess: recognise conditionals
         preprocessed_query = self.resolve_cond_statements(preprocessed_query)
-        print "DEBUG conditionals resolved to:\n",preprocessed_query
+        #print "DEBUG conditionals resolved to:\n",preprocessed_query
         # logging.debug("conditionals resolved to:\n " + preprocessed_query)
         sentence_digests = self.ml.jist(preprocessed_query)
         logging.debug("sentence_digests ")
@@ -91,7 +91,7 @@ class MetaforNL:
         # resolve complementizers (e.g. who, that)
         self.resolve_complementizers(sequence_of_pps_ptr)
         # https://github.com/menta/menta-0.3/issues/20 Demo: extend analysis to process problem description.
-        print "DEBUG sequence of pps",'\n'.join(map(str,sequence_of_pps_ptr))
+        #print "DEBUG sequence of pps",'\n'.join(map(str,sequence_of_pps_ptr))
         
         for cur_index in range(len(sequence_of_pps_ptr)):
             response = self.process_pp(sequence_of_pps_ptr,cur_index)
@@ -124,9 +124,9 @@ class MetaforNL:
         # /20
         #TODO This should be a dictionaries classes or some model.
         male_fnames = ['Hugo','Push','Marvin','Nick','James','Jim','John','Johnny','Robert','Bob','Michael','Mike','William','Bill','Billy','David','Dave','Richard','Dick','Charles','Charlie','Joseph','Joe','Joey','Thomas','Tom','Tommy','Christopher','Chris','Daniel','Dan','Paul','Mark','Donald','Don','George','Kenneth','Ken','Steven','Stephen','Steve','Edward','Eddie','Ed','Brian','Ronald','Ron','Anthony','Tony','Kevin','Jason','Matthew','Matt','Gary','Timothy','Tim','Jose','Larry','Jeffrey','Jeff','Frank','Fred','Scott','Eric','Stephen','Andrew','Andy','Raymond','Ray','Gregory','Greg','Gregg','Joshua','Josh','Jerry','Dennis','Walter','Patrick','Pat','Peter','Harold','Harry','Douglas','Henry','Carl','Arthur','Ryan','Roger','Sam','Dwight','Melvin','Juan']
-        female_fnames = ['Briana','Lea','Eileen','Belinda','Juanita','Julie','Sally','Cindy','Jane','Joyce','Judy','Alyssa','Mary','Patricia','Patty','Linda','Barbara','Elizabeth','Jennifer','Maria','Susan','Margaret','Dorothy','Lisa','Nancy','Karen','Betty','Helen','Sandra','Donna','Carol','Ruth','Sharon','Michelle','Laura','Laurie','Sarah','Sara','Kimberly','Kim','Deborah','Jesse','Jessica','Shirley','Cynthia','Angela','Angie','Melissa','Brenda','Amy','Anna','Rebecca','Becky','Virginia','Kathleen','Kathy','Pamela','Martha','Debra','Amanda','Stephanie','Carolyn','Carol','Christine','Marie','Janet','Catherine','Cathy','Frances','Ann','Annie','Diane','Diana','Dianna']
+        female_fnames = ['Menta','Briana','Lea','Eileen','Belinda','Juanita','Julie','Sally','Cindy','Jane','Joyce','Judy','Alyssa','Mary','Patricia','Patty','Linda','Barbara','Elizabeth','Jennifer','Maria','Susan','Margaret','Dorothy','Lisa','Nancy','Karen','Betty','Helen','Sandra','Donna','Carol','Ruth','Sharon','Michelle','Laura','Laurie','Sarah','Sara','Kimberly','Kim','Deborah','Jesse','Jessica','Shirley','Cynthia','Angela','Angie','Melissa','Brenda','Amy','Anna','Rebecca','Becky','Virginia','Kathleen','Kathy','Pamela','Martha','Debra','Amanda','Stephanie','Carolyn','Carol','Christine','Marie','Janet','Catherine','Cathy','Frances','Ann','Annie','Diane','Diana','Dianna']
         common_agents = ['bartender','milkman','pacman','customer','boss','user','server','disk','drive','computer','program','file','folder']
-        stop_words = ['there','that','one','which', "please"]
+        stop_words = ['there','that','one','which', 'please','msdn','com']
         key_words = ['LIST','QUOTE','ANTECEDENT','SCOPE']
         
         for i in range(len(pp_list_ptr)):
@@ -187,7 +187,8 @@ class MetaforNL:
                         self.deictic_stack.append((phrase,['one']))
                     annotations+=['they','them']
                     phrase = phrase+'s' # pluralize the lemma                    
-                elif (phrase[0].isupper() and phrase.lower() not in stop_words and phrase.split('_')[0] not in key_words) or phrase.lower() in common_agents: # means it is an agent
+               # elif (phrase[0].isupper() and phrase.lower() not in stop_words and phrase.split('_')[0] not in key_words) or phrase.lower() in common_agents: # means it is an agent
+                elif phrase.lower() in common_agents or phrase in male_fnames or phrase in female_fnames:
                     # is the gender known?
                     if phrase in male_fnames:
                         annotations+=['he','him','his','who']
