@@ -20,13 +20,14 @@ class TestRegression(unittest.TestCase):
         self.theMetafor.nl.clear_model()
         self.theMetafor.objects =  [['__main__', 'FunctionType', [], []]]
         response = self.theMetafor.handle_query(query)
-        self.log.debug("response \n %s", response)
 
+        self.log.debug("response \n %s", response)
         python_code = self.theMetafor.render_code(full_name='__main__', flavor='python')
         self.log.debug("STRUCTURE: \n%s", python_code)
         res=self.theMetafor.render_code(full_name='__main__', flavor='howTo')
         self.log.debug("HowTo: \n%s", res)
         return res
+    
 # Account operations test
     def test_account_operations_1(self):
         query = "I have forgotten password and have blocked an account."
@@ -85,9 +86,16 @@ class TestRegression(unittest.TestCase):
         self.assertEqual(temp, assertion)
 
 # Invalid HowTo test
-    def test_inavalid_howTo_operations_2(self):
+    def test_invalid_howTo_operations_1(self):
         query = "terminate now"
         assertion = "     Can`t terminate\n     "
+        temp = self.apply(query)
+        self.assertEqual(temp, assertion)
+
+#Reference it test
+    def test_reference_it(self):
+        query = "I need Firefox to browse MSDN.COM. Please install it."
+        assertion = "     Unable to produce __main__.i.need with Firefox\n     installing application: Firefox...\n     \n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 
