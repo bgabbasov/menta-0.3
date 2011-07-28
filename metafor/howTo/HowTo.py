@@ -129,6 +129,8 @@ class ask_(HowTo):
         self.params=parameters
         
     def apply(self):
+        if '__main__.i.' in self.params[0]:
+             self.params[0]=self.params[0].replace('__main__.i.','')
         if (len(self.params)==1):
             if (self.params[0]==''):
                 return Report.Report("Unable to do nothing")
