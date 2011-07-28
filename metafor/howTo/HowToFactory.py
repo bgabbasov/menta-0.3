@@ -34,16 +34,20 @@ class HowToFactory(object):
         
          # use introspection to create HowTo
         HowToFuncName=howToId.replace(self.prefix, "").lower()
- 
         
-        if HowToFuncName in account_operations and parameters[0]=='account':
+ 
+        if HowToFuncName == 'please':
+            if len(parameters)==0:
+                logging.debug('"please" with nothing.')
+                return
+            if parameters[0]=='reset_password':
+                HowToFuncName='resetpassword'
+            if parameters[0].startswith(clean_disk_operation):
+                HowToFuncName = 'clean_disk'
+        elif HowToFuncName in account_operations and parameters[0]=='account':
             HowToFuncName='unblock'
         elif HowToFuncName in password_operations and parameters[0]=='password':
             HowToFuncName='resetpassword'
-        elif HowToFuncName == 'please' and parameters[0]=='reset_password':
-            HowToFuncName='resetpassword'
-        elif HowToFuncName == 'please' and parameters[0].startswith(clean_disk_operation):
-            HowToFuncName = "clean_disk"
         elif HowToFuncName.endswith(insufficient_disk_suffix):
             HowToFuncName = clean_disk_operation
             temp_parameters = []

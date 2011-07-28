@@ -250,7 +250,7 @@ class Metafor:
             # create HowTo here
             # in case of clean disk substitute here to clean disk
             htf = HowToFactory.HowToFactory()
-            howTo = htf.createHowTo(cur_object_full_name, cur_object_header) 
+            howTo = htf.createHowTo(cur_object_full_name, cur_object_header)
             logging.debug(str(howTo))               
             return howTo
         elif cur_object_type == 'DefinitionType':
