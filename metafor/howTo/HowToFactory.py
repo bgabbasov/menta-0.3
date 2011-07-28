@@ -25,6 +25,7 @@ class HowToFactory(object):
         account_operations = ['i.block', 'block',  'unblock', '__main__.i.block']
         password_operations = ['i.forget', 'reset', '__main__.i.forget']
         clean_disk_operation = "clean_disk"
+        uninstall_operation = "uninstall_"
         insufficient_disk_suffix = "c.insufficient_disk_space"
         insufficient_disk_prefix = "__main__."
         insufficient_disk_indicator = "_full_"
@@ -44,6 +45,9 @@ class HowToFactory(object):
                 HowToFuncName='resetpassword'
             if parameters[0].startswith(clean_disk_operation):
                 HowToFuncName = 'clean_disk'
+            if parameters[0].startswith(uninstall_operation):
+                HowToFuncName = "uninstall"
+                parameters[0] = parameters[0][len(uninstall_operation):]
         elif HowToFuncName in account_operations and parameters[0]=='account':
             HowToFuncName='unblock'
         elif HowToFuncName in password_operations and parameters[0]=='password':

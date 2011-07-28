@@ -81,6 +81,51 @@ class install(HowTo):
             logging.debug(retcode)     
         return Report.Report(r)
 
+class uninstall(HowTo):
+    applicationsToInstall = ['firefox', 'chrome', 'google_chrome', 'microsoft_word', 'word', 'microsoft_office', 'ms_office']
+    install_cmd_ending = ".bat"
+    install_cmd_prefix = "uninstall_scripts"
+    cmd_delimiter = "\\"
+
+    def __init__(self, parameters=[]):
+        inListApplications = []
+        if (len(parameters) < 1):
+            logging.error("Parameters of install HowTo are not specified.")
+            raise ValueError("Please specify application to install.")
+        for par in parameters:
+            if (par.lower() in self.applicationsToInstall):
+                inListApplications.append(par)
+        if(len(inListApplications) < 1):
+            logging.error("Application is not in list")
+            raise ValueError("Application is not in supported list")
+        else:
+            self.applicationName = inListApplications
+
+    def apply(self):
+        r = ""
+        for a in self.applicationName:
+            r += "uninstalling application: " + a + "...\n"
+            ending = self.install_cmd_ending
+            delimiter = self.cmd_delimiter
+            """
+            if (("nt" in os.name) or ("windows" in os.name) ):
+                delimiter = "\\"
+                ending = ".bat"
+            else:
+                delimiter = "/"
+                ending = ".sh"
+            cmd = self.install_cmd_prefix + delimiter + a + ending
+            logging.debug(cmd)
+            try:
+                retcode = subprocess.call([cmd])
+            except ValueError, e:
+                retcode = str(e)
+            except OSError, e:
+                retcode = str(e)
+            logging.debug(retcode)
+            """
+        return Report.Report(r)
+
 class clean_disk(HowTo):
     
     def __init__(self, parameters=[]):
