@@ -95,7 +95,7 @@ class TestRegression(unittest.TestCase):
 #Reference it test
     def test_reference_it(self):
         query = "I need Firefox to browse MSDN.COM. Please install it."
-        assertion = "     Unable to produce __main__.i.need with Firefox\n     installing application: Firefox...\n     \n     "
+        assertion = "     Unable to produce need with Firefox\n     installing application: Firefox...\n     \n     "
         temp = self.apply(query)
         self.assertEqual(temp, assertion)
 

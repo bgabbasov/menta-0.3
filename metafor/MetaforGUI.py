@@ -103,7 +103,7 @@ class MetaforGUI:
         # the query pane
         self.query = Pmw.ScrolledText(panedWidgetBottom.pane('query'), text_wrap='word')
         self.query.pack(padx=5, pady=2, fill='both', expand=1)
-        self.query.component('text').bind('<Return>', self.execute_query)
+        #self.query.component('text').bind('<Return>', self.execute_query)
         
         self.button= Tkinter.Button(panedWidgetBottom.pane('bpanel'),text='Run...', command=self.execute_query)
         self.button.pack(padx=5, pady=5, fill='both', expand=1)
