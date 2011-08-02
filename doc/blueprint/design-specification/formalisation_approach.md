@@ -15,7 +15,7 @@ This way sentences subjects and subject's objects are selected.
 
 
 ### Perceiving level.
-  1. Domain ontology is created or imported for example as [RDF of wikipedia](http://labs.systemone.at/wikipedia3)
+  1. Domain ontology is created or imported for example as [RDF of wikipedia](http://labs.systemone.at/wikipedia3), [conceptNet](http://csc.media.mit.edu/conceptnet) 
   1. Sentences subjects(terms) are mapped to concepts
    1. Links between a sentences subjects, objects (deictic stack) are selected in the way it was demonstrated in
    [MIT Metafor](http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=A6CEE323C057C8DB70662860F87CD61C?doi=10.1.1.94.2569&rep=rep1&type=pdf).
