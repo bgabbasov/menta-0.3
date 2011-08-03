@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="0.2 formalisationModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="0.2 formalisationPackage">
+    <packagedElement xmi:type="uml:Activity" xmi:id="idActivity" name="0.2 formalisationActivity">
+      <ownedComment xmi:id="_HkkpYL4FEeCKOtL1c_3Xsg" annotatedElement="_cSYckL4CEeCKOtL1c_3Xsg _xlCh4L4CEeCKOtL1c_3Xsg">
+        <body>Lexical parser need to be researched for best performance</body>
+      </ownedComment>
+      <ownedComment xmi:id="_1LJwIL4GEeCKOtL1c_3Xsg" annotatedElement="_d1l-8L4GEeCKOtL1c_3Xsg">
+        <body>Create method to search parameters of the Model from semantic tree of Request, based on Metafor</body>
+      </ownedComment>
+      <ownedComment xmi:id="_rjz7EL4JEeCKOtL1c_3Xsg" annotatedElement="_RWnOYL4JEeCKOtL1c_3Xsg _0Fk14L4LEeCKOtL1c_3Xsg">
+        <body>Research approach to find most probable HowTo, Dijkstra(probably)</body>
+      </ownedComment>
+      <ownedComment xmi:id="_G21VcL4MEeCKOtL1c_3Xsg" annotatedElement="_BU-r4L4LEeCKOtL1c_3Xsg">
+        <body>Research logical mechanism to infer HowTo probability</body>
+      </ownedComment>
+      <ownedComment xmi:id="_RzdbEL4MEeCKOtL1c_3Xsg" annotatedElement="_rtkbYL4GEeCKOtL1c_3Xsg">
+        <body>Reserach validation mechanism</body>
+      </ownedComment>
+      <ownedComment xmi:id="_XFyQUL4MEeCKOtL1c_3Xsg" annotatedElement="_BEHI4L4MEeCKOtL1c_3Xsg">
+        <body>Research validation
+mechanism</body>
+      </ownedComment>
+      <ownedComment xmi:id="_i3XA8L4MEeCKOtL1c_3Xsg" annotatedElement="_Z22G4L4FEeCKOtL1c_3Xsg">
+        <body>Test Analogy space as analogy mechanism</body>
+      </ownedComment>
+      <node xmi:type="uml:InitialNode" xmi:id="_7ZPMYL3tEeCFx6Hnt86MWQ" name="InitialNode1" outgoing="_AGEF4L4EEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_cSYckL4CEeCKOtL1c_3Xsg" name="Lexical parser. parse Request/Clarification" outgoing="_BdpucL4FEeCKOtL1c_3Xsg" incoming="_AGEF4L4EEeCKOtL1c_3Xsg _4hinsL4HEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_xlCh4L4CEeCKOtL1c_3Xsg" name="Lexical parser. semantic processing" outgoing="_AgmlcL4HEeCKOtL1c_3Xsg" incoming="_BdpucL4FEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:SequenceNode" xmi:id="_6ynPQL4DEeCKOtL1c_3Xsg" name="find Model">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_A-DWcL4HEeCKOtL1c_3Xsg" name=" " source="_Z22G4L4FEeCKOtL1c_3Xsg" target="_d1l-8L4GEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_A-DWcb4HEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_A-DWcr4HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_BaWQ6L4HEeCKOtL1c_3Xsg" name=" " source="_d1l-8L4GEeCKOtL1c_3Xsg" target="_rtkbYL4GEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_BaWQ6b4HEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_BaWQ6r4HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_UAxZcL4HEeCKOtL1c_3Xsg" name=" " source="_rtkbYL4GEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_UAxZcb4HEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_UAxZcr4HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_bJcsVb4HEeCKOtL1c_3Xsg" name=" ">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_bJcsVr4HEeCKOtL1c_3Xsg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_bJcsV74HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_je1p8L4HEeCKOtL1c_3Xsg" name=" " target="_Z22G4L4FEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_je1p8b4HEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_je1p8r4HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_11ppML4HEeCKOtL1c_3Xsg" name=" " target="_nHRwQL4HEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_11ppMb4HEeCKOtL1c_3Xsg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_11ppMr4HEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_itSmUL4JEeCKOtL1c_3Xsg" name=" " target="_BU-r4L4LEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_itSmUb4JEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_itSmUr4JEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_Z22G4L4FEeCKOtL1c_3Xsg" name="Analogy component. find nearest Model " outgoing="_A-DWcL4HEeCKOtL1c_3Xsg" incoming="_AgmlcL4HEeCKOtL1c_3Xsg _je1p8L4HEeCKOtL1c_3Xsg"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_d1l-8L4GEeCKOtL1c_3Xsg" name="Maper[Model]. map model parameters from semantic tree" outgoing="_BaWQ6L4HEeCKOtL1c_3Xsg" incoming="_A-DWcL4HEeCKOtL1c_3Xsg"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_rtkbYL4GEeCKOtL1c_3Xsg" name="Validator[Model]. check Model consintency" outgoing="_UAxZcL4HEeCKOtL1c_3Xsg" incoming="_BaWQ6L4HEeCKOtL1c_3Xsg"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_nHRwQL4HEeCKOtL1c_3Xsg" name="Clarification Request" outgoing="_4hinsL4HEeCKOtL1c_3Xsg" incoming="_11ppML4HEeCKOtL1c_3Xsg _ltC_ML4NEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:SequenceNode" xmi:id="_9fGRYL4IEeCKOtL1c_3Xsg" name="find HowTo">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_7Roz8L4LEeCKOtL1c_3Xsg" name=" " source="_BU-r4L4LEeCKOtL1c_3Xsg" target="_0Fk14L4LEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_7Roz8b4LEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_7Roz8r4LEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_7o-89b4LEeCKOtL1c_3Xsg" name=" " source="_0Fk14L4LEeCKOtL1c_3Xsg" target="_T_vh4L4LEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_7o-89r4LEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_7o-8974LEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_6WIYgL4MEeCKOtL1c_3Xsg" name=" " source="_T_vh4L4LEeCKOtL1c_3Xsg" target="_BEHI4L4MEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_6WIYgb4MEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_6WIYgr4MEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_AnIcgL4NEeCKOtL1c_3Xsg" name="  " source="_BEHI4L4MEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_AnIcgb4NEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_AnIcgr4NEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_fER7cL4NEeCKOtL1c_3Xsg" name=" " target="_ggZ7ML4NEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_fER7cb4NEeCKOtL1c_3Xsg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_fER7cr4NEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_9i3IUL4OEeCKOtL1c_3Xsg" name=" " target="_--RL0L4NEeCKOtL1c_3Xsg">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_9i3IUb4OEeCKOtL1c_3Xsg" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_9i3IUr4OEeCKOtL1c_3Xsg" value="1"/>
+        </edge>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_RWnOYL4JEeCKOtL1c_3Xsg" name="Search component. find most probable HowTo"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_BU-r4L4LEeCKOtL1c_3Xsg" name="Reasoner. generalise and deduction reasoning to infer probability of HowTo" outgoing="_7Roz8L4LEeCKOtL1c_3Xsg" incoming="_itSmUL4JEeCKOtL1c_3Xsg _iBG48L4NEeCKOtL1c_3Xsg"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_T_vh4L4LEeCKOtL1c_3Xsg" name="Maper[HowTo]. map HowTo parameters from Model" outgoing="_6WIYgL4MEeCKOtL1c_3Xsg" incoming="_7o-89b4LEeCKOtL1c_3Xsg"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_0Fk14L4LEeCKOtL1c_3Xsg" name="Search component.find most probable HowTo" outgoing="_7o-89b4LEeCKOtL1c_3Xsg" incoming="_7Roz8L4LEeCKOtL1c_3Xsg"/>
+        <executableNode xmi:type="uml:CallOperationAction" xmi:id="_BEHI4L4MEeCKOtL1c_3Xsg" name="Validator. check HowTo consistency" outgoing="_AnIcgL4NEeCKOtL1c_3Xsg" incoming="_6WIYgL4MEeCKOtL1c_3Xsg"/>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ggZ7ML4NEeCKOtL1c_3Xsg" name="are there other HowTo-s?" outgoing="_iBG48L4NEeCKOtL1c_3Xsg _ltC_ML4NEeCKOtL1c_3Xsg" incoming="_fER7cL4NEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_52sOAL4NEeCKOtL1c_3Xsg" name="Look up for proper script."/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_--RL0L4NEeCKOtL1c_3Xsg" name="Run HowTo script" outgoing="_-cqeIL4OEeCKOtL1c_3Xsg" incoming="_9i3IUL4OEeCKOtL1c_3Xsg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_5HizkL4OEeCKOtL1c_3Xsg" name="ActivityFinalNode1" incoming="_-cqeIL4OEeCKOtL1c_3Xsg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AGEF4L4EEeCKOtL1c_3Xsg" name=" " visibility="public" source="_7ZPMYL3tEeCFx6Hnt86MWQ" target="_cSYckL4CEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_AGEF4b4EEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_AGEF4r4EEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BdpucL4FEeCKOtL1c_3Xsg" name=" " source="_cSYckL4CEeCKOtL1c_3Xsg" target="_xlCh4L4CEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Bdpucb4FEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Bdpucr4FEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AgmlcL4HEeCKOtL1c_3Xsg" name=" " source="_xlCh4L4CEeCKOtL1c_3Xsg" target="_Z22G4L4FEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Agmlcb4HEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Agmlcr4HEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_4hinsL4HEeCKOtL1c_3Xsg" name=" " source="_nHRwQL4HEeCKOtL1c_3Xsg" target="_cSYckL4CEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_4hinsb4HEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_4hinsr4HEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_iBG48L4NEeCKOtL1c_3Xsg" name=" " source="_ggZ7ML4NEeCKOtL1c_3Xsg" target="_BU-r4L4LEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_iBG48b4NEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_iBG48r4NEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ltC_ML4NEeCKOtL1c_3Xsg" name=" " source="_ggZ7ML4NEeCKOtL1c_3Xsg" target="_nHRwQL4HEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ltC_Mb4NEeCKOtL1c_3Xsg"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ltC_Mr4NEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_-cqeIL4OEeCKOtL1c_3Xsg" name=" " source="_--RL0L4NEeCKOtL1c_3Xsg" target="_5HizkL4OEeCKOtL1c_3Xsg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_-cqeIb4OEeCKOtL1c_3Xsg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_-cqeIr4OEeCKOtL1c_3Xsg" value="1"/>
+      </edge>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
