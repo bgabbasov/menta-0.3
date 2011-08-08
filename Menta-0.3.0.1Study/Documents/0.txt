@@ -1,2 +1,3 @@
-I have forgotten password and have blocked an account.
+I have forgotten password.
+Could you please reset it.
 
