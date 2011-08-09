@@ -16,7 +16,7 @@ Step six is the step where the models that were chosen in step three are built (
 Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
 And finally step eight, which is an ambitious step, consists of evaluating the findings and checking and correcting the requirement specification for incident fixing and delivering final report for incident realization by system itself or manually by assigned specialists.
 
-https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png
+![Main activity diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
 
 # Example of method
 For describing and elaborating the steps described in the main activities section a both, non-existent, (impartial, inconsistent, and implicit)   or decent on natural language requirements document for describing the requirements of incident, problem is used. This requirements document (trouble ticket, problem-incident report) can be used by a IS Monitoring, Operational team in order to check on fly and automate in accordance with SLA timeframe whether the all incoming incidents – reports IS team received via the applied system (sources) has met its requirements and solved.
