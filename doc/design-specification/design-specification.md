@@ -20,7 +20,7 @@ The first three steps are the set-up steps.
  1. The second step is to select the core parts of the document map to the Model of incident selected(classified) in the previous step.
  1. The third step is to look at which properties of the parts are satisfied for established accepting criteria’s or have missing some parts, require additional elucidation of the rule , of the text that have been selected in the second step, will be checked with which models approach.
 All steps until eight are the production steps according SLA OLA procedures and project agreements, and can be iterated on at any stage. It should be noted that all those steps, are completely automatic.
-Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific, missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
+ 1. Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific, missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
 Step five consists of the final parsing the natural language text into semantic content.
 Step six is the step where the models that were chosen in step three are built (provided generated solution).
 Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
