@@ -1,6 +1,6 @@
-#Introduction
+#Design specification.
 
-## Description of use
+## Introduction
 
 That are formal methods in the context of natural language processing applied to requirement engineering, incident – problem solving.
 Those methods are relatively cheap compared to the manual requirement – incident- problem engineering as a whole
