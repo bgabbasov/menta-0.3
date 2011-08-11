@@ -14,15 +14,23 @@ of natural language requirements.
 
 ## Main activities
 
- 1. The first step is to classify the requirement-incident based on linguistic parsing and domain vocabulary for the document (Requirement Document, Problem – Incident document/ticket).
- 1. The second step is to select the core parts of the document map to the Model of incident selected(classified) in the previous step.
- 1. The third step is to look at which properties of the parts are satisfied for established accepting criteria’s or have missing some parts, require additional elucidation of the rule , of the text that have been selected in the second step, will be checked with which models approach.
+0. Structuring:
+ 1. The first step is to classify(select) the *request* (requirement-incident) via linguistic, semantic parsing and semantic graph projection to multidimensional space of possible *models*(classes of *request*).
+ 1. The second step is to select the core parts of the document and map them to the *model properties* selected in the previous step, via classification of *request* terms in the multidimensional space of *model parts* types.
+ 1. The third step is to validate mapped *model properties* according to *model accepting criteria*, in the following way:
+   2. Create set of *predicates* representing *model* and *properties*.
+   2. Using *reasoner* check *model predicates* over *domain model* facts in *KB*.
+ 1. If validation fails request additional *clarification* of the previous *request*.
+
 All steps until eight are the production steps according SLA OLA procedures and project agreements, and can be iterated on at any stage. It should be noted that all those steps, are completely automatic.
- 1. Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific, missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
-Step five consists of the final parsing the natural language text into semantic content.
-Step six is the step where the models that were chosen in step three are built (provided generated solution).
-Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
-And finally step eight, which is an ambitious step, consists of evaluating the findings and checking and correcting the requirement specification for incident fixing and delivering final report for incident realization by system itself or manually by assigned specialists.
+
+0. Formalisation:
+ 1. Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific,
+ missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
+ 1. Step five consists of the final parsing the natural language text into semantic content.
+ 1. Step six is the step where the models that were chosen in step three are built (provided generated solution).
+ 1. Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
+ 1. And finally step eight, which is an ambitious step, consists of evaluating the findings and checking and correcting the requirement specification for incident fixing and delivering final report for incident realization by system itself or manually by assigned specialists.
 
 ![Main activity diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
 
