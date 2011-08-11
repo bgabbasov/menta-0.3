@@ -18,8 +18,8 @@ of natural language requirements.
   2. The first step is to classify(select) the *request* (requirement-incident) via linguistic, semantic parsing and semantic graph projection to multidimensional space of possible *models*(classes of *request*).
   2. The second step is to select the core parts of the document and map them to the *model properties* selected in the previous step, via classification of *request* terms in the multidimensional space of *model parts* types.
   2. The third step is to validate mapped *model properties* according to *model accepting criteria*, in the following way:
-    3. Create set of *predicates* representing *model* and *properties*.
-    3. Using *reasoner* check *model predicates* over *domain model* facts in *KB*.
+     3. Create set of *predicates* representing *model* and *properties*.
+     3. Using *reasoner* check *model predicates* over *domain model* facts in *KB*.
   2. If validation fails request additional *clarification* of the previous *request*.
 
 All steps until eight are the production steps according SLA OLA procedures and project agreements, and can be iterated on at any stage. It should be noted that all those steps, are completely automatic.
