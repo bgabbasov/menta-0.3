@@ -15,22 +15,23 @@ of natural language requirements.
 ## Main activities
 
 1. Structuring:
-  2. The first step is to classify(select) the *request* (requirement-incident) via linguistic, semantic parsing and semantic graph projection to multidimensional space of possible *models*(classes of *request*).
-  2. The second step is to select the core parts of the document and map them to the *model properties* selected in the previous step, via classification of *request* terms in the multidimensional space of *model parts* types.
-  2. The third step is to validate mapped *model properties* according to *model accepting criteria*, in the following way:
+  2. Classify(*select*) the *request* (requirement-incident) via linguistic, semantic parsing and semantic graph projection to multidimensional space of possible *models*(classes of *requests*).
+  2. Select the core parts of the document and *map* them to the *model properties* selected in the previous step, via classification of *request* terms in the multidimensional space of *model parts* types.
+  2. *Validate* mapped *model properties* according to *model accepting criteria*, in the following way:
      3. Create set of *predicates* representing *model* and *properties*.
      3. Using *reasoner* check *model predicates* over *domain model* facts in *KB*.
-  2. If validation fails request additional *clarification* of the previous *request*.
+  2. If validation fails *recalculate weights* of *models* and select most probable once again.
+  2. If there are no more not tried models *request* additional *clarification* of the previous *request*.
 
 All steps until eight are the production steps according SLA OLA procedures and project agreements, and can be iterated on at any stage. It should be noted that all those steps, are completely automatic.
 
 1. Formalisation:
-  2. Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific,
-  missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
-  2. Step five consists of the final parsing the natural language text into semantic content.
-  2. Step six is the step where the models that were chosen in step three are built (provided generated solution).
-  2. Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
-  2. And finally step eight, which is an ambitious step, consists of evaluating the findings and checking and correcting the requirement specification for incident fixing and delivering final report for incident realization by system itself or manually by assigned specialists.
+  2. Create *HowTo* dictionaries using generalised *concepts* of *domain model*.
+  2. Select most probable *HowTo* via classification of *model* in the space of *HowTo symptoms* and selecting nearest (most probable).
+  2. Map parameters of *model* over *HowTo* in the same vay as it was described in Structuring section.
+  2. Validate *HowTo* instance filled in with *model* parameters in the same vay as it was described in Structuring section.
+  2. If validation fails *recalculate weights* of *HowTo-s* and select most probable once again.
+  2. If there are no more not tried *HowTo-s*, goto *recalculate weights* of *model*.
 
 ![Main activity diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
 
