@@ -14,8 +14,6 @@ of natural language requirements.
 
 ## Main activities
 
-The method defines a total of eight steps to perform the formal requirements validations.
-The first three steps are the set-up steps.
  1. The first step is to classify the requirement-incident based on linguistic parsing and domain vocabulary for the document (Requirement Document, Problem – Incident document/ticket).
  1. The second step is to select the core parts of the document map to the Model of incident selected(classified) in the previous step.
  1. The third step is to look at which properties of the parts are satisfied for established accepting criteria’s or have missing some parts, require additional elucidation of the rule , of the text that have been selected in the second step, will be checked with which models approach.
