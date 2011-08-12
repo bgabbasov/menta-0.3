@@ -1,6 +1,6 @@
-#Introduction
+#Design specification.
 
-## Description of use
+## Introduction
 
 That are formal methods in the context of natural language processing applied to requirement engineering, incident – problem solving.
 Those methods are relatively cheap compared to the manual requirement – incident- problem engineering as a whole
@@ -14,21 +14,32 @@ of natural language requirements.
 
 ## Main activities
 
- 1. The first step is to classify the requirement-incident based on linguistic parsing and domain vocabulary for the document (Requirement Document, Problem – Incident document/ticket).
- 1. The second step is to select the core parts of the document map to the Model of incident selected(classified) in the previous step.
- 1. The third step is to look at which properties of the parts are satisfied for established accepting criteria’s or have missing some parts, require additional elucidation of the rule , of the text that have been selected in the second step, will be checked with which models approach.
+1. Structuring:
+  2. Classify(*select*) the *request* (requirement-incident) via linguistic, semantic parsing and semantic graph projection to multidimensional space of possible *models*(classes of *requests*).
+  2. Select the core parts of the document and *map* them to the *model properties* selected in the previous step, via classification of *request* terms in the multidimensional space of *model parts* types.
+  2. *Validate* mapped *model properties* according to *model accepting criteria*, in the following way:
+     3. Create set of *predicates* representing *model* and *properties*.
+     3. Using *reasoner* check *model predicates* over *domain model* facts in *KB*.
+  2. If validation fails *recalculate weights* of *models* and select most probable once again.
+  2. If there are no more not tried models *request* additional *clarification* of the previous *request*.
 
+All steps until eight are the production steps according SLA OLA procedures and project agreements, and can be iterated on at any stage. It should be noted that all those steps, are completely automatic.
 
-Step four is the pre-processing step where the format, structure and ascertainment of all details, including project-domain specific, missing details (detected and added from KB) are translated to a canonical form so it can be used for further automatic processing.
-Step five consists of the final parsing the natural language text into semantic content.
-Step six is the step where the models that were chosen in step three are built (provided generated solution).
-Step seven checks if the models and output result successfully check the properties of the content and sufficient for final acceptance.
-And finally step eight, which is an ambitious step, consists of evaluating the findings and checking and correcting the requirement specification for incident fixing and delivering final report for incident realization by system itself or manually by assigned specialists.
+1. Formalisation:
+  2. Create *HowTo* dictionaries using generalised *concepts* of *domain model*.
+  2. Select most probable *HowTo* via classification of *model* in the space of *HowTo symptoms* and selecting nearest (most probable).
+  2. Map parameters of *model* over *HowTo* in the same vay as it was described in Structuring section.
+  2. Validate *HowTo* instance filled in with *model* parameters in the same vay as it was described in Structuring section.
+  2. If validation fails *recalculate weights* of *HowTo-s* and select most probable once again.
+  2. If there are no more not tried *HowTo-s*, goto *recalculate weights* of *model*.
 
 ![Main activity diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
 
 # Example of method
-For describing and elaborating the steps described in the main activities section a both, non-existent, (impartial, inconsistent, and implicit)   or decent on natural language requirements document for describing the requirements of incident, problem is used. This requirements document (trouble ticket, problem-incident report) can be used by a IS Monitoring, Operational team in order to check on fly and automate in accordance with SLA timeframe whether the all incoming incidents – reports IS team received via the applied system (sources) has met its requirements and solved.
+For describing and elaborating the steps described in the main activities section a both, non-existent,
+(impartial, inconsistent, and implicit) or decent on natural language requirements document for describing the requirements of incident, problem is used.
+This requirements document (trouble ticket, problem-incident report) can be used by a IS Monitoring,
+Operational team in order to check on fly and automate in accordance with SLA timeframe whether the all incoming incidents – reports IS team received via the applied system (sources) has met its requirements and solved.
 In the first step, one defines the style, structure and English language specific domain vocabulary for the specific document which contains the requirements of the incoming document (Requirement Document, Problem – Incident ticket document). The document was written in a consistent style and structure, has a good structural quality and was written in English.
 In the second step is determined what properties are to check and what possible needed for clarification, by applying to domain-project specific KB. As the requirements - incident document contains lots of technical details that cannot be checked in real time by the Monitoring operator, all properties should be externally observable and marked (sufficient or not) were selected.
 In the third step, Menta select the models on the properties will be checked, created requests to KB for correction and for missing objectives; in this case it will use the Circe Menta AI environment to provide automated analysis of the incident requirements. The environment allows the extraction of models from the incoming incident requirements, their validation and the collection of technical -domain data about the requirements document, the system described in it and about the requirements writing process itself.
