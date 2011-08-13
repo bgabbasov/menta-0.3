@@ -46,7 +46,7 @@ All steps until eight are the production steps according SLA OLA procedures and 
   2. Classify: Most probable model of the problem description is selected.
   2. Interpret: Menta maps parts of the request to the model properties.
   2. Validate: Menta validates the model, if validation fails creates clarification request to the user;
-   in this case it will use the Circe Menta AI environment to provide automated analysis of the incident requirements.
+   in this case it will use the **Menta Circe** environment to provide automated analysis of the incident requirements.
    The environment allows the extraction of models from the incoming incident requirements, their validation and the collection of technical-domain
    data about the requirements document, the system described in it.
 1. Formalisation:
@@ -54,7 +54,7 @@ All steps until eight are the production steps according SLA OLA procedures and 
   2. Classify: The model with parameters is represented as graph in the space of HowTo symptoms and nearest HowTo is selected.
  The building of the models was automatically done using the Menta AI Circe environment.
   2. Validate: The properties that were selected are finally checked.
-  Each property is analyzed by the use of specialized validators (supported in the Menta Circe environment) and consisted of a logical domain model for
+  Each property is analyzed by the use of specialized validators (supported in the **Menta Circe** environment) and consisted of a logical domain model for
   incident-problem troubleshooting resolution, mainly focusing on consistency and feasibility by Menta itself.
   2. The result such incident –problem either fixed and closed tickets or not fixed tickets send by system to operational expert.
   On regular base not fixed tickets checked by an IS incident – problem knowledgeable requirement specialist, mainly for consistency errors to improve Menta performance.
@@ -65,3 +65,13 @@ All steps until eight are the production steps according SLA OLA procedures and 
 # Main use cases
 
 ![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/UseCase.png)
+
+## Request to process  problem
+### Preconditions
+ User must have an access to the system and system must be operational.
+### Input
+### Workflow
+### Alternative workflow
+### Output
+### Post conditions
+**Menta Circle** is done and HowTo is applied to the target system. Incident closed
