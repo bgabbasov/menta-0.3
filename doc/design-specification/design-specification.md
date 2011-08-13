@@ -66,12 +66,16 @@ All steps until eight are the production steps according SLA OLA procedures and 
 
 ![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/UseCase.png)
 
-### UC-1 Request to process  problem
-#### Preconditions
+## UC-1 Request to process  problem
+### Preconditions
  User must have an access to the system and system must be operational.
-#### Input
-#### Workflow
-#### Alternative workflow
-#### Output
-#### Post conditions
-**Menta Circle** is done and HowTo is applied to the target system. Incident closed
+### Input
+Textual Problem – Incident ticket document provided by TSS into the system.
+### Workflow
+Please refer to Main activities section.
+### Alternative workflow
+If system fails to interpret the inbound document it rises *clarification request*.
+### Output
+Result of HowTo application to the *target system*.
+### Post conditions
+**Menta Circle** is done and HowTo is applied to the *target system*. Incident closed
