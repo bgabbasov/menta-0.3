@@ -64,4 +64,4 @@ All steps until eight are the production steps according SLA OLA procedures and 
 
 # Main use cases
 
-![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
+![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/UseCase.png)
