@@ -58,3 +58,10 @@ All steps until eight are the production steps according SLA OLA procedures and 
   incident-problem troubleshooting resolution, mainly focusing on consistency and feasibility by Menta itself.
   2. The result such incident –problem either fixed and closed tickets or not fixed tickets send by system to operational expert.
   On regular base not fixed tickets checked by an IS incident – problem knowledgeable requirement specialist, mainly for consistency errors to improve Menta performance.
+
+# Main components
+![Main components used in activity](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/Component.png)
+
+# Main use cases
+
+![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
