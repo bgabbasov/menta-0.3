@@ -1,8 +1,8 @@
-#Design specification.
+# Design specification.
 
 ## Introduction
 
-That are formal methods in the context of natural language processing applied to requirement engineering, incident – problem solving.
+There are formal methods in the context of natural language processing applied to requirement engineering, incident – problem solving.
 Those methods are relatively cheap compared to the manual requirement – incident- problem engineering as a whole
 (many human resources involved in that process).
 The formal methods as such are not meant for creating (informal) requirements documents into formal documents, they are rather used
@@ -12,7 +12,9 @@ explore essence of the matter of a requirements – incident documents
 The goal of this approach is to create a usable low-cost, automated analysis – problem solving – resolution mechanism
 of natural language requirements.
 
-## Main activities
+## Model driven understanding
+
+### Main activities
 
 1. Training:
   2. One defines domain model, vocabulary for the specific document set which contains the requirements of the incoming document (Requirement Document, Problem – Incident ticket document).
@@ -37,7 +39,7 @@ All steps until eight are the production steps according SLA OLA procedures and 
 
 ![Main activity diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/BackTrackeractivity1.png)
 
-# Example of method
+## Example of method
 
 1. Training:
   2. One defines the style, structure and English language specific domain vocabulary for the specific document which contains the requirements of the incoming document (Requirement Document, Problem – Incident ticket document).
@@ -59,23 +61,23 @@ All steps until eight are the production steps according SLA OLA procedures and 
   2. The result such incident –problem either fixed and closed tickets or not fixed tickets send by system to operational expert.
   On regular base not fixed tickets checked by an IS incident – problem knowledgeable requirement specialist, mainly for consistency errors to improve Menta performance.
 
-# Main components
+## Main components
 ![Main components used in activity](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/Component.png)
 
-# Main use cases
+## Main use cases
 
 ![Main use cases](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/images/UseCase.png)
 
-## UC-1 Request to process  problem
-### Preconditions
+### UC-1 Request to process  problem
+#### Preconditions
  User must have an access to the system and system must be operational.
-### Input
+#### Input
 Textual Problem – Incident ticket document provided by TSS into the system.
-### Workflow
+#### Workflow
 Please refer to Main activities section.
-### Alternative workflow
+#### Alternative workflow
 If system fails to interpret the inbound document it rises *clarification request*.
-### Output
+#### Output
 Result of HowTo application to the *target system*.
-### Post conditions
+#### Post conditions
 **Menta Circle** is done and HowTo is applied to the *target system*. Incident closed
