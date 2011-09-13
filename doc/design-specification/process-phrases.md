@@ -13,7 +13,7 @@ actual model for the incident description, ex.: Wrong version of software was in
 For this kind of incidents new model should be inferred via logical methods.
 
 ## Possible solution
-### Extend knowledge base for the domain to include all most common concepts that are included in incidents descriptions.
-### Create phrases dictionaries (based on terms links, see stanford-parser) to identify concepts in textual incident descriptions.
-### Via LSA match parsed links of the incident descriptions to the concepts of the domain.
-### Via probabilistic reasoning and set of reflective rules infer main problem symptoms and then find(generate) the solution.
+ 1. Extend knowledge base for the domain to include all most common concepts that are included in incidents descriptions.
+ 1. Create phrases dictionaries (based on terms links, see stanford-parser) to identify concepts in textual incident descriptions.
+ 1. Via LSA match parsed links of the incident descriptions to the concepts of the domain.
+ 1. Via probabilistic reasoning and set of reflective rules infer main problem symptoms and then find(generate) the solution.
