@@ -1,0 +1,30 @@
+---+ Machine perceiving
+
+   * Incident classification
+      * Incident types
+      * Classification algorithms
+
+   * Textual processing
+      * Phrasese processing
+         * Phrases model
+      * Word prossesing
+         * Synonim
+         * Amonim
+         * Concept mining
+
+   * In/out data
+      * In: Incident desriptions
+      * out: problem solving HowTo-s
+
+   * Issues
+      * Fuzzy system contradics SE decomposition principles
+      * Perceving mechanisms still not clear
+
+   * Several layers of knowledge representation
+      * [[#ID_225919202 Phases model]]
+      * HowTo model
+      * Formal incident model
+
+   * Self understanding
+      * System goal
+      * Incident goal
