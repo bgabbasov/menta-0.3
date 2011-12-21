@@ -7,5 +7,6 @@ the objects that we already know. When kid do not understand some phrases, adult
 logical operations to understand and process the phrase correctly. This way we learn to think logically during understanding process.
 
 This way we need:
+
  1. Some system understandable *flexible* descriptions of words/phrases in common IT lexicon.
  1. Some logical mechanism to infer.
