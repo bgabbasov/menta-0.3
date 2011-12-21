@@ -1,7 +1,7 @@
 # Menta 0.3 vision.
 Problem/prototype centric view.
 
-(https://github.com/menta/menta-0.3/raw/master/doc/informal/mind-maps/problem%20highlevel.png Problems mind map)
+![Mind map](https://github.com/menta/menta-0.3/raw/master/doc/informal/mind-maps/problem%20highlevel.png Problems mind map)
 
 ## Overall
 
