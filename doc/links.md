@@ -8,7 +8,7 @@
 
  1. http://en.wikipedia.org/wiki/Natural_language_understanding
 
-## Cognition projects:
+## Cognition projects
 
  1. OpenCog
    2. http://en.wikipedia.org/wiki/Opencog
@@ -19,8 +19,8 @@
 ## Natural language processing
 
  1. [Stanford parser](http://nlp.stanford.edu/software/lex-parser.shtml)
- 1. http://en.wikipedia.org/wiki/OpenNLP
- 1. http://en.wikipedia.org/wiki/Natural_Language_Toolkit
- 1. http://en.wikipedia.org/wiki/MontyLingua
+ 1. [OpenNLP](http://en.wikipedia.org/wiki/OpenNLP)
+ 1. [NLTK](http://en.wikipedia.org/wiki/Natural_Language_Toolkit)
+ 1. [MontyLingua](http://en.wikipedia.org/wiki/MontyLingua)
  1. [GATE NLP experiments GUI](http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering)
- 1. http://en.wikipedia.org/wiki/Unstructured_Information_Management_Architecture
+ 1. [UIMA Unstructured Information Management Architecture NLP framework](http://en.wikipedia.org/wiki/Unstructured_Information_Management_Architecture)
