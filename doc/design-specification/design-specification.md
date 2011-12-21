@@ -80,4 +80,4 @@ If system fails to interpret the inbound document it rises *clarification reques
 #### Output
 Result of HowTo application to the *target system*.
 #### Post conditions
-**Menta Circle** is done and HowTo is applied to the *target system*. Incident closed
+**Menta Cycle** is done and HowTo is applied to the *target system*. Incident closed
