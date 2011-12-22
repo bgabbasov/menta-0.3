@@ -21,3 +21,8 @@ Problem/prototype centric view.
  1. Annotation depends on Knowledge base (KB), should have at least minimal trained knowledge of TSS + IT common sense.
  1. Interpretation by [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysis) is not ideal and could be replaced by other proper algorithm.
  1. Validation criteria still not clear and could be too detailed.
+
+## Textual processing
+
+ 1. Word processing - NLP tool kits still need more analysis for: the applicability to SE domain.
+ 1. Synonym an Homonym problem still need industrial approach.

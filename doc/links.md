@@ -1,5 +1,9 @@
 # Links collection usable for Menta 0.3.
 
+## AI
+
+ 1. http://en.wikipedia.org/wiki/Emotion_machine
+
 ## Strong AI
 
  1. http://en.wikipedia.org/wiki/Artificial_general_intelligence
