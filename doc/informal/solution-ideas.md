@@ -1,6 +1,14 @@
 # Problems solution ideas list.
 Problems from [Informal vision](https://github.com/menta/menta-0.3/blob/master/doc/informal/vision-informal.md) solutions list.
 
+## Knowledge
+
+ 1. Technical requirements of the TSS including IT common sense.
+ 1. Training course.
+ 1. Project induction.
+ 1. Workbooks.
+
+
 ## Naive (kids) perception
 When people start to communicate they start using words to denote real world objects. This way words are references to
 the objects that we already know. When kid do not understand some phrases, adults explains the logical connections and
