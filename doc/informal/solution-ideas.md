@@ -25,23 +25,19 @@ This way we need:
  1. Some system understandable *flexible* descriptions of words/phrases in common IT lexicon.
  1. Some logical mechanism to infer.
 
+## Discussion
 
-ACh:
+- we can not count instances of files if we not understand what is file = no we can file is just some container for something in computer and it is line in 'll' result.
+- categorization is important point of understanding as the (concept mining)[http://en.wikipedia.org/wiki/Concept_mining] technique.
+- main categories is some ok or not ok = do not understand this
+- conflict is key of solution or key of new knowledge =
 
-Sorry, could anything translate my English to GB English?
+### Dialectical example:
 
-- we can not count instanse of files if we not undestand what is file.
+ - tutorial 1: you must put semicolon for delimit operators
+ - tutorial 2: you must put semicolon at end of operator
 
-- categorization is grand (important) point of undestanding
-
-- main categories is some ok or not ok.
-
-- conflict is key of solution or key of new knowlege.
-
-- Dialectical example: 
-tutorial 1: you must put semicolon for delimit operators
-tutorial 2: you must put semicolon at end of operator
-
-If we see conflict, we can decide "tutorial 2 is wrong" or "tutorial 2 about different language"
+If we see conflict, we can decide "tutorial 2 is wrong" or "tutorial 2 about different language" = this is bad example, expressions as predicates are ok in probabilistic logic(there is no conflict)
+and they do not contain context.
 
 
