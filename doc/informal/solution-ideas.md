@@ -28,7 +28,7 @@ This way we need:
 ## Discussion
 
 - we can not count instances of files if we not understand what is file = no we can file is just some container for something in computer and it is line in 'll' result.
-- categorization is important point of understanding as the (concept mining)[http://en.wikipedia.org/wiki/Concept_mining] technique.
+- categorization is important point of understanding as the [concept mining](http://en.wikipedia.org/wiki/Concept_mining) technique.
 - main categories is some ok or not ok = do not understand this
 - conflict is key of solution or key of new knowledge =
 
@@ -39,5 +39,13 @@ This way we need:
 
 If we see conflict, we can decide "tutorial 2 is wrong" or "tutorial 2 about different language" = this is bad example, expressions as predicates are ok in probabilistic logic(there is no conflict)
 and they do not contain context.
+
+## Synonym processing
+Possibly we could use some of public knowledge base:
+ 1. [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
+ 1. [TrueKnowledge](http://www.trueknowledge.com/q/what_is_the_meaning_of_life)
+ 1. [ConceptNet](http://csc.media.mit.edu/conceptnet)
+ 1. [ConceptNet5](http://conceptnet5.media.mit.edu/)
+ 1. [WordNet](http://wordnet.princeton.edu/)
 
 
