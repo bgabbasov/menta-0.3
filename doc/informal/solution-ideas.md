@@ -24,3 +24,24 @@ This way we need:
 
  1. Some system understandable *flexible* descriptions of words/phrases in common IT lexicon.
  1. Some logical mechanism to infer.
+
+
+ACh:
+
+Sorry, could anything translate my English to GB English?
+
+- we can not count instanse of files if we not undestand what is file.
+
+- categorization is grand (important) point of undestanding
+
+- main categories is some ok or not ok.
+
+- conflict is key of solution or key of new knowlege.
+
+- Dialectical example: 
+tutorial 1: you must put semicolon for delimit operators
+tutorial 2: you must put semicolon at end of operator
+
+If we see conflict, we can decide "tutorial 2 is wrong" or "tutorial 2 about different language"
+
+
