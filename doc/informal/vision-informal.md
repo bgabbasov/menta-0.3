@@ -25,5 +25,5 @@ Problem/prototype centric view.
 ## Textual processing
 
  1. Word processing - NLP tool kits still need more analysis for: the applicability to SE domain.
- 1. Synonym an Homonym problem still need industrial approach = possibly we could use [WolframAlpha](http://www.wolframalpha.com/input/?i=pen&a=*C.pen-_*Word-)
+ 1. Synonym an Homonym problem still need industrial approach = possibly we could use some Knowledge Base see [solutions](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md)
 

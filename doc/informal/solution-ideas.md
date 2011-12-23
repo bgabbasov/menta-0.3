@@ -42,6 +42,7 @@ and they do not contain context.
 
 ## Synonym processing
 Possibly we could use some of public knowledge base:
+
  1. [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
  1. [TrueKnowledge](http://www.trueknowledge.com/q/what_is_the_meaning_of_life)
  1. [ConceptNet](http://csc.media.mit.edu/conceptnet)
