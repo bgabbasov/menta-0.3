@@ -59,9 +59,13 @@ Mainly the Thinking is split on two sections Critics and Selectors(Way to Think)
 
 Critics are applied sequentially and indicates proper Way to Think.
 
+### Design scratch
+
+![Design scratch](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Concept%20TranslationHowTo.png)
 
 
 
+### Use cases
 
-### Simplest way is the direct instruction processing.
+#### Simplest way is the direct instruction processing.
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
