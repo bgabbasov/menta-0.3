@@ -61,7 +61,8 @@ Critics are applied sequentially and indicates proper Way to Think.
 
 ### Design scratch
 
-![Design scratch](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Concept%20TranslationHowTo.png)
+![Design scratch](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Concept%20TranslationHowTo.png)
+
 
 
 
