@@ -56,7 +56,9 @@ Based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http://web.media.m
 ![Critics with Selectors](http://web.media.mit.edu/~minsky/E7/eb7_files/image003.png)
 
 Mainly the Thinking is split on two sections Critics and Selectors(Way to Think):
+
 Critics are applied sequentially and indicates proper Way to Think.
+
 
 
 
