@@ -32,4 +32,5 @@ The Learned Reactive Critics is activated and retrieve the Knowing How way of th
  1. _Complex case is the problem description processing._
 Ex.: Learned Reactive Critics activates ReasoningByAnalogy, DivideAndConquer WayToThink, then WayToThink activates Deliberate Critics,
 that activates Reformulation WayToThink, Reformulation changes the representation of inbound data to proper way and activates Learned Critics then KnowHow WayToThink.
-`Learned -> [ReasoningByAnalogy, DivideAndConquer] -> Deliberate -> Reformulation -> Learned -> KnowHow`
+
+`Learned -> [ReasoningByAnalogy|DivideAndConquer] -> Deliberate -> Reformulation -> Learned -> KnowHow`
