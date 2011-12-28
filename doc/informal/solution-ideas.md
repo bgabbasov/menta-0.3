@@ -61,17 +61,20 @@ Critics are applied sequentially and indicates proper Way to Think.
 
 ### Design scratch
 
-
 ### Use cases
 
 #### Training
 
 ![Train](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
 
+Train mainly is supervised automatic with the Request and Solution pairs provided by TSS. After some essential learning
+TSS monitors the Solution-s of the system.
+
 #### Production
 ![Production](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
 
-_Simplest way is the direct instruction processing._
+
+__Simplest way is the direct instruction processing.__
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
 
 
