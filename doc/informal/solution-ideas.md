@@ -73,8 +73,7 @@ TSS monitors the Solution-s of the system.
 #### Production
 ![Production](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
 
-
-__Simplest way is the direct instruction processing.__
+_Simplest way is the direct instruction processing._
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
 
 
