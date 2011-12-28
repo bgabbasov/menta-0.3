@@ -9,7 +9,6 @@ Problems from [Informal vision](https://github.com/menta/menta-0.3/blob/master/d
  1. Project induction.
  1. Workbooks.
 
-
 ## Naive (kids) perception
 When people start to communicate they start using words to denote real world objects. This way words are references to
 the objects that we already know. When kid do not understand some phrases, adults explains the logical connections and
@@ -50,7 +49,7 @@ Possibly we could use some of public knowledge base:
  1. [ConceptNet5](http://conceptnet5.media.mit.edu/)
  1. [WordNet](http://wordnet.princeton.edu/)
 
-## [Emotion machine](http://en.wikipedia.org/wiki/Emotion_machine)
+## Solution [Emotion machine](http://en.wikipedia.org/wiki/Emotion_machine)
 Based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http://web.media.mit.edu/~minsky/E7/eb7.html)
 
 ![Critics with Selectors](http://web.media.mit.edu/~minsky/E7/eb7_files/image003.png)
