@@ -1,5 +1,5 @@
 # Problems solution ideas list.
-Problems from [Informal vision](https://github.com/menta/menta-0.3/blob/master/doc/informal/vision-informal.md) solutions list.
+Problems from [Informal vision](https://github.com/menta/menta-0.3/blob/master/doc/informal/vision-informal.md) solutions ideas.
 
 
 ## Knowledge
@@ -10,11 +10,13 @@ Problems from [Informal vision](https://github.com/menta/menta-0.3/blob/master/d
  1. Workbooks.
 
 ## Naive (kids) perception
+
 When people start to communicate they start using words to denote real world objects. This way words are references to
 the objects that we already know. When kid do not understand some phrases, adults explains the logical connections and
 logical operations to understand and process the phrase correctly. This way we learn to think logically during understanding process.
 
 ### Self learning IT common sense knowledge
+
 From the system perspective the IT world is completely visible, regardless to access right of the system user.
 This way the system could learn some common sense knowledge based on it's own experiments.
 For example: system could/should try to copy then move files from source to destination directory,
@@ -25,14 +27,14 @@ This way we need:
  1. Some system understandable *flexible* descriptions of words/phrases in common IT lexicon.
  1. Some logical mechanism to infer.
 
-## Discussion
+#### Discussion
 
 - we can not count instances of files if we not understand what is file = no we can file is just some container for something in computer and it is line in 'll' result.
 - categorization is important point of understanding as the [concept mining](http://en.wikipedia.org/wiki/Concept_mining) technique.
 - main categories is some ok or not ok = do not understand this
 - conflict is key of solution or key of new knowledge =
 
-### Dialectical example:
+#### Dialectical example:
 
  - tutorial 1: you must put semicolon for delimit operators
  - tutorial 2: you must put semicolon at end of operator
@@ -49,34 +51,13 @@ Possibly we could use some of public knowledge base:
  1. [ConceptNet5](http://conceptnet5.media.mit.edu/)
  1. [WordNet](http://wordnet.princeton.edu/)
 
-## Solution [Emotion machine](http://en.wikipedia.org/wiki/Emotion_machine)
-Based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http://web.media.mit.edu/~minsky/E7/eb7.html)
+## Mistypes processing
 
-![Critics with Selectors](http://web.media.mit.edu/~minsky/E7/eb7_files/image003.png)
+ OpenOffice uses [Autocorrect](http://www.openoffice.org/api/docs/common/ref/com/sun/star/util/PathSettings.html#AutoCorrect)
+ and [Autocomplete](http://www.openoffice.org/api/docs/common/ref/com/sun/star/awt/UnoControlComboBoxModel.html#Autocomplete) options that we can reuse.
 
-Mainly the Thinking is split on two sections Critics and Selectors(Way to Think):
+## Technical solutions:
 
-Critics are applied sequentially and indicates proper Way to Think.
-
-### Design scratch
-
-### Use cases
-
-#### Training
-
-![Train](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
-
-Train mainly is supervised automatic with the Request and Solution pairs provided by TSS. After some essential learning
-TSS monitors the Solution-s of the system.
-
-#### Production
-![Production](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
-
-_Simplest way is the direct instruction processing._
-The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
-
-
-#### Component diagram
-
-![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
-
+ 1. Emotion Machine Solution
+ 1. Interpretation-Validation Solution
+ 1. OpenCog Solution.
