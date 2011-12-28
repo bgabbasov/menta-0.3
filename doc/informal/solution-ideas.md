@@ -61,12 +61,21 @@ Critics are applied sequentially and indicates proper Way to Think.
 
 ### Design scratch
 
-![Design scratch](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Concept%20TranslationHowTo.png)
-
-
-
 
 ### Use cases
 
-#### Simplest way is the direct instruction processing.
+#### Training
+
+![Train](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
+
+#### Production
+![Production](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
+
+_Simplest way is the direct instruction processing._
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
+
+
+#### Component diagram
+
+![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
+
