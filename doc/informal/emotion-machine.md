@@ -40,9 +40,10 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
  1. Preliminary annotation:
   2. Lexical parser one of (see list below) creates the lexical structure of the sentences, that are added as annotations to inbound text.
 
-    - [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
-    - [OpenCog](http://opencog.org/projects/)
-    - [OpenNLP](http://incubator.apache.org/opennlp/index.html)
+      - [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
+      - [OpenCog](http://opencog.org/projects/)
+      - [OpenNLP](http://incubator.apache.org/opennlp/index.html)
+      
   2. Knowledge Base ([see KB list on Wikipedia page and the list below](http://en.wikipedia.org/wiki/Commonsense_knowledge_bases)) concepts are added to annotated text on the step above.
     - [ConceptNet5](http://conceptnet5.media.mit.edu/)
     - [NELL](http://rtw.ml.cmu.edu/rtw/resources)
