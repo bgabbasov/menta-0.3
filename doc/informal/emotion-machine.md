@@ -42,8 +42,7 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
    3. (StanfordParser)[http://nlp.stanford.edu/software/lex-parser.shtml]
    3. (OpenCog)[http://opencog.org/projects/]
    3. (OpenNLP)[http://incubator.apache.org/opennlp/index.html]
-  2. Knowledge Base ((see KB list on Wikipedia page and the list below)[http://en.wikipedia.org/wiki/Commonsense_knowledge_bases])
-  concepts are added to annotated text on the step above.
+  2. Knowledge Base(see KB list on Wikipedia page and the list below)[http://en.wikipedia.org/wiki/Commonsense_knowledge_bases] concepts are added to annotated text on the step above.
    3. (ConceptNet5)[http://conceptnet5.media.mit.edu/]
    3. (NELL)[http://rtw.ml.cmu.edu/rtw/resources]
    3. (WolframAlpha)[http://www.wolframalpha.com/]
