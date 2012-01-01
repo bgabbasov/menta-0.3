@@ -39,6 +39,7 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
 
  1. Preliminary annotation:
   2. Lexical parser one of (see list below) creates the lexical structure of the sentences, that are added as annotations to inbound text.
+
     - [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
     - [OpenCog](http://opencog.org/projects/)
     - [OpenNLP](http://incubator.apache.org/opennlp/index.html)
