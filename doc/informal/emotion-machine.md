@@ -37,12 +37,19 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
 
 ## Formalisation Production Workflow.
 
+### Inbound data:
+
+ 1. Incidents description text.
+ 1. Incident category.
+
+### Workflow.
+
  1. Preliminary annotation:
   2. Lexical parser one of (see list below) creates the lexical structure of the sentences, that are added as annotations to inbound text.
 
-      - [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
-      - [OpenCog](http://opencog.org/projects/)
-      - [OpenNLP](http://incubator.apache.org/opennlp/index.html)
+      3. [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
+      3. [OpenCog](http://opencog.org/projects/)
+      3. [OpenNLP](http://incubator.apache.org/opennlp/index.html)
       
   2. Knowledge Base ([see KB list on Wikipedia page and the list below](http://en.wikipedia.org/wiki/Commonsense_knowledge_bases)) concepts are added to annotated text on the step above.
      
@@ -55,8 +62,25 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
      - [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
      - [DBPedia](http://dbpedia.org/About)
 
- 1. Self Conscious Critics start the Perceiving WayToThink that controls following Critics-WayToThink pairs
+ 1. Self Conscious Critics starts the Perceiving WayToThink that controls following Critics-WayToThink pairs
   2. Activates Critics from lower to upper level one by one to find proper WayToThink (if no WayToThink found activates Critics on the level above).
   2. Runs found WayToThink that produces some additional annotations(ex.: some inference results could be added).
   2. Validate the WayToThink annotations, if annotations conforms the formalisation criteria stops the process, if not activates proper Critics again.
   2. Controls the number of cycles performed by the system, if exceeded maximum available for the perceiving operation stops.
+
+## Formalisation Training Workflow.
+
+### Inbound data:
+
+ 1. Incidents description text.
+ 1. Incident category.
+ 1. Incident formalized description.
+ 1. Incident solution.
+
+### Workflow
+
+ 1. Preliminary annotation, see Formalisation Production Workflow.
+ 1. Perceiving WayToThink, see Formalisation Production Workflow, searches for the formalized description or is stopped if the maximum number of cycles exceeded.
+ 1. Machine Learning:
+   2. Stores the formalized description validation rules regarding the incident description annotated text contents and Incident category.
+   2. Stores the Incident Solution regarding formalized description and the Incident category.
