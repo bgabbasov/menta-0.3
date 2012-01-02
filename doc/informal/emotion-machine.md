@@ -53,14 +53,14 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
       
   2. Knowledge Base ([see KB list on Wikipedia page and the list below](http://en.wikipedia.org/wiki/Commonsense_knowledge_bases)) concepts are added to annotated text on the step above.
      
-     - [ConceptNet5](http://conceptnet5.media.mit.edu/)
-     - [NELL](http://rtw.ml.cmu.edu/rtw/resources)
-     - [WolframAlpha](http://www.wolframalpha.com/)
-     - [TrueKnowledge](http://www.trueknowledge.com/)
-     - [ConceptNet](http://csc.media.mit.edu/conceptnet)
-     - [Freebase](http://www.freebase.com/apps)
-     - [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
-     - [DBPedia](http://dbpedia.org/About)
+     3. [ConceptNet5](http://conceptnet5.media.mit.edu/)
+     3. [NELL](http://rtw.ml.cmu.edu/rtw/resources)
+     3. [WolframAlpha](http://www.wolframalpha.com/)
+     3. [TrueKnowledge](http://www.trueknowledge.com/)
+     3. [ConceptNet](http://csc.media.mit.edu/conceptnet)
+     3. [Freebase](http://www.freebase.com/apps)
+     3. [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
+     3. [DBPedia](http://dbpedia.org/About)
 
  1. Self Conscious Critics starts the Perceiving WayToThink that controls following Critics-WayToThink pairs
   2. Activates Critics from lower to upper level one by one to find proper WayToThink (if no WayToThink found activates Critics on the level above).
