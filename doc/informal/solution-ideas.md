@@ -59,5 +59,5 @@ Possibly we could use some of public knowledge base:
 ## Technical solutions:
 
  1. [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
- 1. Annotation-Interpretation-Validation Solution
+ 1. [Annotation-Interpretation-Validation Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
  1. [OpenCog Solution](http://opencog.org/projects/).
