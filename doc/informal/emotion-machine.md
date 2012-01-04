@@ -25,7 +25,7 @@ Critics are applied sequentially and selects proper Selector(Way to Think).
 
 ## Component diagram
 
-![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
+![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/EmotionMachineComponent.png)
 
  1. Simplest case is the direct instruction processing.
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
