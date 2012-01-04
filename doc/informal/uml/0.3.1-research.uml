@@ -51,7 +51,7 @@
               diagramclass="org.argouml.uml.diagram.collaboration.ui.UMLCollaborationDiagram"
               diagramname="AIV Collaboration" />
       <member type="pgml"
-              name="0.3.1-research_ClassDiagram.pgml"
+              name="0.3.1-research_AIVComponent.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="AIV Component" />
       <member type="todo"
@@ -70,7 +70,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Jan 04 15:47:57 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Jan 04 15:51:42 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -898,9 +898,6 @@
             </UML:Association>
             <UML:Association xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A24'
               name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-              <UML:ModelElement.comment>
-                <UML:Comment xmi.idref = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A27'/>
-              </UML:ModelElement.comment>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A25'
                   visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
@@ -1222,12 +1219,6 @@
             </UML:Association>
           </UML:Namespace.ownedElement>
         </UML:Package>
-        <UML:Comment xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A27'
-          isSpecification = 'false'>
-          <UML:Comment.annotatedElement>
-            <UML:Association xmi.idref = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A24'/>
-          </UML:Comment.annotatedElement>
-        </UML:Comment>
         <UML:Comment xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A28'
           isSpecification = 'false' body = 'Interpreter&#10;could be&#10;implemented&#10;as&#10;Critic-&gt;Way2Think&#10;pair'>
           <UML:Comment.annotatedElement>
@@ -7379,7 +7370,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig2.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -7512,7 +7503,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -7645,7 +7636,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -7778,7 +7769,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -7841,7 +7832,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig9.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -7976,7 +7967,7 @@ Way to think
                         offset="10" />
     </private>
     <path name="Fig11.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -8108,7 +8099,7 @@ Way to think
       width="155"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -8125,7 +8116,7 @@ Way to think
     <group name="Fig1.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[381, 41, 143, 0]"
          href="127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D5"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -8138,7 +8129,7 @@ Way to think
         y="41"
         width="143"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -8198,7 +8189,7 @@ Way to think
       width="251"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -8215,7 +8206,7 @@ Way to think
     <group name="Fig2.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[381, 169, 239, 0]"
          href="127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D7"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -8228,7 +8219,7 @@ Way to think
         y="169"
         width="239"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -8237,7 +8228,7 @@ Way to think
     <text name="Fig2.3"
       x="381"
       y="169"
-      width="240"
+      width="239"
       height="23"
       fill="0"
       fillcolor="white"
@@ -8288,7 +8279,7 @@ Way to think
       width="163"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -8305,7 +8296,7 @@ Way to think
     <group name="Fig3.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[437, 113, 151, 0]"
          href="127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D6"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -8318,7 +8309,7 @@ Way to think
         y="113"
         width="151"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -8380,7 +8371,7 @@ Way to think
                         offset="-10" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -8411,7 +8402,7 @@ Way to think
                         offset="-10" />
     </private>
     <path name="Fig5.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -8539,7 +8530,7 @@ Way to think
       width="203"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -8556,7 +8547,7 @@ Way to think
     <group name="Fig7.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[29, 169, 191, 0]"
          href="127-0-1-1--53f45832:134a862e0f8:-8000:00000000000009FD"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -8569,7 +8560,7 @@ Way to think
         y="169"
         width="191"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -8578,7 +8569,7 @@ Way to think
     <text name="Fig7.3"
       x="29"
       y="169"
-      width="192"
+      width="191"
       height="23"
       fill="0"
       fillcolor="white"
@@ -8974,7 +8965,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig11.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9031,7 +9022,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig12.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9088,7 +9079,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig13.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9216,7 +9207,7 @@ Way to think
       width="166"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -9233,7 +9224,7 @@ Way to think
     <group name="Fig15.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[29, 289, 154, 0]"
          href="127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D4"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -9246,7 +9237,7 @@ Way to think
         y="289"
         width="154"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -9405,7 +9396,7 @@ Way to think
       width="143"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -9422,7 +9413,7 @@ Way to think
     <group name="Fig17.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[37, 393, 131, 0]"
          href="127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D3"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -9435,7 +9426,7 @@ Way to think
         y="393"
         width="131"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -9523,7 +9514,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig18.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9582,7 +9573,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig19.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9712,7 +9703,7 @@ Way to think
       width="97"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -9729,7 +9720,7 @@ Way to think
     <group name="Fig21.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[341, 289, 85, 0]"
          href="-64--88-121--126-318c5c5c:1347eec1071:-8000:0000000000000866"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -9742,7 +9733,7 @@ Way to think
         y="289"
         width="85"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -9901,7 +9892,7 @@ Way to think
       width="151"
       height="40"
       fill="1"
-      fillcolor="255 0 255"
+      fillcolor="white"
       stroke="1"
       strokecolor="255 0 255"
     />
@@ -9918,7 +9909,7 @@ Way to think
     <group name="Fig23.2"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[341, 401, 139, 0]"
          href="-64--88-121--126-318c5c5c:1347eec1071:-8000:000000000000086A"
-         fill="0"
+         fill="1"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
@@ -9931,7 +9922,7 @@ Way to think
         y="401"
         width="139"
         height="0"
-        fill="0"
+        fill="1"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
@@ -10019,7 +10010,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig24.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10076,7 +10067,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig25.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10133,7 +10124,7 @@ Way to think
                         offset="5" />
     </private>
     <path name="Fig26.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10188,15 +10179,9 @@ Way to think
                         ownerhref="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A26"
                         angle="135.0"
                         offset="5" />
-      <argouml:pathitem figname="Fig27.6"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigEdgePort"
-                        ownerhref="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A24"
-                        angle="270.0"
-                        offset="0" />
     </private>
     <path name="Fig27.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10209,203 +10194,6 @@ Way to think
     </path>
   </group>
   <group name="Fig28"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[0, 0, 79, 59]pathVisible=false;stereotypeView=0;"
-       href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A27"
-       fill="1"
-       fillcolor="white"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-    </private>
-    
-    <rectangle name="Fig28.0"
-      x="0"
-      y="0"
-      width="79"
-      height="59"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-    />
-    <path name="Fig28.1"
-      description="org.tigris.gef.presentation.FigPoly"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="0"
-              y="0" />
-      <lineto x="68"
-              y="0" />
-      <lineto x="78"
-              y="10" />
-      <lineto x="78"
-              y="58" />
-      <lineto x="0"
-              y="58" />
-      <lineto x="0"
-              y="0" />
-    </path>
-    <path name="Fig28.2"
-      description="org.tigris.gef.presentation.FigPoly"
-      fill="1"
-      fillcolor="178 178 178"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="68"
-              y="0" />
-      <lineto x="78"
-              y="10" />
-      <lineto x="68"
-              y="10" />
-      <lineto x="68"
-              y="0" />
-    </path>
-    <group name="Fig28.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[2, 2, 65, 0]"
-         href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A27"
-         fill="0"
-         fillcolor="white"
-         stroke="0"
-         strokecolor="black"
-    >
-      <private>
-      </private>
-      
-      <rectangle name="Fig28.3.0"
-        x="2"
-        y="2"
-        width="65"
-        height="0"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-      />
-    </group>
-    <text name="Fig28.4"
-      x="2"
-      y="2"
-      width="65"
-      height="55"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Dialog"
-      italic="false"
-      bold="false"
-      textsize="12"
-      justification="Left"
-    ></text>
-  </group>
-  <group name="Fig29"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[20, 20, 127, 96]pathVisible=false;stereotypeView=0;"
-       href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A28"
-       fill="1"
-       fillcolor="white"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-    </private>
-    
-    <rectangle name="Fig29.0"
-      x="20"
-      y="20"
-      width="127"
-      height="96"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-    />
-    <path name="Fig29.1"
-      description="org.tigris.gef.presentation.FigPoly"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="20"
-              y="20" />
-      <lineto x="136"
-              y="20" />
-      <lineto x="146"
-              y="30" />
-      <lineto x="146"
-              y="115" />
-      <lineto x="20"
-              y="115" />
-      <lineto x="20"
-              y="20" />
-    </path>
-    <path name="Fig29.2"
-      description="org.tigris.gef.presentation.FigPoly"
-      fill="1"
-      fillcolor="178 178 178"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="136"
-              y="20" />
-      <lineto x="146"
-              y="30" />
-      <lineto x="136"
-              y="30" />
-      <lineto x="136"
-              y="20" />
-    </path>
-    <group name="Fig29.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[22, 22, 113, 0]"
-         href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A28"
-         fill="0"
-         fillcolor="white"
-         stroke="0"
-         strokecolor="black"
-    >
-      <private>
-      </private>
-      
-      <rectangle name="Fig29.3.0"
-        x="22"
-        y="22"
-        width="113"
-        height="0"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-      />
-    </group>
-    <text name="Fig29.4"
-      x="22"
-      y="22"
-      width="113"
-      height="92"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Dialog"
-      italic="false"
-      bold="false"
-      textsize="12"
-      justification="Left"
-    >Interpreter
-could be
-implemented
-as
-Critic-&gt;Way2Think
-pair</text>
-  </group>
-  <group name="Fig30"
        description="org.argouml.uml.diagram.static_structure.ui.FigComment[312, 464, 127, 96]pathVisible=false;stereotypeView=0;"
        href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A28"
        fill="1"
@@ -10416,7 +10204,7 @@ pair</text>
     <private>
     </private>
     
-    <rectangle name="Fig30.0"
+    <rectangle name="Fig28.0"
       x="312"
       y="464"
       width="127"
@@ -10426,7 +10214,7 @@ pair</text>
       stroke="0"
       strokecolor="black"
     />
-    <path name="Fig30.1"
+    <path name="Fig28.1"
       description="org.tigris.gef.presentation.FigPoly"
       fill="1"
       fillcolor="white"
@@ -10446,10 +10234,10 @@ pair</text>
       <lineto x="312"
               y="464" />
     </path>
-    <path name="Fig30.2"
+    <path name="Fig28.2"
       description="org.tigris.gef.presentation.FigPoly"
       fill="1"
-      fillcolor="178 178 178"
+      fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
@@ -10462,18 +10250,19 @@ pair</text>
       <lineto x="428"
               y="464" />
     </path>
-    <group name="Fig30.3"
+    <group name="Fig28.3"
          description="org.argouml.uml.diagram.ui.FigStereotypesGroup[314, 466, 113, 0]"
          href="127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A28"
          fill="0"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
+         visibility="0"
     >
       <private>
       </private>
       
-      <rectangle name="Fig30.3.0"
+      <rectangle name="Fig28.3.0"
         x="314"
         y="466"
         width="113"
@@ -10484,7 +10273,7 @@ pair</text>
         strokecolor="black"
       />
     </group>
-    <text name="Fig30.4"
+    <text name="Fig28.4"
       x="314"
       y="466"
       width="113"
@@ -10506,19 +10295,19 @@ as
 Critic-&gt;Way2Think
 pair</text>
   </group>
-  <group name="Fig31"
+  <group name="Fig29"
        description="org.argouml.uml.diagram.static_structure.ui.FigEdgeNote"
        stroke="1"
        strokecolor="51 51 153"
   >
     <private>
-      sourcePortFig="Fig30.0"
+      sourcePortFig="Fig28.0"
       destPortFig="Fig15.0"
-      sourceFigNode="Fig30"
+      sourceFigNode="Fig28"
       destFigNode="Fig15"
     </private>
-    <path name="Fig31.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig29.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
