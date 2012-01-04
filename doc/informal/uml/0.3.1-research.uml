@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>AIV Component</activediagram>
+      <activediagram>AIV Collaboration</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -70,7 +70,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Jan 04 15:51:42 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Jan 04 21:49:53 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1178,7 +1178,22 @@
           <UML:Namespace.ownedElement>
             <UML:Component xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:00000000000009FD'
               name = 'TextProcessor' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-              isAbstract = 'false'/>
+              isAbstract = 'false'>
+              <UML:ModelElement.clientDependency>
+                <UML:Dependency xmi.idref = '127-0-1-1-1e0a194e:134a9d48097:-8000:0000000000000C3A'/>
+              </UML:ModelElement.clientDependency>
+              <UML:Namespace.ownedElement>
+                <UML:Dependency xmi.id = '127-0-1-1-1e0a194e:134a9d48097:-8000:0000000000000C3A'
+                  isSpecification = 'false'>
+                  <UML:Dependency.client>
+                    <UML:Component xmi.idref = '127-0-1-1--53f45832:134a862e0f8:-8000:00000000000009FD'/>
+                  </UML:Dependency.client>
+                  <UML:Dependency.supplier>
+                    <UML:Component xmi.idref = '127-0-1-1--6bbe9415:134a848864b:-8000:00000000000009D6'/>
+                  </UML:Dependency.supplier>
+                </UML:Dependency>
+              </UML:Namespace.ownedElement>
+            </UML:Component>
             <UML:Association xmi.id = '127-0-1-1--53f45832:134a862e0f8:-8000:0000000000000A12'
               name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
@@ -8569,7 +8584,7 @@ Way to think
     <text name="Fig7.3"
       x="29"
       y="169"
-      width="191"
+      width="192"
       height="23"
       fill="0"
       fillcolor="white"
@@ -10317,6 +10332,37 @@ pair</text>
               y="464" />
       <lineto x="183"
               y="327" />
+    </path>
+  </group>
+  <group name="Fig30"
+       description="org.argouml.uml.diagram.ui.FigDependency"
+       href="127-0-1-1-1e0a194e:134a9d48097:-8000:0000000000000C3A"
+       stroke="1"
+       strokecolor="51 51 153"
+  >
+    <private>
+      sourcePortFig="Fig7.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig7"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig30.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="127-0-1-1-1e0a194e:134a9d48097:-8000:0000000000000C3A"
+                        angle="270.0"
+                        offset="25" />
+    </private>
+    <path name="Fig30.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="51 51 153"
+    >
+      <moveto x="220"
+              y="168" />
+      <lineto x="426"
+              y="151" />
     </path>
   </group>
 </pgml>

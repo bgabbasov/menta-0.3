@@ -19,11 +19,11 @@ applied to the target environment.
 
 ![Critics with Selectors](http://web.media.mit.edu/~minsky/E7/eb7_files/image003.png)
 
-Mainly the Thinking is split on two sections Critics and Selectors(Way to Think):
+According to Marvin Minsky, mainly the Thinking is split on two sections Critics and Selectors(Way to Think):
 
 Critics are applied sequentially and selects proper Selector(Way to Think).
 
-## Component diagram
+### Component diagram
 
 ![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/EmotionMachineComponent.png)
 
@@ -66,7 +66,10 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
   2. Activates Critics from lower to upper level one by one to find proper WayToThink (if no WayToThink found activates Critics on the level above).
   2. Runs found WayToThink that produces some additional annotations(ex.: some inference results could be added).
   2. Validate the WayToThink annotations, if annotations conforms the formalisation criteria stops the process, if not activates proper Critics again.
-  2. Controls the number of cycles performed by the system, if exceeded maximum available for the perceiving operation stops.
+  2. Controls energy spent by the system, if exceeded maximum available for the perceiving operation stops.
+
+    3. Each operation Critics or WayToThink is assigned some degree of energy that is requested for the operation to be performed.
+    3. Each type of incident has maximum allowed energy to spent.
 
 ## Formalisation Training Workflow.
 
