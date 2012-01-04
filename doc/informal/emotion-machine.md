@@ -1,6 +1,35 @@
 #[Emotion machine](http://en.wikipedia.org/wiki/Emotion_machine)
 Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http://web.media.mit.edu/~minsky/E7/eb7.html)
 
+## Definitions
+
+### Production mode.
+
+1. Entry criteria
+  2. User provided new incident Text.
+1. Exit criteria.
+ 2. System found proper formalisation for the inbound Text.
+ 2. System exceeded maximum energy allowed for the perceiving operation of the incident type.
+ 2. System needs further clarifications: if the inbound information is not sufficient.
+1. Inbound data is Text
+  2. Incidents description text.
+  2. Incident category.
+1. Outbound is AnnotatedText with formalisation results.
+
+### Training mode.
+
+1. Entry criteria
+  2. User provided new incidents Texts.
+1. Exit criteria.
+ 2. System found proper formalisation workflow of the Interpreter for inbound Text and incident category, and found validation criteria.
+ 2. System fails to find proper formalisation workflow.
+1. Inbound data is Text
+  2. Incidents description text.
+  2. Incident category.
+  2. Incident formalized description.
+  2. Incident solution.
+1. Outbound is formalisation workflow of the Interpreter steps, validation criteria.
+
 ## Use cases
 
 ### Training
@@ -37,11 +66,6 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
 
 ## Formalisation Production Workflow.
 
-### Inbound data:
-
- 1. Incidents description text.
- 1. Incident category.
-
 ### Workflow.
 
  1. Preliminary annotation:
@@ -72,13 +96,6 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
     3. Each type of incident has maximum allowed energy to spent.
 
 ## Formalisation Training Workflow.
-
-### Inbound data:
-
- 1. Incidents description text.
- 1. Incident category.
- 1. Incident formalized description.
- 1. Incident solution.
 
 ### Workflow
 
