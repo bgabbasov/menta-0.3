@@ -29,7 +29,7 @@ This way we need:
 
 #### Discussion
 
-- we can not count instances of files if we not understand what is file = no we can file is just some container for something in computer and it is line in '''ll''' result.
+- we can not count instances of files if we not understand what is file = no we can file is just some container for something in computer and it is line in ```ll``` result.
 - categorization is important point of understanding as the [concept mining](http://en.wikipedia.org/wiki/Concept_mining) technique.
 - main categories is some ok or not ok = do not understand this
 - conflict is key of solution or key of new knowledge =
