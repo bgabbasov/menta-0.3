@@ -59,8 +59,8 @@ Critics are applied sequentially and selects proper Selector(Way to Think).
  1. Simplest case is the direct instruction processing.
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.
  1. Complex case is the problem description processing.
-Ex.: Learned Reactive Critics activates ReasoningByAnalogy, DivideAndConquer WayToThink, then WayToThink activates Deliberate Critics,
-that activates Reformulation WayToThink, Reformulation changes the representation of inbound data to proper way and activates Learned Critics then KnowHow WayToThink.
+Ex.: Learned Reactive Critics activates ReasoningByAnalogy, DivideAndConquer Way2Think, then Way2Think activates Deliberate Critics,
+that activates Reformulation Way2Think, Reformulation changes the representation of inbound data to proper way and activates Learned Critics then KnowHow Way2Think.
 
 `Learned -> [ReasoningByAnalogy|DivideAndConquer] -> Deliberate -> Reformulation -> Learned -> KnowHow`
 
@@ -86,13 +86,13 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
      3. [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
      3. [DBPedia](http://dbpedia.org/About)
 
- 1. Self Conscious Critics starts the Perceiving WayToThink that controls following Critics-WayToThink pairs
-  2. Activates Critics from lower to upper level one by one to find proper WayToThink (if no WayToThink found activates Critics on the level above).
-  2. Runs found WayToThink that produces some additional annotations(ex.: some inference results could be added).
-  2. Validate the WayToThink annotations, if annotations conforms the formalisation criteria stops the process, if not activates proper Critics again.
+ 1. Self Conscious Critics starts the Perceiving Way2Think that controls following Critics-Way2Think pairs
+  2. Activates Critics from lower to upper level one by one to find proper Way2Think (if no Way2Think found activates Critics on the level above).
+  2. Runs found Way2Think that produces some additional annotations(ex.: some inference results could be added).
+  2. Validate the Way2Think annotations, if annotations conforms the formalisation criteria stops the process, if not activates proper Critics again.
   2. Controls energy spent by the system, if exceeded maximum available for the perceiving operation stops.
 
-    3. Each operation Critics or WayToThink is assigned some degree of energy that is requested for the operation to be performed.
+    3. Each operation Critics or Way2Think is assigned some degree of energy that is requested for the operation to be performed.
     3. Each type of incident has maximum allowed energy to spent.
 
 ## Formalisation Training Workflow.
@@ -100,7 +100,7 @@ that activates Reformulation WayToThink, Reformulation changes the representatio
 ### Workflow
 
  1. Preliminary annotation, see Formalisation Production Workflow.
- 1. Perceiving WayToThink, see Formalisation Production Workflow, searches for the formalized description or is stopped if the maximum number of cycles exceeded.
+ 1. Perceiving Way2Think, see Formalisation Production Workflow, searches for the formalized description or is stopped if the maximum number of cycles exceeded.
  1. Machine Learning:
    2. Stores the formalized description validation rules regarding the incident description annotated text contents and Incident category.
    2. Stores the Incident Solution regarding formalized description and the Incident category.

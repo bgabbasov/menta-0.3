@@ -1,5 +1,5 @@
 #OpenCog
-Solution is based on [OpenCog project](http://opencog.org/projects/)
+Analysis of [OpenCog project](http://opencog.org/projects/)
 
 ## OpenCog projects [see](http://opencog.org/projects/)
 
@@ -13,6 +13,36 @@ There are also a number of affiliated projects that are in separate repositories
  1. [NLGen](https://launchpad.net/nlgen) and [NLGen2](https://launchpad.net/nlgen2) – Do the inverse of RelEx. Convert semantic relationships to natural language.
 … and more!
 
+## Solution overall
+
+### Definitions
+[See](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+
+### Analysis scope
+Could the Solution produce the formalisation starting from Text to AnnotatedText according to formalisation criteria?
 
 ## AtomSpace
 
+### Analysis scope
+Could the storage be reused in our project, are the AtomSpace is capable of storage Scala objects of our project: HowTo-s, Way2Think ...?
+
+## PLN
+
+ 1. Entry criteria = client provided new predicates and the request.
+ 1. Exit criteria = the Frequency Confidence pair found or the energy for the operation is exceeded.
+ 1. Inbound data = the AnnotatedText [see Component diagram section](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+ 1. Outbound data = the Frequency Confidence pair of the predicates.
+
+### Analysis scope
+Could the project be used in:
+ 1. Deliberate Critics.
+ 1. ReasoningByAnalogy Way2Think.
+ 1. Planing Way2Think.
+ 1. Simplification Way2Think.
+ 1. Elevation Way2Think.
+ 1. Reformulation Way2Think.
+ 1. Contradiction Way2Think.
+ 1. Simulation Way2Think.
+ 1. Correlation Way2Think.
+ 1. Logical Reasoning Way2Think
+ 1. Wishful thinking.
