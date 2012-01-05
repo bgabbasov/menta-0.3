@@ -48,7 +48,7 @@ Please assist.
      - Network path = to be clarified.
      - Drive = to be clarified.
    - Operating system = to be clarified.
-1. Action = uninstall
+ 1. Action = uninstall.
    - Software:
      - Product = Wordfinder.
      - Version = Tehcnical
