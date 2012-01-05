@@ -3,7 +3,7 @@ Solution description.
 
 ## Definitions
 
-See [Definitions section](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+See [Emotion Machine Solution Definitions section](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
 
 ## Use cases
 

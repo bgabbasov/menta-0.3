@@ -7,16 +7,13 @@ Analysis of [OpenCog project](http://opencog.org/projects/)
  1. [PLN](http://wiki.opencog.org/w/PLN) – Probabilistic Logic Networks. An logic system for uncertain inference.
  1. [MOSES](http://wiki.opencog.org/w/MOSES) – Meta-Optimizing Semantic Evolutionary Search. Program evolution based on representation-building and probabilistic modeling.
  1. [Embodiment](http://wiki.opencog.org/w/Embodiment) – Modules to allow OpenCog to reason about being embodied within an avatar, be it a Nao robot or a game character inside a virtual world.
-There are also a number of affiliated projects that are in separate repositories. These are often quite functional when used outside of the core framework.
-
  1. [RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/) – Extract grammatical parses and semantic knowledge from natural language (in English).
  1. [NLGen](https://launchpad.net/nlgen) and [NLGen2](https://launchpad.net/nlgen2) – Do the inverse of RelEx. Convert semantic relationships to natural language.
-… and more!
 
 ## Solution overall
 
 ### Definitions
-[See](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
 
 ### Analysis scope
 Could the Solution produce the formalisation starting from Text to AnnotatedText according to formalisation criteria?
@@ -73,4 +70,36 @@ Could the project be used in:
  1. Simulation Way2Think.
  1. Correlation Way2Think.
  1. Wishful thinking.
+
+## [Embodiment](http://wiki.opencog.org/w/Embodiment)
+Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world(Intellix).
+
+### Definitions
+[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+
+### Analysis scope
+Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to formalisation criteria?
+Could the OpenCog agent learn, operate, experiment in the computer environment world(Intellix).
+
+## [RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/)
+RelEx Dependency Relationship Extractor
+
+ 1. Entry criteria = User provided new request.
+ 1. Exit criteria = Created structure of the text.
+ 1. Inbound data = a Text [see Component diagram section](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+ 1. Outbound data = a AnnotatedText with word links.
+
+### Analysis scope
+Could the RelEx produce the proper links structure of the text, suitable for further formalisation?
+
+## [NLGen](https://launchpad.net/nlgen) and [NLGen2](https://launchpad.net/nlgen2)
+
+ 1. Entry criteria = System generated request to User.
+ 1. Exit criteria = Created natural language request.
+ 1. Inbound data = a AnnotatedText [see Component diagram section](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+ 1. Outbound data = a Text request.
+
+### Analysis scope
+Could the NLGen and/or NLGen2 produce the proper text of the request?
+
 
