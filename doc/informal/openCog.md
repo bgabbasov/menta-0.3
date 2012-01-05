@@ -16,7 +16,7 @@ Analysis of [OpenCog project](http://opencog.org/projects/)
 [See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
 
 ### Analysis scope
-Could the Solution produce the formalisation starting from Text to AnnotatedText according to formalisation criteria?
+Could the Solution produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
 
 ## AtomSpace
 
@@ -78,7 +78,7 @@ Modules to allow OpenCog to reason about being embodied within an avatar the pro
 [See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
 
 ### Analysis scope
-Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to formalisation criteria?
+Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
 Could the OpenCog agent learn, operate, experiment in the computer environment world(Intellix).
 
 ## [RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/)

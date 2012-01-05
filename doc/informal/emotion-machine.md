@@ -89,7 +89,8 @@ that activates Reformulation Way2Think, Reformulation changes the representation
  1. Self Conscious Critics starts the Perceiving Way2Think that controls following Critics-Way2Think pairs
   2. Activates Critics from lower to upper level one by one to find proper Way2Think (if no Way2Think found activates Critics on the level above).
   2. Runs found Way2Think that produces some additional annotations(ex.: some inference results could be added).
-  2. Validate the Way2Think annotations, if annotations conforms the formalisation criteria stops the process, if not activates proper Critics again.
+  2. Validate the Way2Think annotations, if annotations conforms the [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)
+  stops the process, if not activates proper Critics again.
   2. Controls energy spent by the system, if exceeded maximum available for the perceiving operation stops.
 
     3. Each operation Critics or Way2Think is assigned some degree of energy that is requested for the operation to be performed.

@@ -8,7 +8,7 @@ Problem/prototype centric view.
  1. *Fuzzy* system
   2. We face new kind of system with no crisp ages of the components.
   2. Inbound information could contain contradictions and different layers of abstraction.
- 1. Perceiving mechanisms are close to thinking mechanisms and still not so formalized as should be.
+ 1. Perceiving mechanisms are close to thinking mechanisms and still not so [formalised as should be](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
 
 ### Mitigation
 

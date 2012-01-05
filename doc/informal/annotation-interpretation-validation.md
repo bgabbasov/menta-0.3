@@ -19,7 +19,8 @@ See https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.
  1. Preliminary Annotator adds using data of the TextProcessor adds the annotation to the inbound Text to indicate the sentence structure. Inbound: Text, outbound AnnotatedText.
  1. KnowledgeBaseAnnotator using KnowledgeBase add the semantic annotations of the words found in KnowledgeBase. Inbound: AnnotatedText, outbound AnnotatedText.
  1. Interpreter adds annotations to formalize the inbound AnnotatedText. Inbound: AnnotatedText, outbound AnnotatedText.
- 1. Validator checks annotations of the Interpreter to match formalisation criteria if formalisation criteria fails return to KnowledgeBaseAnnotator.
+ 1. Validator checks annotations of the Interpreter to match [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)
+ if formalisation criteria fails return to KnowledgeBaseAnnotator.
 
 Interpreter and Validator could be expressed via Emotion Machine Solution [see section Workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) with
 [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysishttp://en.wikipedia.org/wiki/Latent_semantic_analysis) as main interpretation algorithm.
