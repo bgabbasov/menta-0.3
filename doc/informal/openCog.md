@@ -35,6 +35,7 @@ Could the storage be reused in our project, are the AtomSpace is capable of stor
 
 ### Analysis scope
 Could the project be used in:
+
  1. Deliberate Critics.
  1. ReasoningByAnalogy Way2Think.
  1. Planing Way2Think.
