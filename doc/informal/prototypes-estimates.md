@@ -80,6 +80,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Use [online](http://nlp.stanford.edu:8080/parser/) or download and use Java command to test using same 10 simple examples of test incidents.
    2. [OpenNLP](http://incubator.apache.org/opennlp/index.html) = 6 - 8 [could be not strait-forward to use with no documentation reading]
      3. Read documentation and Test using same 10 simple examples of test incidents.
+   2. Comparison criteria: precision and recall
 
  1. [NLGen](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#NLGen)
    2. [Read documentation](https://launchpad.net/nlgen2), [SegSim](http://wiki.opencog.org/w/SegSim) = 4
