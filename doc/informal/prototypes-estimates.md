@@ -61,7 +61,8 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
      3. [Main](http://wiki.opencog.org/w/Embodiment)
      3. <a href="http://wiki.opencog.org/w/UserManual_(Embodiment)">User manual</a>
-   2. Test Embodiment system to simulate [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md) with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](/intellix.md) simulation]
+   2. Test Embodiment system to simulate [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)
+   with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](/menta/menta-0.3/blob/master/doc/informal//intellix.md) simulation]
      3. Files
      3. Directories
      3. Operating system commands: copy file, move file, delete file, create file
