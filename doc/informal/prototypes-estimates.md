@@ -83,7 +83,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
  1. [NLGen](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#NLGen)
    2. [Read documentation](https://launchpad.net/nlgen2), [SegSim](http://wiki.opencog.org/w/SegSim) = 4
-   2. Test if we could use it to generate clarification/confirmation requests:
+   2. Test if we could use it to generate clarification/confirmation requests: 24 - 32 [probable difficulties with setup and run of the module]
      3. Is my understanding correct?
      3. What is Bla-bla-bla?
      3. Please clarify the term.
