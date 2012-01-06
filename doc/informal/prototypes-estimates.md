@@ -52,16 +52,16 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. [Examples](http://wiki.opencog.org/w/MOSES_example_programs)
    2. Search for following options: = 16 - 40 [difficulties in understanding of MOSES mechanisms]
      3. Reasoning By Analogy.
-     3. Reformulation Way2Think.
+     3. Reformulation.
      3. Use external representations.
-     3. Simulation Way2Think.
-     3. Correlation Way2Think.
+     3. Simulation.
+     3. Correlation.
 
  1. [Embodiment](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment)
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
      3. [Main](http://wiki.opencog.org/w/Embodiment)
-     3. [User manual](http://wiki.opencog.org/w/UserManual_(Embodiment))
-   2. Test Embodiment system to simulate [Intellix]((https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)) with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)) simulation]
+     3. <a href="http://wiki.opencog.org/w/UserManual_(Embodiment)">User manual</a>
+   2. Test Embodiment system to simulate [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md) with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](/intellix.md) simulation]
      3. Files
      3. Directories
      3. Operating system commands: copy file, move file, delete file, create file
