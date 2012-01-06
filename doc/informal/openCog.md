@@ -13,7 +13,7 @@ Analysis of [OpenCog project](http://opencog.org/projects/)
 ## Solution overall
 
 ### Definitions
-[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Definitions)
 
 ### Analysis scope
 Could the Solution produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
@@ -23,8 +23,8 @@ Could the Solution produce the formalisation starting from Text to AnnotatedText
 ### Analysis scope
 Could the storage be reused in our project, are the AtomSpace is capable of storage Scala objects of our project: HowTo-s, Way2Think ...?
 
-## [PLN](http://wiki.opencog.org/w/PLN)
-Probabilistic logic network.
+## <a name="PLN">PLN</a>
+[Probabilistic logic network.]((http://wiki.opencog.org/w/PLN))
 
  1. Entry criteria = User provided new predicates and the request.
  1. Exit criteria = the Frequency Confidence pair found or the energy for the operation is exceeded.
@@ -46,8 +46,8 @@ Could the project be used in:
  1. Logical Reasoning Way2Think
  1. Wishful thinking.
 
-## [MOSES](http://wiki.opencog.org/w/MOSES)
-Meta-Optimizing Semantic Evolutionary Search.
+## <a name="MOSES">MOSES</a>
+[Meta-Optimizing Semantic Evolutionary Search.](http://wiki.opencog.org/w/MOSES)
 
  1. Entry criteria = User provided new request.
  1. Exit criteria = the formalisation found or the energy for the operation is exceeded.
