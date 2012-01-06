@@ -30,7 +30,7 @@ Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http:/
   2. Incident solution.
 1. Outbound is formalisation workflow of the Interpreter steps, validation criteria.
 
-## Use cases
+## [Use cases][]
 
 ### Training
 
