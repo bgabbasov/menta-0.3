@@ -30,7 +30,7 @@ Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http:/
   2. Incident solution.
 1. Outbound is formalisation workflow of the Interpreter steps, validation criteria.
 
-## [Use cases][]
+## <a name="Use cases">Use cases</a>
 
 ### Training
 
@@ -44,7 +44,7 @@ TSS monitors the Solution-s of the system.
 System supports the dialog with a customer starting with Request then through the clarifications/confirmations to Solution
 applied to the target environment.
 
-## Components
+## <a name="Components">Components</a>
 
 ![Critics with Selectors](http://web.media.mit.edu/~minsky/E7/eb7_files/image003.png)
 
@@ -64,7 +64,7 @@ that activates Reformulation Way2Think, Reformulation changes the representation
 
 `Learned -> [ReasoningByAnalogy|DivideAndConquer] -> Deliberate -> Reformulation -> Learned -> KnowHow`
 
-## Formalisation Production Workflow.
+## <a name="Formalisation Production Workflow">Formalisation Production Workflow</a>
 
 ### Workflow.
 
@@ -96,7 +96,7 @@ that activates Reformulation Way2Think, Reformulation changes the representation
     3. Each operation Critics or Way2Think is assigned some degree of energy that is requested for the operation to be performed.
     3. Each type of incident has maximum allowed energy to spent.
 
-## Formalisation Training Workflow.
+## <a name="Formalisation Training Workflow">Formalisation Training Workflow.</a>
 
 ### Workflow
 
