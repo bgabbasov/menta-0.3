@@ -72,14 +72,14 @@ Could the project be used in:
  1. Wishful thinking.
 
 ## <a name=Embodiment>Embodiment</a>
-(Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world(Intellix)](http://wiki.opencog.org/w/Embodiment)
+(Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world](http://wiki.opencog.org/w/Embodiment) ([Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md))
 
 ### Definitions
 [See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Definitions)
 
 ### Analysis scope
 Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
-Could the OpenCog agent learn, operate, experiment in the computer environment world(Intellix).
+Could the OpenCog agent learn, operate, experiment in [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md).
 
 ## [RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/)
 RelEx Dependency Relationship Extractor

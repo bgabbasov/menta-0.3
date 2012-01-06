@@ -58,14 +58,12 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Correlation Way2Think.
 
  1. [Embodiment](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment)
-   2. Read documentation 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
-    3. [Main](http://wiki.opencog.org/w/Embodiment)
-    3. [User manual](http://wiki.opencog.org/w/UserManual_(Embodiment))
-   2. Test Embodiment system to simulate the computer environment (Intellix) with following components:
-    3. Files
-    3. Directories
-    3. Operating system commands
-    3. Network connections
-    3. Program distributives
-    3. Installed programs
-    3. And so on
+   2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
+     3. [Main](http://wiki.opencog.org/w/Embodiment)
+     3. [User manual](http://wiki.opencog.org/w/UserManual_(Embodiment))
+   2. Test Embodiment system to simulate [Intellix]((https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)) with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)) simulation]
+     3. Files
+     3. Directories
+     3. Operating system commands: copy file, move file, delete file, create file
+     3. Program distributives
+     3. Installed programs
