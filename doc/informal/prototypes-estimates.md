@@ -16,11 +16,42 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    =  4 - 8 [possible additional setup of the AtomSpace server and TCP connection]{CogBuntu is operational}
 
  1. [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#PLN)
-   2. Read documentation: [PLN](http://wiki.opencog.org/w/PLN),
-   [PLN Details](http://wiki.opencog.org/w/PLN_Details), [Cookbook PLN section](http://wiki.opencog.org/w/Cookbook#Using_PLN), [PLN usage](http://wiki.opencog.org/w/PLN_usage),
-   [PLN Scheme Wrapper](http://wiki.opencog.org/w/PLN_Scheme_Wrapper) = 2 - 4
-   2. Test PLN using: [check linked modules example](http://code.google.com/p/menta/source/browse/lib/src/main/test2.narsese),
-   [check operation to module duplicates, see simplified version](http://code.google.com/p/menta/source/browse/lib/src/main/test4.narsese),
-   see [NARS syntax](http://code.google.com/p/open-nars/wiki/InputOutputFormat) = 4 - 8 [difficulties of the NARS -> PLN translation]
+   2. Read documentation: = 2 - 4
+     3. [PLN](http://wiki.opencog.org/w/PLN)
+     3. [PLN Details](http://wiki.opencog.org/w/PLN_Details)
+     3. [Cookbook PLN section](http://wiki.opencog.org/w/Cookbook#Using_PLN)
+     3. [PLN usage](http://wiki.opencog.org/w/PLN_usage)
+     3. [PLN Scheme Wrapper](http://wiki.opencog.org/w/PLN_Scheme_Wrapper)
+   2. Test PLN using following test data (see [NARS syntax](http://code.google.com/p/open-nars/wiki/InputOutputFormat)): = 4 - 8 [difficulties of the NARS -> PLN translation]
+     3. [check linked modules example](http://code.google.com/p/menta/source/browse/lib/src/main/test2.narsese)
+     3. [check operation to module duplicates, see simplified version](http://code.google.com/p/menta/source/browse/lib/src/main/test4.narsese)
+   2. Search for following options:
+     3. Simplification.
+     3. Elevation .
+     3. Reformulation.
+     3. Contradiction.
+     3. Simulation.
+     3. Correlation.
+     3. Logical Reasoning.
 
- 1. [Bayes Network](http://en.wikipedia.org/wiki/Bayesian_network)
+ 1. [Bayesian Inference](http://en.wikipedia.org/wiki/Bayesian_inference)
+   2. Find implementation or use [ci-bayes](https://github.com/jottinger/ci-bayes) and install them = 8 - 16 [possibly a lot of implementations]
+   2. Compare implementations and PLN using following examples:
+     3. [check linked modules example](http://code.google.com/p/menta/source/browse/lib/src/main/test2.narsese)
+     3. [check operation to module duplicates, see simplified version](http://code.google.com/p/menta/source/browse/lib/src/main/test4.narsese)
+   2. Comparison criteria:
+     3. Performance
+     3. Adapter development estimate
+     3. Probabilistic logic options, use options of PLN analysis
+
+ 1. [MOSES](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#MOSES)
+   2. Read documentation: = 2 - 3
+     3. [Quick Start](http://wiki.opencog.org/wikihome/images/4/4a/MOSES-QuickGuide.pdf)
+     3. [Tutorial](http://wiki.opencog.org/w/MOSES_Tutorial)
+     3. [Examples](http://wiki.opencog.org/w/MOSES_example_programs)
+   2. Search for following options:
+     3. Reasoning By Analogy.
+     3. Reformulation Way2Think.
+     3. Use external representations.
+     3. Simulation Way2Think.
+     3. Correlation Way2Think.

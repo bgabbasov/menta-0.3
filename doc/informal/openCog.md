@@ -24,7 +24,7 @@ Could the Solution produce the formalisation starting from Text to AnnotatedText
 Could the storage be reused in our project, are the AtomSpace is capable of storage Scala objects of our project: HowTo-s, Way2Think ...?
 
 ## <a name="PLN">PLN</a>
-[Probabilistic logic network.]((http://wiki.opencog.org/w/PLN))
+[Probabilistic logic network.](http://wiki.opencog.org/w/PLN)
 
  1. Entry criteria = User provided new predicates and the request.
  1. Exit criteria = the Frequency Confidence pair found or the energy for the operation is exceeded.
