@@ -1,7 +1,7 @@
 #[Emotion machine](http://en.wikipedia.org/wiki/Emotion_machine)
 Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http://web.media.mit.edu/~minsky/E7/eb7.html)
 
-## <a href="#Definitions">Definitions</a>
+## <a name="Definitions">Definitions</a>
 
 ### Production mode.
 
