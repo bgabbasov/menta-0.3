@@ -18,7 +18,7 @@ Analysis of [OpenCog project](http://opencog.org/projects/)
 ### Analysis scope
 Could the Solution produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
 
-## AtomSpace
+## <a name="AtomSpace">AtomSpace</a>
 
 ### Analysis scope
 Could the storage be reused in our project, are the AtomSpace is capable of storage Scala objects of our project: HowTo-s, Way2Think ...?
