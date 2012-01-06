@@ -71,11 +71,11 @@ Could the project be used in:
  1. Correlation Way2Think.
  1. Wishful thinking.
 
-## [Embodiment](http://wiki.opencog.org/w/Embodiment)
-Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world(Intellix).
+## <a name=Embodiment>Embodiment</a>
+(Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world(Intellix)](http://wiki.opencog.org/w/Embodiment)
 
 ### Definitions
-[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md)
+[See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Definitions)
 
 ### Analysis scope
 Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
