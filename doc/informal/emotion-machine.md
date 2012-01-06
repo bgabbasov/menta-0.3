@@ -72,7 +72,7 @@ that activates Reformulation Way2Think, Reformulation changes the representation
   2. Lexical parser one of (see list below) creates the lexical structure of the sentences, that are added as annotations to inbound text.
 
       3. [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml)
-      3. [OpenCog](http://opencog.org/projects/)
+      3. [OpenCog RelEx](http://wiki.opencog.org/w/RelEx)
       3. [OpenNLP](http://incubator.apache.org/opennlp/index.html)
       
   2. Knowledge Base ([see KB list on Wikipedia page and the list below](http://en.wikipedia.org/wiki/Commonsense_knowledge_bases)) concepts are added to annotated text on the step above.

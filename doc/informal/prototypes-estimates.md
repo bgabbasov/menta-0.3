@@ -68,3 +68,22 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Operating system commands: copy file, move file, delete file, create file
      3. Program distributives
      3. Installed programs
+
+ 1. Natural language processors
+   2. [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#RelEx) and StanfordParser
+     3. Read documentation = 4
+       4. [Main](http://wiki.opencog.org/w/RelEx)
+       4. [Sentence algorithm](http://wiki.opencog.org/w/Sentence_algorithms)
+       4. [Walk through](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
+     3. Test NLP using 10 simple examples of test incidents. = 4 - 8
+   2. [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml) = 4 - 5
+     3. Use [online](http://nlp.stanford.edu:8080/parser/) or download and use Java command to test using same 10 simple examples of test incidents.
+   2. [OpenNLP](http://incubator.apache.org/opennlp/index.html) = 6 - 8 [could be not strait-forward to use with no documentation reading]
+     3. Read documentation and Test using same 10 simple examples of test incidents.
+
+ 1. [NLGen](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#NLGen)
+   2. [Read documentation](https://launchpad.net/nlgen2), [SegSim](http://wiki.opencog.org/w/SegSim) = 4
+   2. Test if we could use it to generate clarification/confirmation requests:
+     3. Is my understanding correct?
+     3. What is Bla-bla-bla?
+     3. Please clarify the term.

@@ -71,7 +71,7 @@ Could the project be used in:
  1. Correlation Way2Think.
  1. Wishful thinking.
 
-## <a name=Embodiment>Embodiment</a>
+## <a name="Embodiment">Embodiment</a>
 (Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world](http://wiki.opencog.org/w/Embodiment) ([Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md))
 
 ### Definitions
@@ -81,7 +81,8 @@ Could the project be used in:
 Could the OpenCog agent produce the formalisation starting from Text to AnnotatedText according to [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)?
 Could the OpenCog agent learn, operate, experiment in [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md).
 
-## [RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/)
+## <a name="RelEx">RelEx and Linkgrammar</a>
+[RelEx](http://wiki.opencog.org/w/RelEx) and [Linkgrammar](http://www.abisource.com/projects/link-grammar/)
 RelEx Dependency Relationship Extractor
 
  1. Entry criteria = User provided new request.
@@ -92,7 +93,9 @@ RelEx Dependency Relationship Extractor
 ### Analysis scope
 Could the RelEx produce the proper links structure of the text, suitable for further formalisation?
 
-## [NLGen](https://launchpad.net/nlgen) and [NLGen2](https://launchpad.net/nlgen2)
+## <a name="NLGen">NLGen</a>
+[NLGen](https://launchpad.net/nlgen) and [NLGen2](https://launchpad.net/nlgen2)
+Do the inverse of RelEx. Convert semantic relationships to natural language.
 
  1. Entry criteria = System generated request to User.
  1. Exit criteria = Created natural language request.
