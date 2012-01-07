@@ -51,10 +51,12 @@ Possibly we could use some of public knowledge base:
  1. [ConceptNet5](http://conceptnet5.media.mit.edu/)
  1. [WordNet](http://wordnet.princeton.edu/)
 
-## Mistypes processing
+## <a name="Mistypes_processing">Mistypes processing</a>
 
  OpenOffice uses [Autocorrect](http://www.openoffice.org/api/docs/common/ref/com/sun/star/util/PathSettings.html#AutoCorrect)
  and [Autocomplete](http://www.openoffice.org/api/docs/common/ref/com/sun/star/awt/UnoControlComboBoxModel.html#Autocomplete) options that we can reuse.
+
+ OpenCog has grammatical correction option too  http://wiki.opencog.org/w/Grammatical_correction
 
 ## Technical solutions:
 
