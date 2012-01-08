@@ -90,7 +90,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. What is Bla-bla-bla?
      3. Please clarify the term.
 
-# [AIV Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+# <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
+
+# <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
 
  1. <a name="Training_data">Create training data set.</a>
    2. Analyse 100 incidents and select 10 most relative = 2 - 4
@@ -136,4 +138,4 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Explore API to integrate = 10 - 20 [could be not strait forward]
      3. Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]
 
-
+ 1. Interpreter and Validator see [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Emotion_Machine)
