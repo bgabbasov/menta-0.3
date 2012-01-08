@@ -3,7 +3,8 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
 ```1. Prototype name = sunny day estimate m/h - rainy day estimate m/h [risks]{preconditions}```
 
-## [OpenCog Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md)
+## <a name="OpenCog">OpenCog</a>
+[OpenCog Solution specification.](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md)
 
  1. [CogBuntu](http://wiki.opencog.org/w/CogBuntu)
    2. [Read documentation](http://wiki.opencog.org/w/CogBuntu) = 0.5 - 1 [need further reading]
@@ -69,7 +70,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Program distributives
      3. Installed programs
 
- 1. <a name="Natural_language_processors">Natural language processors</a>
+ 1. <a name="Natural_language_processors">Natural language processors</a> use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
    2. [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#RelEx) and StanfordParser
      3. Read documentation = 4
        4. [Main](http://wiki.opencog.org/w/RelEx)
@@ -106,4 +107,14 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Install [OpenOffice](http://www.openoffice.org/download/) or [LibreOffice](http://www.libreoffice.org/download/) = 1 - 2
      3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
    2. OpenCog
+     3. Read Auto-correct module documentation [Grammatical correction](http://wiki.opencog.org/w/Grammatical_correction) = 1 - 2
+     3. Install [OpenCog](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#OpenCog) = 1 - 2
+     3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
    2. KOffice
+     3. Read Auto-correct module documentation [http://userbase.kde.org/KWord/1.5/Manual/Autocorrect) = 1 - 2
+     3. Install [KOffice](http://www.koffice.org/download/) = 1 - 4 [Could be not strait forward under Win]
+     3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
+
+ 1. Link parsers should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
+ see [Natural Language processing](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
+
