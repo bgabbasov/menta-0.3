@@ -42,7 +42,7 @@ This way we need:
 If we see conflict, we can decide "tutorial 2 is wrong" or "tutorial 2 about different language" = this is bad example, expressions as predicates are ok in probabilistic logic(there is no conflict)
 and they do not contain context.
 
-## Synonym processing
+## <a name="Synonym_processing">Synonym processing</a>
 Possibly we could use some of public knowledge base:
 
  1. [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
