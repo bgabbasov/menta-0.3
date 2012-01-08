@@ -29,7 +29,7 @@ Problem/prototype centric view.
 
 ## Emotion machine Solution problems
 
- 1. Problem and Solution description form - Solution should be formal in teh domain context, possibly in HowTo could be reused.
+ 1. Problem and Solution description structure - Solution should be formal in the domain context, possibly HowTo approach could be reused.
  1. The way TSS could monitor the System solutions.
  1. The textual pre-processing including auto-correct based on domain dictionary.
  1. Rules and mechanisms of Critics, see [§7-5. What are some useful Critics?](http://web.media.mit.edu/~minsky/E7/eb7.html)

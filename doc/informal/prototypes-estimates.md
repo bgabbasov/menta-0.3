@@ -69,7 +69,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Program distributives
      3. Installed programs
 
- 1. Natural language processors
+ 1. <a name="Natural_language_processors">Natural language processors</a>
    2. [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#RelEx) and StanfordParser
      3. Read documentation = 4
        4. [Main](http://wiki.opencog.org/w/RelEx)
@@ -88,3 +88,22 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Is my understanding correct?
      3. What is Bla-bla-bla?
      3. Please clarify the term.
+
+# [AIV Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+
+ 1. <a name="Training_data">Create training data set.</a>
+   2. Analyse 100 incidents and select 10 most relative = 2 - 4
+
+ 1. Auto-correct analysis should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
+   2. AbiWord
+     3. Read [Syntax check module documentation](http://www.abisource.com/projects/enchant/) = 1
+     3. Install [AbiWord](http://www.abisource.com/download/) = 1 - 2
+     3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
+   2. OpenOffice(LibreOffice)
+     3. Read Auto-correct module documentation
+     [OpenOffice](http://wiki.services.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Writer_Guide/Using_AutoCorrect)
+     [LibreOffice](http://help.libreoffice.org/Common/AutoCorrecthttp://help.libreoffice.org/Common/AutoCorrect) = 1
+     3. Install [OpenOffice](http://www.openoffice.org/download/) or [LibreOffice](http://www.libreoffice.org/download/) = 1 - 2
+     3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
+   2. OpenCog
+   2. KOffice
