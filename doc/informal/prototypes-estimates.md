@@ -106,7 +106,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
  1. Test data
    2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
-   2. Perceiving workflow: Deliberative Critics -> Selects -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
+   2. Perceiving workflow: Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
    -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
 
  1. Model data structures:
