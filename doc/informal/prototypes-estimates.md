@@ -133,18 +133,18 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Current task state representation =  4 - 6 [possibly should try several representations]
          4. Reasoning over current state with Reasoner adapter development = 8 - 10
      3. Reflective Critic
-        4. Develop self-control mechanism
-          5. Develop Energy control mechanism.
-            6. Design Energy concept = 4
-            6. Design Energy assignment mechanism during training = 2
-            6. Implement Energy concept = 2
-            6. Implement Energy assignment mechanism = 4
-          5. Develop Sub-goal control mechanism.
-            6. Design sub-goal control mechanism = 4
-            6. Implement sub-goal control mechanism = 4
-          5. Develop Evidence control mechanism.
-            6. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
-            6. Implement Evidence control mechanism = 4 - 10
+         4. Develop self-control mechanism
+           5. Develop Energy control mechanism.
+             6. Design Energy concept = 4
+             6. Design Energy assignment mechanism during training = 2
+             6. Implement Energy concept = 2
+             6. Implement Energy assignment mechanism = 4
+           5. Develop Sub-goal control mechanism.
+             6. Design sub-goal control mechanism = 4
+             6. Implement sub-goal control mechanism = 4
+           5. Develop Evidence control mechanism.
+             6. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
+             6. Implement Evidence control mechanism = 4 - 10
      3. Self-Reflective Critic = not requested in the prototype
      3. Self-Conscious Critic = not requested in the prototype
  1. Prototype Selector = 6 - 8
@@ -162,16 +162,16 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]
    2. Divide and Conquer
      3. Add analytical HowTo-s to basic set:
-        4. Wrong software was installed = 4
-        4. Two direct instructions in one incident description = 4
+         4. Wrong software was installed = 4
+         4. Two direct instructions in one incident description = 4
      3. Add Interpretation mechanism over current state of the system
-        4. Variable and current state addressing = 12 - 16
-        4. Logical operation execution = 16
-          5. Exists
-          5. Equals value
-          5. Conjunction
-          5. Implication
-          5. Not
+         4. Variable and current state addressing = 12 - 16
+         4. Logical operation execution = 16
+           5. Exists
+           5. Equals value
+           5. Conjunction
+           5. Implication
+           5. Not
    2. Planning.
    2. Simplification.
    2. Elevation.
