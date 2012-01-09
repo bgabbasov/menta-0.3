@@ -26,9 +26,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Test PLN using following test data (see [NARS syntax](http://code.google.com/p/open-nars/wiki/InputOutputFormat)): = 4 - 8 [difficulties of the NARS -> PLN translation]
      3. [check linked modules example](http://code.google.com/p/menta/source/browse/lib/src/main/test2.narsese)
      3. [check operation to module duplicates, see simplified version](http://code.google.com/p/menta/source/browse/lib/src/main/test4.narsese)
-   2. Search for following options:
+   2. Search for following options see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573):
      3. Simplification.
-     3. Elevation .
+     3. Elevation (generalization).
      3. Reformulation.
      3. Contradiction.
      3. Simulation.
