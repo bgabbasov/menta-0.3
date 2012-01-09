@@ -86,11 +86,12 @@ that activates Reformulation Way2Think, Reformulation changes the representation
      3. [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
      3. [DBPedia](http://dbpedia.org/About)
 
- 1. Self Conscious Critics starts the Perceiving Way2Think that controls following Critics-Way2Think pairs
-  2. Activates Critics from lower to upper level one by one to find proper Way2Think (if no Way2Think found activates Critics on the level above).
+ 1. [Reflective Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_ednref6) starts the Perceiving Way2Think that controls following Critics-Selector-Way2Think
+  2. Activates Critics from lower to upper level one by one to identify the problem type then Selector (if no Selector found activates Critics on the level above).
+  2. Selector fetches proper Way2Think
   2. Runs found Way2Think that produces some additional annotations(ex.: some inference results could be added).
   2. Validate the Way2Think annotations, if annotations conforms the [formalisation criteria](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md)
-  stops the process, if not activates proper Critics again.
+  stops the process, if not activates Critics again.
   2. Controls energy spent by the system, if exceeded maximum available for the perceiving operation stops.
 
     3. Each operation Critics or Way2Think is assigned some degree of energy that is requested for the operation to be performed.

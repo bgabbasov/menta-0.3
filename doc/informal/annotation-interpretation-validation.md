@@ -25,7 +25,7 @@ See https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.
 Interpreter and Validator could be expressed via Emotion Machine Solution [see section Workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) with
 [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysishttp://en.wikipedia.org/wiki/Latent_semantic_analysis) as main interpretation algorithm.
 
-### Component diagram
+### <a name="Component_diagram>Component diagram</a>
 
 ![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVComponent.png)
 

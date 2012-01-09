@@ -92,6 +92,25 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
 # <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
+ 1. Model data structures:
+   2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram)
+     3. Incidents description text.
+     3. Incident category.
+     3. Incident formalized description.
+     3. Incident solution.
+   2. Internal knowledge(atom) (representations)[http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130] and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131)
+     3. Realm (Domain), should take in account several realms representation of knowledge see Panalogy [here](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc465796529)
+     , [here](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc516744255).
+     3. Context see [Micronemes for Contextual Knowledge of the chapter](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
+     3. References to other Realms representations
+     3. References to other detalization levels representations
+     3. Links to other atoms in current Realm and Context
+     3. Links from other atoms in current Realm and Context
+     3. Textual representation.
+   2. Formalisation outbound structures
+     3. Must have links to textual representations.
+     3. Must conform formalisation criteria.
+
 # <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
 
  1. <a name="Training_data">Create training data set.</a>
