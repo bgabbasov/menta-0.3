@@ -123,9 +123,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Must conform formalisation criteria.
      3. Must be one of [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
  1. Design [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) = 18 - 28 [first solution could be not the best]
-   2. [Critics](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708574),
-   2. [Selector](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708572), could be understood as resources(Critics, Way2Think) selection strategy,
-   2. [Way2Think](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708573)
+   2. [Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708574),
+   2. [Selector](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708572), could be understood as resources(Critics, Way2Think) selection strategy,
+   2. [Way2Think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)
  1. Prototype Critics, Way2Think, Selector
    2. Implement Critics
      3. Deliberative Critics
