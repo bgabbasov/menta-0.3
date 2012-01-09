@@ -51,7 +51,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. [Quick Start](http://wiki.opencog.org/wikihome/images/4/4a/MOSES-QuickGuide.pdf)
      3. [Tutorial](http://wiki.opencog.org/w/MOSES_Tutorial)
      3. [Examples](http://wiki.opencog.org/w/MOSES_example_programs)
-   2. Search for following options: = 16 - 40 [difficulties in understanding of MOSES mechanisms]
+   2. Search for following options (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)): = 16 - 40 [difficulties in understanding of MOSES mechanisms]
      3. Reasoning By Analogy.
      3. Reformulation.
      3. Use external representations.
