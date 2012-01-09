@@ -129,9 +129,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
  1. Prototype Critics, Way2Think, Selector
    2. Implement Critics
      3. Deliberative Critics
-       4. Current activity goal representation = 6 - 8 [possibly should try several approaches]
-       4. Current task state representation =  4 - 6 [possibly should try several representations]
-       4. Reasoning over current state with Reasoner adapter development = 8 - 10
+         4. Current activity goal representation = 6 - 8 [possibly should try several approaches]
+         4. Current task state representation =  4 - 6 [possibly should try several representations]
+         4. Reasoning over current state with Reasoner adapter development = 8 - 10
      3. Reflective Critic
        4. Develop self-control mechanism
          5. Develop Energy control mechanism.
