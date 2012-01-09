@@ -110,7 +110,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Incident category.
      3. Incident formalized description.
      3. Incident solution.
-   2. Internal knowledge(atom) (representations)[http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130] and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131) = 8 - 10 [possibly several approaches required]
+   2. Internal knowledge (representations)[http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130] and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131) = 8 - 10 [possibly several approaches required]
      3. Panalogy (Realm, Domain), should take in account several realms representation of knowledge see Panalogy [here](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc465796529)
      , [here](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc516744255).
      3. Context see [Micronemes for Contextual Knowledge of the chapter](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
