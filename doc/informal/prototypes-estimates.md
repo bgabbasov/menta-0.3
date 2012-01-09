@@ -104,6 +104,11 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
 # <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
+ 1. Test data
+   2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
+   2. Perceiving workflow: Deliberative Critics -> Selects -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
+   -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
+
  1. Model data structures:
    2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram) = 1 - 2
      3. Incidents description text.
