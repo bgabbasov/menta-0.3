@@ -205,7 +205,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. OpenOffice(LibreOffice)
      3. Read Auto-correct module documentation
      [OpenOffice](http://wiki.services.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Writer_Guide/Using_AutoCorrect)
-     [LibreOffice](http://help.libreoffice.org/Common/AutoCorrecthttp://help.libreoffice.org/Common/AutoCorrect) = 1
+     [LibreOffice](http://help.libreoffice.org/Common/AutoCorrect) = 1
      3. Install [OpenOffice](http://www.openoffice.org/download/) or [LibreOffice](http://www.libreoffice.org/download/) = 1 - 2
      3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
    2. OpenCog
