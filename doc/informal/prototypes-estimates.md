@@ -213,14 +213,14 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Install [OpenCog](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#OpenCog) = 1 - 2
      3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
    2. KOffice
-     3. Read Auto-correct module documentation [http://userbase.kde.org/KWord/1.5/Manual/Autocorrect) = 1 - 2
+     3. Read Auto-correct [module documentation](http://userbase.kde.org/KWord/1.5/Manual/Autocorrect) = 1 - 2
      3. Install [KOffice](http://www.koffice.org/download/) = 1 - 4 [Could be not strait forward under Win]
      3. Test [10 incidents descriptions](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training_data) = 3.5 - 4
 
  1. Link parsers(Preliminary annotator) should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
  see [Natural Language processing](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
 
- 1. (KnowledgeBaseAnnotator)[https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing]
+ 1. [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing)
  knowledge base integration analysis.
    2. [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
      3. Explore API to integrate = 10 - 20 [could be not strait forward]
