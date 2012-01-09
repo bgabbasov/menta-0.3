@@ -40,3 +40,24 @@ Problem/prototype centric view.
  1. Exit criteria of Critics->WayToThink loop.
  1. Clarification/Confirmation response processing.
  1. Context support.
+
+## Annotation interpretation validation Solution problems
+Emotion machine +
+
+ 1. Knowledge Base annotator is dependant on current KB available.
+ 1. Domain KB creation could be expensive.
+ 1. Validation mechanisms still obscure.
+
+
+ ## OpenCog Solution problems
+ Emotion machine, Annotation interpretation validation +
+
+  1. OpenCog is created on C++, could be hard to integrate with Scala application, see [JCog](https://launchpad.net/jcog).
+    2. Some parts of OpenCog is in Java: RelEx, NLGen2.
+  1. OpenCog is the framework, we have to understand how do we integrate and implement parts of Menta-0.3 perceiving system.
+  1. NLGen2 could be not good enough to generate the clarification requests.
+  1. AtomSpace could be not usable for our [knowledge representation](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130).
+  1. PLN could be hard to integrate in Scala project.
+  1. MOSES could be not usable for our knowledge.
+  1. Embodiment could be not capable of expressing [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md).
+  1. RelEx and NLGen could be not so good to be used in the project.
