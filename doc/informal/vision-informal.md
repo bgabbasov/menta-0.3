@@ -42,14 +42,15 @@ Problem/prototype centric view.
  1. Context support.
 
 ## Annotation interpretation validation Solution problems
+
 Emotion machine +
 
  1. Knowledge Base annotator is dependant on current KB available.
  1. Domain KB creation could be expensive.
  1. Validation mechanisms still obscure.
 
+## OpenCog Solution problems
 
- ## OpenCog Solution problems
  Emotion machine, Annotation interpretation validation +
 
   1. OpenCog is created on C++, could be hard to integrate with Scala application, see [JCog](https://launchpad.net/jcog).
