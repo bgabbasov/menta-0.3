@@ -172,25 +172,25 @@ The list of prototypes with WBS and estimates in man/hours with following layout
            5. Conjunction
            5. Implication
            5. Not
-   2. Planning.
-   2. Simplification.
-   2. Elevation.
-   2. Reformulation.
-   2. Self-reflection.
-   2. Contradiction.
-   2. Use external representations.
+   2. Planning (will not be implemented in prototype).
+   2. Simplification (will not be implemented in prototype).
+   2. Elevation (will not be implemented in prototype).
+   2. Reformulation (will not be implemented in prototype).
+   2. Self-reflection (will not be implemented in prototype).
+   2. Contradiction (will not be implemented in prototype).
+   2. Use external representations (will not be implemented in prototype).
    2. Simulation (build the model based on inbound information) =
      3. Search for concept in the KB. = 16
      3. Search for properties in KB. = 4
      3. Create connections of found concepts. = 2
      3. Support context. = 2
-   2. Correlation.
+   2. Correlation (will not be implemented in prototype).
    2. Logical Reasoning see [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN)
    and [Bayesian inference](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Bayesian_inference)
-   2. Wishful thinking
-   2. Impersonation.
+   2. Wishful thinking (will not be implemented in prototype).
+   2. Impersonation (will not be implemented in prototype).
    2. Cry for help (escalation) [see](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#NLGen)
-   2. Resignation
+   2. Resignation (will not be implemented in prototype).
 
 # <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
 
