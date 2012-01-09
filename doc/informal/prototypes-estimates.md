@@ -60,7 +60,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
  1. <a name="Bayesian_network">[Bayesian Network](http://en.wikipedia.org/wiki/Bayesian_network)</a>
    2. Find implementation or use [javabayes](http://www.cs.cmu.edu/~javabayes/) and install them = 16 - 32 [possibly a lot of implementations]
-   2. Compare implementations and MOSES using following examples:
+   2. Compare implementations and MOSES using following examples (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)):
      3. Reasoning By Analogy.
      3. Reformulation.
      3. Use external representations.

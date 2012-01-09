@@ -74,6 +74,7 @@ Could the project be used in:
 ## <a name="Embodiment">Embodiment</a>
 (Modules to allow OpenCog to reason about being embodied within an avatar the program in the computer environment world](http://wiki.opencog.org/w/Embodiment) ([Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md))
 
+Embodiment system possibly could be used to simulate [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md).
 ### Definitions
 [See Emotion Machine Solution Definitions section.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Definitions)
 
