@@ -83,7 +83,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Installed programs
 
  1. <a name="Natural_language_processors">Natural language processors</a> use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
-   2. [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#RelEx) and StanfordParser
+   2. [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#RelEx)
      3. Read documentation = 4
        4. [Main](http://wiki.opencog.org/w/RelEx)
        4. [Sentence algorithm](http://wiki.opencog.org/w/Sentence_algorithms)

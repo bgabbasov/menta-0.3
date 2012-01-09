@@ -100,7 +100,7 @@ Do the inverse of RelEx. Convert semantic relationships to natural language.
 
  1. Entry criteria = System generated request to User.
  1. Exit criteria = Created natural language request.
- 1. Inbound data = a AnnotatedText [see Component diagram section](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+ 1. Inbound data = a AnnotatedText [see Component diagram section](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram)
  1. Outbound data = a Text request.
 
 ### Analysis scope
