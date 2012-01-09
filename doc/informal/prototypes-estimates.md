@@ -16,7 +16,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    and [test data to be loaded and requested](http://menta.googlecode.com/hg/test/OwlTest/src/main/resources/preload/storage.test.0.2.owl)
    =  4 - 8 [possible additional setup of the AtomSpace server and TCP connection]{CogBuntu is operational}
 
- 1. [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#PLN)
+ 1. <a name="PLN">[PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#PLN)</a>
    2. Read documentation: = 2 - 4
      3. [PLN](http://wiki.opencog.org/w/PLN)
      3. [PLN Details](http://wiki.opencog.org/w/PLN_Details)
@@ -35,7 +35,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Correlation.
      3. Logical Reasoning.
 
- 1. [Bayesian Inference](http://en.wikipedia.org/wiki/Bayesian_inference)
+ 1. <a name="Bayesian_inference">[Bayesian Inference](http://en.wikipedia.org/wiki/Bayesian_inference)</a>
    2. Find implementation or use [ci-bayes](https://github.com/jottinger/ci-bayes) and install them = 16 - 32 [possibly a lot of implementations]
    2. Compare implementations and PLN using following examples:
      3. [check linked modules example](http://code.google.com/p/menta/source/browse/lib/src/main/test2.narsese)
@@ -57,6 +57,18 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Use external representations.
      3. Simulation.
      3. Correlation.
+
+ 1. <a name="Bayesian_network">[Bayesian Network](http://en.wikipedia.org/wiki/Bayesian_network)</a>
+   2. Find implementation or use [javabayes](http://www.cs.cmu.edu/~javabayes/) and install them = 16 - 32 [possibly a lot of implementations]
+   2. Compare implementations and MOSES using following examples:
+     3. Reasoning By Analogy.
+     3. Reformulation.
+     3. Use external representations.
+     3. Simulation.
+     3. Correlation.
+   2. Comparison criteria:
+     3. Performance
+     3. Adapter development estimate
 
  1. [Embodiment](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment)
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
@@ -83,22 +95,22 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Read documentation and Test using same 10 simple examples of test incidents.
    2. Comparison criteria: precision and recall
 
- 1. [NLGen](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#NLGen)
+ 1. <a name="NLGen">[NLGen](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#NLGen)</a>
    2. [Read documentation](https://launchpad.net/nlgen2), [SegSim](http://wiki.opencog.org/w/SegSim) = 4
    2. Test if we could use it to generate clarification/confirmation requests: 24 - 32 [probable difficulties with setup and run of the module]
      3. Is my understanding correct?
      3. What is Bla-bla-bla?
      3. Please clarify the term.
 
-# <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
+# <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
  1. Model data structures:
-   2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram)
+   2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram) = 1 - 2
      3. Incidents description text.
      3. Incident category.
      3. Incident formalized description.
      3. Incident solution.
-   2. Internal knowledge(atom) (representations)[http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130] and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131)
+   2. Internal knowledge(atom) (representations)[http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130] and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131) = 8 - 10 [possibly several approaches required]
      3. Panalogy (Realm, Domain), should take in account several realms representation of knowledge see Panalogy [here](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc465796529)
      , [here](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc516744255).
      3. Context see [Micronemes for Contextual Knowledge of the chapter](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
@@ -107,11 +119,14 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Links to other atoms in current Realm and Context
      3. Links from other atoms in current Realm and Context
      3. Textual representation.
-   2. Formalisation outbound structures
+   2. Formalisation outbound structures(modeling and simulation) = 6 - 10
      3. Must have links to textual representations.
      3. Must conform formalisation criteria.
      3. Must be one of [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
- 1. Design [Critics](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708574) and [Way2Think](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708573) = 16 - 24 [first solution could be not the best]
+ 1. Design [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) = 18 - 28 [first solution could be not the best]
+   2. [Critics](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708574),
+   2. [Selector](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708572), could be understood as resources(Critics, Way2Think) selection strategy,
+   2. [Way2Think](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc508708573)
  1. Prototype Critics, Way2Think, Selector
    2. Implement Critics
      3. Deliberative Critics
@@ -133,6 +148,50 @@ The list of prototypes with WBS and estimates in man/hours with following layout
            6. Implement Evidence control mechanism = 4 - 10
      3. Self-Reflective Critic = not requested in the prototype
      3. Self-Conscious Critic = not requested in the prototype
+ 1. Prototype Selector = 6 - 8
+ 1. Prototype Way2Think
+   2. Create base constructs(HowTo-s) = 2 - 4
+     3. Copy file
+     3. Move file
+     3. Delete file
+     3. Install program
+     3. Uninstall program
+     3. Add user to user group
+     3. Remove user from user group
+   2. Knowing How (select from KB) = 4 - 8
+   2. Extensive Search (search in KB)  = 12 - 24 [graph search could be not strait-forward]
+   2. Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]
+   2. Divide and Conquer
+     3. Add analytical HowTo-s to basic set:
+       4. Wrong software was installed = 4
+       4. Two direct instructions in one incident description = 4
+     3. Add Interpretation mechanism over current state of the system
+       4. Variable and current state addressing = 12 - 16
+       4. Logical operation execution = 16
+         5. Exists
+         5. Equals value
+         5. Conjunction
+         5. Implication
+         5. Not
+   2. Planning.
+   2. Simplification.
+   2. Elevation.
+   2. Reformulation.
+   2. Self-reflection.
+   2. Contradiction.
+   2. Use external representations.
+   2. Simulation (build the model based on inbound information) =
+     3. Search for concept in the KB. = 16
+     3. Search for properties in KB. = 4
+     3. Create connections of found concepts. = 2
+     3. Support context. = 2
+   2. Correlation.
+   2. Logical Reasoning see [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN)
+   and [Bayesian inference](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Bayesian_inference)
+   2. Wishful thinking
+   2. Impersonation.
+   2. Cry for help (escalation) [see](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#NLGen)
+   2. Resignation
 
 # <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
 
