@@ -45,9 +45,9 @@ Problem/prototype centric view.
 
 Emotion machine +
 
- 1. Knowledge Base annotator is dependant on current KB available.
+ 1. [Knowledge Base annotator is dependant on current KB available.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
  1. Domain KB creation could be expensive.
- 1. Validation mechanisms still obscure.
+ 1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Test_data)
 
 ## OpenCog Solution problems
 

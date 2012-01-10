@@ -107,9 +107,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
 # <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
- 1. Test data
+ 1. <a name="Test_data">Test data</a>:
    2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
-   2. Perceiving workflow: Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
+   2. [Perceiving workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Formalisation_Production_Workflow): Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
    -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
 
  1. <a name="Model">Model data structures:</a>
@@ -228,7 +228,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
  1. Link parsers(Preliminary annotator) should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
  see [Natural Language processing](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
 
- 1. [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing)
+ 1. <a name="KnowledgeBaseAnnotator">KnowledgeBaseAnnotator</a>, see [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing).
  knowledge base integration analysis.
    2. [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
      3. Explore API to integrate = 10 - 20 [could be not strait forward]

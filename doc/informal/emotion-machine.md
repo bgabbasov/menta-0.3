@@ -64,7 +64,7 @@ that activates Reformulation Way2Think, Reformulation changes the representation
 
 `Learned -> [ReasoningByAnalogy|DivideAndConquer] -> Deliberate -> Reformulation -> Learned -> KnowHow`
 
-## <a name="Formalisation Production Workflow">Formalisation Production Workflow</a>
+## <a name="Formalisation_Production_Workflow">Formalisation Production Workflow</a>
 
 ### Workflow.
 
