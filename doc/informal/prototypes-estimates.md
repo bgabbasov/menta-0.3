@@ -47,32 +47,6 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Adapter development estimate
      3. Probabilistic logic options, use options of PLN analysis
 
- 1. <a name="MOSES">MOSES</a>, [see specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#MOSES)
-   2. Read documentation: = 2 - 3
-     3. [Main](http://wiki.opencog.org/w/MOSES)
-     3. [Quick Start](http://wiki.opencog.org/wikihome/images/4/4a/MOSES-QuickGuide.pdf)
-     3. [Tutorial](http://wiki.opencog.org/w/MOSES_Tutorial)
-     3. [Examples](http://wiki.opencog.org/w/MOSES_example_programs)
-   2. Search for following options (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)): = 16 - 40 [difficulties in understanding of MOSES mechanisms]
-     3. Reasoning By Analogy.
-     3. Reformulation.
-     3. Use external representations.
-     3. Simulation.
-     3. Correlation.
-   2. Estimate the integration effort into Scala project.
-
- 1. <a name="Bayesian_network">[Bayesian Network](http://en.wikipedia.org/wiki/Bayesian_network)</a>
-   2. Find implementation or use [javabayes](http://www.cs.cmu.edu/~javabayes/) and install them = 16 - 32 [possibly a lot of implementations]
-   2. Compare implementations and MOSES using following examples (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)):
-     3. Reasoning By Analogy.
-     3. Reformulation.
-     3. Use external representations.
-     3. Simulation.
-     3. Correlation.
-   2. Comparison criteria:
-     3. Performance
-     3. Adapter development estimate
-
  1. <a name"Embodiment">Embodiment</a>, see [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment).
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
      3. [Main](http://wiki.opencog.org/w/Embodiment)
@@ -105,7 +79,54 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. What is Bla-bla-bla?
      3. Please clarify the term.
 
-# <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
+### <a name="Training">System training prototype</a>
+
+ 1. <a name="MOSES">MOSES</a>, [see specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#MOSES)
+   2. Read documentation: = 2 - 3
+     3. [Main](http://wiki.opencog.org/w/MOSES)
+     3. [Quick Start](http://wiki.opencog.org/wikihome/images/4/4a/MOSES-QuickGuide.pdf)
+     3. [Tutorial](http://wiki.opencog.org/w/MOSES_Tutorial)
+     3. [Examples](http://wiki.opencog.org/w/MOSES_example_programs)
+   2. Search for following options (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)): = 16 - 40 [difficulties in understanding of MOSES mechanisms]
+     3. Reasoning By Analogy.
+     3. Reformulation.
+     3. Use external representations.
+     3. Simulation.
+     3. Correlation.
+   2. Estimate the integration effort into Scala project.
+
+ 1. <a name="Bayesian_network">[Bayesian Network](http://en.wikipedia.org/wiki/Bayesian_network)</a>
+   2. Find implementation or use [javabayes](http://www.cs.cmu.edu/~javabayes/) and install them = 16 - 32 [possibly a lot of implementations]
+   2. Compare implementations and MOSES using following examples (see [Emotion Machine book description](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)):
+     3. Reasoning By Analogy.
+     3. Reformulation.
+     3. Use external representations.
+     3. Simulation.
+     3. Correlation.
+   2. Comparison criteria:
+     3. Performance
+     3. Adapter development estimate
+
+ 1. Test approach
+   2. Create Training data structures.
+     3. Incidents description text. 1 - 2
+     3. Incident category. 1 - 2
+     3. Incident formalized description.
+       4. Design = 14 - 16
+       4. Model = 10 - 12
+       4. Implement = 40 - 48
+     3. Incident solution (Migrate HowTo approach). 10 - 14
+   2. Create formalized description generalisation mechanism
+     3. Create common parts selector and variable introducer
+       4. Comparator = 6 - 8
+       4. Recursive runner = 8 - 10
+       4. Variable introducer
+         5. Design variable structure =  4 - 8
+         5. Implement and test variable = 8 - 16
+         5. Named variables builder including variable HowTo = 8 - 10
+         5. Unnamed variable builder = 8 - 10
+
+## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
  1. <a name="Test_data">Test data</a>:
    2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
@@ -181,6 +202,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
            5. Conjunction
            5. Implication
            5. Not
+
    2. Planning (will not be implemented in prototype).
    2. Simplification (will not be implemented in prototype).
    2. Elevation (will not be implemented in prototype).
@@ -200,8 +222,12 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Impersonation (will not be implemented in prototype).
    2. Cry for help (escalation) [see](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#NLGen)
    2. Resignation (will not be implemented in prototype).
+ 1. Test main perceiving workflow
+   2. Prototype Validation criteria to be used in test = should be done as part of [Training prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#MOSES)
+   2. Prototype [Main Workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Main_perceiving_workflow). = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}
 
-# <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
+
+## <a name="AIV">AIV Solution</a>, for the specification see [page.](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md)
 
  1. <a name="Training_data">Create training data set.</a>
    2. Analyse 100 incidents and select 10 most relative = 2 - 4

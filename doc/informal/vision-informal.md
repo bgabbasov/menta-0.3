@@ -17,15 +17,16 @@ Problem/prototype centric view.
 
 ## Perceiving algorithms
 
- 1. Lexical processing - depends on parser and trained data could be erroneous.
- 1. Annotation depends on Knowledge base (KB), should have at least minimal trained knowledge of TSS + IT common sense.
- 1. Interpretation by [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysis) is not ideal and could be replaced by other proper algorithm.
- 1. Validation criteria still not clear and could be too detailed.
+ 1. [Lexical processing - depends on parser and trained data could be erroneous.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
+ 1. [Annotation depends on Knowledge base (KB), should have at least minimal trained knowledge of TSS + IT common sense.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
+ 1. Interpretation by [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysis) is not ideal and could be replaced by other proper algorithm, see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Emotion_Machine)
+ 1. [Validation criteria still not clear and could be too detailed.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training)
 
 ## Textual processing
 
- 1. Word processing - NLP tool kits still need more analysis for: the applicability to SE domain.
- 1. Synonym an Homonym problem still need industrial approach = possibly we could use some Knowledge Base see [solutions](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md)
+ 1. [Word processing - NLP tool kits still need more analysis for: the applicability to SE domain.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
+ 1. Synonym an Homonym problem still need industrial approach = possibly we could use some Knowledge Base see [solutions](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing),
+  see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
 
 ## Emotion machine Solution problems
 

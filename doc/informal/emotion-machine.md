@@ -16,7 +16,7 @@ Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http:/
   2. Incident category.
 1. Outbound is AnnotatedText with formalisation results.
 
-### Training mode.
+### <a name="Training_mode">Training mode</a>.
 
 1. Entry criteria
   2. User provided new incidents Texts.
@@ -86,7 +86,7 @@ that activates Reformulation Way2Think, Reformulation changes the representation
      3. [YAGO2](http://www.mpi-inf.mpg.de/yago-naga/yago/)
      3. [DBPedia](http://dbpedia.org/About)
 
- 1. [Reflective Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_ednref6) starts the Perceiving Way2Think that controls following Critics-Selector-Way2Think
+ 1. <a name="Main_perceiving_workflow">Main perceiving workflow</a> [Reflective Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_ednref6) starts the Perceiving Way2Think that controls following Critics-Selector-Way2Think
    2. Activates Critics from lower to upper level one by one to identify the problem type then Selector (if no Selector found activates Critics on the level above).
    2. Selector fetches proper Way2Think
    2. Runs found Way2Think that produces some additional annotations(ex.: some inference results could be added).
