@@ -119,7 +119,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Incident category.
      3. Incident formalized description.
      3. Incident solution.
-   2. Internal knowledge(atom) [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130) and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131) = 8 - 10 [possibly several approaches required]
+   2. <a name"Internal_knowledge">Internal knowledge(atom)</a> [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130) and it's [hierarchy](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131) = 8 - 10 [possibly several approaches required]
      3. Panalogy (Realm, Domain), should take in account several realms representation of knowledge see Panalogy [here](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc516744255), [here](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc465796529).
      3. Context see [Micronemes for Contextual Knowledge of the chapter](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
      3. References to other Realms representations
@@ -131,7 +131,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Must have links to textual representations.
      3. Must conform formalisation criteria.
      3. Must be one of [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
- 1. Design [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) = 18 - 28 [first solution could be not the best]
+ 1. <a name="Design_Emotion_Machine">Design</a> [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) = 18 - 28 [first solution could be not the best]
    2. [Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708574),
    2. [Selector](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708572), could be understood as resources(Critics, Way2Think) selection strategy,
    2. [Way2Think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)
@@ -206,7 +206,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
  1. <a name="Training_data">Create training data set.</a>
    2. Analyse 100 incidents and select 10 most relative = 2 - 4
 
- 1. Auto-correct analysis should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
+ 1. <a name="Auto_correct">Auto-correct</a> analysis should use measures: [precision, recall and F-measure](http://en.wikipedia.org/wiki/Precision_and_recall)
    2. AbiWord
      3. Read [Syntax check module documentation](http://www.abisource.com/projects/enchant/) = 1
      3. Install [AbiWord](http://www.abisource.com/download/) = 1 - 2

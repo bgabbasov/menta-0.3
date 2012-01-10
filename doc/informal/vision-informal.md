@@ -29,17 +29,19 @@ Problem/prototype centric view.
 
 ## Emotion machine Solution problems
 
- 1. Problem and Solution description structure - Solution should be formal in the domain context, possibly HowTo approach could be reused.
- 1. The way TSS could monitor the System solutions.
- 1. The textual pre-processing including auto-correct based on domain dictionary.
- 1. Rules and mechanisms of Critics, see [§7-5. What are some useful Critics?](http://web.media.mit.edu/~minsky/E7/eb7.html)
- 1. Rules and mechanisms of Selector(WayToThink) see [§7-4. What are some useful Ways to Think?](http://web.media.mit.edu/~minsky/E7/eb7.html)
- 1. Inbound Critics data structure.
- 1. Inbound WayToThink data structure.
- 1. Outbound WayToThink data structure.
- 1. Exit criteria of Critics->WayToThink loop.
- 1. Clarification/Confirmation response processing.
- 1. Context support.
+ 1. [Problem and Solution description structure - Solution should be formal in the domain context, possibly HowTo approach could be reused.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
+ 1. The way TSS could monitor the System solutions. = The Reporting system should be crated, for now only the application reporting should be used.
+ 1. [The textual pre-processing including auto-correct based on domain dictionary.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Auto_correct)
+ 1. Rules and mechanisms of Critics, see [§7-5. What are some useful Critics?](http://web.media.mit.edu/~minsky/E7/eb7.html),
+ see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Design_Emotion_Machine)
+ 1. Rules and mechanisms of Selector(WayToThink) see [§7-4. What are some useful Ways to Think?](http://web.media.mit.edu/~minsky/E7/eb7.html),
+ see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Design_Emotion_Machine)
+ 1. [Inbound Critics data structure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
+ 1. [Inbound WayToThink data structure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
+ 1. [Outbound WayToThink data structure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
+ 1. [Exit criteria of Critics->WayToThink loop.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Test_data)
+ 1. [Clarification/Confirmation response processing.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#NLGen)
+ 1. [Context support.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Internal_knowledge)
 
 ## Annotation interpretation validation Solution problems
 
@@ -47,6 +49,10 @@ Emotion machine +
 
  1. [Knowledge Base annotator is dependant on current KB available.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
  1. Domain KB creation could be expensive.
+   2.	TSS1 courses entry requirements.
+   2.	TSS1 training courses materials.
+   2.	TSS1 – TSS2 intro into a project to be automated.
+   2.	TSS1 – TSS2 workbooks of a project to be automated.
  1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Test_data)
 
 ## OpenCog Solution problems
