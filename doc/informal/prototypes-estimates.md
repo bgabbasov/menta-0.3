@@ -47,7 +47,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Adapter development estimate
      3. Probabilistic logic options, use options of PLN analysis
 
- 1. <a name"Embodiment">Embodiment</a>, see [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment).
+ 1. <a name="Embodiment">Embodiment</a>, see [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment).
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
      3. [Main](http://wiki.opencog.org/w/Embodiment)
      3. <a href="http://wiki.opencog.org/w/UserManual_(Embodiment)">User manual</a>
