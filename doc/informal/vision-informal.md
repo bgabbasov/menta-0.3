@@ -68,4 +68,4 @@ Emotion machine +
   1. [MOSES could be not usable for our knowledge](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#MOSES).
   1. Embodiment could be not capable of expressing [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md), see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Embodiment).
   1. [RelEx could be not so good to be used in the project.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
-  1. [NLGen2 could be not good enough to generate the clarification requests.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md.md#NLGen)
+  1. [NLGen2 could be not good enough to generate the clarification requests.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#NLGen)
