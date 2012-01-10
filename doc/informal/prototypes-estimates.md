@@ -10,11 +10,12 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. [Read documentation](http://wiki.opencog.org/w/CogBuntu) = 0.5 - 1 [need further reading]
    2. [Install CogBuntu](http://wiki.opencog.org/w/CogBuntu#How_to_Get_cogbuntu) = 1 - 4 [problems with iso installation on virtual machine]
 
- 1. [AtomSpace](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#AtomSpace)
+ 1. <a name="AtomSpace">AtomSpace</a>, [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#AtomSpace)
    2. [Read documentation](http://wiki.opencog.org/w/AtomSpace), [Cookbook](http://wiki.opencog.org/w/Cookbook) = 2 - 4 [need further reading]
-   2. Test the storage using [Cookbook](http://wiki.opencog.org/w/Cookbook#Importing_Data)
+   2. Test storage using [Cookbook](http://wiki.opencog.org/w/Cookbook#Importing_Data)
    and [test data to be loaded and requested](http://menta.googlecode.com/hg/test/OwlTest/src/main/resources/preload/storage.test.0.2.owl)
    =  4 - 8 [possible additional setup of the AtomSpace server and TCP connection]{CogBuntu is operational}
+   2. Test weather storage is usable for our [knowledge representation](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130). = 16 - 20 {Data structures are designed and prototyped, [see description](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)}
 
  1. <a name="PLN">[PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#PLN)</a>
    2. Read documentation: = 2 - 4
@@ -34,6 +35,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Simulation.
      3. Correlation.
      3. Logical Reasoning.
+   2. Estimate the integration effort into Scala project.
 
  1. <a name="Bayesian_inference">[Bayesian Inference](http://en.wikipedia.org/wiki/Bayesian_inference)</a>
    2. Find implementation or use [ci-bayes](https://github.com/jottinger/ci-bayes) and install them = 16 - 32 [possibly a lot of implementations]
@@ -45,7 +47,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Adapter development estimate
      3. Probabilistic logic options, use options of PLN analysis
 
- 1. [MOSES](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#MOSES)
+ 1. <a name="MOSES">MOSES</a>, [see specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#MOSES)
    2. Read documentation: = 2 - 3
      3. [Main](http://wiki.opencog.org/w/MOSES)
      3. [Quick Start](http://wiki.opencog.org/wikihome/images/4/4a/MOSES-QuickGuide.pdf)
@@ -57,6 +59,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Use external representations.
      3. Simulation.
      3. Correlation.
+   2. Estimate the integration effort into Scala project.
 
  1. <a name="Bayesian_network">[Bayesian Network](http://en.wikipedia.org/wiki/Bayesian_network)</a>
    2. Find implementation or use [javabayes](http://www.cs.cmu.edu/~javabayes/) and install them = 16 - 32 [possibly a lot of implementations]
@@ -70,7 +73,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Performance
      3. Adapter development estimate
 
- 1. [Embodiment](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment)
+ 1. <a name"Embodiment">Embodiment</a>, see [specification](https://github.com/menta/menta-0.3/blob/master/doc/informal/openCog.md#Embodiment).
    2. Read documentation = 8 - 16 [possibly further understanding of the Embodiment could be required to test it]
      3. [Main](http://wiki.opencog.org/w/Embodiment)
      3. <a href="http://wiki.opencog.org/w/UserManual_(Embodiment)">User manual</a>
@@ -109,7 +112,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Perceiving workflow: Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
    -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
 
- 1. Model data structures:
+ 1. <a name="Model">Model data structures:</a>
    2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram) = 1 - 2
      3. Incidents description text.
      3. Incident category.

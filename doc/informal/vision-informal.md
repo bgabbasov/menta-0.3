@@ -53,12 +53,12 @@ Emotion machine +
 
  Emotion machine, Annotation interpretation validation +
 
-  1. OpenCog is created on C++, could be hard to integrate with Scala application, see [JCog](https://launchpad.net/jcog).
+  1. OpenCog is created on C++, could be hard to integrate with Scala application, see [JCog](https://launchpad.net/jcog), see [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) and [MOSES](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#MOSES) prototypes
     2. Some parts of OpenCog is in Java: RelEx, NLGen2.
-  1. OpenCog is the framework, we have to understand how do we integrate and implement parts of Menta-0.3 perceiving system.
-  1. NLGen2 could be not good enough to generate the clarification requests.
-  1. AtomSpace could be not usable for our [knowledge representation](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130).
-  1. PLN could be hard to integrate in Scala project.
-  1. MOSES could be not usable for our knowledge.
-  1. Embodiment could be not capable of expressing [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md).
-  1. RelEx and NLGen could be not so good to be used in the project.
+  1. [OpenCog is the framework, we have to understand how do we integrate and implement parts of Menta-0.3 perceiving system.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#OpenCog)
+  1. AtomSpace could be not usable for our [knowledge representation](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130), see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#AtomSpace)
+  1. [PLN could be hard to integrate in Scala project.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN)
+  1. [MOSES could be not usable for our knowledge](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#MOSES).
+  1. Embodiment could be not capable of expressing [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md), see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Embodiment).
+  1. [RelEx could be not so good to be used in the project.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
+  1. [NLGen2 could be not good enough to generate the clarification requests.](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md#NLGen)
