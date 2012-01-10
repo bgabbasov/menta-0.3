@@ -33,9 +33,9 @@ Problem/prototype centric view.
  1. [Problem and Solution description structure - Solution should be formal in the domain context, possibly HowTo approach could be reused.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
  1. The way TSS could monitor the System solutions. = The Reporting system should be crated, for now only the application reporting should be used.
  1. [The textual pre-processing including auto-correct based on domain dictionary.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Auto_correct)
- 1. Rules and mechanisms of Critics, see [§7-5. What are some useful Critics?](http://web.media.mit.edu/~minsky/E7/eb7.html),
+ 1. Rules and mechanisms of Critics, see [§7-5. What are some useful Critics?](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708574),
  see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Design_Emotion_Machine)
- 1. Rules and mechanisms of Selector(WayToThink) see [§7-4. What are some useful Ways to Think?](http://web.media.mit.edu/~minsky/E7/eb7.html),
+ 1. Rules and mechanisms of Selector(Way2Think) see [§7-4. What are some useful Ways to Think?](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573),
  see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Design_Emotion_Machine)
  1. [Inbound Critics data structure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
  1. [Inbound WayToThink data structure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
