@@ -107,7 +107,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Performance
      3. Adapter development estimate
 
- 1. Test approach
+ 1. Training approach
    2. Create Training data structures.
      3. Incidents description text. 1 - 2
      3. Incident category. 1 - 2
@@ -125,6 +125,19 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          5. Implement and test variable = 8 - 16
          5. Named variables builder including variable HowTo = 8 - 10
          5. Unnamed variable builder = 8 - 10
+   2. Create validation criteria inference approach
+     3. Analyse ```what could be wrong``` case of the workbooks.
+     3. Create model of ```what could be wrong``` cases:
+       4. Design = 24 - 32
+       4. Implement = 20 - 32
+     3. Create <a name="validator">validator</a>
+       4. Analyse validation criteria types(direct instruction or problem description or both) according to incident types and problem indications = 10 - 20
+       4. Analyse problem description ```what could be wrong``` cases of the workbooks = 10 - 16
+       4. Create ```what could be wrong``` descriptions via predicates
+         5. Create logical operations [interpreter](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Interpretation). = 28 - 32
+       4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
+         5. Design adapter = 8 - 16
+         5. Implement adapter = 24 -32
 
 ## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
@@ -194,7 +207,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Add analytical HowTo-s to basic set:
          4. Wrong software was installed = 4
          4. Two direct instructions in one incident description = 4
-     3. Add Interpretation mechanism over current state of the system
+     3. Add <a name="Interpretation">Interpretation</a> mechanism over current state of the system
          4. Variable and current state addressing = 12 - 16
          4. Logical operation execution = 16
            5. Exists

@@ -7,8 +7,9 @@ Problem/prototype centric view.
 
  1. *Fuzzy* system
   2. We face new kind of system with no crisp ages of the components.
-  2. Inbound information could contain contradictions and different layers of abstraction.
- 1. Perceiving mechanisms are close to thinking mechanisms and still not so [formalised as should be](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
+  2. [Inbound information could contain contradictions and different layers of abstraction.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Internal_knowledge)
+ 1. Perceiving mechanisms are close to thinking mechanisms and still not so
+ [formalised as should be](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
 
 ### Mitigation
 
@@ -20,7 +21,7 @@ Problem/prototype centric view.
  1. [Lexical processing - depends on parser and trained data could be erroneous.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Natural_language_processors)
  1. [Annotation depends on Knowledge base (KB), should have at least minimal trained knowledge of TSS + IT common sense.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
  1. Interpretation by [LSA](http://en.wikipedia.org/wiki/Latent_semantic_analysis) is not ideal and could be replaced by other proper algorithm, see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Emotion_Machine)
- 1. [Validation criteria still not clear and could be too detailed.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training)
+ 1. [Validation criteria still not clear and could be too detailed.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#validator)
 
 ## Textual processing
 
@@ -54,7 +55,7 @@ Emotion machine +
    2.	TSS1 training courses materials.
    2.	TSS1 – TSS2 intro into a project to be automated.
    2.	TSS1 – TSS2 workbooks of a project to be automated.
- 1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training)
+ 1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#validator)
 
 ## OpenCog Solution problems
 
