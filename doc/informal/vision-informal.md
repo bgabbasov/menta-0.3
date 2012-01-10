@@ -54,7 +54,7 @@ Emotion machine +
    2.	TSS1 training courses materials.
    2.	TSS1 – TSS2 intro into a project to be automated.
    2.	TSS1 – TSS2 workbooks of a project to be automated.
- 1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Test_data)
+ 1. [Validation mechanisms still obscure.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Training)
 
 ## OpenCog Solution problems
 
