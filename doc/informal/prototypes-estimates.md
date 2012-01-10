@@ -109,8 +109,9 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
  1. <a name="Test_data">Test data</a>:
    2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
-   2. [Perceiving workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Formalisation_Production_Workflow): Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
-   -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
+   2. [Perceiving workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Formalisation_Production_Workflow):
+   ```Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
+   -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))```
 
  1. <a name="Model">Model data structures:</a>
    2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram) = 1 - 2
