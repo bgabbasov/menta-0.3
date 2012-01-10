@@ -134,10 +134,10 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Analyse validation criteria types(direct instruction or problem description or both) according to incident types and problem indications = 10 - 20
          4. Analyse problem description ```what could be wrong``` cases of the workbooks = 10 - 16
          4. Create ```what could be wrong``` descriptions via predicates
-           5. Create logical operations [interpreter](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Interpretation). = 28 - 32
+             5. Create logical operations [interpreter](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Interpretation). = 28 - 32
          4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
-           5. Design adapter = 8 - 16
-           5. Implement adapter = 24 -32
+             5. Design adapter = 8 - 16
+             5. Implement adapter = 24 -32
 
 ## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
