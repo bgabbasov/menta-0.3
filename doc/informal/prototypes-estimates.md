@@ -146,14 +146,13 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
              5. Design adapter = 8 - 16
              5. Implement adapter = 24 -32
-   2. Create solution generation prototype.
-     3. Based on trained data(solution) and [HowTo](http://code.google.com/p/menta/wiki/HowTo) approach develop:
-         4. HowTo types = 16 - 40
-         4. Solution description language = 32 - 40
-         4. Create 10 Solution descriptions = 16 - 32
-         4. Train Solutions
-             5. Analyse machine learning algorithms (C 4.5, Bayes network) = 16 - 24
-             5. Train 10 Solutions (in: formalised problem description, out Solution) = 16 - 24
+   2. Create Solution generation prototype based on trained data(solution) and [HowTo](http://code.google.com/p/menta/wiki/HowTo) approach:
+     3. HowTo types = 16 - 40
+     3. Solution description language = 32 - 40
+     3. Create 10 Solution descriptions = 16 - 32
+     3. Train Solutions
+         4. Analyse machine learning algorithms (C 4.5, Bayes network) = 16 - 24
+         4. Train 10 Solutions (in: formalised problem description, out Solution) = 16 - 24
 
 ## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
