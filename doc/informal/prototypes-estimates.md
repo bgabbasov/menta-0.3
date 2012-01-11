@@ -125,6 +125,14 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          5. Implement and test variable = 8 - 16
          5. Named variables builder including variable HowTo = 8 - 10
          5. Unnamed variable builder = 8 - 10
+   2. Create incident classification algorithm
+     3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations
+      + [Simulation](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes_estimates.md#Prototype_Way2Think) created model based on LSA algorithm. {Model}
+         4. Create test data for KnowledgeBaseAnnotator
+             5. Allowed Software list = 20 - 32
+             5. Over Software actions = 4 - 6
+             5. Software attributes = 8 - 16
+             5. Software states = 4 - 8
    2. Create validation criteria inference approach
      3. Analyse ```what could be wrong``` case of the workbooks.
      3. Create model of ```what could be wrong``` cases
@@ -138,6 +146,14 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
              5. Design adapter = 8 - 16
              5. Implement adapter = 24 -32
+   2. Create solution generation prototype.
+     3. Based on trained data(solution) and [HowTo](http://code.google.com/p/menta/wiki/HowTo) approach develop:
+         4. HowTo types = 16 - 40
+         4. Solution description language = 32 - 40
+         4. Create 10 Solution descriptions = 16 - 32
+         4. Train Solutions
+             5. Analyse machine learning algorithms (C 4.5, Bayes network) = 16 - 24
+             5. Train 10 Solutions (in: formalised problem description, out Solution) = 16 - 24
 
 ## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
@@ -191,7 +207,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Self-Reflective Critic = not requested in the prototype
      3. Self-Conscious Critic = not requested in the prototype
  1. Prototype Selector = 6 - 8
- 1. Prototype Way2Think
+ 1. <a name="Prototype_Way2Think">Prototype Way2Think</a>
    2. Create base constructs(HowTo-s) = 2 - 4
      3. Copy file
      3. Move file

@@ -29,6 +29,14 @@ Problem/prototype centric view.
  1. Synonym an Homonym problem still need industrial approach = possibly we could use some Knowledge Base see [solutions](https://github.com/menta/menta-0.3/blob/master/doc/informal/solution-ideas.md#Synonym_processing),
   see [prototype](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
 
+## Out: Formal incident description
+
+ 1. [Still not clear the formalization level required to infer the solution.](https://github.com/menta/menta-0.3/blob/master/doc/informal/vision-informal.md#Model)
+
+## Incident classification
+
+ 1. Still not clear the algorithms of training and production classification, could be not good idea to use word frequencies, possibly some models or at least taking in account the generalised concepts of terms used in text.
+
 ## Emotion machine Solution problems
 
  1. [Problem and Solution description structure - Solution should be formal in the domain context, possibly HowTo approach could be reused.](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Model)
