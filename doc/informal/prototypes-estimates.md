@@ -133,7 +133,6 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. Create validation criteria inference approach
      3. Create <a name="validator">validator</a>
          4. Analyse validation criteria types(direct instruction or problem description or both) according to incident types and problem indications = 10 - 20
-         4. Analyse problem description ```what could be wrong``` cases of the workbooks = 10 - 16
          4. Create ```what could be wrong``` descriptions via predicates
              5. Create logical operations [interpreter](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Interpretation). = 28 - 32
          4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
