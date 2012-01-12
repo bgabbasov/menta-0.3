@@ -156,11 +156,26 @@ The list of prototypes with WBS and estimates in man/hours with following layout
 
 ## <a name="Emotion_Machine">Emotion Machine Solution</a>, for the specification see [page](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md).
 
- 1. <a name="Test_data">Test data</a>:
+ 1. <a name="Test_data">Test data example</a>:
    2. Incident description: Wrong software was installed. I have ordered Word Dictionary Technical, but the Word Dictionary Business was installed. Please help.
    2. [Perceiving workflow](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md#Formalisation_Production_Workflow):
    Deliberative Critics -> Simulation Way2Think(creates the model: User ordered Software(Word Dictionary Technical), order was processed by TSS, TSS installed Software(Word Dictionary Business), this Software is Wrong)
    -> Deliberative Critics -> Elevation Way2Think (creates model: Wrong Software(Word Dictionary Business), Intended Software(Word Dictionary Technical))
+
+ 1. <a name="Test_data_analysis">Test data analysis</a>
+   2. Analyse 100 incident descriptions, and create: = 25 - 30
+     3. Incidents description text (correct)
+     3. Incident category.
+     3. Incident formalized description.
+     3. Incident solution.
+   2. Analyse workbook articles = 14.4 - 32.4
+     3. Create formalized Background description = 0.1
+     3. Create formalized Problem description: = 0.25
+         4. Entry criteria.
+         4. Exit criteria.
+         4. Inbound data.
+         4. Outbound data.
+     3. Solution in HowTo terms = 0.25 - 1
 
  1. <a name="Model">Model data structures:</a>
    2. Inbound textual description [Text](https://github.com/menta/menta-0.3/blob/master/doc/informal/annotation-interpretation-validation.md#Component_diagram) = 1 - 2

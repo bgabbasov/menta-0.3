@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2012-01-11" view-index="0" gantt-divider-location="315" resource-divider-location="300" version="2.0">
-    <description/>
-    <view zooming-state="default:2" id="gantt-chart"/>
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-11" view-index="0" gantt-divider-location="402" resource-divider-location="337" version="2.0">
+    <description><![CDATA[Research project to automate the incident handling.]]></description>
+    <view zooming-state="default:1" id="gantt-chart"/>
     <view id="resource-table">
-        <field id="0" name="Name" width="55" order="0"/>
-        <field id="1" name="Default role" width="44" order="0"/>
+        <field id="0" name="Name" width="54" order="0"/>
+        <field id="1" name="Default role" width="45" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -31,21 +31,33 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Analysis" color="#8cb6ce" meeting="false" start="2012-01-11" duration="1" complete="0" priority="1" expand="true">
-            <task id="1" name="Incidents analysis" color="#8cb6ce" meeting="false" start="2012-01-11" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="0" name="Analysis" color="#8cb6ce" meeting="false" start="2012-01-16" duration="1" complete="0" priority="1" expand="true">
+            <task id="1" name="Incidents analysis" color="#8cb6ce" meeting="false" start="2012-01-16" duration="1" complete="0" priority="1" expand="true"/>
         </task>
     </tasks>
     <resources>
-        <resource id="0" name="Max" function="Default:0" contacts="" phone=""/>
+        <resource id="0" name="Max" function="0" contacts="" phone=""/>
+        <resource id="1" name="Alex" function="1" contacts="" phone=""/>
+        <resource id="2" name="Adel" function="2" contacts="" phone=""/>
+        <resource id="3" name="Bulat" function="2" contacts="" phone=""/>
+        <resource id="4" name="Renat" function="2" contacts="" phone=""/>
+        <resource id="5" name="Artem" function="2" contacts="" phone=""/>
     </resources>
     <allocations/>
     <vacations/>
     <taskdisplaycolumns>
         <displaycolumn property-id="tpd3" order="0" width="105"/>
         <displaycolumn property-id="tpd4" order="1" width="61"/>
-        <displaycolumn property-id="tpd5" order="2" width="59"/>
+        <displaycolumn property-id="tpd5" order="3" width="59"/>
+        <displaycolumn property-id="tpd6" order="2" width="50"/>
+        <displaycolumn property-id="tpd7" order="4" width="75"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
     <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="0" name="Architect"/>
+        <role id="1" name="Team lead"/>
+        <role id="2" name="Developer"/>
+    </roles>
 </project>
