@@ -112,9 +112,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Incidents description text. 1 - 2
      3. Incident category. 1 - 2
      3. Incident formalized description.
-         4. Design = 14 - 16
          4. Model = 10 - 12
-         4. Implement = 40 - 48
      3. Incident solution (Migrate HowTo approach). 10 - 14
    2. Create formalized description generalisation mechanism, see formalization criteria [example](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
      3. Create common parts selector and variable introducer
