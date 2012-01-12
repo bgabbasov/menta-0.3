@@ -116,13 +116,13 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Incident solution (Migrate HowTo approach). 10 - 14
    2. Create formalized description generalisation mechanism, see formalization criteria [example](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
      3. Create common parts selector and variable introducer
-       4. Comparator = 6 - 8
-       4. Recursive runner = 8 - 10
-       4. Variable introducer
-         5. Design variable structure =  4 - 8
-         5. Implement and test variable = 8 - 16
-         5. Named variables builder including variable HowTo = 8 - 10
-         5. Unnamed variable builder = 8 - 10
+         4. Comparator = 6 - 8
+         4. Recursive runner = 8 - 10
+         4. Variable introducer
+             5. Design variable structure =  4 - 8
+             5. Implement and test variable = 8 - 16
+             5. Named variables builder including variable HowTo = 8 - 10
+             5. Unnamed variable builder = 8 - 10
    2. Create incident classification algorithm
      3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations
       + [Simulation](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes_estimates.md#Prototype_Way2Think) created model based on LSA algorithm. {Model}
