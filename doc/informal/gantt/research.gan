@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-09" view-index="0" gantt-divider-location="591" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-02-20" view-index="0" gantt-divider-location="661" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
-    <view zooming-state="default:5" id="gantt-chart"/>
+    <view zooming-state="default:3" id="gantt-chart"/>
     <view id="resource-table">
         <field id="0" name="Name" width="54" order="0"/>
         <field id="1" name="Default role" width="45" order="1"/>
@@ -88,6 +88,7 @@
                 <task id="22" name="Test storage usability for knowledge representation" color="#8cb6ce" meeting="false" start="2012-02-13" duration="16" complete="0" priority="1" expand="true"/>
             </task>
             <task id="23" name="Probability Logic Engines analysis" color="#8cb6ce" meeting="false" start="2012-02-03" duration="22" complete="0" priority="1" expand="true">
+                <depend id="49" type="2" difference="0" hardness="Strong"/>
                 <task id="24" name="PLN analysis" color="#8cb6ce" meeting="false" start="2012-02-03" duration="6" complete="0" priority="1" expand="true">
                     <task id="25" name="Read documentation" color="#8cb6ce" meeting="false" start="2012-02-03" duration="2" complete="0" priority="1" expand="true">
                         <depend id="26" type="2" difference="0" hardness="Strong"/>
@@ -115,27 +116,42 @@
                 <task id="34" name="OpenNLP" color="#8cb6ce" meeting="false" start="2012-02-21" duration="6" complete="0" priority="1" expand="true"/>
             </task>
         </task>
-        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-01-09" duration="58" complete="0" priority="1" expand="true">
+        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-28" duration="30" complete="0" priority="1" expand="true">
             <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-02-29" duration="18" complete="0" priority="1" expand="true"/>
             <task id="37" name="Bayesian network" color="#8cb6ce" meeting="false" start="2012-03-06" duration="16" complete="0" priority="1" expand="true"/>
-            <task id="38" name="Training" color="#8cb6ce" meeting="false" start="2012-03-02" duration="19" complete="0" priority="1" expand="true">
-                <task id="39" name="Training data structures" color="#8cb6ce" meeting="false" start="2012-03-02" duration="19" complete="0" priority="1" expand="true">
+            <task id="38" name="Training" color="#8cb6ce" meeting="false" start="2012-02-28" duration="15" complete="0" priority="1" expand="true">
+                <task id="39" name="Training data structures" color="#8cb6ce" meeting="false" start="2012-02-28" duration="15" complete="0" priority="1" expand="true">
                     <task id="40" name="Incident description" color="#8cb6ce" meeting="false" start="2012-03-02" duration="1" complete="0" priority="1" expand="true">
                         <depend id="41" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="41" name="Incident category" color="#8cb6ce" meeting="false" start="2012-03-05" duration="1" complete="0" priority="1" expand="true">
                         <depend id="46" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="42" name="Incident formalized description" color="#8cb6ce" meeting="false" start="2012-03-15" duration="10" complete="0" priority="1" expand="true">
-                        <task id="44" name="Model" color="#8cb6ce" meeting="false" start="2012-03-15" duration="10" complete="0" priority="1" expand="true"/>
+                    <task id="42" name="Incident formalized description" color="#8cb6ce" meeting="false" start="2012-02-28" duration="10" complete="0" priority="1" expand="true">
+                        <task id="44" name="Model" color="#8cb6ce" meeting="false" start="2012-02-28" duration="10" complete="0" priority="1" expand="true">
+                            <depend id="52" type="2" difference="0" hardness="Strong"/>
+                        </task>
                     </task>
                     <task id="46" name="Incident solution(Migrate HowTo approach" color="#8cb6ce" meeting="false" start="2012-03-06" duration="10" complete="0" priority="1" expand="true"/>
                 </task>
             </task>
-            <task id="47" name="Create formalized description generalisation mechanism" color="#8cb6ce" meeting="false" start="2012-01-09" duration="20" complete="0" priority="1" expand="true">
-                <task id="48" name="Create common parts selector and variable introducer" color="#8cb6ce" meeting="false" start="2012-01-09" duration="20" complete="0" priority="1" expand="true">
-                    <task id="49" name="Comparator" color="#8cb6ce" meeting="false" start="2012-02-03" duration="1" complete="0" priority="1" expand="true"/>
-                    <task id="50" name="Recursive runner" color="#8cb6ce" meeting="false" start="2012-01-09" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="47" name="Create formalized description generalisation mechanism" color="#8cb6ce" meeting="false" start="2012-03-06" duration="25" complete="0" priority="1" expand="true">
+                <task id="48" name="Create common parts selector and variable introducer" color="#8cb6ce" meeting="false" start="2012-03-06" duration="25" complete="0" priority="1" expand="true">
+                    <task id="49" name="Comparator" color="#8cb6ce" meeting="false" start="2012-03-06" duration="6" complete="0" priority="1" expand="true">
+                        <depend id="50" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="50" name="Recursive runner" color="#8cb6ce" meeting="false" start="2012-03-14" duration="8" complete="0" priority="1" expand="true"/>
+                    <task id="51" name="Variable introducer" color="#8cb6ce" meeting="false" start="2012-03-13" duration="20" complete="0" priority="1" expand="true">
+                        <task id="52" name="Design variable structure" color="#8cb6ce" meeting="false" start="2012-03-13" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="53" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="53" name="Implement and test variable" color="#8cb6ce" meeting="false" start="2012-03-19" duration="8" complete="0" priority="1" expand="true">
+                            <depend id="54" type="2" difference="0" hardness="Strong"/>
+                            <depend id="55" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="54" name="Named variables builder" color="#8cb6ce" meeting="false" start="2012-03-29" duration="8" complete="0" priority="1" expand="true"/>
+                        <task id="55" name="Unnamed variables builder" color="#8cb6ce" meeting="false" start="2012-03-29" duration="8" complete="0" priority="1" expand="true"/>
+                    </task>
                 </task>
             </task>
         </task>
@@ -187,6 +203,13 @@
         <allocation task-id="40" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="41" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="42" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="54" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="5" function="2" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
@@ -196,6 +219,7 @@
         <displaycolumn property-id="tpd6" order="3" width="41"/>
         <displaycolumn property-id="tpd5" order="4" width="37"/>
         <displaycolumn property-id="tpd9" order="5" width="36"/>
+        <displaycolumn property-id="tpd8" order="6" width="75"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>

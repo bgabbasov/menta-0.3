@@ -124,7 +124,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
              5. Named variables builder including variable HowTo = 8 - 10
              5. Unnamed variable builder = 8 - 10
    2. Create incident classification algorithm
-     3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations
+      3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations
       + [Simulation](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes_estimates.md#Prototype_Way2Think) created model based on LSA algorithm. {Model}
          4. Create test data for KnowledgeBaseAnnotator
              5. Allowed Software list = 20 - 32
