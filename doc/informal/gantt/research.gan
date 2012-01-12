@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-16" view-index="0" gantt-divider-location="591" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-13" view-index="0" gantt-divider-location="591" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
     <view zooming-state="default:2" id="gantt-chart"/>
     <view id="resource-table">
@@ -32,15 +32,31 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="Analysis" color="#8cb6ce" meeting="false" start="2012-01-16" duration="15" complete="0" priority="1" expand="true">
-            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
             <task id="1" name="Incidents" color="#8cb6ce" meeting="false" start="2012-01-16" duration="13" complete="0" priority="1" expand="true"/>
             <task id="2" name="Workbook articles" color="#8cb6ce" meeting="false" start="2012-01-16" duration="15" complete="0" priority="1" expand="true"/>
         </task>
-        <task id="5" name="Model" color="#8cb6ce" meeting="false" start="2012-02-06" duration="1" complete="0" priority="1" expand="true">
-            <task id="6" name="Inbound textual description" color="#8cb6ce" meeting="false" start="2012-02-06" duration="1" complete="0" priority="1" expand="true"/>
-            <task id="7" name="Internal knowledge(atom) representations" color="#8cb6ce" meeting="false" start="2012-02-06" duration="1" complete="0" priority="1" expand="true"/>
-            <task id="8" name="Formalization outbound structures" color="#8cb6ce" meeting="false" start="2012-02-06" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="5" name="Design Emotion Machine" color="#8cb6ce" meeting="false" start="2012-01-23" duration="19" complete="0" priority="1" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <task id="6" name="Inbound textual description" color="#8cb6ce" meeting="false" start="2012-01-23" duration="1" complete="0" priority="1" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="Internal knowledge(atom) representations" color="#8cb6ce" meeting="false" start="2012-01-23" duration="4" complete="0" priority="1" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Formalization outbound structures" color="#8cb6ce" meeting="false" start="2012-01-27" duration="3" complete="0" priority="1" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Design Solution HowTo-s" color="#8cb6ce" meeting="false" start="2012-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Design Critics" color="#8cb6ce" meeting="false" start="2012-02-01" duration="6" complete="0" priority="1" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="Design Selector" color="#8cb6ce" meeting="false" start="2012-01-25" duration="6" complete="0" priority="1" expand="true"/>
+            <task id="12" name="Design Way2Think" color="#8cb6ce" meeting="false" start="2012-02-09" duration="6" complete="0" priority="1" expand="true"/>
         </task>
+        <task id="13" name="Analysis and design" color="#8cb6ce" meeting="true" start="2012-02-17" duration="1" complete="0" priority="1" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Max" function="0" contacts="" phone=""/>
@@ -60,7 +76,14 @@
         <allocation task-id="2" resource-id="2" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="6" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
