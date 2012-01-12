@@ -131,10 +131,6 @@ The list of prototypes with WBS and estimates in man/hours with following layout
              5. Software attributes = 8 - 16
              5. Software states = 4 - 8
    2. Create validation criteria inference approach
-     3. Analyse ```what could be wrong``` case of the workbooks.
-     3. Create model of ```what could be wrong``` cases
-         4. Design = 24 - 32
-         4. Implement = 20 - 32
      3. Create <a name="validator">validator</a>
          4. Analyse validation criteria types(direct instruction or problem description or both) according to incident types and problem indications = 10 - 20
          4. Analyse problem description ```what could be wrong``` cases of the workbooks = 10 - 16
