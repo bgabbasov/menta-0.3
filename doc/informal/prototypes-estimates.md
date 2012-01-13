@@ -199,19 +199,18 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Current activity goal representation = 6 - 8 [possibly should try several approaches]
          4. Current task state representation =  4 - 6 [possibly should try several representations]
          4. Reasoning over current state with Reasoner adapter development = 8 - 10
-     3. Reflective Critic
-         4. Develop self-control mechanism
-             5. Develop Energy control mechanism.
-                 - Design Energy concept = 4
-                 - Design Energy assignment mechanism during training = 2
-                 - Implement Energy concept = 2
-                 - Implement Energy assignment mechanism = 4
-             5. Develop Sub-goal control mechanism.
-                 6. Design sub-goal control mechanism = 4
-                 6. Implement sub-goal control mechanism = 4
-             5. Develop Evidence control mechanism.
-                 6. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
-                 6. Implement Evidence control mechanism = 4 - 10
+     3. Reflective Critic (self-control mechanism)
+         4. Develop Energy control mechanism.
+             5. Design Energy concept = 4
+             5. Design Energy assignment mechanism during training = 2
+             5. Implement Energy concept = 2
+             5. Implement Energy assignment mechanism = 4
+         4. Develop Sub-goal control mechanism.
+             5. Design sub-goal control mechanism = 4
+             5. Implement sub-goal control mechanism = 4
+         4. Develop Evidence control mechanism.
+             5. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
+             5. Implement Evidence control mechanism = 4 - 10
      3. Self-Reflective Critic = not requested in the prototype
      3. Self-Conscious Critic = not requested in the prototype
  1. Prototype Selector = 6 - 8
