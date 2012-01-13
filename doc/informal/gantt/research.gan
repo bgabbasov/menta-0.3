@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-16" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-02-27" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
     <view zooming-state="default:5" id="gantt-chart"/>
     <view id="resource-table">
@@ -119,6 +119,7 @@
             </task>
         </task>
         <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-29" duration="60" complete="0" priority="1" expand="true">
+            <depend id="143" type="2" difference="0" hardness="Strong"/>
             <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-02-29" duration="18" complete="0" priority="1" expand="true">
                 <depend id="59" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -204,24 +205,29 @@
                 </task>
             </task>
         </task>
-        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
-            <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
-                <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
-                    <task id="78" name="Deliberative Critics" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
-                        <task id="79" name="Current activity goal representation = 6 - 8 [possibly should try several approaches]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="6" complete="0" priority="1" expand="true"/>
-                        <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="4" complete="0" priority="1" expand="true"/>
-                        <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true"/>
+        <task id="143" name="Training prototype milestone" color="#8cb6ce" meeting="true" start="2012-05-23" duration="1" complete="0" priority="1" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true">
+            <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true">
+                <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true">
+                    <task id="78" name="Deliberative Critics" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true">
+                        <task id="79" name="Current activity goal representation = 6 - 8 [possibly should try several approaches]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true"/>
+                        <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                        <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true"/>
                     </task>
-                    <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+                    <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true">
+                        <task id="83" name="Develop self-control mechanism" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true"/>
+                        <task id="84" name="Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
+                            <task id="85" name="Design Energy concept = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                            <task id="86" name="Design Energy assignment mechanism during training = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
+                            <task id="87" name="Implement Energy concept = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
+                        </task>
+                    </task>
                 </task>
             </task>
         </task>
-        <task id="83" name="Develop self-control mechanism" color="#8cb6ce" meeting="false" start="2012-01-13" duration="10" complete="0" priority="1" expand="true"/>
-        <task id="84" name="            Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="85" name="                Design Energy concept = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="86" name="                Design Energy assignment mechanism during training = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="87" name="                Implement Energy concept = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="88" name="                Implement Energy assignment mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="88" name="                Implement Energy assignment mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="4" complete="0" priority="1" expand="true"/>
         <task id="89" name="            Develop Sub-goal control mechanism." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
         <task id="90" name="                Design sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
         <task id="91" name="                Implement sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
