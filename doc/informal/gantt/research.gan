@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-30" view-index="0" gantt-divider-location="661" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-16" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
-    <view zooming-state="default:4" id="gantt-chart"/>
+    <view zooming-state="default:5" id="gantt-chart"/>
     <view id="resource-table">
         <field id="0" name="Name" width="54" order="0"/>
         <field id="1" name="Default role" width="45" order="1"/>
@@ -118,7 +118,7 @@
                 <task id="34" name="OpenNLP" color="#8cb6ce" meeting="false" start="2012-02-21" duration="6" complete="0" priority="1" expand="true"/>
             </task>
         </task>
-        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-03" duration="60" complete="0" priority="1" expand="true">
+        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-29" duration="60" complete="0" priority="1" expand="true">
             <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-02-29" duration="18" complete="0" priority="1" expand="true">
                 <depend id="59" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -157,7 +157,9 @@
                         <task id="53" name="Implement and test variable" color="#8cb6ce" meeting="false" start="2012-04-04" duration="8" complete="0" priority="1" expand="true">
                             <depend id="54" type="2" difference="0" hardness="Strong"/>
                         </task>
-                        <task id="54" name="Named variables builder" color="#8cb6ce" meeting="false" start="2012-04-16" duration="8" complete="0" priority="1" expand="true"/>
+                        <task id="54" name="Named variables builder" color="#8cb6ce" meeting="false" start="2012-04-16" duration="8" complete="0" priority="1" expand="true">
+                            <depend id="74" type="2" difference="0" hardness="Strong"/>
+                        </task>
                         <task id="55" name="Unnamed variables builder" color="#8cb6ce" meeting="false" start="2012-04-17" duration="8" complete="0" priority="1" expand="true"/>
                     </task>
                 </task>
@@ -174,18 +176,32 @@
                     <task id="61" name="Software states" color="#8cb6ce" meeting="false" start="2012-03-20" duration="4" complete="0" priority="1" expand="true"/>
                 </task>
             </task>
-            <task id="62" name="Create validation criteria inference approach" color="#8cb6ce" meeting="false" start="2012-02-03" duration="52" complete="0" priority="1" expand="true">
+            <task id="62" name="Create validation criteria inference approach" color="#8cb6ce" meeting="false" start="2012-03-20" duration="46" complete="0" priority="1" expand="true">
                 <task id="63" name="Analyse validation criteria types" color="#8cb6ce" meeting="false" start="2012-03-22" duration="10" complete="0" priority="1" expand="true">
                     <depend id="66" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="64" name="Create descriptions via predicates (logical operations)" color="#8cb6ce" meeting="false" start="2012-03-20" duration="14" complete="0" priority="1" expand="true"/>
+                <task id="64" name="Create descriptions via predicates (logical operations)" color="#8cb6ce" meeting="false" start="2012-03-20" duration="14" complete="0" priority="1" expand="true">
+                    <depend id="69" type="2" difference="0" hardness="Strong"/>
+                    <depend id="70" type="2" difference="0" hardness="Strong"/>
+                </task>
                 <task id="65" name="Create validation mechanism possibly via PLN" color="#8cb6ce" meeting="false" start="2012-03-30" duration="12" complete="0" priority="1" expand="true">
                     <task id="66" name="Design adapter" color="#8cb6ce" meeting="false" start="2012-04-05" duration="8" complete="0" priority="1" expand="true">
                         <depend id="55" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="67" name="Implement adapter" color="#8cb6ce" meeting="false" start="2012-03-30" duration="12" complete="0" priority="1" expand="true"/>
+                    <task id="67" name="Implement adapter" color="#8cb6ce" meeting="false" start="2012-03-30" duration="12" complete="0" priority="1" expand="true">
+                        <depend id="71" type="2" difference="0" hardness="Strong"/>
+                        <depend id="73" type="2" difference="0" hardness="Strong"/>
+                    </task>
                 </task>
-                <task id="68" name="Create Solution generation prototype " color="#8cb6ce" meeting="false" start="2012-02-03" duration="1" complete="0" priority="1" expand="true"/>
+                <task id="68" name="Create Solution generation prototype " color="#8cb6ce" meeting="false" start="2012-04-09" duration="32" complete="0" priority="1" expand="true">
+                    <task id="69" name="HowTo types = 16 - 40" color="#8cb6ce" meeting="false" start="2012-04-09" duration="16" complete="0" priority="1" expand="true"/>
+                    <task id="70" name="Solution description language = 32 - 40" color="#8cb6ce" meeting="false" start="2012-04-09" duration="32" complete="0" priority="1" expand="true"/>
+                    <task id="71" name="Create 10 Solution descriptions = 16 - 32" color="#8cb6ce" meeting="false" start="2012-04-17" duration="16" complete="0" priority="1" expand="true"/>
+                    <task id="72" name="Train Solutions" color="#8cb6ce" meeting="false" start="2012-04-17" duration="23" complete="0" priority="1" expand="true">
+                        <task id="73" name="Analyse machine learning algorithms (C 4.5, Bayes network) = 16 - 24" color="#8cb6ce" meeting="false" start="2012-04-17" duration="16" complete="0" priority="1" expand="true"/>
+                        <task id="74" name="Train 10 Solutions (in: formalised problem description, out Solution) = 16 - 24" color="#8cb6ce" meeting="false" start="2012-04-26" duration="16" complete="0" priority="1" expand="true"/>
+                    </task>
+                </task>
             </task>
         </task>
     </tasks>
@@ -198,16 +214,16 @@
         <resource id="5" name="Artem" function="2" contacts="" phone=""/>
     </resources>
     <allocations>
-        <allocation task-id="1" resource-id="2" function="2" responsible="false" load="50.0"/>
-        <allocation task-id="1" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="3" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="1" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="2" responsible="false" load="50.0"/>
         <allocation task-id="1" resource-id="1" function="1" responsible="true" load="50.0"/>
-        <allocation task-id="2" resource-id="2" function="2" responsible="true" load="100.0"/>
-        <allocation task-id="2" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="3" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="2" responsible="true" load="100.0"/>
         <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="7" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="8" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -216,16 +232,16 @@
         <allocation task-id="11" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="17" resource-id="2" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="17" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="3" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="17" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="18" resource-id="2" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="18" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="3" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="18" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="19" resource-id="5" function="2" responsible="true" load="100.0"/>
         <allocation task-id="20" resource-id="5" function="2" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="4" function="2" responsible="true" load="100.0"/>
@@ -249,21 +265,27 @@
         <allocation task-id="60" resource-id="4" function="2" responsible="true" load="100.0"/>
         <allocation task-id="61" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="63" resource-id="2" function="2" responsible="true" load="100.0"/>
-        <allocation task-id="64" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="64" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="64" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="66" resource-id="2" function="2" responsible="true" load="100.0"/>
-        <allocation task-id="67" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="67" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="67" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="69" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="70" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="71" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="74" resource-id="0" function="0" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
-        <displaycolumn property-id="tpd10" order="0" width="15"/>
-        <displaycolumn property-id="tpd3" order="1" width="261"/>
-        <displaycolumn property-id="tpd4" order="2" width="37"/>
-        <displaycolumn property-id="tpd6" order="3" width="41"/>
-        <displaycolumn property-id="tpd5" order="4" width="37"/>
-        <displaycolumn property-id="tpd9" order="5" width="36"/>
-        <displaycolumn property-id="tpd8" order="6" width="75"/>
+        <displaycolumn property-id="tpd0" order="0" width="32"/>
+        <displaycolumn property-id="tpd10" order="1" width="15"/>
+        <displaycolumn property-id="tpd3" order="2" width="261"/>
+        <displaycolumn property-id="tpd4" order="3" width="37"/>
+        <displaycolumn property-id="tpd6" order="4" width="41"/>
+        <displaycolumn property-id="tpd5" order="5" width="37"/>
+        <displaycolumn property-id="tpd9" order="6" width="36"/>
+        <displaycolumn property-id="tpd8" order="7" width="75"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
