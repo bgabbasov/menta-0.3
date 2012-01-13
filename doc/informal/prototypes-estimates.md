@@ -52,7 +52,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. [Main](http://wiki.opencog.org/w/Embodiment)
      3. <a href="http://wiki.opencog.org/w/UserManual_(Embodiment)">User manual</a>
    2. Test Embodiment system to simulate [Intellix](https://github.com/menta/menta-0.3/blob/master/doc/informal/intellix.md)
-   with following components: = 40 - 80 [possibly difficulties with understanding of [Intellix world](/menta/menta-0.3/blob/master/doc/informal//intellix.md) simulation]
+   with following components: = 20 - 40 [possibly difficulties with understanding of [Intellix world](/menta/menta-0.3/blob/master/doc/informal//intellix.md) simulation]
      3. Files
      3. Directories
      3. Operating system commands: copy file, move file, delete file, create file
@@ -112,35 +112,27 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Incidents description text. 1 - 2
      3. Incident category. 1 - 2
      3. Incident formalized description.
-         4. Design = 14 - 16
          4. Model = 10 - 12
-         4. Implement = 40 - 48
      3. Incident solution (Migrate HowTo approach). 10 - 14
    2. Create formalized description generalisation mechanism, see formalization criteria [example](https://github.com/menta/menta-0.3/blob/master/doc/informal/formalisation-criteria.md).
      3. Create common parts selector and variable introducer
-       4. Comparator = 6 - 8
-       4. Recursive runner = 8 - 10
-       4. Variable introducer
-         5. Design variable structure =  4 - 8
-         5. Implement and test variable = 8 - 16
-         5. Named variables builder including variable HowTo = 8 - 10
-         5. Unnamed variable builder = 8 - 10
+         4. Comparator = 6 - 8
+         4. Recursive runner = 8 - 10
+         4. Variable introducer
+             5. Design variable structure =  4 - 8
+             5. Implement and test variable = 8 - 16
+             5. Named variables builder including variable HowTo = 8 - 10
+             5. Unnamed variable builder = 8 - 10
    2. Create incident classification algorithm
-     3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations
-      + [Simulation](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes_estimates.md#Prototype_Way2Think) created model based on LSA algorithm. {Model}
+     3. Create approach to classify the incidents according to the description + [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator) annotations + [Simulation](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes_estimates.md#Prototype_Way2Think) created model based on LSA algorithm. {Model}
          4. Create test data for KnowledgeBaseAnnotator
-             5. Allowed Software list = 20 - 32
+             5. Allowed Software list = 6 - 8
              5. Over Software actions = 4 - 6
              5. Software attributes = 8 - 16
              5. Software states = 4 - 8
    2. Create validation criteria inference approach
-     3. Analyse ```what could be wrong``` case of the workbooks.
-     3. Create model of ```what could be wrong``` cases
-         4. Design = 24 - 32
-         4. Implement = 20 - 32
      3. Create <a name="validator">validator</a>
          4. Analyse validation criteria types(direct instruction or problem description or both) according to incident types and problem indications = 10 - 20
-         4. Analyse problem description ```what could be wrong``` cases of the workbooks = 10 - 16
          4. Create ```what could be wrong``` descriptions via predicates
              5. Create logical operations [interpreter](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Interpretation). = 28 - 32
          4. Create validation mechanism possibly via [PLN](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#PLN) adapter
@@ -195,6 +187,8 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Must have links to textual representations.
      3. Must conform formalisation criteria.
      3. Must be one of [representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305130)
+   2. Design Solution structures (update [HowTo](http://code.google.com/p/menta/wiki/HowTo)) = 16 - 24
+
  1. <a name="Design_Emotion_Machine">Design</a> [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.md) = 18 - 28 [first solution could be not the best]
    2. [Critics](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708574),
    2. [Selector](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708572), could be understood as resources(Critics, Way2Think) selection strategy,
@@ -205,19 +199,18 @@ The list of prototypes with WBS and estimates in man/hours with following layout
          4. Current activity goal representation = 6 - 8 [possibly should try several approaches]
          4. Current task state representation =  4 - 6 [possibly should try several representations]
          4. Reasoning over current state with Reasoner adapter development = 8 - 10
-     3. Reflective Critic
-         4. Develop self-control mechanism
-           5. Develop Energy control mechanism.
-             6. Design Energy concept = 4
-             6. Design Energy assignment mechanism during training = 2
-             6. Implement Energy concept = 2
-             6. Implement Energy assignment mechanism = 4
-           5. Develop Sub-goal control mechanism.
-             6. Design sub-goal control mechanism = 4
-             6. Implement sub-goal control mechanism = 4
-           5. Develop Evidence control mechanism.
-             6. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
-             6. Implement Evidence control mechanism = 4 - 10
+     3. Reflective Critic (self-control mechanism)
+         4. Develop Energy control mechanism.
+             5. Design Energy concept = 4
+             5. Design Energy assignment mechanism during training = 2
+             5. Implement Energy concept = 2
+             5. Implement Energy assignment mechanism = 4
+         4. Develop Sub-goal control mechanism.
+             5. Design sub-goal control mechanism = 4
+             5. Implement sub-goal control mechanism = 4
+         4. Develop Evidence control mechanism.
+             5. Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]
+             5. Implement Evidence control mechanism = 4 - 10
      3. Self-Reflective Critic = not requested in the prototype
      3. Self-Conscious Critic = not requested in the prototype
  1. Prototype Selector = 6 - 8
