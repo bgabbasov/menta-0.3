@@ -204,6 +204,78 @@
                 </task>
             </task>
         </task>
+        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
+            <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
+                <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
+                    <task id="78" name="Deliberative Critics" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true">
+                        <task id="79" name="Current activity goal representation = 6 - 8 [possibly should try several approaches]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="6" complete="0" priority="1" expand="true"/>
+                        <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="4" complete="0" priority="1" expand="true"/>
+                        <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-01-13" duration="8" complete="0" priority="1" expand="true"/>
+                    </task>
+                    <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+                </task>
+            </task>
+        </task>
+        <task id="83" name="Develop self-control mechanism" color="#8cb6ce" meeting="false" start="2012-01-13" duration="10" complete="0" priority="1" expand="true"/>
+        <task id="84" name="            Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="85" name="                Design Energy concept = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="86" name="                Design Energy assignment mechanism during training = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="87" name="                Implement Energy concept = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="88" name="                Implement Energy assignment mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="89" name="            Develop Sub-goal control mechanism." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="90" name="                Design sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="91" name="                Implement sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="92" name="            Develop Evidence control mechanism." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="93" name="                Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="94" name="                Implement Evidence control mechanism = 4 - 10" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="95" name="        Self-Reflective Critic = not requested in the prototype" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="96" name="        Self-Conscious Critic = not requested in the prototype" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="97" name="Prototype Selector = 6 - 8" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="98" name="Prototype Way2Think" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="99" name="    Create base constructs(HowTo-s) = 2 - 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="100" name="        Copy file" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="101" name="        Move file" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="102" name="        Delete file" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="103" name="        Install program" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="104" name="        Uninstall program" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="105" name="        Add user to user group" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="106" name="        Remove user from user group" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="107" name="    Knowing How (select from KB) = 4 - 8" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="108" name="    Extensive Search (search in KB) = 12 - 24 [graph search could be not strait-forward]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="109" name="    Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="110" name="    Divide and Conquer" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="111" name="        Add analytical HowTo-s to basic set:" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="112" name="            Wrong software was installed = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="113" name="            Two direct instructions in one incident description = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="114" name="        Add Interpretation mechanism over current state of the system" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="115" name="            Variable and current state addressing = 12 - 16" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="116" name="            Logical operation execution = 16" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="117" name="            Exists" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="118" name="            Equals value" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="119" name="            Conjunction" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="120" name="            Implication" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="121" name="            Not" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="122" name="    Planning (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="123" name="    Simplification (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="124" name="    Elevation (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="125" name="    Reformulation (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="126" name="    Self-reflection (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="127" name="    Contradiction (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="128" name="    Use external representations (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="129" name="    Simulation (build the model based on inbound information) =" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="130" name="        Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="131" name="        Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="132" name="        Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="133" name="        Support context. = 2" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="134" name="    Correlation (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="135" name="    Logical Reasoning see PLN and Bayesian inference" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="136" name="    Wishful thinking (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="137" name="    Impersonation (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="138" name="    Cry for help (escalation) see" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="139" name="    Resignation (will not be implemented in prototype)." color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="140" name="Test main perceiving workflow" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="141" name="    Prototype Validation criteria to be used in test = should be done as part of Training prototype" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="142" name="    Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2012-01-13" duration="1" complete="0" priority="1" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Max" function="0" contacts="" phone=""/>
@@ -278,14 +350,13 @@
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
-        <displaycolumn property-id="tpd0" order="0" width="32"/>
-        <displaycolumn property-id="tpd10" order="1" width="15"/>
-        <displaycolumn property-id="tpd3" order="2" width="261"/>
-        <displaycolumn property-id="tpd4" order="3" width="37"/>
-        <displaycolumn property-id="tpd6" order="4" width="41"/>
-        <displaycolumn property-id="tpd5" order="5" width="37"/>
-        <displaycolumn property-id="tpd9" order="6" width="36"/>
-        <displaycolumn property-id="tpd8" order="7" width="75"/>
+        <displaycolumn property-id="tpd10" order="0" width="15"/>
+        <displaycolumn property-id="tpd3" order="1" width="367"/>
+        <displaycolumn property-id="tpd4" order="2" width="21"/>
+        <displaycolumn property-id="tpd6" order="3" width="23"/>
+        <displaycolumn property-id="tpd5" order="4" width="18"/>
+        <displaycolumn property-id="tpd9" order="5" width="30"/>
+        <displaycolumn property-id="tpd8" order="6" width="28"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
