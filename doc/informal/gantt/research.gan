@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-09" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-04-16" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
-    <view zooming-state="default:4" id="gantt-chart"/>
+    <view zooming-state="default:5" id="gantt-chart"/>
     <view id="resource-table">
         <field id="0" name="Name" width="54" order="0"/>
         <field id="1" name="Default role" width="45" order="1"/>
@@ -208,57 +208,97 @@
         <task id="143" name="Training prototype milestone" color="#8cb6ce" meeting="true" start="2012-05-23" duration="1" complete="0" priority="1" expand="true">
             <depend id="75" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-05-24" duration="32" complete="0" priority="1" expand="true">
-            <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true">
-                <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true">
+        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-05-24" duration="36" complete="0" priority="1" expand="true">
+            <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-05-24" duration="14" complete="0" priority="1" expand="true">
+                <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-05-24" duration="14" complete="0" priority="1" expand="true">
                     <task id="78" name="Deliberative Critics" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true">
-                        <task id="79" name="Current activity goal representation = 6 - 8 [possibly should try several approaches]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true"/>
-                        <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                        <task id="79" name="Current activity goal representation = 6 - 8 [possibly should try several approaches]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
+                            <depend id="93" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="90" type="2" difference="0" hardness="Strong"/>
+                        </task>
                         <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true"/>
                     </task>
-                    <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
-                        <task id="84" name="Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
-                            <task id="85" name="Design Energy concept = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                            <task id="86" name="Design Energy assignment mechanism during training = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
-                            <task id="87" name="Implement Energy concept = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
-                            <task id="88" name="Implement Energy assignment mechanism = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                    <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
+                        <task id="84" name="Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
+                            <task id="85" name="Design Energy concept = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
+                                <depend id="87" type="2" difference="0" hardness="Strong"/>
+                                <depend id="97" type="2" difference="0" hardness="Strong"/>
+                            </task>
+                            <task id="86" name="Design Energy assignment mechanism during training = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true">
+                                <depend id="88" type="2" difference="0" hardness="Strong"/>
+                            </task>
+                            <task id="87" name="Implement Energy concept = 2" color="#8cb6ce" meeting="false" start="2012-05-30" duration="2" complete="0" priority="1" expand="true">
+                                <depend id="99" type="2" difference="0" hardness="Strong"/>
+                            </task>
+                            <task id="88" name="Implement Energy assignment mechanism = 4" color="#8cb6ce" meeting="false" start="2012-05-28" duration="4" complete="0" priority="1" expand="true">
+                                <depend id="107" type="2" difference="0" hardness="Strong"/>
+                            </task>
                         </task>
                     </task>
-                    <task id="89" name="Develop Sub-goal control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
-                        <task id="90" name="Design sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                        <task id="91" name="Implement sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                    <task id="89" name="Develop Sub-goal control mechanism." color="#8cb6ce" meeting="false" start="2012-05-30" duration="8" complete="0" priority="1" expand="true">
+                        <task id="90" name="Design sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-05-30" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="91" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="91" name="Implement sub-goal control mechanism = 4" color="#8cb6ce" meeting="false" start="2012-06-05" duration="4" complete="0" priority="1" expand="true"/>
                     </task>
-                    <task id="92" name="Develop Evidence control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
-                        <task id="93" name="Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                        <task id="94" name="Implement Evidence control mechanism = 4 - 10" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+                    <task id="92" name="Develop Evidence control mechanism." color="#8cb6ce" meeting="false" start="2012-06-01" duration="8" complete="0" priority="1" expand="true">
+                        <task id="93" name="Design Evidence control mechanism = 4 - 10 [no clear understanding of evidence control mechanism, possibly further research required]" color="#8cb6ce" meeting="false" start="2012-06-01" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="94" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="94" name="Implement Evidence control mechanism = 4 - 10" color="#8cb6ce" meeting="false" start="2012-06-07" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="112" type="2" difference="0" hardness="Strong"/>
+                        </task>
                     </task>
                 </task>
             </task>
-            <task id="97" name="Prototype Selector = 6 - 8" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true"/>
-            <task id="98" name="Prototype Way2Think" color="#8cb6ce" meeting="false" start="2012-05-24" duration="32" complete="0" priority="1" expand="true">
-                <task id="99" name="Create base constructs(HowTo-s) = 2 - 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
-                <task id="107" name="Knowing How (select from KB) = 4 - 8" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                <task id="108" name="Extensive Search (search in KB) = 12 - 24 [graph search could be not strait-forward]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="12" complete="0" priority="1" expand="true"/>
-                <task id="109" name="Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="32" complete="0" priority="1" expand="true"/>
-                <task id="110" name="Divide and Conquer" color="#8cb6ce" meeting="false" start="2012-05-24" duration="16" complete="0" priority="1" expand="true">
-                    <task id="111" name="Add analytical HowTo-s to basic set:" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
-                        <task id="112" name="Wrong software was installed = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                        <task id="113" name="Two direct instructions in one incident description = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
+            <task id="97" name="Prototype Selector = 6 - 8" color="#8cb6ce" meeting="false" start="2012-05-30" duration="6" complete="0" priority="1" expand="true">
+                <depend id="109" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="98" name="Prototype Way2Think" color="#8cb6ce" meeting="false" start="2012-06-01" duration="30" complete="0" priority="1" expand="true">
+                <task id="99" name="Create base constructs(HowTo-s) = 2 - 4" color="#8cb6ce" meeting="false" start="2012-06-01" duration="2" complete="0" priority="1" expand="true">
+                    <depend id="108" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="107" name="Knowing How (select from KB) = 4 - 8" color="#8cb6ce" meeting="false" start="2012-06-01" duration="4" complete="0" priority="1" expand="true">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="108" name="Extensive Search (search in KB) = 12 - 24 [graph search could be not strait-forward]" color="#8cb6ce" meeting="false" start="2012-06-05" duration="12" complete="0" priority="1" expand="true">
+                    <depend id="130" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="109" name="Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-06-07" duration="16" complete="0" priority="1" expand="true">
+                    <depend id="131" type="2" difference="0" hardness="Strong"/>
+                    <depend id="132" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="110" name="Divide and Conquer" color="#8cb6ce" meeting="false" start="2012-06-07" duration="24" complete="0" priority="1" expand="true">
+                    <task id="111" name="Add analytical HowTo-s to basic set:" color="#8cb6ce" meeting="false" start="2012-06-07" duration="8" complete="0" priority="1" expand="true">
+                        <task id="112" name="Wrong software was installed = 4" color="#8cb6ce" meeting="false" start="2012-06-13" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="116" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="113" name="Two direct instructions in one incident description = 4" color="#8cb6ce" meeting="false" start="2012-06-07" duration="4" complete="0" priority="1" expand="true">
+                            <depend id="115" type="2" difference="0" hardness="Strong"/>
+                        </task>
                     </task>
-                    <task id="114" name="Add Interpretation mechanism over current state of the system" color="#8cb6ce" meeting="false" start="2012-05-24" duration="16" complete="0" priority="1" expand="true">
-                        <task id="115" name="Variable and current state addressing = 12 - 16" color="#8cb6ce" meeting="false" start="2012-05-24" duration="12" complete="0" priority="1" expand="true"/>
-                        <task id="116" name="Logical operation execution = 16" color="#8cb6ce" meeting="false" start="2012-05-24" duration="16" complete="0" priority="1" expand="true"/>
+                    <task id="114" name="Add Interpretation mechanism over current state of the system" color="#8cb6ce" meeting="false" start="2012-06-13" duration="20" complete="0" priority="1" expand="true">
+                        <task id="115" name="Variable and current state addressing = 12 - 16" color="#8cb6ce" meeting="false" start="2012-06-13" duration="12" complete="0" priority="1" expand="true">
+                            <depend id="133" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="116" name="Logical operation execution = 16" color="#8cb6ce" meeting="false" start="2012-06-19" duration="16" complete="0" priority="1" expand="true"/>
                     </task>
                 </task>
-                <task id="129" name="Simulation (build the model based on inbound information) =" color="#8cb6ce" meeting="false" start="2012-05-24" duration="16" complete="0" priority="1" expand="true">
-                    <task id="130" name="Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2012-05-24" duration="16" complete="0" priority="1" expand="true"/>
-                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true"/>
-                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
-                    <task id="133" name="Support context. = 2" color="#8cb6ce" meeting="false" start="2012-05-24" duration="2" complete="0" priority="1" expand="true"/>
+                <task id="129" name="Simulation (build the model based on inbound information) =" color="#8cb6ce" meeting="false" start="2012-06-21" duration="16" complete="0" priority="1" expand="true">
+                    <task id="130" name="Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2012-06-21" duration="16" complete="0" priority="1" expand="true"/>
+                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2012-06-29" duration="4" complete="0" priority="1" expand="true"/>
+                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2012-06-29" duration="2" complete="0" priority="1" expand="true">
+                        <depend id="142" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="133" name="Support context. = 2" color="#8cb6ce" meeting="false" start="2012-06-29" duration="2" complete="0" priority="1" expand="true">
+                        <depend id="142" type="2" difference="0" hardness="Strong"/>
+                    </task>
                 </task>
             </task>
-            <task id="140" name="Test main perceiving workflow" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true">
-                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2012-05-24" duration="10" complete="0" priority="1" expand="true"/>
+            <task id="140" name="Test main perceiving workflow" color="#8cb6ce" meeting="false" start="2012-07-03" duration="5" complete="0" priority="1" expand="true">
+                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2012-07-03" duration="5" complete="0" priority="1" expand="true"/>
             </task>
         </task>
     </tasks>
@@ -272,14 +312,14 @@
     </resources>
     <allocations>
         <allocation task-id="1" resource-id="1" function="1" responsible="true" load="50.0"/>
-        <allocation task-id="1" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="2" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="1" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="7" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -290,14 +330,14 @@
         <allocation task-id="12" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="17" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="17" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="18" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="19" resource-id="5" function="2" responsible="true" load="100.0"/>
         <allocation task-id="20" resource-id="5" function="2" responsible="true" load="100.0"/>
@@ -332,6 +372,33 @@
         <allocation task-id="71" resource-id="3" function="2" responsible="true" load="100.0"/>
         <allocation task-id="73" resource-id="4" function="2" responsible="true" load="100.0"/>
         <allocation task-id="74" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="79" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="80" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="81" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="86" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="87" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="88" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="90" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="91" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="93" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="94" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="97" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="99" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="107" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="108" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="109" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="109" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="112" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="113" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="115" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="116" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="130" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="131" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="132" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="133" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="3" function="2" responsible="false" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
