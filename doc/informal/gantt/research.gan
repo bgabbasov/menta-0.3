@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-04-16" view-index="0" gantt-divider-location="804" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-07-02" view-index="0" gantt-divider-location="758" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
     <view zooming-state="default:5" id="gantt-chart"/>
     <view id="resource-table">
@@ -35,6 +35,7 @@
             <depend id="13" type="2" difference="0" hardness="Strong"/>
             <depend id="15" type="2" difference="0" hardness="Strong"/>
             <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="181" type="2" difference="0" hardness="Strong"/>
             <task id="1" name="Incidents" color="#8cb6ce" meeting="false" start="2012-01-16" duration="5" complete="0" priority="1" expand="true">
                 <depend id="2" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -218,7 +219,9 @@
                         <task id="80" name="Current task state representation = 4 - 6 [possibly should try several representations]" color="#8cb6ce" meeting="false" start="2012-05-24" duration="4" complete="0" priority="1" expand="true">
                             <depend id="90" type="2" difference="0" hardness="Strong"/>
                         </task>
-                        <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true"/>
+                        <task id="81" name="Reasoning over current state with Reasoner adapter development = 8 - 10" color="#8cb6ce" meeting="false" start="2012-05-24" duration="8" complete="0" priority="1" expand="true">
+                            <depend id="109" type="2" difference="0" hardness="Strong"/>
+                        </task>
                     </task>
                     <task id="82" name="Reflective Critic" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
                         <task id="84" name="Develop Energy control mechanism." color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
@@ -266,7 +269,7 @@
                 <task id="108" name="Extensive Search (search in KB) = 12 - 24 [graph search could be not strait-forward]" color="#8cb6ce" meeting="false" start="2012-06-05" duration="12" complete="0" priority="1" expand="true">
                     <depend id="130" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="109" name="Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-06-07" duration="16" complete="0" priority="1" expand="true">
+                <task id="109" name="Reasoning by Analogy = 32 - 40 [graph analogy API could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-06-07" duration="11" complete="0" priority="1" expand="true">
                     <depend id="131" type="2" difference="0" hardness="Strong"/>
                     <depend id="132" type="2" difference="0" hardness="Strong"/>
                 </task>
@@ -287,20 +290,107 @@
                     </task>
                 </task>
                 <task id="129" name="Simulation (build the model based on inbound information) =" color="#8cb6ce" meeting="false" start="2012-06-21" duration="16" complete="0" priority="1" expand="true">
+                    <depend id="181" type="2" difference="0" hardness="Strong"/>
                     <task id="130" name="Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2012-06-21" duration="16" complete="0" priority="1" expand="true"/>
-                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2012-06-29" duration="4" complete="0" priority="1" expand="true"/>
-                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2012-06-29" duration="2" complete="0" priority="1" expand="true">
+                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2012-06-22" duration="4" complete="0" priority="1" expand="true"/>
+                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2012-06-22" duration="2" complete="0" priority="1" expand="true">
                         <depend id="142" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="133" name="Support context. = 2" color="#8cb6ce" meeting="false" start="2012-06-29" duration="2" complete="0" priority="1" expand="true">
                         <depend id="142" type="2" difference="0" hardness="Strong"/>
+                        <depend id="181" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
             </task>
             <task id="140" name="Test main perceiving workflow" color="#8cb6ce" meeting="false" start="2012-07-03" duration="5" complete="0" priority="1" expand="true">
-                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2012-07-03" duration="5" complete="0" priority="1" expand="true"/>
+                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2012-07-03" duration="5" complete="0" priority="1" expand="true">
+                    <depend id="181" type="2" difference="0" hardness="Strong"/>
+                </task>
             </task>
         </task>
+        <task id="181" name="Emotion machine solution" color="#8cb6ce" meeting="true" start="2012-07-13" duration="1" complete="0" priority="1" expand="true">
+            <depend id="144" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="144" name="AIV Solution, for the specification see page." color="#8cb6ce" meeting="false" start="2012-07-16" duration="36" complete="0" priority="1" expand="true">
+            <task id="147" name="Auto-correct analysis should use measures: precision, recall and F-measure" color="#8cb6ce" meeting="false" start="2012-07-16" duration="6" complete="0" priority="1" expand="true">
+                <task id="148" name="AbiWord" color="#8cb6ce" meeting="false" start="2012-07-16" duration="6" complete="0" priority="1" expand="true">
+                    <task id="149" name="Read Syntax check module documentation = 1" color="#8cb6ce" meeting="false" start="2012-07-16" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="150" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="150" name="Install AbiWord = 1 - 2" color="#8cb6ce" meeting="false" start="2012-07-17" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="151" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="151" name="Test 10 incidents descriptions = 3.5 - 4" color="#8cb6ce" meeting="false" start="2012-07-18" duration="4" complete="0" priority="1" expand="true">
+                        <depend id="173" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="152" name="OpenOffice(LibreOffice)" color="#8cb6ce" meeting="false" start="2012-07-16" duration="6" complete="0" priority="1" expand="true">
+                    <task id="153" name="Read Auto-correct module documentation OpenOffice LibreOffice = 1" color="#8cb6ce" meeting="false" start="2012-07-16" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="154" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="154" name="Install OpenOffice or LibreOffice = 1 - 2" color="#8cb6ce" meeting="false" start="2012-07-17" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="155" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="155" name="Test 10 incidents descriptions = 3.5 - 4" color="#8cb6ce" meeting="false" start="2012-07-18" duration="4" complete="0" priority="1" expand="true">
+                        <depend id="176" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="156" name="OpenCog" color="#8cb6ce" meeting="false" start="2012-07-16" duration="6" complete="0" priority="1" expand="true">
+                    <task id="157" name="Read Auto-correct module documentation Grammatical correction = 1 - 2" color="#8cb6ce" meeting="false" start="2012-07-16" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="158" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="158" name="Install OpenCog = 1 - 2" color="#8cb6ce" meeting="false" start="2012-07-17" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="159" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="159" name="Test 10 incidents descriptions = 3.5 - 4" color="#8cb6ce" meeting="false" start="2012-07-18" duration="4" complete="0" priority="1" expand="true">
+                        <depend id="179" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="160" name="KOffice" color="#8cb6ce" meeting="false" start="2012-07-16" duration="6" complete="0" priority="1" expand="true">
+                    <task id="161" name="Read Auto-correct module documentation = 1 - 2" color="#8cb6ce" meeting="false" start="2012-07-16" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="162" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="162" name="Install KOffice = 1 - 4 [Could be not strait forward under Win]" color="#8cb6ce" meeting="false" start="2012-07-17" duration="1" complete="0" priority="1" expand="true">
+                        <depend id="163" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="163" name="Test 10 incidents descriptions = 3.5 - 4" color="#8cb6ce" meeting="false" start="2012-07-18" duration="4" complete="0" priority="1" expand="true"/>
+                </task>
+            </task>
+            <task id="165" name="KnowledgeBaseAnnotator, see specification. knowledge base integration analysis." color="#8cb6ce" meeting="false" start="2012-07-16" duration="36" complete="0" priority="1" expand="true">
+                <depend id="182" type="2" difference="0" hardness="Strong"/>
+                <task id="166" name="WolframAlpha" color="#8cb6ce" meeting="false" start="2012-07-16" duration="30" complete="0" priority="1" expand="true">
+                    <task id="167" name="Explore API to integrate = 10 - 20 [could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-07-16" duration="10" complete="0" priority="1" expand="true">
+                        <depend id="168" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="168" name="Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]" color="#8cb6ce" meeting="false" start="2012-07-30" duration="20" complete="0" priority="1" expand="true"/>
+                </task>
+                <task id="169" name="TrueKnowledge" color="#8cb6ce" meeting="false" start="2012-07-24" duration="30" complete="0" priority="1" expand="true">
+                    <task id="170" name="Explore API to integrate = 10 - 20 [could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-07-24" duration="10" complete="0" priority="1" expand="true">
+                        <depend id="171" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="171" name="Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]" color="#8cb6ce" meeting="false" start="2012-08-07" duration="20" complete="0" priority="1" expand="true"/>
+                </task>
+                <task id="172" name="ConceptNet" color="#8cb6ce" meeting="false" start="2012-07-24" duration="30" complete="0" priority="1" expand="true">
+                    <task id="173" name="Explore API to integrate = 10 - 20 [could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-07-24" duration="10" complete="0" priority="1" expand="true">
+                        <depend id="174" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="174" name="Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]" color="#8cb6ce" meeting="false" start="2012-08-07" duration="20" complete="0" priority="1" expand="true"/>
+                </task>
+                <task id="175" name="ConceptNet5" color="#8cb6ce" meeting="false" start="2012-07-24" duration="30" complete="0" priority="1" expand="true">
+                    <task id="176" name="Explore API to integrate = 10 - 20 [could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-07-24" duration="10" complete="0" priority="1" expand="true">
+                        <depend id="177" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="177" name="Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]" color="#8cb6ce" meeting="false" start="2012-08-07" duration="20" complete="0" priority="1" expand="true"/>
+                </task>
+                <task id="178" name="WordNet, is integrated in ConceptNet5 but could be useful standalone" color="#8cb6ce" meeting="false" start="2012-07-24" duration="30" complete="0" priority="1" expand="true">
+                    <task id="179" name="Explore API to integrate = 10 - 20 [could be not strait forward]" color="#8cb6ce" meeting="false" start="2012-07-24" duration="10" complete="0" priority="1" expand="true">
+                        <depend id="180" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="180" name="Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]" color="#8cb6ce" meeting="false" start="2012-08-07" duration="20" complete="0" priority="1" expand="true"/>
+                </task>
+            </task>
+        </task>
+        <task id="182" name="AIV Solution" color="#8cb6ce" meeting="true" start="2012-09-04" duration="1" complete="0" priority="1" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Max" function="0" contacts="" phone=""/>
@@ -311,14 +401,14 @@
         <resource id="5" name="Artem" function="2" contacts="" phone=""/>
     </resources>
     <allocations>
-        <allocation task-id="1" resource-id="1" function="1" responsible="true" load="50.0"/>
-        <allocation task-id="1" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="2" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="1" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="1" responsible="true" load="50.0"/>
         <allocation task-id="1" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="4" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
@@ -329,14 +419,14 @@
         <allocation task-id="11" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="17" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="17" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="17" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="4" function="2" responsible="false" load="100.0"/>
-        <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="18" resource-id="3" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="18" resource-id="5" function="2" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="4" function="2" responsible="false" load="100.0"/>
         <allocation task-id="19" resource-id="5" function="2" responsible="true" load="100.0"/>
@@ -387,6 +477,7 @@
         <allocation task-id="99" resource-id="4" function="2" responsible="true" load="100.0"/>
         <allocation task-id="107" resource-id="3" function="2" responsible="true" load="100.0"/>
         <allocation task-id="108" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="109" resource-id="2" function="2" responsible="false" load="100.0"/>
         <allocation task-id="109" resource-id="1" function="1" responsible="false" load="100.0"/>
         <allocation task-id="109" resource-id="5" function="2" responsible="true" load="100.0"/>
         <allocation task-id="112" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -397,8 +488,29 @@
         <allocation task-id="131" resource-id="5" function="2" responsible="true" load="100.0"/>
         <allocation task-id="132" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="133" resource-id="3" function="2" responsible="true" load="100.0"/>
-        <allocation task-id="142" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="142" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="142" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="149" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="150" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="151" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="153" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="154" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="155" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="157" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="158" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="159" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="161" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="162" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="163" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="167" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="168" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="170" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="171" resource-id="5" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="173" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="174" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="176" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="177" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="179" resource-id="2" function="2" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
