@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-01-16" view-index="0" gantt-divider-location="758" resource-divider-location="337" version="2.0">
+<project name="Menta 0.3 research" company="" webLink="http://menta-project.org/" view-date="2012-02-27" view-index="0" gantt-divider-location="758" resource-divider-location="337" version="2.0">
     <description><![CDATA[Research project to automate the incident handling.]]></description>
     <view zooming-state="default:2" id="gantt-chart"/>
     <view id="resource-table">
@@ -31,7 +31,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Analysis" color="#8cb6ce" meeting="false" start="2012-01-16" duration="11" complete="0" priority="1" expand="true">
+        <task id="0" name="Analysis" color="#8cb6ce" meeting="false" start="2012-01-16" duration="11" complete="0" priority="1" expand="false">
             <depend id="13" type="2" difference="0" hardness="Strong"/>
             <depend id="15" type="2" difference="0" hardness="Strong"/>
             <depend id="28" type="2" difference="0" hardness="Strong"/>
@@ -40,7 +40,7 @@
             </task>
             <task id="2" name="Workbook articles" color="#8cb6ce" meeting="false" start="2012-01-23" duration="6" complete="0" priority="1" expand="true"/>
         </task>
-        <task id="5" name="Design Emotion Machine" color="#8cb6ce" meeting="false" start="2012-01-23" duration="38" complete="0" priority="1" expand="true">
+        <task id="5" name="Design Emotion Machine" color="#8cb6ce" meeting="false" start="2012-01-23" duration="38" complete="0" priority="1" expand="false">
             <depend id="13" type="2" difference="0" hardness="Strong"/>
             <task id="6" name="Inbound textual description" color="#8cb6ce" meeting="false" start="2012-01-23" duration="1" complete="0" priority="1" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
@@ -66,7 +66,8 @@
             </task>
         </task>
         <task id="13" name="Analysis and design" color="#8cb6ce" meeting="true" start="2012-03-15" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="15" name="OpenCog prototype" color="#8cb6ce" meeting="false" start="2012-01-31" duration="31" complete="0" priority="1" expand="true">
+        <task id="15" name="OpenCog prototype" color="#8cb6ce" meeting="false" start="2012-01-31" duration="31" complete="0" priority="1" expand="false">
+            <depend id="183" type="2" difference="0" hardness="Strong"/>
             <task id="16" name="CogBuntu" color="#8cb6ce" meeting="false" start="2012-01-31" duration="3" complete="0" priority="1" expand="true">
                 <depend id="19" type="2" difference="0" hardness="Strong"/>
                 <depend id="23" type="2" difference="0" hardness="Strong"/>
@@ -118,7 +119,8 @@
                 <task id="34" name="OpenNLP" color="#8cb6ce" meeting="false" start="2012-02-21" duration="6" complete="0" priority="1" expand="true"/>
             </task>
         </task>
-        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-29" duration="60" complete="0" priority="1" expand="true">
+        <task id="183" name="OpenCog analysis" color="#8cb6ce" meeting="true" start="2012-03-14" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-02-29" duration="60" complete="0" priority="1" expand="false">
             <depend id="143" type="2" difference="0" hardness="Strong"/>
             <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-02-29" duration="18" complete="0" priority="1" expand="true">
                 <depend id="59" type="2" difference="0" hardness="Strong"/>
@@ -208,7 +210,7 @@
         <task id="143" name="Training prototype milestone" color="#8cb6ce" meeting="true" start="2012-05-23" duration="1" complete="0" priority="1" expand="true">
             <depend id="144" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="144" name="AIV Solution, for the specification see page." color="#8cb6ce" meeting="false" start="2012-05-24" duration="36" complete="0" priority="1" expand="true">
+        <task id="144" name="AIV Solution, for the specification see page." color="#8cb6ce" meeting="false" start="2012-05-24" duration="36" complete="0" priority="1" expand="false">
             <depend id="182" type="2" difference="0" hardness="Strong"/>
             <task id="147" name="Auto-correct analysis should use measures: precision, recall and F-measure" color="#8cb6ce" meeting="false" start="2012-06-29" duration="6" complete="0" priority="1" expand="true">
                 <task id="148" name="AbiWord" color="#8cb6ce" meeting="false" start="2012-05-24" duration="6" complete="0" priority="1" expand="true">
@@ -290,7 +292,7 @@
         <task id="182" name="AIV Solution" color="#8cb6ce" meeting="true" start="2012-07-13" duration="1" complete="0" priority="1" expand="true">
             <depend id="75" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-07-17" duration="36" complete="0" priority="1" expand="true">
+        <task id="75" name="Emotion Machine Soltion" color="#8cb6ce" meeting="false" start="2012-07-17" duration="36" complete="0" priority="1" expand="false">
             <depend id="181" type="2" difference="0" hardness="Strong"/>
             <task id="76" name="Prototype Critics, Way2Think, Selector" color="#8cb6ce" meeting="false" start="2012-07-17" duration="14" complete="0" priority="1" expand="true">
                 <task id="77" name="Implement Critics" color="#8cb6ce" meeting="false" start="2012-07-17" duration="14" complete="0" priority="1" expand="true">
