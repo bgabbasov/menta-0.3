@@ -1,6 +1,6 @@
 # Incident analysis result
 
-## 1
+## 2
 ```
 class = Invalid Login {
   login = snill9,
@@ -8,7 +8,7 @@ class = Invalid Login {
 }
 ```
 
-## 2
+## 3
 
 ```
 class = Connectivity problem {
@@ -17,7 +17,7 @@ class = Connectivity problem {
 }
 ```
 
-## 3
+## 4
 
 ```
 class = Can not find { // this class seems to be obscure
@@ -26,7 +26,7 @@ class = Can not find { // this class seems to be obscure
 }
 ```
 
-## 4
+## 5
 
 ```
 class = Reinstall software{
@@ -38,16 +38,16 @@ class = Reinstall software{
 }
 ```
 
-## 5
+## 6
 
 ```
 Can not process need attachment message.
 ```
 
-## 6
+## 7
 
 ```
-class Wrong application has been installed {
+class = Wrong application has been installed {
   installedApplication = Software{
     context = ordered instead,
     name =   Wordfinder,
@@ -62,7 +62,7 @@ class Wrong application has been installed {
 
 ```
 
-## 7
+## 8
 
 ```
 class = Insufficient disk space{
@@ -74,7 +74,7 @@ class = Insufficient disk space{
 }
 ```
 
-## 8
+## 9
 ```
 class = Reinstall software {
   Software {
@@ -83,7 +83,7 @@ class = Reinstall software {
 }
 ```
 
-## 9
+## 10
 
 ```
 class Reinstall software {
@@ -91,13 +91,13 @@ class Reinstall software {
 }
 ```
 
-## 10
+## 11
 
 ```
 Can not process, need the instruction what to do with software mentioned.
 ```
 
-## 11
+## 12
 
 ```
 class = Shared disk group connection{
@@ -111,7 +111,14 @@ class = Shared disk group connection{
 }
 ```
 
-## 12
+## 13
+```
+class = Reinstall software{
+  application = Adobe Reader
+}
+```
+
+## 14
 
 ```
 class = Invalid time{
@@ -121,13 +128,13 @@ class = Invalid time{
 }
 ```
 
-## 13
+## 15
 
 ```
 Can not process: No incident description available.
 ```
 
-## 14
+## 16
 
 ```
 class = Shared disk group connection{
@@ -142,7 +149,7 @@ class = Shared disk group connection{
 }
 ```
 
-## 15
+## 17
 
 ```
 class = Setup Wi-Fi{
@@ -155,7 +162,7 @@ class = Setup Wi-Fi{
 }
 ```
 
-## 16
+## 18
 ```
 class = Shared disk group connection{
   group{
@@ -169,7 +176,7 @@ class = Shared disk group connection{
 }
 ```
 
-## 17
+## 19
 ```
 class = Can not find{
   software {
@@ -179,7 +186,7 @@ class = Can not find{
 Can not process the request, need an application name.
 ```
 
-## 18
+## 20
 ```
 class Shared disk group connection{
   group{
