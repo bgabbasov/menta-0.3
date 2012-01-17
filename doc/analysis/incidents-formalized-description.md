@@ -181,7 +181,7 @@ Can not process the request, need an application name.
 
 ## 18
 ```
-"class Shared disk group connection{
+class Shared disk group connection{
   group{
     context = AD-GROUPS,
     name =   9413-SHR-VCC40600-AR9413-SHR-VCC40600-R
