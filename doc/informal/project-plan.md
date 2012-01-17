@@ -9,3 +9,13 @@
  1. Training prototype 23/05/12
  1. AIV prototype 13/07/12
  1. Emotion machine prototype 05/09/12
+
+![Menta 0.3 research project plan rainy day](https://github.com/menta/menta-0.3/raw/master/doc/informal/gantt/research-pessimistic.png)
+
+ 1. Analysis and design 23/03/12
+ 1. OpenCog analysis 25/07/12
+ 1. Training prototype 21/05/13
+ 1. AIV prototype 03/12/13
+ 1. Emotion machine prototype 08/05/14
+
+
