@@ -1,6 +1,8 @@
 #Menta 0.3 prototype project plan.
 
-## Project plan in CVS
+## Sunny day scenario.
+
+### Project plan in CVS
 
 ```
 0,"  Analysis",16/01/12,31/01/12,11,0,"","","",
@@ -154,7 +156,7 @@
 
 ![Menta 0.3 research project plan](https://github.com/menta/menta-0.3/raw/master/doc/informal/gantt/research.png)
 
-## Main milestones:
+### Main milestones:
 
  1. Analysis and design 15/03/12
  1. OpenCog analysis 14/03/12
@@ -162,7 +164,11 @@
  1. AIV prototype 13/07/12
  1. Emotion machine prototype 05/09/12
 
+## Rainy day scenario.
+
 ![Menta 0.3 research project plan rainy day](https://github.com/menta/menta-0.3/raw/master/doc/informal/gantt/research-pessimistic.png)
+
+### Main milestones:
 
  1. Analysis and design 23/03/12
  1. OpenCog analysis 25/07/12
