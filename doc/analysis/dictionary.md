@@ -15,3 +15,36 @@ Incident class of installation/reinstallation requests.
 ## Can not process...
 Start of escalation/clarification response of the system.
 
+## Wrong application has been installed
+Subclass of _Reinstall software_ class with additional parameters:
+  - Installed(current, wrong) software.
+  - Desired software.
+
+## Insufficient disk space
+Incident class of the lack of disk space issues.
+Parameters:
+ - driveName
+ - address (network address)
+
+## application =
+Parameter shortcut to:
+```
+Software {
+  name =
+}
+```
+
+## Shared disk group connection
+Incident class or requests to assign access rights to user group.
+Parameters:
+ - group
+ - disk
+
+## Invalid time
+_Invalid parameter_ subclass with parameters:
+ - software
+
+## Setup Wi-Fi
+Subclass of all _Unable to setup_ issues.
+Parameters:
+ - machine(network address)

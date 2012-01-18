@@ -69,7 +69,7 @@ class = Insufficient disk space{
   driveName = c,
   networkAddress = {
     context = driveName,
-    address = MELLDEN
+    address = MEL123
   }
 }
 ```
@@ -102,11 +102,11 @@ Can not process, need the instruction what to do with software mentioned.
 ```
 class = Shared disk group connection{
   group{
-    name = 9413-SHR-VCC55101-R9413-SHR-VCC55101-AR
+    name = 9413-SHR-R9413-SHR-VCC55101-AR
   }
-  class disk{
+  disk{
     context = Shared DISK:,
-    address = \\gbw9061117\proj\9413-shr-vcc55100\88625_Fire_Protection-VCC55101
+    address = \\eee9061117\proj\9413-shr-vcc55100\88625_Fire_Protection-VCC55101
   }
 }
 ```
@@ -140,11 +140,11 @@ Can not process: No incident description available.
 class = Shared disk group connection{
   group{
     context = AD-GROUPS:,
-    name =  9413-SHR-VCC46701-S19413-SHR-VCC46701-AR9413-SHR-VCC46701-R
+    name =  9413-SHR-S19413-SHR-VCC46701-AR9413-SHR-46701-R
   }
   disk{
     context = Shared DISK:,
-    address = \\gbw9061110\proj\9413-shr-vcc46700\Managment_Team-VCC46701
+    address = \\eee9061110\proj\9413-shr-null46700\Managment_Team-null46701
   }
 }
 ```
@@ -154,10 +154,10 @@ class = Shared disk group connection{
 ```
 class = Setup Wi-Fi{
  machine = {
-   address = GOBEL
+   address = GOBLIN
  },
  machine = {
-   name = PETRA
+   name = PET
  }
 }
 ```
@@ -167,11 +167,11 @@ class = Setup Wi-Fi{
 class = Shared disk group connection{
   group{
     context = AD-GROUPS,
-    name =  9413-SHR-vcc55100-AR9413-SHR-vcc55100-R
+    name =  9413-SHR-null55100-AR9413-SHR-null55100-R
   }
   disk{
     context = Shared DISK:,
-    address = \\gbw9061117\proj\9413-shr-vcc55100
+    address = \\gbw9061117\proj\9413-shr-null55100
   }
 }
 ```
@@ -191,11 +191,11 @@ Can not process the request, need an application name.
 class Shared disk group connection{
   group{
     context = AD-GROUPS,
-    name =   9413-SHR-VCC40600-AR9413-SHR-VCC40600-R
+    name =   9413-SHR-null40600-AR9413-SHR-null40600-R
   }
   class disk{
     context = Shared DISK:,
-    address = \\gbw9061104\proj\9413-shr-vcc40600
+    address = \\gbw9061104\proj\9413-shr-null40600
   }
 }
 ```
