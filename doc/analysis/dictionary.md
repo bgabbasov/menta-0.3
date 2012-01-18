@@ -1,0 +1,4 @@
+# Incidents dictionary
+
+
+## Invalid Login
