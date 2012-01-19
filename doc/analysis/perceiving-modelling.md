@@ -115,4 +115,165 @@ Response =
 2 | noun | a person who uses something or someone selfishly or unethically
 3 | noun | a person who takes drugs
 ```
+```
+Request = what is received
+Response =
+1 | adjective | conforming to the established language usage of educated native speakers
+2 | adjective | widely accepted as true or worthy
+```
+```
+Request = what is Wordfinder Business Economical
+Response =
+noun | a thesaurus organized to help you find the word you want but cannot think of
+```
 
+### [TrueKnowledge](http://www.trueknowledge.com/q/what_is_the_meaning_of_life)
+
+```
+Request = what is user
+Response =
+user, a computer identity used to access a particular computer network
+class
+Parent Class = technology, object, computing concept, concept that can be classified by sector of human endeavor, conceptual object,  …
+```
+```
+Request = what is received
+Response =
+is someone who won as prize money
+relation
+```
+```
+Request = what is Wordfinder Business Economical
+Response =
+The term 'wordfinder' means a thesaurus organized to help you find the word you want but cannot think of
+```
+
+### [ConceptNet](http://csc.media.mit.edu/conceptnet)
+
+```
+Request = what is user
+Response =
+	a user is a kind of person.
+	users can use.
+	A user is someone who takes drugs
+	Users can train Open Mind
+	users can explain that verb
+	software is used for users.
+	a user can complete a form
+	A user can mine a database
+```
+```
+Request = what is received
+Response =
+	Beggers are used to recieving
+	getting something requires being there to receive it
+	The effect of getting something is receiving
+	Something that might happen when you get something is receiving it
+	receive is action
+	opening a gift requires receiving one
+```
+```
+Request = what is Wordfinder Business Economical
+Response =
+Hmm. I don't know anything about that concept.
+```
+
+### [ConceptNet5](http://conceptnet5.media.mit.edu/)
+
+```
+Request = user
+Response =
+...
+    {
+      "end": "/concept/en/user",
+      "weight": 1,
+      "start": "/concept/en/user/n/one_who_uses_something,_a_consumer",
+      "score": 1257.3005135859114,
+      "key": "senseOf /concept/en/user/n/one_who_uses_something,_a_consumer /concept/en/user",
+      "start_url": "http://conceptnet5.media.mit.edu/data/concept/en/user/n/one_who_uses_something,_a_consumer",
+      "type": "senseOf"
+    },
+...
+```
+```
+Request = receive
+Response =
+...
+    {
+      "end": "/concept/en/receive",
+      "weight": 1,
+      "start": "/assertion/[/relation/Causes/,/concept/en/get_something/,/concept/en/receive/]",
+      "score": 250.98328321790424,
+      "key": "arg2 /assertion/[/relation/Causes/,/concept/en/get_something/,/concept/en/receive/] /concept/en/receive",
+      "start_url": "http://conceptnet5.media.mit.edu/data/assertion/[/relation/Causes/,/concept/en/get_something/,/concept/en/receive/]",
+      "position": 2,
+      "type": "arg"
+    },
+...
+```
+```
+Request = Wordfinder
+Response =
+{"error": "invalid uri /concept/en/Wordfinder"}
+```
+
+### [WordNet](http://wordnet.princeton.edu/)
+
+```
+Request = user
+Response =
+S: (n) user (a person who makes use of a thing; someone who uses or employs something)
+S: (n) exploiter, user (a person who uses something or someone selfishly or unethically)
+S: (n) drug user, substance abuser, user (a person who takes drugs)
+```
+```
+Request = receive
+Response =
+S: (v) receive, have (get something; come into possession of) "receive payment"; "receive a gift"; "receive letters from the front"
+S: (v) receive, get, find, obtain, incur (receive a specified treatment (abstract)) "These aspects of civilization do not find expression or receive an interpretation"; "His movie received a good review"; "I got nothing but trouble for my good intentions"
+S: (v) pick up, receive (register (perceptual input)) "pick up a signal"
+S: (v) experience, receive, have, get (go through (mental or physical states or experiences)) "get an idea"; "experience vertigo"; "get nauseous"; "receive injuries"; "have a feeling"
+S: (v) receive, take in, invite (express willingness to have in one's home or environs) "The community warmly received the refugees"
+S: (v) receive (accept as true or valid) "He received Christ"
+S: (v) welcome, receive (bid welcome to; greet upon arrival)
+S: (v) receive (convert into sounds or pictures) "receive the incoming radio signals"
+S: (v) meet, encounter, receive (experience as a reaction) "My proposal met with much opposition"
+S: (v) receive (have or give a reception) "The lady is receiving Sunday morning"
+S: (v) get, receive (receive as a retribution or punishment) "He got 5 years in prison"
+S: (v) receive (partake of the Holy Eucharist sacrament)
+S: (v) receive (regard favorably or with disapproval) "Her new collection of poems was not well received"
+```
+```
+Request = Wordfinder
+Response =
+S: (n) word finder, wordfinder (a thesaurus organized to help you find the word you want but cannot think of)
+```
+
+### [OpenCyc](http://www.opencyc.org/)
+
+```
+Request = user-theprogram
+Response =
+GAF Arg : 1
+
+Mt : UniversalVocabularyMt
+isa :	Individual
+
+Mt : ComputerSoftwareDataMt
+isa :	UserInterfaceProgram MicrosoftComputerProgram UnversionedProgram LocalProgram MSWindowsApplication
+comment :	"The Win16 User for Win16 application compatibility."
+
+Mt : EnglishMt
+prettyString :	"Windows User-interface core component"
+prettyString-Canonical :	"User"
+```
+```
+Request = receive
+Response =
+---> 	toreceive would be here.
+```
+```
+Request = Wordfinder
+Response =
+---> 	Wordfinder would be here.
+```
