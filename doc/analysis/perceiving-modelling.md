@@ -75,5 +75,31 @@ dep(Please-1, assist-2)
 
 ### [RelEx](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
 
+See [XML Semantic parsing results](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.res.xml) and compact version
+(https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt)
+
+Examples of SemanticRelation-s
 ```
+<BinaryRelation leftWord="receive" rightWord="User" label="_subj" />
+<UnaryRelation label="verb" word="receive" type="" />
+```
+
+### Data structures:
+
+```
+SemanticLink {
+  name,
+  probability,
+}
+
+BinaryRelation extends SemanticLink {
+  _1,
+  _2
+}
+
+UnaryRelation extends SemanticLink {
+  _1,
+  type
+}
+
 ```
