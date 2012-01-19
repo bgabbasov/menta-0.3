@@ -79,6 +79,7 @@ See [XML Semantic parsing results](https://github.com/menta/menta-0.3/blob/maste
 (https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt)
 
 Examples of SemanticRelation-s
+
 ```
 <BinaryRelation leftWord="receive" rightWord="User" label="_subj" />
 <UnaryRelation label="verb" word="receive" type="" />
@@ -101,5 +102,4 @@ UnaryRelation extends SemanticLink {
   _1,
   type
 }
-
 ```
