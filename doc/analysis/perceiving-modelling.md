@@ -27,9 +27,7 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
          4. DesiredState if not mentioned explicitly could be inferred as following:
              5. System has a goal to help User.
              5. To help user System has to satisfy User needs:
-             5. User has a goal to get rid of problem.
-                 * If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed.
-                 * Else initiate Deliberate Critics to find out the ProblemSource.
+             5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
      3. Deliberate Critics selects ExtensiveSearch Way2Think.
      3. ExtensiveSearch searches for HowTo-s to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
          4. If found => reports success.
