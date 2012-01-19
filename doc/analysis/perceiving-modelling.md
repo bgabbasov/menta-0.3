@@ -143,7 +143,7 @@ is someone who won as prize money
 relation
 ```
 ```
-Request = what is Wordfinder Business Economical
+Request = what is Wordfinder
 Response =
 The term 'wordfinder' means a thesaurus organized to help you find the word you want but cannot think of
 ```
@@ -277,3 +277,11 @@ Request = Wordfinder
 Response =
 ---> 	Wordfinder would be here.
 ```
+
+### Data structures
+
+```
+```
+
+## EmotionMachine
+
