@@ -38,7 +38,8 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
 
 ## PreliminaryAnnotator
-See [Stanford Parser](http://nlp.stanford.edu:8080/parser/index.jsp)
+
+### [Stanford Parser](http://nlp.stanford.edu:8080/parser/index.jsp)
 
 Typed dependencies, collapsed
 
@@ -72,3 +73,7 @@ root(ROOT-0, Please-1)
 dep(Please-1, assist-2)
 ```
 
+### [RelEx](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
+
+```
+```

@@ -64,7 +64,7 @@ The list of prototypes with WBS and estimates in man/hours with following layout
      3. Read documentation = 4
        4. [Main](http://wiki.opencog.org/w/RelEx)
        4. [Sentence algorithm](http://wiki.opencog.org/w/Sentence_algorithms)
-       4. [Walk through](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
+       4. See ```/OpenCog/nlgen/README``` for the instructions to run
      3. Test NLP using 10 simple examples of test incidents. = 4 - 8
    2. [StanfordParser](http://nlp.stanford.edu/software/lex-parser.shtml) = 4 - 5
      3. Use [online](http://nlp.stanford.edu:8080/parser/) or download and use Java command to test using same 10 simple examples of test incidents.
