@@ -12,7 +12,7 @@ Please assist
 See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
  1. PreliminaryAnnotator creates word links.
- 1. KnowledgeAnnotator creates concept references.
+ 1. KnowledgeBaseAnnotator creates concept references.
  1. EmotionMachine runs:
    2. Reflective Critics selects KnowingHow(Perceiving) Way2Think:
    2. KnowingHow(Perceiving) Way2Think:
@@ -76,7 +76,7 @@ dep(Please-1, assist-2)
 ### [RelEx](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
 
 See [XML Semantic parsing results](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.res.xml) and
-[compact version](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt)
+[compact version](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt).
 
 Examples of SemanticRelation-s
 
@@ -103,3 +103,16 @@ UnaryRelation extends SemanticLink {
   type
 }
 ```
+
+## [KnowledgeBaseAnnotator](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#KnowledgeBaseAnnotator)
+
+### [WolframAlpha](http://www.wolframalpha.com/input/?i=what+is+the+meaning+of+life)
+
+```
+Request = what is user
+Response =
+1 | noun | a person who makes use of a thing; someone who uses or employs something
+2 | noun | a person who uses something or someone selfishly or unethically
+3 | noun | a person who takes drugs
+```
+

@@ -305,8 +305,11 @@ The list of prototypes with WBS and estimates in man/hours with following layout
    2. [ConceptNet5](http://conceptnet5.media.mit.edu/)
      3. Explore API to integrate = 10 - 20 [could be not strait forward]
      3. Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]
-   2. [WordNet](http://wordnet.princeton.edu/), is integrated in ConceptNet5 but could be useful standalone
+   2. [WordNet](http://wordnet.princeton.edu/) is integrated in ConceptNet5, but could be useful standalone
      3. Explore API to integrate = 10 - 20 [could be not strait forward]
      3. Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]
+   2. [OpenCyc](http://www.opencyc.org/)
+        3. Explore API to integrate = 10 - 20 [could be not strait forward]
+        3. Test information retrieval and annotation options = 20 - 30 [could contain information not from SE domain]
 
  1. Interpreter and Validator see [Emotion Machine Solution](https://github.com/menta/menta-0.3/blob/master/doc/informal/prototypes-estimates.md#Emotion_Machine)
