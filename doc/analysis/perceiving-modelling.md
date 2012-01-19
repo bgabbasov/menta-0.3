@@ -38,3 +38,36 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
 
 ## PreliminaryAnnotator
+[Stanford Parser](http://nlp.stanford.edu:8080/parser/index.jsp)
+
+Typed dependencies, collapsed
+```
+nsubj(received-3, User-1)
+aux(received-3, had-2)
+root(ROOT-0, received-3)
+amod(application-5, wrong-4)
+dobj(received-3, application-5)
+
+nsubj(ordered-3, User-1)
+aux(ordered-3, has-2)
+root(ROOT-0, ordered-3)
+nn(Economical-6, Wordfinder-4)
+nn(Economical-6, Business-5)
+dobj(ordered-3, Economical-6)
+
+advmod(received-3, However-1)
+nsubj(received-3, she-2)
+ccomp(received-8, received-3)
+amod(version-5, wrong-4)
+dobj(received-3, version-5)
+nsubj(received-8, she-7)
+root(ROOT-0, received-8)
+nn(Tehcnical-10, Wordfinder-9)
+dobj(received-8, Tehcnical-10)
+nn(Economical-14, Business-13)
+prep_instead_of(Tehcnical-10, Economical-14)
+
+root(ROOT-0, Please-1)
+dep(Please-1, assist-2)
+```
+
