@@ -75,8 +75,8 @@ dep(Please-1, assist-2)
 
 ### [RelEx](http://wiki.opencog.org/w/Walkthrough#Natural_Language_Processing)
 
-See [XML Semantic parsing results](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.res.xml) and compact version
-(https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt)
+See [XML Semantic parsing results](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.res.xml) and
+[compact version](https://github.com/menta/menta-0.3/blob/master/doc/analysis/incident_7.compact.txt)
 
 Examples of SemanticRelation-s
 
