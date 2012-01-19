@@ -38,9 +38,10 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
 
 ## PreliminaryAnnotator
-[Stanford Parser](http://nlp.stanford.edu:8080/parser/index.jsp)
+See [Stanford Parser](http://nlp.stanford.edu:8080/parser/index.jsp)
 
 Typed dependencies, collapsed
+
 ```
 nsubj(received-3, User-1)
 aux(received-3, had-2)
