@@ -282,22 +282,22 @@ Response =
 Based no [K-lines](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131).
 
 ```
-Concept {
+Concept extends Resource {
   uri
   resource // resource structure depends on KB is going to be used
   similar // list of similar concepts
   superConcepts
-  subConcetps
+  subConcepts
   links: List[Link]
 }
 
-Link {
+Link[SrcResource, DestResource] extends Resource {
   uri
-  source: Concept
-  destination: Concept
+  source: SrcResource
+  destination: DestResource
 }
 
-K-line {
+K-line[SrcResource, DestResource] {
   type
   links: List[Link]
 }
@@ -306,3 +306,73 @@ K-line {
 
 ## EmotionMachine
 
+## Reflective Critics selects KnowingHow(Perceiving) Way2Think: and KnowingHow(Perceiving) Way2Think:
+
+Main control lifecycle that starts perceiving workflow elements.
+
+### Inbound data structure
+
+Based on [Narrative Scripts/Stories](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131).
+
+```
+AnnotatedText extends Frames for Including Additional Slots {
+   Narrative Story
+   K-lines: List[Kline[Word, Concept]]
+}
+```
+
+### Outbound data structure
+
+```
+???
+Solution {
+  Narrative Story[HowTo]
+}
+```
+
+## Deliberate Critics selects Knowing How(Classify incident description) Way2Think and Knowing How(Classify incident description) Way2Think
+
+Following Critics started concurrently:
+  1. Detect Direct instruction
+  1. Detect Problem description
+    2. Detect desired state in problem description
+
+## Selector chooses most probable variant according to Critics estimates
+
+## Direct instruction
+Activates Simulation Way2Think with Instruction model.
+
+## Simulation Way2Think with Instruction model
+### Workflow
+via K-lines creates model(picture) of current state with participants:
+  1. Instruction HowTo
+    2. Parameters of the Type set in HowTo
+
+### Exceptions
+If Instruction HowTo was not found => Unknown action requested.
+If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+
+## Problem description
+
+## Deliberate Critics selects Simulation Way2Think and Simulation Way2Think with Problem model
+
+### Inbound data structure = same as above
+
+### Outbound data structure
+
+```
+Semantic network[Concept]
+```
+### Workflow
+
+  1. Reading each word
+  1. via K-lines creates model(picture) of current state with participants:
+    2. User: Actor
+      3. has:
+        4. Software
+          5. name = Wordfinder
+          5. version = Tehcnical
+      3. ordered:
+        4. Software
+          5. name = Wordfinder
+          5. version = Tehcnical
