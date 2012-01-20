@@ -16,23 +16,26 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
  1. EmotionMachine runs:
    2. Reflective Critics selects KnowingHow(Perceiving) Way2Think:
    2. KnowingHow(Perceiving) Way2Think:
-     3. Deliberate Critics selects Simulation Way2Think.
-     3. Simulation crates model of CurrentSituation:
+     3. Incident Clarification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
+     3. Selector selects most probable Way2Think according to Critics estimates, current example is Problem description with desired state.
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable.
+     3. Simulation Way2Think with CurrentSituation model => crates model of CurrentSituation:
          4. User,
          4. Software,
          4. ...
-     3. Deliberate Critics selects Reformulation Way2Think.
      3. Reformulation according to UserProblem template creates UserProblem model(CurrentState and DesiredState delta(_software wrongly installed, software lack on the User computer_)).
      instance from CurrentSituation model.
          4. DesiredState if not mentioned explicitly could be inferred as following:
              5. System has a goal to help User.
              5. To help user System has to satisfy User needs:
              5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
-     3. Deliberate Critics selects ExtensiveSearch Way2Think.
+     3. Identifying Solution Deliberate Critics searches among (Known cases or ExtensiveSearch-es).
+     3. Selector selects most probable Way2Think according to Critics estimates, current example is ExtensiveSearch.
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the second step, if does carry on with Way2Think, if not try less probable.
      3. ExtensiveSearch searches for HowTo-s to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
          4. If found => reports success.
          4. If fails => activate Cry4Help Way2Think.
-   2. Reflective Critics checks if the System goal reached (Problem is exterminated)
+   2. _Reflective Critics_ checks if the System goal reached (Problem is exterminated)
          4. If satisfied => reports success.
          4. If fails => activate Cry4Help Way2Think.
 
