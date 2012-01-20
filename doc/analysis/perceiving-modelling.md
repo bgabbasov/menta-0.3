@@ -333,37 +333,39 @@ Solution {
 ## Deliberate Critics selects Knowing How(Classify incident description) Way2Think and Knowing How(Classify incident description) Way2Think
 
 Following Critics started concurrently:
+
   1. Detect Direct instruction
   1. Detect Problem description
     2. Detect desired state in problem description
 
-## Selector chooses most probable variant according to Critics estimates
+## Selector chooses most probable variant according to Critics estimates:
 
-## Direct instruction
+## Direct instruction case
 Activates Simulation Way2Think with Instruction model.
 
-## Simulation Way2Think with Instruction model
-### Workflow
+### Simulation Way2Think with Instruction model
+#### Workflow
 via K-lines creates model(picture) of current state with participants:
+
   1. Instruction HowTo
-    2. Parameters of the Type set in HowTo
+  1. Parameters of the Type set in HowTo
 
-### Exceptions
-  - If Instruction HowTo was not found => Unknown action requested.
-  - If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+#### Exceptions
+  1. If Instruction HowTo was not found => Unknown action requested.
+  1. If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
 
-## Problem description
+## Problem description with desired state case
 
-## Deliberate Critics selects Simulation Way2Think and Simulation Way2Think with Problem model
+### Deliberate Critics selects Simulation Way2Think and Simulation Way2Think with Problem model
 
-### Inbound data structure = same as above
+#### Inbound data structure = same as above
 
-### Outbound data structure
+#### Outbound data structure
 
 ```
 Semantic network[Concept]
 ```
-### Workflow
+#### Workflow
 
   1. Reading each word
   1. via K-lines creates model(picture) of current state with participants:
@@ -375,4 +377,35 @@ Semantic network[Concept]
       3. ordered:
         4. Software
           5. name = Wordfinder
-          5. version = Tehcnical
+          5. version = Business Economical
+
+#### Exceptions
+
+  1. Mandatory parameters of encapsulating concept was not detected => Clarification request for parameters to be clarified.
+
+### Deliberate Critics selects Reformulation Way2Think and Reformulation Problem model
+
+#### Workflow
+
+creates UserProblem model
+
+  1. CurrentState
+  1. DesiredState delta
+    2. software wrongly installed,
+    2. software lack on the User computer.
+
+#### Exceptions
+
+  1. Current state lacks what's wrong description
+  1. System was unable to infer the desired state.
+
+### Deliberate Critics selects ExtensiveSearch Way2Think and ExtensiveSearch searches for HowTo-s
+to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
+
+  1. If found => reports success.
+  1. If fails => activate Cry4Help Way2Think.
+
+#### Exceptions
+
+  1. Fails to find the HowTo to get rid of problem. => Escalate.
+
