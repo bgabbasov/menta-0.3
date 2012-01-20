@@ -349,8 +349,8 @@ via K-lines creates model(picture) of current state with participants:
     2. Parameters of the Type set in HowTo
 
 ### Exceptions
-If Instruction HowTo was not found => Unknown action requested.
-If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+  - If Instruction HowTo was not found => Unknown action requested.
+  - If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
 
 ## Problem description
 
