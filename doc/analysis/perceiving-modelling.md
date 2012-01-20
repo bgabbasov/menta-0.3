@@ -279,8 +279,29 @@ Response =
 ```
 
 ### Data structures
+Based no [K-lines](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131).
 
 ```
+Concept {
+  uri
+  resource // resource structure depends on KB is going to be used
+  similar // list of similar concepts
+  superConcepts
+  subConcetps
+  links: List[Link]
+}
+
+Link {
+  uri
+  source: Concept
+  destination: Concept
+}
+
+K-line {
+  type
+  links: List[Link]
+}
+
 ```
 
 ## EmotionMachine
