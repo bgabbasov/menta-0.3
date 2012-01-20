@@ -94,7 +94,7 @@
                     <depend id="26" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="23" name="Probability Logic Engines analysis" color="#8cb6ce" meeting="false" start="2012-03-23" duration="34" complete="0" priority="1" expand="true">
+            <task id="23" name="Probability Logic Engines analysis" color="#8cb6ce" meeting="false" start="2012-03-23" duration="21" complete="0" priority="1" expand="true">
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
                 <task id="24" name="PLN analysis" color="#8cb6ce" meeting="false" start="2012-03-23" duration="18" complete="0" priority="1" expand="true">
                     <task id="25" name="Read documentation" color="#8cb6ce" meeting="false" start="2012-03-23" duration="4" complete="0" priority="1" expand="true">
@@ -134,13 +134,13 @@
         <task id="183" name="OpenCog analysis" color="#8cb6ce" meeting="true" start="2012-07-25" duration="1" complete="0" priority="1" expand="true">
             <depend id="35" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-07-26" duration="213" complete="0" priority="1" expand="true">
+        <task id="35" name="System Training prototype" color="#8cb6ce" meeting="false" start="2012-07-25" duration="214" complete="0" priority="1" expand="true">
             <depend id="143" type="2" difference="0" hardness="Strong"/>
-            <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-07-26" duration="18" complete="0" priority="1" expand="true">
+            <task id="36" name="MOSES" color="#8cb6ce" meeting="false" start="2012-07-25" duration="18" complete="0" priority="1" expand="true">
                 <depend id="37" type="2" difference="0" hardness="Strong"/>
                 <depend id="59" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="37" name="Bayesian network" color="#8cb6ce" meeting="false" start="2012-08-21" duration="16" complete="0" priority="1" expand="true">
+            <task id="37" name="Bayesian network" color="#8cb6ce" meeting="false" start="2012-08-20" duration="16" complete="0" priority="1" expand="true">
                 <depend id="38" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="38" name="Training" color="#8cb6ce" meeting="false" start="2012-09-12" duration="15" complete="0" priority="1" expand="true">
@@ -446,23 +446,23 @@
                     </task>
                 </task>
                 <task id="129" name="Simulation (build the model based on inbound information) =" color="#8cb6ce" meeting="false" start="2014-04-11" duration="12" complete="0" priority="1" expand="true">
-                    <task id="130" name="Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2014-04-11" duration="8" complete="0" priority="1" expand="true">
+                    <task id="130" name="Search for concept in the KB. = 16" color="#8cb6ce" meeting="false" start="2014-02-12" duration="8" complete="0" priority="1" expand="true">
                         <depend id="131" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2014-04-23" duration="2" complete="0" priority="1" expand="true">
+                    <task id="131" name="Search for properties in KB. = 4" color="#8cb6ce" meeting="false" start="2014-03-12" duration="2" complete="0" priority="1" expand="true">
                         <depend id="132" type="2" difference="0" hardness="Strong"/>
                         <depend id="133" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2014-04-25" duration="2" complete="0" priority="1" expand="true">
+                    <task id="132" name="Create connections of found concepts. = 2" color="#8cb6ce" meeting="false" start="2014-03-14" duration="2" complete="0" priority="1" expand="true">
                         <depend id="142" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="133" name="Support context. = 2" color="#8cb6ce" meeting="false" start="2014-04-25" duration="2" complete="0" priority="1" expand="true">
+                    <task id="133" name="Support context. = 2" color="#8cb6ce" meeting="false" start="2014-04-01" duration="2" complete="0" priority="1" expand="true">
                         <depend id="142" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
             </task>
             <task id="140" name="Test main perceiving workflow" color="#8cb6ce" meeting="false" start="2014-04-29" duration="7" complete="0" priority="1" expand="true">
-                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2014-04-29" duration="7" complete="0" priority="1" expand="true"/>
+                <task id="142" name="Prototype Main Workflow. = 10 - 14 [some not well tested bugs could slow down the development]{Models, Critics, Way2Think ready to use}" color="#8cb6ce" meeting="false" start="2014-04-03" duration="7" complete="0" priority="1" expand="true"/>
             </task>
         </task>
         <task id="181" name="Emotion machine solution" color="#8cb6ce" meeting="true" start="2014-05-08" duration="1" complete="0" priority="1" expand="true"/>
@@ -476,10 +476,10 @@
         <resource id="5" name="Artem" function="2" contacts="" phone=""/>
     </resources>
     <allocations>
-        <allocation task-id="1" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="1" function="1" responsible="true" load="50.0"/>
-        <allocation task-id="2" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="2" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="7" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="8" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -488,34 +488,34 @@
         <allocation task-id="11" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="17" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="18" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="19" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="20" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="21" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="22" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="22" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="23" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="24" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="25" resource-id="0" function="0" responsible="true" load="100.0"/>
-        <allocation task-id="26" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="26" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="27" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="27" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="28" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="28" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="29" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="29" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="30" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="30" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="32" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="32" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="36" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="36" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="37" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="37" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="40" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="41" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="42" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -530,26 +530,26 @@
         <allocation task-id="58" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="59" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="60" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="61" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="61" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="63" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="63" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="64" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="63" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="64" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="66" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="64" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="66" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="67" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="66" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="67" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="69" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="67" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="69" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="70" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="69" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="70" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="71" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="70" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="71" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="73" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="71" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="73" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="74" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="74" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="74" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="149" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="150" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="151" resource-id="0" function="0" responsible="true" load="100.0"/>
@@ -562,26 +562,26 @@
         <allocation task-id="161" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="162" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="163" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="167" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="167" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="168" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="167" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="168" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="170" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="168" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="170" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="171" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="170" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="171" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="173" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="171" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="173" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="174" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="173" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="174" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="176" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="174" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="176" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="177" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="176" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="177" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="179" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="177" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="179" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="180" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="179" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="180" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="180" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="79" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="80" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="81" resource-id="1" function="1" responsible="true" load="100.0"/>
@@ -592,33 +592,33 @@
         <allocation task-id="90" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="91" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="93" resource-id="0" function="0" responsible="true" load="100.0"/>
-        <allocation task-id="94" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="94" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="94" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="97" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="99" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="99" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="107" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="99" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="107" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="108" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="107" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="108" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="109" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="108" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="109" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="112" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="109" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="112" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="113" resource-id="0" function="0" responsible="false" load="100.0"/>
+        <allocation task-id="112" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="113" resource-id="1" function="1" responsible="true" load="100.0"/>
-        <allocation task-id="115" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="113" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="115" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="116" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="115" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="116" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="130" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="116" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="130" resource-id="1" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="131" resource-id="0" function="0" responsible="true" load="100.0"/>
+        <allocation task-id="130" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="131" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="131" resource-id="0" function="0" responsible="true" load="100.0"/>
         <allocation task-id="132" resource-id="1" function="1" responsible="true" load="100.0"/>
         <allocation task-id="133" resource-id="0" function="0" responsible="true" load="100.0"/>
-        <allocation task-id="142" resource-id="0" function="0" responsible="false" load="100.0"/>
         <allocation task-id="142" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="0" function="0" responsible="false" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
