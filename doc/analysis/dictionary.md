@@ -48,3 +48,11 @@ _Invalid parameter_ subclass with parameters:
 Subclass of all _Unable to setup_ issues.
 Parameters:
  - machine(network address)
+
+## extends
+Keyword to identify the reference to super Class.
+
+## AND
+Keyword to identify the sequence of superclasses.
+
+
