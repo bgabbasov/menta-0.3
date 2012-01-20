@@ -199,3 +199,41 @@ class Shared disk group connection{
   }
 }
 ```
+## 23
+```
+class Install software {
+    name=IE8
+}
+
+## 123
+class Compound Problem{
+    class Install Software{
+        name=proxy_script
+    }
+    class problem solving ???{
+
+    }
+
+}
+
+## 223
+```
+class LOT Problem OrderReciever{
+    class LOT OrderReciever{
+       class Install{
+
+       }
+    }
+}
+
+## 323
+```
+class LOT Problem OrderReciever{
+    class LOT OrderReciever{
+       class Install{
+            name=  Adobe Acrobat Professional 7.0
+            LOBAID=4440
+       }
+    }
+}
+
