@@ -204,7 +204,7 @@ class Shared disk group connection extends Direct instruction{
 class Install software {
     name=IE8
 }
-
+```
 ## 123
 class Compound Problem{
     class Install Software{
@@ -218,22 +218,147 @@ class Compound Problem{
 
 ## 223
 ```
-class LOT Problem OrderReciever{
+class LotRecieverProblem{
     class LOT OrderReciever{
        class Install{
-
+           name=Catia.C3png-P2 v5
        }
     }
 }
-
+```
 ## 323
 ```
-class LOT Problem OrderReciever{
+class LotRecieverProblem{
     class LOT OrderReciever{
-       class Install{
+       class Install software{
             name=  Adobe Acrobat Professional 7.0
             LOBAID=4440
        }
     }
 }
+```
 
+## 423
+```
+class LotRecieverProblem{
+    class LOT OrderReciever{
+       class Install software{
+            name=  WinDVD(4.0)
+       }
+    }
+}
+```
+
+## 523
+```
+class Install software {
+    name=IE8
+}
+```
+
+## 623
+```
+class Install software {
+    name=Adobe Reader
+}
+```
+
+## 723
+```
+class  Reinstall software extends Problem description without desired state {
+  application = VIDA All-in-one(2010 C Edition (SE))
+}
+```
+
+## 823
+```
+class LotRecieverProblem {
+    class RemoveSoftware {
+      application = Minitab version 15
+    }
+    class  Install software extends Problem {
+      application = Minitab version 16
+    }
+
+}
+```
+
+## 923
+```
+class  Install software extends Problem {
+      application = VIDA on Web(1.0)
+    }
+
+```
+
+## 1023
+```
+Unable to clarify, need specialist contact
+
+```
+
+## 1123
+```
+class = Shared disk group connection extends Direct instruction {
+  group{
+    name = 9413-SHR-VCC34514-R9413-SHR-VCC34514-AR
+  }
+  disk{
+    context = Shared DISK:,
+    address = \\gbw9061108\proj\9413-shr-vcc34500\CWM3-VCC34514
+  }
+}
+```
+
+## 1223
+```
+class LotRecieverProblem {
+    class Install {
+      application = Camtasia Studio
+      version= 5.0
+    }
+
+}
+```
+
+## 1323
+```
+class Install {
+      application = Lotus Notes Client
+      version= 6.5.5
+}
+```
+
+## 1423
+```
+Need user clarification
+```
+
+## 1523
+```
+Need user contact, or reinstall software, need instructions
+```
+
+## 1623
+```
+User clarification required
+```
+
+## 1723
+```
+class Alias Add extends Problem{
+    name=wantedalias.example.com
+    ip=127.0.0.1
+}
+```
+
+## 1823
+```
+class LotRecieverProblem {
+    class Install {
+      application = MatLab
+      version= R2010b
+    }
+
+}
+```
