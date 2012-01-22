@@ -18,20 +18,21 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
    2. KnowingHow(Perceiving) Way2Think:
      3. Incident Clarification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
      3. Selector selects most probable Way2Think according to Critics estimates, current example is Problem description with desired state.
-     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable.
+     3. _KnowingHow(Perceiving)_ stores variants and the Selector choice.
      3. Simulation Way2Think with CurrentSituation model => crates model of CurrentSituation:
          4. User,
          4. Software,
          4. ...
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
      3. Reformulation according to UserProblem template creates UserProblem model(CurrentState and DesiredState delta(_software wrongly installed, software lack on the User computer_)).
      instance from CurrentSituation model.
          4. DesiredState if not mentioned explicitly could be inferred as following:
              5. System has a goal to help User.
              5. To help user System has to satisfy User needs:
              5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
-     3. Solution Generation Deliberate Critics searches among (Known cases or ExtensiveSearch-es).
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
+     3. Solution Generation Deliberate Critics searches among (KnowingHow Way2Think or ExtensiveSearch-es).
      3. Selector selects most probable Way2Think according to Critics estimates, current example is ExtensiveSearch.
-     3. _Reflective Critics_ estimates does the System got closer to the goal of the second step, if does carry on with Way2Think, if not try less probable.
      3. ExtensiveSearch searches for HowTo-s to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
          4. If found => reports success.
          4. If fails => activate Cry4Help Way2Think.
@@ -327,13 +328,23 @@ AnnotatedText extends Frames for Including Additional Slots {
 ### Outbound data structure
 
 ```
-???
 Solution {
   Narrative Story[HowTo]
 }
 ```
 
 ## Incident Classification Deliberate Critics
+
+### Outbound data
+
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Workflow
 
 Following Critics started concurrently:
 
@@ -343,7 +354,22 @@ Following Critics started concurrently:
 
 They end up with analysis results: Way2Think and probability pair.
 
-## Selector chooses most probable variant according to Critics estimates:
+## Selector chooses most probable variant according to Critics estimates
+
+### Inbound data
+
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Outbound data
+
+```
+Resource
+```
 
 ## _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable.
 
