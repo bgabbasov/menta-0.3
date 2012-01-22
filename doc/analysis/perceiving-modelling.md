@@ -8,7 +8,7 @@ However she received wrong version, she received Wordfinder Tehcnical instead of
 Please assist
 ```
 
-## Approximate workflow
+## <a name="Approximate_workflow">Approximate workflow</a>
 See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
  1. PreliminaryAnnotator creates word links.
@@ -29,7 +29,7 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
              5. System has a goal to help User.
              5. To help user System has to satisfy User needs:
              5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
-     3. Identifying Solution Deliberate Critics searches among (Known cases or ExtensiveSearch-es).
+     3. Solution Generation Deliberate Critics searches among (Known cases or ExtensiveSearch-es).
      3. Selector selects most probable Way2Think according to Critics estimates, current example is ExtensiveSearch.
      3. _Reflective Critics_ estimates does the System got closer to the goal of the second step, if does carry on with Way2Think, if not try less probable.
      3. ExtensiveSearch searches for HowTo-s to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
@@ -333,7 +333,7 @@ Solution {
 }
 ```
 
-## Deliberate Critics selects Knowing How(Classify incident description) Way2Think and Knowing How(Classify incident description) Way2Think
+## Incident Classification Deliberate Critics
 
 Following Critics started concurrently:
 
@@ -341,7 +341,11 @@ Following Critics started concurrently:
   1. Detect Problem description
     2. Detect desired state in problem description
 
+They end up with analysis results: Way2Think and probability pair.
+
 ## Selector chooses most probable variant according to Critics estimates:
+
+## _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable.
 
 ## Direct instruction case
 Activates Simulation Way2Think with Instruction model.
@@ -354,12 +358,14 @@ via K-lines creates model(picture) of current state with participants:
   1. Parameters of the Type set in HowTo
 
 #### Exceptions
+
   1. If Instruction HowTo was not found => Unknown action requested.
   1. If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
 
+
 ## Problem description with desired state case
 
-### Deliberate Critics selects Simulation Way2Think and Simulation Way2Think with Problem model
+### Simulation Way2Think with Problem model
 
 #### Inbound data structure = same as above
 
@@ -368,6 +374,7 @@ via K-lines creates model(picture) of current state with participants:
 ```
 Semantic network[Concept]
 ```
+
 #### Workflow
 
   1. Reading each word
@@ -386,14 +393,18 @@ Semantic network[Concept]
 
   1. Mandatory parameters of encapsulating concept was not detected => Clarification request for parameters to be clarified.
 
-### Deliberate Critics selects Reformulation Way2Think and Reformulation Problem model
+### Reformulation Way2Think with UserProblem model with desired state case
+
+#### Inbound data = same as above
+
+#### Outbound data = same as above
 
 #### Workflow
 
 creates UserProblem model
 
   1. CurrentState
-  1. DesiredState delta
+  1. DesiredState delta:
     2. software wrongly installed,
     2. software lack on the User computer.
 
@@ -402,7 +413,33 @@ creates UserProblem model
   1. Current state lacks what's wrong description
   1. System was unable to infer the desired state.
 
-### Deliberate Critics selects ExtensiveSearch Way2Think and ExtensiveSearch searches for HowTo-s
+### Reformulation Way2Think with UserProblem model without desired state case
+
+#### Inbound data = same as above
+
+#### Outbound data = same as above
+
+#### Workflow
+  1. DesiredState is inferred taking in account following goals:
+    2. System goal: to help user
+    2. User goal: get rid of the problem
+    2. If problem source mentioned explicitly (need Software) => DesiredState = Software installed ==> Install needed software
+    2. Else initiate Deliberate Critics to find out the ProblemSource.)
+  1. DesiredState delta
+    2. software wrongly installed,
+    2. software lack on the User computer.
+
+creates UserProblem model
+
+  1. CurrentState
+
+#### Exceptions
+
+  1. Current state lacks what's wrong description
+  1. System was unable to infer the desired state.
+
+
+### ExtensiveSearch Way2Think and ExtensiveSearch searches for HowTo-s
 to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
 
   1. If found => reports success.
