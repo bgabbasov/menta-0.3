@@ -354,7 +354,10 @@ Following Critics started concurrently:
 
 They end up with analysis results: Way2Think and probability pair.
 
-## Selector chooses most probable variant according to Critics estimates
+## Selector chooses most probable variant according to Critics estimates, current example is _Problem description with desired state case_
+
+## Problem description with desired state
+see [alternative](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Direct_instruction_case)
 
 ### Inbound data
 
@@ -371,40 +374,18 @@ Pair {
 Resource
 ```
 
-## _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable.
+## Simulation Way2Think with Problem model
 
-## Direct instruction case
-Activates Simulation Way2Think with Instruction model.
-
-### Simulation Way2Think with Instruction model
-#### Workflow
-via K-lines creates model(picture) of current state with participants:
-
-  1. Instruction HowTo
-  1. Parameters of the Type set in HowTo
-
-#### Exceptions
-
-  1. If Instruction HowTo was not found => Unknown action requested.
-  1. If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
-
-
-## Problem description with desired state case
-
-### Simulation Way2Think with Problem model
-
-#### Inbound data structure = same as above
-
-#### Outbound data structure
+### Outbound data structure
 
 ```
 Semantic network[Concept]
 ```
 
-#### Workflow
+### Workflow
 
   1. Reading each word
-  1. via K-lines creates model(picture) of current state with participants:
+  1. via K-lines creates model(picture) of current state ex.:
     2. User: Actor
       3. has:
         4. Software
@@ -415,17 +396,20 @@ Semantic network[Concept]
           5. name = Wordfinder
           5. version = Business Economical
 
-#### Exceptions
+### Exceptions
 
   1. Mandatory parameters of encapsulating concept was not detected => Clarification request for parameters to be clarified.
 
-### Reformulation Way2Think with UserProblem model with desired state case
+## Reformulation Way2Think with UserProblem model with desired state
+see [alternative](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Reformulation_Way2Think_without_desired_state_case)
 
-#### Inbound data = same as above
+### Outbound data structure
 
-#### Outbound data = same as above
+```
+Semantic network[Concept]
+```
 
-#### Workflow
+### Workflow
 
 creates UserProblem model
 
@@ -434,44 +418,101 @@ creates UserProblem model
     2. software wrongly installed,
     2. software lack on the User computer.
 
-#### Exceptions
+### Exceptions
 
   1. Current state lacks what's wrong description
   1. System was unable to infer the desired state.
 
-### Reformulation Way2Think with UserProblem model without desired state case
+## Solution Generation Deliberate Critics searches among (KnowingHow Way2Think or ExtensiveSearch-es).
 
-#### Inbound data = same as above
+### Outbound data
 
-#### Outbound data = same as above
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
 
-#### Workflow
-  1. DesiredState is inferred taking in account following goals:
-    2. System goal: to help user
-    2. User goal: get rid of the problem
-    2. If problem source mentioned explicitly (need Software) => DesiredState = Software installed ==> Install needed software
-    2. Else initiate Deliberate Critics to find out the ProblemSource.)
-  1. DesiredState delta
-    2. software wrongly installed,
-    2. software lack on the User computer.
+### Workflow
 
-creates UserProblem model
+Following Critics started concurrently:
 
-  1. CurrentState
+  1. Detect KnowingHow Way2Think to get from Current to Desired state
+  1. Detect ExtensiveSearch if no complete Solution was generated
 
-#### Exceptions
+They end up with analysis results: Way2Think and probability pair.
 
-  1. Current state lacks what's wrong description
-  1. System was unable to infer the desired state.
+## Selector chooses most probable variant according to Critics estimates of the completeness of the Solution, current example is _ExtensiveSearch_
 
+### Inbound data
 
-### ExtensiveSearch Way2Think and ExtensiveSearch searches for HowTo-s
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Outbound data
+
+```
+Resource
+```
+
+## ExtensiveSearch Way2Think
 to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
 
   1. If found => reports success.
   1. If fails => activate Cry4Help Way2Think.
 
-#### Exceptions
+### Outbound data
+
+```
+Solution {
+  Narrative Story[HowTo]
+}
+```
+
+### Exceptions
 
   1. Fails to find the HowTo to get rid of problem. => Escalate.
+
+## Alternative workflow
+
+## <a name="Direct_instruction_case">Direct instruction case</a>
+Activates Simulation Way2Think with Instruction model.
+
+## Simulation Way2Think with Instruction model
+
+### Workflow
+via K-lines creates model(picture) of current state with participants:
+
+  1. Instruction HowTo
+  1. Parameters of the Type set in HowTo
+
+### Exceptions
+
+  1. If Instruction HowTo was not found => Unknown action requested.
+  1. If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+
+
+## <a name="Reformulation_Way2Think_without_desired_state_case">Reformulation Way2Think with UserProblem model without desired state case</a>
+
+### Workflow
+
+  1. DesiredState is inferred taking in account following goals:
+    2. System goal: to help user
+    2. User goal: get rid of the problem
+    2. Problem source analysis:
+      3. If problem source mentioned explicitly (need Software) => DesiredState = Software installed ==> Install needed software
+      3. Else initiate Deliberate Critics to find out the ProblemSource.)
+  1. DesiredState delta
+    2. software wrongly installed,
+    2. software lack on the User computer.
+
+### Exceptions
+
+  1. Current state lacks what's wrong description
+  1. System was unable to infer the desired state.
 
