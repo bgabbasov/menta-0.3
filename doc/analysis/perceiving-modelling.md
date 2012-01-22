@@ -309,6 +309,7 @@ K-line[SrcResource, DestResource] {
 ```
 
 ## EmotionMachine
+see [Workflow](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Approximate_workflow)
 
 ## Reflective Critics selects KnowingHow(Perceiving) Way2Think: and KnowingHow(Perceiving) Way2Think:
 
