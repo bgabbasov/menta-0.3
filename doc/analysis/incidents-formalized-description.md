@@ -201,10 +201,21 @@ class Shared disk group connection extends Direct instruction{
 ```
 ## 23
 ```
-class Install software {
+class  Install software {
     name=IE8
 }
 ```
+
+## 26
+```
+class Pending installation extends Reinstall software {
+	applicationToInstall = {
+		name = Excel
+	}
+	Message about pending installation=  "windows installer preparing to install"
+}
+```
+
 ## 123
 class Compound Problem{
     class Install Software{
@@ -216,6 +227,20 @@ class Compound Problem{
 
 }
 
+## 126
+```
+class User cannot perfom action extends desired state {
+	failed action = class action {
+		print from KDP
+	}
+	possible solution = class Reinstall software{
+			applicationToInstall = {
+			name = Excel
+		}
+	}
+}
+```
+
 ## 223
 ```
 class LotRecieverProblem{
@@ -226,6 +251,16 @@ class LotRecieverProblem{
     }
 }
 ```
+
+## 226
+```
+class Install software {
+	Software = {
+		name = IP communicator
+	}
+}
+```
+
 ## 323
 ```
 class LotRecieverProblem{
@@ -235,6 +270,15 @@ class LotRecieverProblem{
             LOBAID=4440
        }
     }
+}
+```
+
+## 326
+```
+class Reinstall software {
+	Software = {
+		name = IE8
+	}
 }
 ```
 
@@ -249,10 +293,32 @@ class LotRecieverProblem{
 }
 ```
 
+## 426
+```
+class LotRecieverProblem{
+    class LOT OrderReciever{
+       class Install software{
+            name = PAINTSHOPPRO(9.0)
+       }
+    }
+}
+```
+
 ## 523
 ```
 class Install software {
     name=IE8
+}
+```
+
+## 526
+```
+class LotRecieverProblem{
+    class LOT OrderReciever{
+       class Install software{
+            name = Software Metering Report Tool(1.0)
+       }
+    }
 }
 ```
 
@@ -263,10 +329,28 @@ class Install software {
 }
 ```
 
+## 626
+```
+class LotRecieverProblem{
+    class LOT OrderReciever{
+       class Install software{
+            name = Hummingbird Host Explorer(11.0)
+       }
+    }
+}
+```
+
 ## 723
 ```
 class  Reinstall software extends Problem description without desired state {
   application = VIDA All-in-one(2010 C Edition (SE))
+}
+```
+
+## 726
+```
+class Install software {
+    name=VIDA All-in-one 2010 C Edition (SE) (LOBAID: 5454)
 }
 ```
 
@@ -283,6 +367,19 @@ class LotRecieverProblem {
 }
 ```
 
+## 826
+```
+class Reinstall software {
+   installedApplication = Software{
+    name =    C3PNG
+  }
+  applicationToInstall = Software{
+    name =  C3PNG,
+    version = latest version
+  }
+}
+```
+
 ## 923
 ```
 class  Install software extends Problem {
@@ -291,10 +388,25 @@ class  Install software extends Problem {
 
 ```
 
+## 926
+```
+Can not process, message about pending installation but without mentioning software, need user contact
+```
+
 ## 1023
 ```
 Unable to clarify, need specialist contact
 
+```
+
+## 1026
+```
+class No access {
+  context = Software {
+	name = SMS/SCCM client
+  }
+  access level = possibility to install configuration package
+}
 ```
 
 ## 1123
@@ -310,6 +422,16 @@ class = Shared disk group connection extends Direct instruction {
 }
 ```
 
+## 1126
+```
+class No access {
+  context =  Software {
+	name = Lotus Notes
+  }
+  access level = access to Databases
+}
+```
+
 ## 1223
 ```
 class LotRecieverProblem {
@@ -321,6 +443,20 @@ class LotRecieverProblem {
 }
 ```
 
+## 1226
+```
+class User cannot perfom action extends desired state {
+	failed action = class action {
+		view something related quicktime via pictureviewer
+	}
+	possible solution = class Reinstall software{
+			applicationToInstall = {
+			name = quicktime
+		}
+	}
+}
+```
+
 ## 1323
 ```
 class Install {
@@ -329,19 +465,54 @@ class Install {
 }
 ```
 
+## 1326
+```
+class LotOrderNotDeliver {
+}
+```
+
 ## 1423
 ```
 Need user clarification
 ```
+
+## 1426
+```
+class Reinstall software {
+   installedApplication = Software{
+    name = VPN client
+	version = 4.0.4
+  }
+  applicationToInstall = Software{
+    name =  VPN client 4.0.4,
+    version = 4.0.4
+  }
+}
+```
+
 
 ## 1523
 ```
 Need user contact, or reinstall software, need instructions
 ```
 
+## 1526
+```
+Unable to clarify, need specialist contact
+```
+
 ## 1623
 ```
 User clarification required
+```
+
+## 1626
+```
+class User cannot perfom action extends desired state {
+	failed action = class action {
+		open a PDF file
+	}
+}
 ```
 
 ## 1723
@@ -352,6 +523,11 @@ class Alias Add extends Problem{
 }
 ```
 
+## 1726
+```
+User clarification required
+```
+
 ## 1823
 ```
 class LotRecieverProblem {
@@ -360,5 +536,14 @@ class LotRecieverProblem {
       version= R2010b
     }
 
+}
+```
+
+## 1826
+```
+class No access {
+  context =  address {
+	 Y/W/printers
+  }
 }
 ```
