@@ -199,6 +199,19 @@ class Shared disk group connection extends Direct instruction{
   }
 }
 ```
+## 22
+```
+class Shared disk group connection extends Direct instruction{
+  group{
+    context = AD-GROUPS,
+    name =   9413-SHR-xxxxx
+  }
+  class disk{
+    context = RSharedDISK:,
+    address = \\gbw9061104\proj\xxxxxx
+  }
+}
+```
 ## 23
 ```
 class  Install software {
@@ -215,7 +228,17 @@ class Pending installation extends Reinstall software {
 	Message about pending installation=  "windows installer preparing to install"
 }
 ```
-
+## 122
+```
+class  Install software {
+    name = VPNClient
+    class ClientInfo extends Target {
+	Name = xxxx
+	Location = xxxx
+    }
+    Service Tag = Migrated to vccnet
+}
+```
 ## 123
 class Compound Problem{
     class Install Software{
@@ -241,6 +264,19 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 222
+```
+class  Install software Issue extends Install{
+    error = VFTGCalled user, no answer
+    class ClientInfo extends Target {
+	Name = xxxx
+	Location = xxxx
+    }
+    Service Tag = Migrated to vccnet
+}
+
+```
+
 ## 223
 ```
 class LotRecieverProblem{
@@ -261,6 +297,23 @@ class Install software {
 }
 ```
 
+
+## 322
+```
+class  Update software Issue extends Install{
+    error = unable to use application
+    application = c3png
+    priority = high
+    class ClientInfo extends Target {
+	Name = xxxx
+	Location = xxxx
+	Domain = xxxx
+    }
+    Service Tag = 9xxxb4Jxx
+}
+
+```
+
 ## 323
 ```
 class LotRecieverProblem{
@@ -279,6 +332,16 @@ class Reinstall software {
 	Software = {
 		name = IE8
 	}
+}
+```
+
+## 422
+```
+class LOTFailed  {
+    Software =  Canalyzer(7.2 SP3)
+    class ClientInfo extends Target{
+	Receiver = xxxxx
+    }
 }
 ```
 
@@ -304,6 +367,18 @@ class LotRecieverProblem{
 }
 ```
 
+## 522
+```
+class Install {
+    application = IE
+    version = 8
+    class ClientInfo extends Target {
+	Name = xxxx
+	Location = xxxx
+    }
+}
+```
+
 ## 523
 ```
 class Install software {
@@ -318,6 +393,22 @@ class LotRecieverProblem{
        class Install software{
             name = Software Metering Report Tool(1.0)
        }
+    }
+}
+```
+
+## 622
+```
+class can not log {
+    Software =  CATIA
+    class errorInfo{
+      type = missing file
+      filename = xxxx
+    }
+    class ClientInfo extends Target{
+	Name = xxxx
+	Location = xxxx
+        File location = xxx
     }
 }
 ```
@@ -340,6 +431,19 @@ class LotRecieverProblem{
 }
 ```
 
+## 722
+```
+class No access {
+    resource = home hard drive
+    problem = not shared
+    class ClientInfo extends Target{
+	Name = xxxx
+	Location = xxxx
+        File location = xxx
+    }
+}
+```
+
 ## 723
 ```
 class  Reinstall software extends Problem description without desired state {
@@ -351,6 +455,15 @@ class  Reinstall software extends Problem description without desired state {
 ```
 class Install software {
     name=VIDA All-in-one 2010 C Edition (SE) (LOBAID: 5454)
+}
+```
+
+## 822
+```
+class = Update software extends Direct instruction{
+  class = Software{
+    name =  eMS
+  }
 }
 ```
 
@@ -380,6 +493,17 @@ class Reinstall software {
 }
 ```
 
+## 922
+```
+class = install{
+  error = insufficient rights
+  class = Software{
+    name =  McAfee
+    context = updates
+  }
+}
+```
+
 ## 923
 ```
 class  Install software extends Problem {
@@ -391,6 +515,16 @@ class  Install software extends Problem {
 ## 926
 ```
 Can not process, message about pending installation but without mentioning software, need user contact
+```
+
+## 1022
+
+```
+class = cant login{
+  class = Software{
+    name =  Business Warehouse
+  }
+}
 ```
 
 ## 1023
@@ -406,6 +540,18 @@ class No access {
 	name = SMS/SCCM client
   }
   access level = possibility to install configuration package
+}
+```
+
+## 1122
+```
+class = Shared disk group connection extends Direct instruction {
+  group{
+    name = xxxx
+  }
+  disk{
+    context = Shared DISK:,
+    address = \\gbw9061108\proj\xxxx
 }
 ```
 
@@ -430,6 +576,12 @@ class No access {
   }
   access level = access to Databases
 }
+```
+
+## 1222
+```
+Unable to clarify, need specialist contact
+
 ```
 
 ## 1223
@@ -457,6 +609,11 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1322
+```
+Unable to clarify, some kind of conversation
+```
+
 ## 1323
 ```
 class Install {
@@ -468,6 +625,21 @@ class Install {
 ## 1326
 ```
 class LotOrderNotDeliver {
+}
+```
+
+## 1422
+```
+class = profiles{
+   class = Profile{
+      action = clean
+      name = xxx1
+   }
+   class = Profile{
+      action = clean
+      name = xxx2
+   }
+   Service Tag:Migrated to vccnet 
 }
 ```
 
@@ -491,6 +663,18 @@ class Reinstall software {
 ```
 
 
+## 1522
+```
+class Reinstall software {
+   installedApplication = Software{
+    name = Lotus Notes   
+  }
+  applicationToInstall = Software{
+    name = Lotus Notes
+  }
+}
+```
+
 ## 1523
 ```
 Need user contact, or reinstall software, need instructions
@@ -499,6 +683,13 @@ Need user contact, or reinstall software, need instructions
 ## 1526
 ```
 Unable to clarify, need specialist contact
+```
+
+## 1622
+```
+class Install {
+      application = c3png
+}
 ```
 
 ## 1623
@@ -515,6 +706,11 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1722
+```
+Unable to clarify, need specialist contact
+```
+
 ## 1723
 ```
 class Alias Add extends Problem{
@@ -526,6 +722,17 @@ class Alias Add extends Problem{
 ## 1726
 ```
 User clarification required
+```
+
+## 1822
+```
+class LotRecieverProblem {
+    class Software {
+      application =  Teamcenter and TC-vis VCC XP
+      version= V5
+    }
+
+}
 ```
 
 ## 1823
