@@ -228,6 +228,7 @@ class Pending installation extends Reinstall software {
 	Message about pending installation=  "windows installer preparing to install"
 }
 ```
+
 ## 122
 ```
 class  Install software {
@@ -239,6 +240,7 @@ class  Install software {
     Service Tag = Migrated to vccnet
 }
 ```
+
 ## 123
 class Compound Problem{
     class Install Software{
@@ -249,6 +251,7 @@ class Compound Problem{
     }
 
 }
+```
 
 ## 126
 ```
