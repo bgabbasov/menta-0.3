@@ -242,6 +242,7 @@ class  Install software {
 ```
 
 ## 123
+```
 class Compound Problem{
     class Install Software{
         name=proxy_script
