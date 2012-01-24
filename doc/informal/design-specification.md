@@ -11,3 +11,7 @@
  1. Way2Think
  1. PreliminaryAnnotator
  1. KnowledgeBaseAnnotator
+
+## General workflow
+
+[Workflow Model](https://github.com/menta/menta-0.3/blob/master/doc/informal/perceiving-modelling.md#Approximate_workflow)

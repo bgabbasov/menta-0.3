@@ -27,7 +27,7 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
      3. Reformulation according to UserProblem template creates UserProblem model(CurrentState and DesiredState delta(_software wrongly installed, software lack on the User computer_)).
      instance from CurrentSituation model.
          4. DesiredState if not mentioned explicitly could be inferred as following:
-             5. System has a goal to help User.
+             5. System has a [goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png) to help User.
              5. To help user System has to satisfy User needs:
              5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
      3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
