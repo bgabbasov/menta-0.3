@@ -49,14 +49,18 @@ Subclass of all _Unable to setup_ issues.
 Parameters:
  - machine(network address)
 
-## extends
-Keyword to identify the reference to super Class.
-
 ## Format of different version
 User can't work with document because he have older or newer programm.
 
 ## restore data
 User want restore backuped version of data.
+parameter - target date of target tag or target id
+
+## tried actions
+User tried do something
+
+## extends
+Keyword to identify the reference to super Class.
 
 ## AND
 Keyword to identify the sequence of superclasses.
