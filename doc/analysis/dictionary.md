@@ -10,7 +10,7 @@ Incident class of all connections issues.
 Incident class, that occurs when user can not find something, usually the icon on his/her desktop.
 
 ## Reinstall software
-Incident class of installation/reinstallation requests.
+Incident class of installation/reinstallation/upgrade requests.
 
 ## Can not process...
 Start of escalation/clarification response of the system.
@@ -58,6 +58,9 @@ parameter - target date of target tag or target id
 
 ## tried actions
 User tried do something
+
+## disabled period
+period when any actions from support disabled 
 
 ## extends
 Keyword to identify the reference to super Class.
