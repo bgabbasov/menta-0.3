@@ -52,6 +52,12 @@ Parameters:
 ## extends
 Keyword to identify the reference to super Class.
 
+## Format of different version
+User can't work with document because he have older or newer programm.
+
+## restore data
+User want restore backuped version of data.
+
 ## AND
 Keyword to identify the sequence of superclasses.
 
