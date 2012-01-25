@@ -199,6 +199,7 @@ class Shared disk group connection extends Direct instruction{
   }
 }
 ```
+
 ## 22
 ```
 class Shared disk group connection extends Direct instruction{
@@ -212,6 +213,7 @@ class Shared disk group connection extends Direct instruction{
   }
 }
 ```
+
 ## 23
 ```
 class  Install software {
@@ -228,6 +230,29 @@ class Pending installation extends Reinstall software {
 	Message about pending installation=  "windows installer preparing to install"
 }
 ```
+
+## 104
+```
+class = Cannot Log In extends Problem description without desired state {
+	where = login,
+	errorMessage = null,
+	actionsBefore = cleaned local temp files
+}
+```
+
+## 121
+```
+class Restore data {
+    software name = Lotus
+    target date 13/2 
+}
+OR 
+class Convert data 
+    software name = Lotus
+	from version Vista
+	to version XP
+```
+
 
 ## 122
 ```
@@ -268,6 +293,32 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 204
+```
+class = Fail extends Problem description without desired state {
+	object = LOT Order Reciever
+}
+```
+
+## 221
+```
+Class Connectivity problem
+{
+subclass - map drive
+local disk letter: W:
+target directory - not present in ticket
+}
+class tried actions
+{
+   restart computer
+}
+class tried actions
+{
+   run script 
+   script name = \\abc112333.subdomain3.subdomain2.com\Folder\seclogon.bat
+}
+```
+
 ## 222
 ```
 class  Install software Issue extends Install{
@@ -299,6 +350,25 @@ class Install software {
 		name = IP communicator
 	}
 }
+```
+
+## 304
+```
+class = Problem extends Problem description without desired state {
+	object = Internet Explorer 8,
+	problem = class {
+		object = mouse,
+		problemType = laggs,
+		condition = moving cursor over the favorites,
+		additional = works fine if uses favorites
+	}
+}
+```
+
+## 321
+```
+class Reinstall software
+{softvare name = C3PNG }
 ```
 
 
@@ -339,6 +409,25 @@ class Reinstall software {
 }
 ```
 
+## 404
+```
+class = Reinstall software extends Direct instruction{
+	class = Software{
+		context = application,
+		name = Adobe Reader
+	}
+}
+```
+
+## 421
+```
+class Install software{
+    softvare name = IE
+    version = 8 
+}
+```
+
+
 ## 422
 ```
 class LOTFailed  {
@@ -371,6 +460,26 @@ class LotRecieverProblem{
 }
 ```
 
+## 504
+```
+class = Reinstall software extends Direct instruction{
+	class = Software{
+		context = application,
+		name = Internet Explorer 8
+	}
+}
+```
+
+## 521
+```
+class Install software
+{softvare name = IE
+version = 8 
+}
+disabled period {19 Jan - 20 Jan}
+```
+
+
 ## 522
 ```
 class Install {
@@ -398,6 +507,19 @@ class LotRecieverProblem{
             name = Software Metering Report Tool(1.0)
        }
     }
+}
+```
+
+## 604
+```
+class = Cannot analyse
+```
+
+## 621
+```
+class Reinstall software{ 
+    name = Catia
+	version = 5
 }
 ```
 
@@ -435,6 +557,21 @@ class LotRecieverProblem{
 }
 ```
 
+## 704
+```
+class = Needs clarification
+```
+
+## 721
+```
+Class Reinstall software
+{
+   application = FlashPlayer
+   location one of two computers
+}
+# there are "long" text
+```
+
 ## 722
 ```
 class No access {
@@ -459,6 +596,22 @@ class  Reinstall software extends Problem description without desired state {
 ```
 class Install software {
     name=VIDA All-in-one 2010 C Edition (SE) (LOBAID: 5454)
+}
+```
+
+## 804
+```
+class = Error Messages extends Problem description without desired state{
+	when = system start,
+	message = "Program assigned to run",
+	duration = a weeks
+}
+```
+
+## 821
+```
+class Reinstall software {
+    name=Java
 }
 ```
 
@@ -497,6 +650,26 @@ class Reinstall software {
 }
 ```
 
+## 904
+```
+class = Install software extends Direct instruction{
+	context = application,
+	name = Firefox
+}
+```
+
+## 921
+```
+class = Shared disk group connection extends Direct instruction {
+  group{
+    name = 9413-SHR-R9413-SHR-VCC55101-AR
+  }
+  disk{
+    context = Shared DISK:,
+    address = \\eee9061117\proj\9413-shr-vcc55100\88625_Fire_Protection-VCC55101
+  }
+```
+
 ## 922
 ```
 class = install{
@@ -521,8 +694,26 @@ class  Install software extends Problem {
 Can not process, message about pending installation but without mentioning software, need user contact
 ```
 
-## 1022
+## 1004
+```
+class = Install software extends Problem description without desired state {
+	context = application,
+	name = Adobe Flash Player
+}
+```
 
+## 1021
+
+```
+class network problem
+{
+  hardware PV2C - Cisco IP communicator
+  content -IP-phone
+  frequency sometimes 
+}
+```
+
+## 1022
 ```
 class = cant login{
   class = Software{
@@ -544,6 +735,23 @@ class No access {
 	name = SMS/SCCM client
   }
   access level = possibility to install configuration package
+}
+```
+
+## 1104
+```
+class = Reinstall software extends Direct instruction{
+	context = application,
+	name = Internet Explorer 8
+}
+```
+
+## 1121
+```
+class Connectivity problem
+{
+target = external sites
+software VCC proxy
 }
 ```
 
@@ -582,6 +790,24 @@ class No access {
 }
 ```
 
+## 1204
+```
+class = Cannot run extends Problem description without desired state{
+	target = bat script
+}
+```
+
+## 1221
+```
+class Connectivity problem
+{
+target = external sites
+software IE8
+}
+tried actions {check proksy settings}
+# user ask about reinstall may be it know thomething else, may be hi's not right.
+```
+
 ## 1222
 ```
 Unable to clarify, need specialist contact
@@ -613,6 +839,20 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1304
+```
+class = Cannot Access extends Problem description without desired state
+```
+
+## 1321
+```
+class network addressing
+{
+   name of host:  someportal.subdomain.biz
+   target IP: 212.12.1.2
+}
+```
+
 ## 1322
 ```
 Unable to clarify, some kind of conversation
@@ -630,6 +870,18 @@ class Install {
 ```
 class LotOrderNotDeliver {
 }
+```
+
+## 1404
+```
+class = Update software extends Direct instruction{
+	currentVersion = 484
+}
+```
+
+## 1421
+```
+Failed LOT OrderReciever???
 ```
 
 ## 1422
@@ -666,6 +918,17 @@ class Reinstall software {
 }
 ```
 
+## 1504
+```
+class = LOT {
+	object = not delivered
+}
+```
+
+## 1521
+```
+something abbout portal
+```
 
 ## 1522
 ```
@@ -689,6 +952,20 @@ Need user contact, or reinstall software, need instructions
 Unable to clarify, need specialist contact
 ```
 
+## 1604
+```
+class = LOT {
+	object = failed
+}
+```
+
+## 1621
+```
+class = Setup Wi-Fi
+{
+}
+```
+
 ## 1622
 ```
 class Install {
@@ -710,6 +987,20 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1704
+```
+class = Cannot Access extends Problem description without desired state
+```
+
+## 1721
+```
+class Connectivity problem
+{
+target = external sites
+}
+
+```
+
 ## 1722
 ```
 Unable to clarify, need specialist contact
@@ -726,6 +1017,27 @@ class Alias Add extends Problem{
 ## 1726
 ```
 User clarification required
+```
+
+## 1804
+```
+class = Cannot access extends Problem description without desired state{
+	object = e-mail
+}
+```
+
+## 1821
+```
+class Connectivity problem
+{
+target = external sites
+application IE8
+additional info via VPN
+}
+tried action
+{check proxy settings}
+tried action
+{clear cookies}
 ```
 
 ## 1822
