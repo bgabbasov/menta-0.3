@@ -231,6 +231,15 @@ class Pending installation extends Reinstall software {
 }
 ```
 
+## 104
+```
+class = Cannot Log In extends Problem description without desired state {
+	where = login,
+	errorMessage = null,
+	actionsBefore = cleaned local temp files
+}
+```
+
 ## 121
 ```
 class Restore data {
@@ -281,6 +290,13 @@ class User cannot perfom action extends desired state {
 			name = Excel
 		}
 	}
+}
+```
+
+## 204
+```
+class = Fail extends Problem description without desired state {
+	object = LOT Order Reciever
 }
 ```
 
@@ -336,6 +352,18 @@ class Install software {
 }
 ```
 
+## 304
+```
+class = Problem extends Problem description without desired state {
+	object = Internet Explorer 8,
+	problem = class {
+		object = mouse,
+		problemType = laggs,
+		condition = moving cursor over the favorites,
+		additional = works fine if uses favorites
+	}
+}
+```
 
 ## 321
 ```
@@ -381,6 +409,16 @@ class Reinstall software {
 }
 ```
 
+## 404
+```
+class = Reinstall software extends Direct instruction{
+	class = Software{
+		context = application,
+		name = Adobe Reader
+	}
+}
+```
+
 ## 421
 ```
 class Install software{
@@ -422,6 +460,16 @@ class LotRecieverProblem{
 }
 ```
 
+## 504
+```
+class = Reinstall software extends Direct instruction{
+	class = Software{
+		context = application,
+		name = Internet Explorer 8
+	}
+}
+```
+
 ## 521
 ```
 class Install software
@@ -460,6 +508,11 @@ class LotRecieverProblem{
        }
     }
 }
+```
+
+## 604
+```
+class = Cannot analyse
 ```
 
 ## 621
@@ -504,6 +557,11 @@ class LotRecieverProblem{
 }
 ```
 
+## 704
+```
+class = Needs clarification
+```
+
 ## 721
 ```
 Class Reinstall software
@@ -538,6 +596,15 @@ class  Reinstall software extends Problem description without desired state {
 ```
 class Install software {
     name=VIDA All-in-one 2010 C Edition (SE) (LOBAID: 5454)
+}
+```
+
+## 804
+```
+class = Error Messages extends Problem description without desired state{
+	when = system start,
+	message = "Program assigned to run",
+	duration = a weeks
 }
 ```
 
@@ -583,6 +650,14 @@ class Reinstall software {
 }
 ```
 
+## 904
+```
+class = Install software extends Direct instruction{
+	context = application,
+	name = Firefox
+}
+```
+
 ## 921
 ```
 class = Shared disk group connection extends Direct instruction {
@@ -619,6 +694,14 @@ class  Install software extends Problem {
 Can not process, message about pending installation but without mentioning software, need user contact
 ```
 
+## 1004
+```
+class = Install software extends Problem description without desired state {
+	context = application,
+	name = Adobe Flash Player
+}
+```
+
 ## 1021
 
 ```
@@ -652,6 +735,14 @@ class No access {
 	name = SMS/SCCM client
   }
   access level = possibility to install configuration package
+}
+```
+
+## 1104
+```
+class = Reinstall software extends Direct instruction{
+	context = application,
+	name = Internet Explorer 8
 }
 ```
 
@@ -699,6 +790,13 @@ class No access {
 }
 ```
 
+## 1204
+```
+class = Cannot run extends Problem description without desired state{
+	target = bat script
+}
+```
+
 ## 1221
 ```
 class Connectivity problem
@@ -741,6 +839,11 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1304
+```
+class = Cannot Access extends Problem description without desired state
+```
+
 ## 1321
 ```
 class network addressing
@@ -766,6 +869,13 @@ class Install {
 ## 1326
 ```
 class LotOrderNotDeliver {
+}
+```
+
+## 1404
+```
+class = Update software extends Direct instruction{
+	currentVersion = 484
 }
 ```
 
@@ -808,6 +918,12 @@ class Reinstall software {
 }
 ```
 
+## 1504
+```
+class = LOT {
+	object = not delivered
+}
+```
 
 ## 1521
 ```
@@ -834,6 +950,13 @@ Need user contact, or reinstall software, need instructions
 ## 1526
 ```
 Unable to clarify, need specialist contact
+```
+
+## 1604
+```
+class = LOT {
+	object = failed
+}
 ```
 
 ## 1621
@@ -864,6 +987,11 @@ class User cannot perfom action extends desired state {
 }
 ```
 
+## 1704
+```
+class = Cannot Access extends Problem description without desired state
+```
+
 ## 1721
 ```
 class Connectivity problem
@@ -889,6 +1017,13 @@ class Alias Add extends Problem{
 ## 1726
 ```
 User clarification required
+```
+
+## 1804
+```
+class = Cannot access extends Problem description without desired state{
+	object = e-mail
+}
 ```
 
 ## 1821
