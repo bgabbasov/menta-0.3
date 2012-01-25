@@ -12,6 +12,13 @@
  1. PreliminaryAnnotator
  1. KnowledgeBaseAnnotator
 
-## General workflow
+## Workflow
 
 [Workflow Model](https://github.com/menta/menta-0.3/blob/master/doc/informal/perceiving-modelling.md#Approximate_workflow)
+
+## Knowledge data model
+[Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/informal/knowledge.md)
+
+## Collaboration diagram
+
+![Collaboration diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVCollaboration.png)
