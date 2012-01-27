@@ -5,7 +5,7 @@ Selector is main component to switch Critics -> Way2Think pair.
 ## Inbound data
 
   1. Critics list.
-  1. Context[(K-lines)[knowledge.md]]
+  1. Context[[K-lines](knowledge.md)]
 
 ## Workflow
 
