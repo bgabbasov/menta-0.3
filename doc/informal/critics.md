@@ -2,7 +2,7 @@
 
 ## Class diagram
 
-![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/criticsClass.png)
+![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/criticClass.png)
 
 ## Main Critics links types.
 
