@@ -52,3 +52,7 @@ From [Emotion Machine](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc50870857
 The Way2Think is the workflow that could be represented as [SemanticNetwork](knowledge.md). There are two types of Way2Think: basic and compound.
 Basic Way2Think listed above are implemented directly in the System, compounds are created combining [Critics](critics.md),
 [Selectors](selector.md), and other Way2Think.
+
+## Goal based Way2Think
+
+The other way to crate the Way2Think is use SemanticNetwork of goals where each node is implemented as Critics -> Selector -> Way2Think(Basic) sequence.
