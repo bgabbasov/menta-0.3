@@ -6,9 +6,9 @@
 
 ### Components list
 
- 1. Selector
- 1. Critics
- 1. Way2Think
+ 1. [Selector](selector.md)
+ 1. [Critics](critics.md)
+ 1. [Way2Think](way2Think.md)
  1. PreliminaryAnnotator
  1. KnowledgeBaseAnnotator
 

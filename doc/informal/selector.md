@@ -10,7 +10,7 @@ Selector is main component to switch Critics -> Way2Think pair.
 ## Workflow
 
   1. Selector starts inbound [Critics](critics.md) in parallel.
-  1. As Critics returns their probabilities and recall Selector select the best variant ([Way2Think](way2think.md))
+  1. As Critics returns their probabilities and recall Selector select the best variant ([Way2Think](way2Think.md))
   taking in account following aspects (thees aspects could be stored in KB as [SemanticNetwork](knowledge.md)):
     2. One Critic is the part of another.
     2. One Critic if triggered is more probable than another.
