@@ -55,4 +55,4 @@ Basic Way2Think listed above are implemented directly in the System, compounds a
 
 ## Goal based Way2Think
 
-The other way to crate the Way2Think is use SemanticNetwork of goals where each node is implemented as Critics -> Selector -> Way2Think(Basic) sequence.
+The other way to crate the Way2Think is use SemanticNetwork of [goals](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png) where each node is implemented as Critics -> Selector -> Way2Think(Basic) sequence.
