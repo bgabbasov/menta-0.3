@@ -71,7 +71,7 @@
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="selector activity reset" />
       <member type="pgml"
-              name="0.3.1-research_ClassDiagram.pgml"
+              name="0.3.1-research_criticClass.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="critic Class" />
       <member type="todo"
@@ -90,7 +90,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Jan 27 18:28:05 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Jan 30 10:27:28 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -309,7 +309,7 @@
                     <UML:Parameter xmi.id = '-64--88-121--124-a80258c:1351fbb3012:-8000:0000000000000C6A'
                       name = 'return' isSpecification = 'false' kind = 'return'>
                       <UML:Parameter.type>
-                        <UML:Class xmi.idref = '-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C10'/>
+                        <UML:Class xmi.idref = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86'/>
                       </UML:Parameter.type>
                     </UML:Parameter>
                     <UML:Parameter xmi.id = '-64--88-121--124-a80258c:1351fbb3012:-8000:0000000000000C6B'
@@ -448,6 +448,42 @@
                 </UML:AssociationEnd>
               </UML:Association.connection>
             </UML:Association>
+            <UML:Class xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86'
+              name = 'Way2ThinkProbabilityPair' visibility = 'public' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C89'
+                  name = 'way2Think' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C8A'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C8B'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Component xmi.idref = '-64--88-121--126-318c5c5c:1347eec1071:-8000:000000000000086A'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C8C'
+                  name = 'probability' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C8D'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C8E'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C10'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+            </UML:Class>
           </UML:Namespace.ownedElement>
         </UML:Package>
         <UML:Package xmi.id = '-64--88-121--126-318c5c5c:1347eec1071:-8000:0000000000000897'
@@ -19027,7 +19063,7 @@ be used as guide.</text>
                         offset="25" />
     </private>
     <path name="Fig29.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -20631,7 +20667,7 @@ K-line</text>
       name="critic Class"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[64, 368, 255, 104]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
+       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[64, 368, 351, 104]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
        href="-64--88-121--124-26c86835:135197be9da:-8000:0000000000000C30"
        fill="1"
        fillcolor="white"
@@ -20644,7 +20680,7 @@ K-line</text>
     <rectangle name="Fig0.0"
       x="64"
       y="368"
-      width="255"
+      width="351"
       height="104"
       fill="1"
       fillcolor="white"
@@ -20654,7 +20690,7 @@ K-line</text>
     <text name="Fig0.1"
       x="65"
       y="369"
-      width="253"
+      width="349"
       height="43"
       fill="0"
       fillcolor="white"
@@ -20668,7 +20704,7 @@ K-line</text>
       justification="Center"
     >Critic</text>
     <group name="Fig0.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[65, 369, 253, 20]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[65, 369, 349, 20]"
          href="-64--88-121--124-26c86835:135197be9da:-8000:0000000000000C30"
          fill="0"
          fillcolor="white"
@@ -20681,7 +20717,7 @@ K-line</text>
       <rectangle name="Fig0.2.0"
         x="65"
         y="369"
-        width="253"
+        width="349"
         height="20"
         fill="0"
         fillcolor="white"
@@ -20691,7 +20727,7 @@ K-line</text>
       <text name="Fig0.2.1"
         x="65"
         y="369"
-        width="253"
+        width="349"
         height="18"
         fill="0"
         fillcolor="white"
@@ -20708,7 +20744,7 @@ K-line</text>
     <rectangle name="Fig0.3"
       x="64"
       y="412"
-      width="255"
+      width="351"
       height="1"
       fill="1"
       fillcolor="black"
@@ -20716,7 +20752,7 @@ K-line</text>
       strokecolor="black"
     />
     <group name="Fig0.4"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[65, 413, 253, 59]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[65, 413, 349, 59]"
          href="-64--88-121--124-26c86835:135197be9da:-8000:0000000000000C30"
          fill="0"
          fillcolor="white"
@@ -20729,7 +20765,7 @@ K-line</text>
       <rectangle name="Fig0.4.0"
         x="65"
         y="413"
-        width="253"
+        width="349"
         height="59"
         fill="0"
         fillcolor="white"
@@ -20739,7 +20775,7 @@ K-line</text>
       <text name="Fig0.4.1"
         x="65"
         y="413"
-        width="253"
+        width="349"
         height="17"
         fill="0"
         fillcolor="white"
@@ -20755,7 +20791,7 @@ K-line</text>
       <text name="Fig0.4.2"
         x="65"
         y="430"
-        width="253"
+        width="349"
         height="17"
         fill="0"
         fillcolor="white"
@@ -20771,7 +20807,7 @@ K-line</text>
       <text name="Fig0.4.3"
         x="65"
         y="447"
-        width="253"
+        width="349"
         height="23"
         fill="0"
         fillcolor="white"
@@ -20783,7 +20819,7 @@ K-line</text>
         bold="false"
         textsize="12"
         justification="Left"
-      >evaluate(context : SemanticNetwork) : Double</text>
+      >evaluate(context : SemanticNetwork) : Way2ThinkProbabilityPair</text>
     </group>
   </group>
   <group name="Fig1"
@@ -21101,7 +21137,7 @@ K-line</text>
                         offset="-10" />
     </private>
     <path name="Fig3.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -21158,7 +21194,7 @@ K-line</text>
                         offset="5" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -21329,7 +21365,7 @@ K-line</text>
                         offset="-10" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -21386,7 +21422,7 @@ K-line</text>
                         offset="5" />
     </private>
     <path name="Fig7.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -21397,6 +21433,163 @@ K-line</text>
       <lineto x="224"
               y="246" />
     </path>
+  </group>
+  <group name="Fig8"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[64, 488, 147, 88]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       href="-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig8.0"
+      x="64"
+      y="488"
+      width="147"
+      height="88"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig8.1"
+      x="65"
+      y="489"
+      width="145"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Way2ThinkProbabilityPair</text>
+    <group name="Fig8.2"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[65, 489, 64, 0]"
+         href="-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig8.2.0"
+        x="65"
+        y="489"
+        width="64"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <rectangle name="Fig8.3"
+      x="64"
+      y="512"
+      width="147"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig8.4"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[65, 513, 145, 42]"
+         href="-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig8.4.0"
+        x="65"
+        y="513"
+        width="145"
+        height="42"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+      <text name="Fig8.4.1"
+        x="65"
+        y="513"
+        width="145"
+        height="17"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >way2Think : Way2Think</text>
+      <text name="Fig8.4.2"
+        x="65"
+        y="530"
+        width="145"
+        height="23"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >probability : Double</text>
+    </group>
+    <rectangle name="Fig8.5"
+      x="64"
+      y="554"
+      width="147"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig8.6"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[65, 555, 145, 21]"
+         href="-64--88--75-1-d49a481:1352d7e93db:-8000:0000000000000C86"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig8.6.0"
+        x="65"
+        y="555"
+        width="145"
+        height="21"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
   </group>
 </pgml>
 <todo>

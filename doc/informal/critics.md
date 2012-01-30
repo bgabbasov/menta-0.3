@@ -1,5 +1,14 @@
 # Critics design specification
 
+## Inbound data
+
+ 1. Context
+
+## Outbound data
+
+ 1. Probability: Double
+ 1. Way2Think
+
 ## Class diagram
 
 ![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/criticClass.png)
