@@ -1,6 +1,6 @@
 # Way2Think design specification.
 
-## Ways to think:
+## Basic Ways to think:
 From [Emotion Machine](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)
 
  1. Knowing How: The best way to solve a problem is to know how to solve it and use that solution. However, we may not know how to retrieve what we know, or even know that we know it.
@@ -39,3 +39,8 @@ From [Emotion Machine](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc50870857
 
  1. Resignation. Whenever you find yourself totally stuck, you can shut down the resources you’re using now and relax, lay back, drop out, and stop. Then the ‘Rest of Your Mind’ may find an alternative—or conclude that you don’t have to do this at all.
 
+## Workflow
+
+The Way2Think is the workflow that could be represented as [SemanticNetwork](knowledge.md). There are two types of Way2Think: basic and compound.
+Basic Way2Think listed above are implemented directly in the System, compounds are created combining [Critics](critics.md),
+[Selectors](selector.md), and other Way2Think.
