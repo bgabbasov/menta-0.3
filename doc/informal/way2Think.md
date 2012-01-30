@@ -1,5 +1,13 @@
 # Way2Think design specification.
 
+## Inbound data
+
+ 1. Context [K-line of the incident](knowledge.md)
+
+## Outbound data
+
+ 1. Updated part of context [K-line](knowledge.md)
+
 ## Basic Ways to think:
 From [Emotion Machine](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)
 

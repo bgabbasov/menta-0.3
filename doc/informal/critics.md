@@ -6,8 +6,8 @@
 
 ## Outbound data
 
- 1. Probability: Double
  1. Way2Think
+ 1. Probability: Double
 
 ## Class diagram
 
