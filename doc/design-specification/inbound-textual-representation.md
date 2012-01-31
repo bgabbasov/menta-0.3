@@ -11,8 +11,10 @@ _Workflow_
 * TODO: Informal Request description
 * TODO: Request description with diagrams
 * PREPROCESSING module perfroms additional checks:
+
 ** If this is generated request, skip NLP checking and load generated template
 ** Else run NLP to extract predicates
+
 * NLP performs objects extraction and filled out CustomAttributes
 * Translation take care on mapping to the internal format
 
