@@ -8,7 +8,7 @@ However she received wrong version, she received Wordfinder Tehcnical instead of
 Please assist
 ```
 
-## Approximate workflow
+## <a name="Approximate_workflow">Approximate workflow</a>
 See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
 
  1. PreliminaryAnnotator creates word links.
@@ -16,23 +16,27 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
  1. EmotionMachine runs:
    2. Reflective Critics selects KnowingHow(Perceiving) Way2Think:
    2. KnowingHow(Perceiving) Way2Think:
-     3. Deliberate Critics selects Simulation Way2Think.
-     3. Simulation crates model of CurrentSituation:
+     3. Incident Clarification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
+     3. Selector selects most probable Way2Think according to Critics estimates, current example is Problem description with desired state.
+     3. _KnowingHow(Perceiving)_ stores variants and the Selector choice.
+     3. Simulation Way2Think with CurrentSituation model => crates model of CurrentSituation:
          4. User,
          4. Software,
          4. ...
-     3. Deliberate Critics selects Reformulation Way2Think.
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
      3. Reformulation according to UserProblem template creates UserProblem model(CurrentState and DesiredState delta(_software wrongly installed, software lack on the User computer_)).
      instance from CurrentSituation model.
          4. DesiredState if not mentioned explicitly could be inferred as following:
-             5. System has a goal to help User.
+             5. System has a [goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png) to help User.
              5. To help user System has to satisfy User needs:
              5. User has a goal to get rid of problem.(If ProblemSource mentioned explicitly (need Software) => DesiredState = Software installed, Else initiate Deliberate Critics to find out the ProblemSource.)
-     3. Deliberate Critics selects ExtensiveSearch Way2Think.
+     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
+     3. Solution Generation Deliberate Critics searches among (KnowingHow Way2Think or ExtensiveSearch-es).
+     3. Selector selects most probable Way2Think according to Critics estimates, current example is ExtensiveSearch.
      3. ExtensiveSearch searches for HowTo-s to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
          4. If found => reports success.
          4. If fails => activate Cry4Help Way2Think.
-   2. Reflective Critics checks if the System goal reached (Problem is exterminated)
+   2. _Reflective Critics_ checks if the System goal reached (Problem is exterminated)
          4. If satisfied => reports success.
          4. If fails => activate Cry4Help Way2Think.
 
@@ -305,6 +309,7 @@ K-line[SrcResource, DestResource] {
 ```
 
 ## EmotionMachine
+see [Workflow](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Approximate_workflow)
 
 ## Reflective Critics selects KnowingHow(Perceiving) Way2Think: and KnowingHow(Perceiving) Way2Think:
 
@@ -324,49 +329,64 @@ AnnotatedText extends Frames for Including Additional Slots {
 ### Outbound data structure
 
 ```
-???
 Solution {
   Narrative Story[HowTo]
 }
 ```
 
-## Deliberate Critics selects Knowing How(Classify incident description) Way2Think and Knowing How(Classify incident description) Way2Think
+## Incident Classification Deliberate Critics
+
+### Outbound data
+
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Workflow
 
 Following Critics started concurrently:
+
   1. Detect Direct instruction
   1. Detect Problem description
     2. Detect desired state in problem description
 
-## Selector chooses most probable variant according to Critics estimates
+They end up with analysis results: Way2Think and probability pair.
 
-## Direct instruction
-Activates Simulation Way2Think with Instruction model.
+## Selector chooses most probable variant according to Critics estimates, current example is _Problem description with desired state case_
 
-## Simulation Way2Think with Instruction model
-### Workflow
-via K-lines creates model(picture) of current state with participants:
-  1. Instruction HowTo
-    2. Parameters of the Type set in HowTo
+## Problem description with desired state
+see [alternative](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Direct_instruction_case)
 
-### Exceptions
-  - If Instruction HowTo was not found => Unknown action requested.
-  - If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+### Inbound data
 
-## Problem description
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
 
-## Deliberate Critics selects Simulation Way2Think and Simulation Way2Think with Problem model
+### Outbound data
 
-### Inbound data structure = same as above
+```
+Resource
+```
+
+## Simulation Way2Think with Problem model
 
 ### Outbound data structure
 
 ```
 Semantic network[Concept]
 ```
+
 ### Workflow
 
   1. Reading each word
-  1. via K-lines creates model(picture) of current state with participants:
+  1. via K-lines creates model(picture) of current state ex.:
     2. User: Actor
       3. has:
         4. Software
@@ -375,4 +395,125 @@ Semantic network[Concept]
       3. ordered:
         4. Software
           5. name = Wordfinder
-          5. version = Tehcnical
+          5. version = Business Economical
+
+### Exceptions
+
+  1. Mandatory parameters of encapsulating concept was not detected => Clarification request for parameters to be clarified.
+
+## Reformulation Way2Think with UserProblem model with desired state
+see [alternative](https://github.com/menta/menta-0.3/blob/master/doc/analysis/perceiving-modelling.md#Reformulation_Way2Think_without_desired_state_case)
+
+### Outbound data structure
+
+```
+Semantic network[Concept]
+```
+
+### Workflow
+
+creates UserProblem model
+
+  1. CurrentState
+  1. DesiredState delta:
+    2. software wrongly installed,
+    2. software lack on the User computer.
+
+### Exceptions
+
+  1. Current state lacks what's wrong description
+  1. System was unable to infer the desired state.
+
+## Solution Generation Deliberate Critics searches among (KnowingHow Way2Think or ExtensiveSearch-es).
+
+### Outbound data
+
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Workflow
+
+Following Critics started concurrently:
+
+  1. Detect KnowingHow Way2Think to get from Current to Desired state
+  1. Detect ExtensiveSearch if no complete Solution was generated
+
+They end up with analysis results: Way2Think and probability pair.
+
+## Selector chooses most probable variant according to Critics estimates of the completeness of the Solution, current example is _ExtensiveSearch_
+
+### Inbound data
+
+```
+Pair {
+  Resource
+  probability: Double
+}
+```
+
+### Outbound data
+
+```
+Resource
+```
+
+## ExtensiveSearch Way2Think
+to get from CurrentState to DesiredState(_get rid of wrongly installed software, install desired software_).
+
+  1. If found => reports success.
+  1. If fails => activate Cry4Help Way2Think.
+
+### Outbound data
+
+```
+Solution {
+  Narrative Story[HowTo]
+}
+```
+
+### Exceptions
+
+  1. Fails to find the HowTo to get rid of problem. => Escalate.
+
+## Alternative workflow
+
+## <a name="Direct_instruction_case">Direct instruction case</a>
+Activates Simulation Way2Think with Instruction model.
+
+## Simulation Way2Think with Instruction model
+
+### Workflow
+via K-lines creates model(picture) of current state with participants:
+
+  1. Instruction HowTo
+  1. Parameters of the Type set in HowTo
+
+### Exceptions
+
+  1. If Instruction HowTo was not found => Unknown action requested.
+  1. If Instruction HowTo mandatory parameter of the specified type was not found => Clarification request for the parameter to be clarified.
+
+
+## <a name="Reformulation_Way2Think_without_desired_state_case">Reformulation Way2Think with UserProblem model without desired state case</a>
+
+### Workflow
+
+  1. DesiredState is inferred taking in account following goals:
+    2. System goal: to help user
+    2. User goal: get rid of the problem
+    2. Problem source analysis:
+      3. If problem source mentioned explicitly (need Software) => DesiredState = Software installed ==> Install needed software
+      3. Else initiate Deliberate Critics to find out the ProblemSource.)
+  1. DesiredState delta
+    2. software wrongly installed,
+    2. software lack on the User computer.
+
+### Exceptions
+
+  1. Current state lacks what's wrong description
+  1. System was unable to infer the desired state.
+

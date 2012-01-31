@@ -10,7 +10,7 @@ Incident class of all connections issues.
 Incident class, that occurs when user can not find something, usually the icon on his/her desktop.
 
 ## Reinstall software
-Incident class of installation/reinstallation requests.
+Incident class of installation/reinstallation/upgrade requests.
 
 ## Can not process...
 Start of escalation/clarification response of the system.
@@ -48,6 +48,19 @@ _Invalid parameter_ subclass with parameters:
 Subclass of all _Unable to setup_ issues.
 Parameters:
  - machine(network address)
+
+## Format of different version
+User can't work with document because he have older or newer programm.
+
+## restore data
+User want restore backuped version of data.
+parameter - target date of target tag or target id
+
+## tried actions
+User tried do something
+
+## disabled period
+period when any actions from support disabled 
 
 ## extends
 Keyword to identify the reference to super Class.
