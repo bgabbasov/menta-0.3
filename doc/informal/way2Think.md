@@ -55,4 +55,14 @@ Basic Way2Think listed above are implemented directly in the System, compounds a
 
 ## Goal based Way2Think
 
+<<<<<<< HEAD
 The other way to crate the Way2Think is use SemanticNetwork of [goals](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png) where each node is implemented as Critics -> Selector -> Way2Think(Basic) sequence.
+=======
+The other way to crate the Way2Think is use SemanticNetwork of Goals where each node is implemented as Critics -> Selector -> Way2Think(Basic) sequence.
+Self controlling Way2Think(Perceiving) selects first goal of the SemanticNetwork and invokes the Selector with Goal parameter.
+Each critic should have the property of the Goal context, this way the Selector could apply proper Critics on the fly. Critics returns a Way2Think basic or compound and it is
+executed by Selector.
+Then Self controlling Way2Think selects next Goal.
+
+![Goals diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png)
+>>>>>>> c6b2ea488d74b1e2214444f513f2be8fc07d56c5
