@@ -39,14 +39,8 @@ SemanticNetwork of the Incident description with KLine-s that links to Knowledge
 ### Simulation Way2Think
 SemanticNetwork that models the situation of the Incident description.
 
-### Reformulation Way2Think
+### Reformulation Way2Think = Formalisation result
 TransFrame in case of the UserProblem
 
 ### SolutionGeneration Way2Think
 SemanticNetwork of HowTo-s
-
-## Formalization outbound data structure
-
-The result of formalisation could be:
- 1.Current situation model: SemanticNetwork
- 1. Problem description: TransFrame.
