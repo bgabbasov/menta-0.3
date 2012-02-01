@@ -9,6 +9,20 @@ Then the present state of your micronemes could represent much of your current m
 In other words, this system could switch you into other, different ways to think.
 I think that this concept of micronemes could help to replace many old and vague ideas about ‘association of ideas.’
 
+## <a name="Text_inbound_data_structure">Text inbound data structure</a>
+
+### Training mode
+1. Inbound data is Text
+  2. Incidents description text.
+  2. Incident category.
+  2. Incident formalized description.
+  2. Incident solution.
+
+### Production mode
+1. Inbound data is Text
+  2. Incidents description text.
+  2. Incident category.
+
 ## Formalization outbound data structure
 
 The result of formalisation is the domain model that is SemanticNetwork of current situation or the Problem description = TransFrame.
