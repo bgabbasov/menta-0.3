@@ -2,11 +2,12 @@
 
 ## Inbound data
 
- 1. Context [K-line of the incident](knowledge.md)
+ 1. Context:[SemanticNetwork with KLine](knowledge.md#KnowledgeBase_annotation) or
+ 1. Context:[SemanticNetwork](knowledge.md#Reformulation_Way2Think)
 
-## Outbound data
+## <a name="Outbound_data">Outbound data</a>
 
- 1. Updated part of context [K-line](knowledge.md)
+ 1. Updated part of the Conversation KLine:[KLine](knowledge.md)
 
 ## Basic Ways to think:
 From [Emotion Machine](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc508708573)

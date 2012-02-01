@@ -33,13 +33,13 @@ Data structures listed below are parts of the Conversation KLine.
 ### Preliminary annotation
 SemanticNetwork of the Incident description.
 
-### KnowledgeBase annotation
+### <a name="KnowledgeBase_annotation"> KnowledgeBase annotation</a>
 SemanticNetwork of the Incident description with KLine-s that links to KnowledgeBase resources.
 
-### Simulation Way2Think
+### <a name="Simulation_Way2Think">Simulation Way2Think</a>
 SemanticNetwork that models the situation of the Incident description.
 
-### Reformulation Way2Think = Formalisation result
+### <a name="Reformulation_Way2Think">Reformulation Way2Think = Formalisation result</a>
 TransFrame in case of the UserProblem
 
 ### SolutionGeneration Way2Think

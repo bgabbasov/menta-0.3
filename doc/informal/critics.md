@@ -2,7 +2,8 @@
 
 ## Inbound data
 
- 1. Context: SemanticNetwork with KLine-s
+ 1. Incident description: SemanticNetwork with KLine-s or
+ 1. Simulation Way2Think result: SemanticNetwork
 
 ## Outbound data
 
