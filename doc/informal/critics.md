@@ -2,7 +2,7 @@
 
 ## Inbound data
 
- 1. Context
+ 1. Context: SemanticNetwork with KLine-s
 
 ## Outbound data
 

@@ -1,6 +1,6 @@
 # Simple machine perceiving process modelling.
 
-## Inbound data
+## Inbound data example
 ```
 User had received wrong application.
 User has ordered Wordfinder Business Economical.
@@ -16,14 +16,13 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
  1. EmotionMachine runs:
    2. Reflective Critics selects KnowingHow(Perceiving) Way2Think:
    2. KnowingHow(Perceiving) Way2Think:
-     3. Incident Clarification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
+     3. Incident Classification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
      3. Selector selects most probable Way2Think according to Critics estimates, current example is Problem description with desired state.
      3. _KnowingHow(Perceiving)_ stores variants and the Selector choice.
      3. Simulation Way2Think with CurrentSituation model => crates model of CurrentSituation:
          4. User,
          4. Software,
          4. ...
-     3. _Reflective Critics_ estimates does the System got closer to the goal of the first step, if does carry on with Way2Think, if not try less probable stored by KnowingHow(Perceiving).
      3. Reformulation according to UserProblem template creates UserProblem model(CurrentState and DesiredState delta(_software wrongly installed, software lack on the User computer_)).
      instance from CurrentSituation model.
          4. DesiredState if not mentioned explicitly could be inferred as following:
