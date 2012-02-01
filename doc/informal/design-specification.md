@@ -3,10 +3,10 @@
 ## <a name="Use_cases">Use cases</a>
 
 ### Training use case
-![Training use case](/uml/images/UseCaseTrain.png)
+![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
 
 ### Production use case
-![Production use case](/uml/images/UseCaseProduction.png)
+![Production use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
 
 ## <a name="Component_diagram">Component diagram</a>
 
