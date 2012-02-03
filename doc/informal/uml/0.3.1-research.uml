@@ -90,7 +90,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Feb 02 17:41:26 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Feb 03 10:08:58 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2431,6 +2431,21 @@
                         <UML:Class xmi.idref = '-64--88-121--124--71206377:1350f30b9c4:-8000:0000000000000BDA'/>
                       </UML:StructuralFeature.type>
                     </UML:Attribute>
+                    <UML:Attribute xmi.id = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CCF'
+                      name = 'CustomAttributes' visibility = 'public' isSpecification = 'false'
+                      ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                      <UML:StructuralFeature.multiplicity>
+                        <UML:Multiplicity xmi.id = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CD0'>
+                          <UML:Multiplicity.range>
+                            <UML:MultiplicityRange xmi.id = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CD1'
+                              lower = '1' upper = '1'/>
+                          </UML:Multiplicity.range>
+                        </UML:Multiplicity>
+                      </UML:StructuralFeature.multiplicity>
+                      <UML:StructuralFeature.type>
+                        <UML:Class xmi.idref = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CD2'/>
+                      </UML:StructuralFeature.type>
+                    </UML:Attribute>
                   </UML:Classifier.feature>
                 </UML:Class>
                 <UML:Class xmi.id = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CC0'
@@ -2490,6 +2505,9 @@
                     <UML:Class xmi.idref = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6'/>
                   </UML:Generalization.parent>
                 </UML:Generalization>
+                <UML:Class xmi.id = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CD2'
+                  name = 'Dictionary' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
               </UML:Namespace.ownedElement>
             </UML:Package>
           </UML:Namespace.ownedElement>
@@ -19718,7 +19736,7 @@ mental context</text>
     </path>
   </group>
   <group name="Fig35"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[256, 888, 238, 122]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[256, 888, 238, 139]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6"
        fill="1"
        fillcolor="white"
@@ -19732,7 +19750,7 @@ mental context</text>
       x="256"
       y="888"
       width="238"
-      height="122"
+      height="139"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -19755,7 +19773,7 @@ mental context</text>
       justification="Center"
     >Request</text>
     <group name="Fig35.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[257, 889, 64, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[257, 889, 236, 0]"
          href="-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6"
          fill="0"
          fillcolor="white"
@@ -19769,7 +19787,7 @@ mental context</text>
       <rectangle name="Fig35.2.0"
         x="257"
         y="889"
-        width="64"
+        width="236"
         height="0"
         fill="0"
         fillcolor="white"
@@ -19788,7 +19806,7 @@ mental context</text>
       strokecolor="black"
     />
     <group name="Fig35.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[257, 913, 236, 76]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[257, 913, 236, 93]"
          href="-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6"
          fill="0"
          fillcolor="white"
@@ -19802,7 +19820,7 @@ mental context</text>
         x="257"
         y="913"
         width="236"
-        height="76"
+        height="93"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -19860,7 +19878,7 @@ mental context</text>
         x="257"
         y="964"
         width="236"
-        height="23"
+        height="17"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -19872,10 +19890,26 @@ mental context</text>
         textsize="12"
         justification="Left"
       >Solution : SemanticNetwork</text>
+      <text name="Fig35.4.5"
+        x="257"
+        y="981"
+        width="236"
+        height="23"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >CustomAttributes : Dictionary</text>
     </group>
     <rectangle name="Fig35.5"
       x="256"
-      y="988"
+      y="1005"
       width="238"
       height="1"
       fill="1"
@@ -19884,7 +19918,7 @@ mental context</text>
       strokecolor="black"
     />
     <group name="Fig35.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[257, 989, 236, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[257, 1006, 236, 21]"
          href="-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6"
          fill="0"
          fillcolor="white"
@@ -19896,7 +19930,7 @@ mental context</text>
       
       <rectangle name="Fig35.6.0"
         x="257"
-        y="989"
+        y="1006"
         width="236"
         height="21"
         fill="0"
@@ -19944,7 +19978,7 @@ mental context</text>
       justification="Center"
     >TrainingRequest</text>
     <group name="Fig36.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[545, 913, 64, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[545, 913, 236, 0]"
          href="-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CC0"
          fill="0"
          fillcolor="white"
@@ -19958,7 +19992,7 @@ mental context</text>
       <rectangle name="Fig36.2.0"
         x="545"
         y="913"
-        width="64"
+        width="236"
         height="0"
         fill="0"
         fillcolor="white"
@@ -20050,7 +20084,7 @@ mental context</text>
                         offset="-10" />
     </private>
     <path name="Fig37.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -20081,7 +20115,7 @@ mental context</text>
                         offset="-10" />
     </private>
     <path name="Fig38.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
