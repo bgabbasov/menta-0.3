@@ -19,7 +19,7 @@ Data structures listed below are parts of the Conversation KLine.
 ### <a name="Incident_inbound_data_structure">Incident inbound data structure</a>
 
 #### Training mode
-1. Inbound data: Frame
+1. TrainingRequest: Frame
   2. Description: StringResource
      3. Contains description of Incident
   2. IncidentCategory: Microneme
@@ -32,9 +32,11 @@ Data structures listed below are parts of the Conversation KLine.
      3. Additional attributes of Request (already formalized)
 
 #### Production mode
-1. Inbound data: Frame
-  2. Incident description text: StringResource
-  2. Incident category: Microneme
+1. Request: Frame
+  2. Description: StringResource
+     3. Contains description of Incident
+  2. IncidentCategory: Microneme
+     3. Contains already defined category TODO:Add sample
 
 ### Preliminary annotation
 SemanticNetwork of the Incident description.
