@@ -20,10 +20,16 @@ Data structures listed below are parts of the Conversation KLine.
 
 #### Training mode
 1. Inbound data: Frame
-  2. Incident description text: StringResource
-  2. Incident category: Microneme
-  2. Incident formalized description: SemanticNetwork
-  2. Incident solution: SemanticNetwork
+  2. Description: StringResource
+   3. Contains description of Incident
+  2. IncidentCategory: Microneme
+   3. Contains already defined category TODO:Add sample
+  2. FormalizedDescription: SemanticNetwork
+   3. Fornalized description of problem
+  2. Solution: SemanticNetwork
+   3. Solution of incident in formalized
+  2. CustomAttributes:Dictionary
+   3. Additional attributes of Request (already formalized)
 
 #### Production mode
 1. Inbound data: Frame
