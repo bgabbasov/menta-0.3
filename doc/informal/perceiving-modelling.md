@@ -17,7 +17,7 @@ See [Ways to think](http://web.media.mit.edu/~minsky/E7/eb7.html#_Toc451324833)
    2. SelfReflective Critics selects and starts SelfControl [Way2Think](way2Think.md) with
    [Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png): Help user.
    2. Reflective Critics selects and starts ProblemSolving [Way2Think](way2Think.md) with
-   [Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png): Get rid of user problem.
+   [Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png): ResolveIncident.
    2. Reflective Critics selects KnowingHow(Perceiving) Way2Think:
    2. KnowingHow(Perceiving) Way2Think:
      3. Incident Classification Deliberate Critics starts in parallel (Direct Instruction, Problem description with desired state, Problem description without desired state)
