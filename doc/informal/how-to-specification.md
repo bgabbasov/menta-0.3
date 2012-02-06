@@ -3,6 +3,7 @@
 
 # Idea
 There are 2 types of HowTo:
+
 1. ValueHowTo
 1. FunctionalHowTo
 
@@ -11,6 +12,7 @@ Holds simple value. Such as string, integer e.t.c.
 
 ## FunctionalHowTo 
 Holds script execution
+
 1. ScriptName is a name of executable script
 1. InputParameters - obfuscate input parameters for script
 1. OutputParameters - pbfuscate output data from script
