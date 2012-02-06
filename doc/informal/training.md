@@ -40,14 +40,14 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
    2. Installation(install).
  1. HowTo-s the incident solution algorithms = Comes from Project workbooks.
 
- ## Workflow
+## Workflow
 
- ### Train incident handling process
+### Train incident handling process
 
-  1. Process Goals parameter
-    2. Create Narrative of the Critics, Way2Think sequence.
-    2. Connect all intermediate knowledge: SemanticNetWorkWithKLines, ProblemDescription with DesiredState, Model, Solution
-    with KLine(context = Request)
-    2. Connect all matching terms and concepts of intermediate knowledge with KLine-s
-      3. Connect each parameter of Solution HowTo with Formal Model (of previous step)
-      3. Set Formal Model as context of KLine and store Solution in frames parameter of KLine.
+ 1. Process Goals parameter
+   2. Create Narrative of the Critics, Way2Think sequence.
+   2. Connect all intermediate knowledge: SemanticNetWorkWithKLines, ProblemDescription with DesiredState, Model, Solution
+   with KLine(context = Request)
+   2. Connect all matching terms and concepts of intermediate knowledge with KLine-s
+     3. Connect each parameter of Solution HowTo with Formal Model (of previous step)
+     3. Set Formal Model as context of KLine and store Solution in frames parameter of KLine.
