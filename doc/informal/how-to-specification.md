@@ -18,7 +18,11 @@ Holds script execution
 1. OutputParameters - pbfuscate output data from script
 
 ## Mapping mechanism
-Each action from fromalized data map directly to FunctionalHowTo, each single node point to value how-to and holds description of entity. Actually input parameters of how-to indicates how-to, that applicable to this script
+Array of actions is a solution. Solution maps to set of problems using [Training](training.md)
+
+# Comments
+
+## 1
 
 ```
 [18:12:43] Talanov Max: let's do it flexible
