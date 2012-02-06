@@ -17,10 +17,15 @@ Holds script execution
 
 ## Mapping mechanism
 Each action from fromalized data map directly to FunctionalHowTo, each single node point to value how-to and holds description of entity. Actually input parameters of how-to indicates how-to, that applicable to this script
+
 ```
 [18:12:43] Talanov Max: let's do it flexible
+
 [18:13:12] Talanov Max: for example each how to should have some formalized decription of the situation it could be used
+
 [18:13:31] Talanov Max: and then extended search could find it using this parameter
+
 [18:13:40] Talanov Max: what about ithis?
+
 [18:13:59] Talanov Max: for example using K-line
 ```
