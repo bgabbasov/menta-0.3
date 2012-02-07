@@ -33,16 +33,31 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
 ## Information to be trained
 
  1. Goals structure, could be defined explicitly or inferred during Incident handling training = Specified by Knowledge engineer and Project induction.
- 1. Incident handling process, see [Goals data example](training.md#Goals_data_example) = Specified by Knowledge engineer.
  1. Domain concepts dictionary = Comes from TSS training courses.
    2. User.
    2. Software.
    2. Installation(install).
  1. HowTo-s the incident solution algorithms = Comes from Project workbooks.
+ 1. Incident handling process, see [Goals data example](training.md#Goals_data_example) = Specified by Knowledge engineer.
 
 ## Workflow
 
-### Train incident handling process
+## Train Goals
+
+ 1. Explicitly from Goals -> SubGoal-s structure
+ 1. Implicitly appended from Goals parameter of Incident handling training
+
+## Train Domain concepts
+
+ 1. First explicitly from specified Domain SemanticNetWork
+ 1. SemanticNetWork could be appended by subsequent Domain training sessions.
+
+## HowTo-s training
+
+ 1. Explicitly from HowTo functional description //TODO add example here
+ 1. Implicitly appended from Goals parameter of Incident handling training
+
+### Train Incident handling process
 
  1. Process Goals parameter
    2. Create Narrative of the Critics, Way2Think sequence.
