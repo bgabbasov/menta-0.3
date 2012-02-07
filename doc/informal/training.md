@@ -42,7 +42,7 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
 
 ## Workflow
 
-![Goal](Goal.png)
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Goal.png)
 
 ## Train Goals
 
