@@ -42,6 +42,8 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
 
 ## Workflow
 
+![Goal](Goal.png)
+
 ## Train Goals
 
  1. Explicitly from Goals -> SubGoal-s structure
