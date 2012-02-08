@@ -27,6 +27,5 @@
 ## Knowledge data model
 [Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/informal/knowledge.md)
 
-## Collaboration diagram
-
-![Collaboration diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVCollaboration.png)
+## Activity diagram
+![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/LifecycleActivity.png)
