@@ -10,5 +10,6 @@ it is normal
 421: empty phrase, ok
 521: bad root "work" in therd sentence
 621: ok after convert "?" to "'" it words like isn?t
+721: parsing of long sentence is incorrect     btw Flush player is not player
 
 
