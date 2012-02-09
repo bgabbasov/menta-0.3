@@ -20,6 +20,28 @@ Holds script execution
 ## Mapping mechanism
 Array of actions is a solution. Solution maps to set of problems using [Training](training.md)
 
+## Samples
+
+Each how-to represent a automated script called by executor module. For example we have a reciept to fix the Problem:
+```
+1.  Login to Domain\Server 
+2.	Launch Utility 12 for Windows Servers
+3.	Open TAB1
+4.	Navigate to All Managed Servers, find necessary Server from right panel, open Server properties
+5.	Click on Backup Exec Services…
+6.	Select necessary Server Cluster node, then press button Restart all Services
+7.	Wait few seconds, then check Server Status
+```
+In this example we will have 7 how-to which can be represented by diffrent amount of scripts
+
+```
+login:howto{
+  InputParameters:[
+  ]
+}
+```
+
+
 # Comments
 
 ## 1
