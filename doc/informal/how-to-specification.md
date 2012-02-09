@@ -45,9 +45,49 @@ In this example we will have 7 how-to which can be represented by diffrent amoun
 
 ```
 login:howto{
+  Parameters:[
+    
+    {Key:'ScriptName',
+    Value:'LogonScript.bat'},
+    {Key:'Description',
+    Value:'Logon to server'}
+  ]
+  
   InputParameters:[
+    {Key:'ServerName',
+    Value:'Domain\Server'},
+    {Key:'UserName',
+    Value:'MyUser'}
+  ]
+  
+  OutputParameters:[
+    {Key:'SessionID',
+    Value:'SSSE12'},
+    
   ]
 }
+
+launch:howto{
+  Parameters:[
+    
+    {Key:'ScriptName',
+    Value:'LaunchScript.bat'},
+    {Key:'Description',
+    Value:'Launch the application'}
+  ]
+  
+  InputParameters:[
+    {Key:'ExecName',
+    Value:'Utility12.exe'},
+  ]
+  
+  OutputParameters:[
+    {Key:'SessionID',
+    Value:'SSSE12'},
+    
+  ]
+}
+
 ```
 
 
