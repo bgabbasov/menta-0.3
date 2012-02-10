@@ -1,5 +1,5 @@
 # Goal
-Class Goal is a SemanticNode that represent goal of this request. 
+Class Goal is a SemanticNode that represent goal of the request. 
 
 ```
 class = Insufficient disk space extends Problem description without desired state {
