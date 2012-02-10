@@ -13,3 +13,5 @@ it is normal
 721: parsing of long sentence is incorrect     btw Flush player is not player
 
 
+## Comments
+Please compare it with [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/relex.md]
