@@ -26,3 +26,5 @@ and of course can not att comma or point if user skip it.
 
 
 
+## Comments
+Please compare it with [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/relex.md)
