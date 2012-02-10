@@ -14,4 +14,4 @@ it is normal
 
 
 ## Comments
-Please compare it with [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/relex.md]
+Please compare it with [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/relex.md)
