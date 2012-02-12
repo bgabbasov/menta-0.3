@@ -27,5 +27,5 @@
 ## Knowledge data model
 [Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/informal/knowledge.md)
 
-## Activity diagram
+## <a name="Activity_diagram">Activity diagram</a>
 ![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/LifecycleActivity.png)
