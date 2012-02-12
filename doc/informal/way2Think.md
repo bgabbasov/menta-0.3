@@ -11,7 +11,7 @@
 
 ## <a name="Interface">Interface</a>
 
-![Way2Think interface](![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Way2ThinkInterface.png))
+![Way2Think interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Way2ThinkInterface.png)
 
 ## Basic and compound Way2Think
 
