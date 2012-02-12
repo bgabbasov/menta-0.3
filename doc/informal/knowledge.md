@@ -16,31 +16,28 @@ Taking in account the main [Perceiving workflow](perceiving-modelling.md#Approxi
 System crates KLine for the Conversation, Narrative to store each step of processing for machine learning and analysis.
 Data structures listed below are parts of the Conversation KLine.
 
-### <a name="Incident_inbound_data_structure">Incident inbound data structure</a>
+### Incident Context
+Is the KLine with named Resource-s, first element is Request.
+
+### Goal
+
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalTraining.png)
+
+Implements SemanticTreeNode and KLine, thus is organised in Goal-s three and contains context(Critics, Way2Think and their results regarding this Goal).
+
+### Tag
+
+Has same structure as the Goal but is used for different purposes.
+
+### <a name="Inbound_Incident_data_structure">Inbound Incident data structure</a>
 
 #### Training mode
-1. TrainingRequest: Frame
-  2. Description: StringResource
-     3. Contains description of Incident
-  2. IncidentCategory: Microneme
-     3. Contains already defined category:
-         4. Wintel
-         4. Linux
-         4. Network setup
-         4. ...
-  2. FormalizedDescription: SemanticNetwork
-     3. Formalized description of problem
-  2. Solution: SemanticNetwork
-     3. Solution of incident in formalized
-  2. CustomAttributes:Frame-s
-     3. Additional attributes of Request (already formalized)
+See [Training tree](training.md#Training_tree)
 
 #### Production mode
 1. Request: Frame
   2. Description: StringResource
-     3. Contains description of Incident
-  2. IncidentCategory: Microneme
-     3. Contains already defined category TODO:Add sample
+  2. IncidentCategory: KLine (Contains already defined Tag, ex.: Software problem).
 
 ### Preliminary annotation
 SemanticNetwork of the Incident description.

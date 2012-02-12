@@ -8,7 +8,7 @@ However she received wrong version, she received Wordfinder Tehcnical instead of
 Please assist
 ```
 
-## <a name="Goals_data_example">Goals data example used for training</a>
+## <a name="Training_tree">Training tree</a>
 ```
  1. SubGoal = Resolve incident
    2. SubGoal = ParseIncidentDescription, Way2Think = ProcessText: KnowingHow, SemanticNetWorkWithKLines =
@@ -42,7 +42,7 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
 
 ## Workflow
 
-![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Goal.png)
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalConceptClass.png)
 
 ## Train Goals
 

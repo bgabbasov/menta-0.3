@@ -45,4 +45,4 @@ Goal is Shared disk group connection
 1.  Resources - is a KLine that contains suitable Critics to be activated
 
 # Goal example
-![Goals hierarchy examle](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalClass.png)
+![Goals hierarchy example](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalConceptClass.png)
