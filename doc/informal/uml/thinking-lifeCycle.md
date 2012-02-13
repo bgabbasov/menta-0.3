@@ -1,0 +1,1 @@
+# ThinkingLifeCycle specification.

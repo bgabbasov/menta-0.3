@@ -27,7 +27,7 @@ Interpreter and Validator could be expressed via Emotion Machine Solution [see s
 
 ### <a name="Component_diagram">Component diagram</a>
 
-![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVComponent.png)
+![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
 
 Component diagram is supplemental to the Collaboration diagram.
 

@@ -10,7 +10,7 @@
 
 ## <a name="Component_diagram">Component diagram</a>
 
-![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVComponent.png)
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
 
 ### Components list
 
