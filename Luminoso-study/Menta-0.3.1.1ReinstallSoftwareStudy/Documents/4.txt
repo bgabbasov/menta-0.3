@@ -1,1 +1,0 @@
-Service affected: I can't open any files with *.pdf extensions. Problem description: My PC haven't Adobe Reader. 

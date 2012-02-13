@@ -1,1 +1,0 @@
-echo "Microsoft Word install bat"

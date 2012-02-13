@@ -1,1 +1,0 @@
-echo "Microsoft Office install bat"

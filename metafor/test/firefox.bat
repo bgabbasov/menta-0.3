@@ -1,1 +1,0 @@
-echo "Firefox install bat"
