@@ -78,6 +78,6 @@ RelEx uses LinkGrammar notation in the tree output, which can be found [here](ht
 
 # Comments
 
-Have u used WordNet?
+Have you used WordNet?
 
 Please add statistical analysis: [Precision, Recall, F-measure](http://en.wikipedia.org/wiki/Recall_(information_retrieval))
