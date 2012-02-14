@@ -118,7 +118,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Feb 14 16:22:22 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Feb 14 16:35:31 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1648,7 +1648,7 @@
                       </UML:ModelElement.clientDependency>
                       <UML:Classifier.feature>
                         <UML:Attribute xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D65'
-                          name = 'subGoal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                          name = 'goal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
                           changeability = 'changeable' targetScope = 'instance'>
                           <UML:StructuralFeature.multiplicity>
                             <UML:Multiplicity xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D66'>
@@ -1660,66 +1660,6 @@
                           </UML:StructuralFeature.multiplicity>
                           <UML:StructuralFeature.type>
                             <UML:Class xmi.idref = '-64--88-121--120-50ea8cc8:13567701519:-8000:0000000000000EDC'/>
-                          </UML:StructuralFeature.type>
-                        </UML:Attribute>
-                        <UML:Attribute xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D6A'
-                          name = 'way2Think' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                          changeability = 'changeable' targetScope = 'instance'>
-                          <UML:StructuralFeature.multiplicity>
-                            <UML:Multiplicity xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D6B'>
-                              <UML:Multiplicity.range>
-                                <UML:MultiplicityRange xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D6C'
-                                  lower = '1' upper = '1'/>
-                              </UML:Multiplicity.range>
-                            </UML:Multiplicity>
-                          </UML:StructuralFeature.multiplicity>
-                          <UML:StructuralFeature.type>
-                            <UML:Interface xmi.idref = '89-27-9--3--4f059724:135732be48d:-8000:0000000000000DB5'/>
-                          </UML:StructuralFeature.type>
-                        </UML:Attribute>
-                        <UML:Attribute xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D70'
-                          name = 'result' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                          changeability = 'changeable' targetScope = 'instance'>
-                          <UML:StructuralFeature.multiplicity>
-                            <UML:Multiplicity xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D71'>
-                              <UML:Multiplicity.range>
-                                <UML:MultiplicityRange xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D72'
-                                  lower = '1' upper = '1'/>
-                              </UML:Multiplicity.range>
-                            </UML:Multiplicity>
-                          </UML:StructuralFeature.multiplicity>
-                          <UML:StructuralFeature.type>
-                            <UML:Class xmi.idref = '-64--88-121--124--71206377:1350f30b9c4:-8000:0000000000000BE9'/>
-                          </UML:StructuralFeature.type>
-                        </UML:Attribute>
-                        <UML:Attribute xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D73'
-                          name = 'solution' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                          changeability = 'changeable' targetScope = 'instance'>
-                          <UML:StructuralFeature.multiplicity>
-                            <UML:Multiplicity xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D74'>
-                              <UML:Multiplicity.range>
-                                <UML:MultiplicityRange xmi.id = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D75'
-                                  lower = '1' upper = '1'/>
-                              </UML:Multiplicity.range>
-                            </UML:Multiplicity>
-                          </UML:StructuralFeature.multiplicity>
-                          <UML:StructuralFeature.type>
-                            <UML:Class xmi.idref = '-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D77'/>
-                          </UML:StructuralFeature.type>
-                        </UML:Attribute>
-                        <UML:Attribute xmi.id = '89-27-9--3--4f059724:135732be48d:-8000:0000000000000DBC'
-                          name = 'critic' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                          changeability = 'changeable' targetScope = 'instance'>
-                          <UML:StructuralFeature.multiplicity>
-                            <UML:Multiplicity xmi.id = '89-27-9--3--4f059724:135732be48d:-8000:0000000000000DBD'>
-                              <UML:Multiplicity.range>
-                                <UML:MultiplicityRange xmi.id = '89-27-9--3--4f059724:135732be48d:-8000:0000000000000DBE'
-                                  lower = '1' upper = '1'/>
-                              </UML:Multiplicity.range>
-                            </UML:Multiplicity>
-                          </UML:StructuralFeature.multiplicity>
-                          <UML:StructuralFeature.type>
-                            <UML:Interface xmi.idref = '-64--88-121--124-26c86835:135197be9da:-8000:0000000000000C30'/>
                           </UML:StructuralFeature.type>
                         </UML:Attribute>
                         <UML:Attribute xmi.id = '-64--88-121--120--1f79db71:1357b5b174b:-8000:000000000000159E'
@@ -22861,7 +22801,7 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
   </group>
   <group name="Fig19"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[584, 1152, 183, 156]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[584, 1152, 183, 173]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
        fill="1"
        fillcolor="white"
@@ -22876,7 +22816,7 @@ A robot must protect its own existence as long as such protection does not confl
       x="584"
       y="1152"
       width="183"
-      height="156"
+      height="173"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -22932,7 +22872,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig19.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[585, 1177, 181, 110]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[585, 1177, 181, 83]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -22946,7 +22886,7 @@ A robot must protect its own existence as long as such protection does not confl
         x="585"
         y="1177"
         width="181"
-        height="110"
+        height="83"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -22967,74 +22907,10 @@ A robot must protect its own existence as long as such protection does not confl
         bold="false"
         textsize="12"
         justification="Left"
-      >subGoal : Goal</text>
+      >goal : Goal</text>
       <text name="Fig19.4.2"
         x="585"
         y="1194"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >way2Think : Way2Think</text>
-      <text name="Fig19.4.3"
-        x="585"
-        y="1211"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >result : Frame</text>
-      <text name="Fig19.4.4"
-        x="585"
-        y="1228"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >solution : Solution</text>
-      <text name="Fig19.4.5"
-        x="585"
-        y="1245"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >critic : Critic</text>
-      <text name="Fig19.4.6"
-        x="585"
-        y="1262"
         width="181"
         height="23"
         fill="0"
@@ -23051,7 +22927,7 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
     <rectangle name="Fig19.5"
       x="584"
-      y="1286"
+      y="1260"
       width="183"
       height="1"
       fill="1"
@@ -23060,7 +22936,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig19.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[585, 1287, 181, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[585, 1261, 181, 62]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -23072,9 +22948,9 @@ A robot must protect its own existence as long as such protection does not confl
       
       <rectangle name="Fig19.6.0"
         x="585"
-        y="1287"
+        y="1261"
         width="181"
-        height="21"
+        height="62"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -30145,7 +30021,7 @@ Resource interface</text>
       name="Training"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[80, 72, 183, 156]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[84, 72, 179, 104]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
        fill="1"
        fillcolor="white"
@@ -30156,19 +30032,19 @@ Resource interface</text>
     </private>
     
     <rectangle name="Fig0.0"
-      x="80"
+      x="84"
       y="72"
-      width="183"
-      height="156"
+      width="179"
+      height="104"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig0.1"
-      x="81"
+      x="85"
       y="73"
-      width="181"
+      width="177"
       height="23"
       fill="0"
       fillcolor="white"
@@ -30205,9 +30081,9 @@ Resource interface</text>
       />
     </group>
     <rectangle name="Fig0.3"
-      x="80"
+      x="84"
       y="96"
-      width="183"
+      width="179"
       height="1"
       fill="1"
       fillcolor="black"
@@ -30215,7 +30091,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig0.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[81, 97, 181, 110]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[85, 97, 177, 49]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -30226,19 +30102,19 @@ Resource interface</text>
       </private>
       
       <rectangle name="Fig0.4.0"
-        x="81"
+        x="85"
         y="97"
-        width="181"
-        height="110"
+        width="177"
+        height="49"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
       <text name="Fig0.4.1"
-        x="81"
+        x="85"
         y="97"
-        width="181"
+        width="177"
         height="17"
         fill="0"
         fillcolor="white"
@@ -30250,75 +30126,11 @@ Resource interface</text>
         bold="false"
         textsize="12"
         justification="Left"
-      >subGoal : Goal</text>
+      >goal : Goal</text>
       <text name="Fig0.4.2"
-        x="81"
+        x="85"
         y="114"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >way2Think : Way2Think</text>
-      <text name="Fig0.4.3"
-        x="81"
-        y="131"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >result : Frame</text>
-      <text name="Fig0.4.4"
-        x="81"
-        y="148"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >solution : Solution</text>
-      <text name="Fig0.4.5"
-        x="81"
-        y="165"
-        width="181"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Dialog"
-        italic="false"
-        bold="false"
-        textsize="12"
-        justification="Left"
-      >critic : Critic</text>
-      <text name="Fig0.4.6"
-        x="81"
-        y="182"
-        width="181"
+        width="177"
         height="23"
         fill="0"
         fillcolor="white"
@@ -30333,9 +30145,9 @@ Resource interface</text>
       >ParentNode : TrainingTreeNode</text>
     </group>
     <rectangle name="Fig0.5"
-      x="80"
-      y="206"
-      width="183"
+      x="84"
+      y="146"
+      width="179"
       height="1"
       fill="1"
       fillcolor="black"
@@ -30343,7 +30155,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig0.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[81, 207, 181, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[85, 147, 177, 28]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -30354,10 +30166,10 @@ Resource interface</text>
       </private>
       
       <rectangle name="Fig0.6.0"
-        x="81"
-        y="207"
-        width="181"
-        height="21"
+        x="85"
+        y="147"
+        width="177"
+        height="28"
         fill="0"
         fillcolor="white"
         stroke="0"
