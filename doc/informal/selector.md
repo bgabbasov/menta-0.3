@@ -18,6 +18,10 @@ Selector is main component to switch Critics -> Way2Think pair.
    2. If Reflective Critics realises that current Way2Think does not leads to expected result.
    2. If User is not satisfied with the results.
 
+## Start Request processing activity
+
+![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestProcessingActivity.png)
+
 ## Action class
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
