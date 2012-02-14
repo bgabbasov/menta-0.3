@@ -72,7 +72,18 @@ _Please note that all data linked via Goal's KLine_
 
 ## Class description
 
-![Goal](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Training.png)
+![Goal](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Training.png?raw=true)
 
  1. goal - link to goal assiciated with this training node
  1. ParentNode -reference to Parent Training Node 
+
+
+## Main cycle integration
+
+Activity:
+ 1. Check all training data accroding to found goal
+ 1. If many found - run Classify critic - check second level in taining data
+ 1. Continue until one training tree found
+
+## Example
+TODO
