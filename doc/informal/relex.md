@@ -75,3 +75,9 @@ Sample of use RelEx:
     java $VM_OPTS $RELEX_OPTS $CLASSPATH  relex.RelationExtractor -n 4 -l -t -f
     
 RelEx uses LinkGrammar notation in the tree output, which can be found [here](http://www.abisource.com/projects/link-grammar/dict/index.html)
+
+# Comments
+
+Have u used WordNet?
+
+Please add statistical analysis: [Precision, Recall, F-measure](http://en.wikipedia.org/wiki/Recall_(information_retrieval))
