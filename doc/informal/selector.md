@@ -6,10 +6,10 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/SelectorInterface.png)
 
-## Workflow
+## Classification Workflow
 
  1. [ThinkingLifeCycle](thinking-lifeCycle.md) starts inbound [Critics](critics.md) in parallel.
- 1. As Critics returns their ActionProbabilityRuleTriple Selector
+ 1. As Critics returns their ActionProbabilityRuleTriple, Selector
  starts [GetMostProbableWay2Think](design-specification.md#Activity_diagram) that takes in account following aspects:
    2. One Critic is the part of another.
    2. One Critic if triggered is more probable than another.
