@@ -26,7 +26,7 @@ Actions are started by ThinkingLifeCycle in parallel in different threads.
 
 ## Classify incident activity
 
-![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/incidentClassificationactivity.png)
+![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/classifyIncidentActivity.png)
 
 ThinkingLifeCycle start Critics in parallel with join and collect their results to process them by one Selector.
 
