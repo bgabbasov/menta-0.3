@@ -24,7 +24,8 @@ and of course can not att comma or point if user skip it.
 1721: bad
 1821: 3/4 bad
 
-
+##Additional
+Notation of stanford parser's tree can be found [here](http://bulba.sdsu.edu/jeanette/thesis/PennTags.html).
 
 ## Comments
 Please compare it with [RelEx](https://github.com/menta/menta-0.3/blob/master/doc/informal/relex.md)
