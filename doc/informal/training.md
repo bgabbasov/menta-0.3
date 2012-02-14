@@ -60,6 +60,7 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
  1. Implicitly appended from Goals parameter of Incident handling training
 
 ### Train Incident handling process
+_Please note that all data linked via Goal's KLine_
 
  1. Process Goals parameter
    2. Create Narrative of the Critics, Way2Think sequence.
@@ -68,3 +69,21 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
    2. Connect all matching terms and concepts of intermediate knowledge with KLine-s
      3. Connect each parameter of Solution HowTo with Formal Model (of previous step)
      3. Set Formal Model as context of KLine and store Solution in frames parameter of KLine.
+
+## Class description
+
+![Goal](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Training.png?raw=true)
+
+ 1. goal - link to goal assiciated with this training node
+ 1. ParentNode -reference to Parent Training Node 
+
+
+## Main cycle integration
+
+Activity:
+ 1. Check all training data accroding to found goal
+ 1. If many found - run Classify critic - check second level in taining data
+ 1. Continue until one training tree found
+
+## Example
+TODO
