@@ -74,4 +74,4 @@ Sample of use RelEx:
     echo "Alice wrote a book about dinosaurs for the University of California in Berkeley." | \
     java $VM_OPTS $RELEX_OPTS $CLASSPATH  relex.RelationExtractor -n 4 -l -t -f
     
-RelEx uses LinkGrammar notation in the tree output, which can be fount [here](http://www.abisource.com/projects/link-grammar/dict/index.html)
+RelEx uses LinkGrammar notation in the tree output, which can be found [here](http://www.abisource.com/projects/link-grammar/dict/index.html)
