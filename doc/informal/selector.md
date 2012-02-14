@@ -22,6 +22,14 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestProcessingActivity.png)
 
+Actions are started by ThinkingLifeCycle in parallel in different threads.
+
+## Classify incident activity
+
+![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/incidentClassificationactivity.png)
+
+ThinkingLifeCycle start Critics in parallel with join and collect their results to process them by one Selector.
+
 ## Action class
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
