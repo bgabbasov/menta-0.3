@@ -20,7 +20,7 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ## Start Request processing activity
 
-![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestProcessingActivity.png)
+![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestprocessingactivity.png)
 
 ## Action class
 
