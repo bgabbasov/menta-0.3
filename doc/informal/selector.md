@@ -8,11 +8,13 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ## Workflow
 
-### apply(request : Request) : Action Activity
+### apply(request : Request) : Action
 
-![apply(request : Request) : Action Activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applyrequestRequestActionActivity.png)
+![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applyrequestRequestActionActivity.png)
 
+### apply(goal: Goal): Action
 
+![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applygoalGoalActionActivity.png)
 
 ## Classification Workflow
 
