@@ -6,6 +6,14 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/SelectorInterface.png)
 
+## Workflow
+
+### apply(request : Request) : Action Activity
+
+applyrequestRequestActionActivity.png
+
+
+
 ## Classification Workflow
 
  1. [ThinkingLifeCycle](thinking-lifeCycle.md) starts inbound [Critics](critics.md) in parallel.
