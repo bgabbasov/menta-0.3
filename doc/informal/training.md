@@ -40,14 +40,27 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
  1. HowTo-s the incident solution algorithms = Comes from Project workbooks.
  1. Incident handling process, see [Goals data example](training.md#Goals_data_example) = Specified by Knowledge engineer.
 
-## Workflow
+## Train Goals
+
+### Goals tree
 
 ![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalConceptClass.png)
 
-## Train Goals
+Goals could be infered from:
 
  1. Explicitly from Goals -> SubGoal-s structure
  1. Implicitly appended from Goals parameter of Incident handling training
+
+### Training multiple goals on the same level
+
+#### Training:
+But if Training process finds several goals on the same level, when adds new subgoal, it should try to add classification as previous step.
+Classification is delta data based. If there is no option to find delta(same data triggers two goals) then use MostProbableWay2Think. 
+
+#### Production:
+MostProbableWay2Think Critics returns most probable Way to think, all the rest are stored in MostProbableWay2Think: Frame according to probability. If on further steps of production process Reflective/SelfReflective Critics hits the failure of the choice, it should use MostProbableWay2Think: Frame to use less probable and recalculate probability of the goal.
+
+
 
 ## Train Domain concepts
 
