@@ -1,10 +1,16 @@
 # Selector design specification.
 
 Selector is main component to switch Critics -> Way2Think pair.
+Selector is used to retrieve proper Actions from KBServer according to the inbound parameters that are treated as Selector request.
 
 ## Interface
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/SelectorInterface.png)
+
+## Action class
+
+![Action class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
+
 
 ## Workflow
 
@@ -55,6 +61,3 @@ Actions are started by ThinkingLifeCycle in parallel in different threads.
 
 ThinkingLifeCycle start Critics in parallel with join and collect their results to process them by one Selector.
 
-## Action class
-
-![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
