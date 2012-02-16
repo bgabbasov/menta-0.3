@@ -195,3 +195,56 @@ Extract goals
     3. VPN
 
 
+Goals has solution KLines. For example for CorruptedSoftware
+
+```
+Solution:{
+ how-tos:[remove,install]
+}
+
+remove:howto{
+  Parameters:[
+
+    {Key:'SoftwareName',
+    Value:'VPN'},
+    {Key:'ServerName',
+    Value:'TestServer'}
+  ]
+
+  InputParameters:[
+    {Key:'SoftwareName',
+    Value:'VPN'},
+    {Key:'ServerName',
+    Value:'TestServer'}
+  ]
+
+  OutputParameters:[
+    {Key:'Result',
+    Value:''},
+
+  ]
+}
+
+install:howto{
+  Parameters:[
+
+    {Key:'SoftwareName',
+    Value:'VPN'},
+    {Key:'ServerName',
+    Value:'TestServer'}
+  ]
+
+  InputParameters:[
+    {Key:'SoftwareName',
+    Value:'VPN'},
+    {Key:'ServerName',
+    Value:'TestServer'}
+  ]
+
+  OutputParameters:[
+    {Key:'Result',
+    Value:''},
+
+  ]
+}
+```
