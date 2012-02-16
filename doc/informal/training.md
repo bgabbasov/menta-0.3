@@ -101,6 +101,21 @@ Activity:
 ## Example
 
 ### Domain Concept Training
+
+Possible common object for domain concept
+
+```
+Action:{
+
+}
+Object:{
+
+}
+Link:{
+
+}
+```
+
 Input:
 
 ```
@@ -111,41 +126,29 @@ Domain Data:
 
 ```
 Soft:Object {
- 
  synonyms:[Application, Program]
  appliedActions:[Install, ReInstall]
- 
 }
 
 Action:{
  LinkedLinguisticTerm:[
-  verb,dobj
+  verb
  ]
-
-}
-
-Link:{
- 
-
 }
 
 AppliedTo:Link{
   linguisticTerm:[
    dobj
   ]
- 
 }
 
 Install:Action{
- 
 }
 
 ReInstall:Action{
- 
 }
 
 Remove:Action{
-
 }
 
 ```
@@ -153,14 +156,6 @@ Remove:Action{
 Possible Linguistic Data:
 
 ```
-Object{
-
-
-}
-Link{
-
-
-}
 
 subject:Object{
 
