@@ -99,4 +99,95 @@ Activity:
  1. Continue until one training tree found
 
 ## Example
-TODO
+
+### Domain Concept Training
+Input:
+
+```
+Firefox is a soft. Soft can be installed, reinstalled, removed. Instead of soft term we can use application, program.
+```
+
+Domain Data:
+
+```
+Soft:Object {
+ 
+ synonyms:[Application, Program]
+ appliedActions:[Install, ReInstall]
+ 
+}
+
+Action:{
+ LinkedLinguisticTerm:[
+  verb,dobj
+ ]
+
+}
+
+Link:{
+ 
+
+}
+
+AppliedTo:Link{
+  linguisticTerm:[
+   dobj
+  ]
+ 
+}
+
+Install:Action{
+ 
+}
+
+ReInstall:Action{
+ 
+}
+
+Remove:Action{
+
+}
+
+```
+
+Possible Linguistic Data:
+
+```
+Object{
+
+
+}
+Link{
+
+
+}
+
+subject:Object{
+
+}
+
+verb:Object{
+
+}
+
+dobj:Link{
+
+}
+```
+
+3 incidents:
+
+```
+1.User is missing "Outlook pst file backup" icon on her desktopName
+2.Users VPN client 4.0.4 is corrupt and needs to be reinstalled
+3.User is unable to access external pages when connected via VPN,
+IE just stops responding. Confirmed proxy settings, which seemed 
+correct and cleared cookies/temp internet files, but problem persists.
+Also tried to check "automatically detect settings", but it didn't 
+solve the issue.Can you please assist?
+
+```
+
+Extract first goal
+
+```
