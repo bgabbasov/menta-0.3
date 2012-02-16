@@ -1,6 +1,6 @@
 # Selector design specification.
 
-Selector is main component to switch Critics -> Way2Think pair.
+Selector is main component to retrieve Actions in  [Critics](critics.md) -> Selector -> [Way2Think](way2Think.md) triple.
 Selector is used to retrieve proper Actions from KBServer according to the inbound parameters that are treated as Selector request.
 
 ## Interface
