@@ -184,6 +184,14 @@ solve the issue.Can you please assist?
 
 ```
 
-Extract first goal
+Extract goals
 
-```
+1. ResolveIncident
+  2. Missing backup link
+1. ResolveIncident
+  2. CorruptedSoftware
+1. ResolveIncident
+  2. AccessProblem
+   3. VPN
+
+
