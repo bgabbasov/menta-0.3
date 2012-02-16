@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>apply(criticResult : ActionProbabilityRulePair) : Action Activity</activediagram>
+      <activediagram>start Request Processing Activity</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -123,7 +123,7 @@
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="apply(criticResults : ListofActionProbabilityRulePair) : Action activity" />
       <member type="pgml"
-              name="0.3.1-research_selectoractivity7.pgml"
+              name="0.3.1-research_applycriteriaKLineActionActivity.pgml"
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="apply(criteria : KLine) : Action Activity" />
       <member type="todo"
@@ -142,7 +142,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Feb 16 18:33:49 EET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Feb 16 18:48:48 EET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -3549,6 +3549,9 @@
                       <UML:StateVertex.outgoing>
                         <UML:Transition xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD5'/>
                       </UML:StateVertex.outgoing>
+                      <UML:ObjectFlowState.type>
+                        <UML:Class xmi.idref = '-64--88-121--120-37230557:1353e7977c4:-8000:0000000000000CB6'/>
+                      </UML:ObjectFlowState.type>
                     </UML:ObjectFlowState>
                     <UML:ActionState xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD1'
                       isSpecification = 'false' isDynamic = 'false'>
@@ -3768,7 +3771,7 @@
                     <UML:ActionState xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22'
                       isSpecification = 'false' isDynamic = 'false'>
                       <UML:StateVertex.outgoing>
-                        <UML:Transition xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E27'/>
+                        <UML:Transition xmi.idref = '-115--64--119-110-199c1f9e:135870ea3a9:-8000:0000000000000E71'/>
                       </UML:StateVertex.outgoing>
                       <UML:StateVertex.incoming>
                         <UML:Transition xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E23'/>
@@ -3786,7 +3789,7 @@
                     <UML:FinalState xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E26'
                       isSpecification = 'false'>
                       <UML:StateVertex.incoming>
-                        <UML:Transition xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E27'/>
+                        <UML:Transition xmi.idref = '-115--64--119-110-199c1f9e:135870ea3a9:-8000:0000000000000E71'/>
                       </UML:StateVertex.incoming>
                     </UML:FinalState>
                     <UML:ActionState xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E34'
@@ -3929,15 +3932,6 @@
                     <UML:ActionState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22'/>
                   </UML:Transition.target>
                 </UML:Transition>
-                <UML:Transition xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E27'
-                  isSpecification = 'false'>
-                  <UML:Transition.source>
-                    <UML:ActionState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22'/>
-                  </UML:Transition.source>
-                  <UML:Transition.target>
-                    <UML:FinalState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E26'/>
-                  </UML:Transition.target>
-                </UML:Transition>
                 <UML:Transition xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E28'
                   isSpecification = 'false'>
                   <UML:Transition.source>
@@ -3981,6 +3975,15 @@
                   </UML:Transition.source>
                   <UML:Transition.target>
                     <UML:ActionState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DEC'/>
+                  </UML:Transition.target>
+                </UML:Transition>
+                <UML:Transition xmi.id = '-115--64--119-110-199c1f9e:135870ea3a9:-8000:0000000000000E71'
+                  isSpecification = 'false'>
+                  <UML:Transition.source>
+                    <UML:ActionState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22'/>
+                  </UML:Transition.source>
+                  <UML:Transition.target>
+                    <UML:FinalState xmi.idref = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E26'/>
                   </UML:Transition.target>
                 </UML:Transition>
               </UML:StateMachine.transitions>
@@ -4391,7 +4394,7 @@
               </UML:Comment.annotatedElement>
             </UML:Comment>
             <UML:ActivityGraph xmi.id = '-115--64--119-110--4765d799:13581d810a0:-8000:0000000000000E2E'
-              name = 'selector.apply(request : Request) : Action' isSpecification = 'false'>
+              name = 'apply(request : Request) : Action' isSpecification = 'false'>
               <UML:StateMachine.context>
                 <UML:Package xmi.idref = '-64--88-121--124-7116c4fb:13509a13794:-8000:000000000000129D'/>
               </UML:StateMachine.context>
@@ -28863,7 +28866,7 @@ Resource interface</text>
       name="AIV Sequence"
 >
   <group name="Fig0"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 150, 480]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 150, 478]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
        fill="1"
        fillcolor="white"
@@ -28877,7 +28880,7 @@ Resource interface</text>
       x="528"
       y="86"
       width="150"
-      height="480"
+      height="478"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -28895,7 +28898,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig0.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 150, 285]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 150, 283]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
          fill="1"
          fillcolor="white"
@@ -28909,7 +28912,7 @@ Resource interface</text>
         x="528"
         y="280"
         width="150"
-        height="285"
+        height="283"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -28925,10 +28928,10 @@ Resource interface</text>
         <moveto x="603"
                 y="280" />
         <lineto x="603"
-                y="565" />
+                y="563" />
       </path>
       <group name="Fig0.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[593, 280, 20, 285]"
+           description="org.argouml.sequence2.diagram.FigActivation[593, 280, 20, 283]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
            fill="1"
            fillcolor="white"
@@ -28942,7 +28945,7 @@ Resource interface</text>
           x="593"
           y="280"
           width="20"
-          height="285"
+          height="283"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29012,7 +29015,7 @@ Resource interface</text>
     </group>
   </group>
   <group name="Fig1"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 482]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 480]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
        fill="1"
        fillcolor="white"
@@ -29026,7 +29029,7 @@ Resource interface</text>
       x="0"
       y="86"
       width="150"
-      height="482"
+      height="480"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29044,7 +29047,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig1.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 432]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 430]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
          fill="1"
          fillcolor="white"
@@ -29058,7 +29061,7 @@ Resource interface</text>
         x="0"
         y="135"
         width="150"
-        height="432"
+        height="430"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29074,10 +29077,10 @@ Resource interface</text>
         <moveto x="75"
                 y="135" />
         <lineto x="75"
-                y="567" />
+                y="565" />
       </path>
       <group name="Fig1.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 432]"
+           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 430]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
            fill="1"
            fillcolor="white"
@@ -29091,7 +29094,7 @@ Resource interface</text>
           x="65"
           y="135"
           width="20"
-          height="432"
+          height="430"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29161,7 +29164,7 @@ Resource interface</text>
     </group>
   </group>
   <group name="Fig2"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 478]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 476]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
        fill="1"
        fillcolor="white"
@@ -29175,7 +29178,7 @@ Resource interface</text>
       x="208"
       y="86"
       width="151"
-      height="478"
+      height="476"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29193,7 +29196,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig2.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 428]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 426]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
          fill="1"
          fillcolor="white"
@@ -29207,7 +29210,7 @@ Resource interface</text>
         x="208"
         y="135"
         width="151"
-        height="428"
+        height="426"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29223,10 +29226,10 @@ Resource interface</text>
         <moveto x="283"
                 y="135" />
         <lineto x="283"
-                y="563" />
+                y="561" />
       </path>
       <group name="Fig2.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 428]"
+           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 426]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
            fill="1"
            fillcolor="white"
@@ -29240,7 +29243,7 @@ Resource interface</text>
           x="273"
           y="135"
           width="20"
-          height="428"
+          height="426"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29341,7 +29344,7 @@ Resource interface</text>
     </path>
   </group>
   <group name="Fig4"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 481]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 479]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
        fill="1"
        fillcolor="white"
@@ -29355,7 +29358,7 @@ Resource interface</text>
       x="376"
       y="86"
       width="150"
-      height="481"
+      height="479"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29373,7 +29376,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig4.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 431]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 429]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
          fill="1"
          fillcolor="white"
@@ -29387,7 +29390,7 @@ Resource interface</text>
         x="376"
         y="135"
         width="150"
-        height="431"
+        height="429"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29403,7 +29406,7 @@ Resource interface</text>
         <moveto x="451"
                 y="135" />
         <lineto x="451"
-                y="566" />
+                y="564" />
       </path>
       <group name="Fig4.2.2"
            description="org.argouml.sequence2.diagram.FigActivation[441, 180, 20, 50]"
@@ -29605,7 +29608,7 @@ Resource interface</text>
     </path>
   </group>
   <group name="Fig8"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 151, 480]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 151, 478]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
        fill="1"
        fillcolor="white"
@@ -29619,7 +29622,7 @@ Resource interface</text>
       x="800"
       y="86"
       width="151"
-      height="480"
+      height="478"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29637,7 +29640,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig8.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 151, 245]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 151, 243]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
          fill="1"
          fillcolor="white"
@@ -29651,7 +29654,7 @@ Resource interface</text>
         x="800"
         y="320"
         width="151"
-        height="245"
+        height="243"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29667,10 +29670,10 @@ Resource interface</text>
         <moveto x="875"
                 y="320" />
         <lineto x="875"
-                y="565" />
+                y="563" />
       </path>
       <group name="Fig8.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[865, 320, 20, 245]"
+           description="org.argouml.sequence2.diagram.FigActivation[865, 320, 20, 243]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
            fill="1"
            fillcolor="white"
@@ -29684,7 +29687,7 @@ Resource interface</text>
           x="865"
           y="320"
           width="20"
-          height="245"
+          height="243"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29847,7 +29850,7 @@ Resource interface</text>
     </path>
   </group>
   <group name="Fig12"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 179, 484]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 179, 482]pathVisible=false;stereotypeView=0;"
        href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
        fill="1"
        fillcolor="white"
@@ -29861,7 +29864,7 @@ Resource interface</text>
       x="984"
       y="86"
       width="179"
-      height="484"
+      height="482"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29879,7 +29882,7 @@ Resource interface</text>
       strokecolor="black"
     />
     <group name="Fig12.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 179, 125]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 179, 123]"
          href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
          fill="1"
          fillcolor="white"
@@ -29893,7 +29896,7 @@ Resource interface</text>
         x="984"
         y="444"
         width="179"
-        height="125"
+        height="123"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29909,10 +29912,10 @@ Resource interface</text>
         <moveto x="1073"
                 y="444" />
         <lineto x="1073"
-                y="569" />
+                y="567" />
       </path>
       <group name="Fig12.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1063, 444, 20, 125]"
+           description="org.argouml.sequence2.diagram.FigActivation[1063, 444, 20, 123]"
            href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
            fill="1"
            fillcolor="white"
@@ -29926,7 +29929,7 @@ Resource interface</text>
           x="1063"
           y="444"
           width="20"
-          height="125"
+          height="123"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -37799,6 +37802,10 @@ apply = Way2Think</text>
               y="1518" />
       <lineto x="560"
               y="1552" />
+      <lineto x="311"
+              y="1518" />
+      <lineto x="560"
+              y="1552" />
     </path>
   </group>
   <group name="Fig138"
@@ -41242,7 +41249,7 @@ apply(request: Request)
       name="start Request Processing Activity"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[400, 120, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[400, 88, 16, 16]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DC1"
        fill="1"
        fillcolor="black"
@@ -41254,7 +41261,7 @@ apply(request: Request)
     
     <ellipse name="Fig0.0"
       x="408"
-      y="128"
+      y="96"
       rx="8"
       ry="8"
       fill="0"
@@ -41264,7 +41271,7 @@ apply(request: Request)
     />
     <ellipse name="Fig0.1"
       x="408"
-      y="128"
+      y="96"
       rx="8"
       ry="8"
       fill="1"
@@ -41274,7 +41281,7 @@ apply(request: Request)
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[312, 32, 123, 66]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[312, 0, 123, 66]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DC8"
        fill="1"
        fillcolor="white"
@@ -41286,7 +41293,7 @@ apply(request: Request)
     
     <rectangle name="Fig1.0"
       x="312"
-      y="32"
+      y="0"
       width="123"
       height="66"
       fill="1"
@@ -41296,7 +41303,7 @@ apply(request: Request)
     />
     <rectangle name="Fig1.1"
       x="312"
-      y="32"
+      y="0"
       width="123"
       height="66"
       fill="1"
@@ -41306,7 +41313,7 @@ apply(request: Request)
     />
     <text name="Fig1.2"
       x="320"
-      y="40"
+      y="8"
       width="107"
       height="24"
       fill="0"
@@ -41319,10 +41326,10 @@ apply(request: Request)
       bold="false"
       textsize="12"
       justification="Center"
-    ></text>
+    >Request</text>
     <text name="Fig1.3"
       x="320"
-      y="72"
+      y="40"
       width="107"
       height="18"
       fill="0"
@@ -41338,7 +41345,7 @@ apply(request: Request)
     ></text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.activity.ui.FigPool[0, 400, 920, 352]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigPool[0, 368, 920, 352]pathVisible=false;stereotypeView=0;"
        fill="1"
        fillcolor="white"
        stroke="1"
@@ -41349,7 +41356,7 @@ apply(request: Request)
     
     <rectangle name="Fig2.0"
       x="0"
-      y="400"
+      y="368"
       width="920"
       height="352"
       fill="0"
@@ -41359,7 +41366,7 @@ apply(request: Request)
     />
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.activity.ui.FigPartition[0, 400, 304, 352]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigPartition[0, 368, 304, 352]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DC9"
        fill="0"
        fillcolor="255 0 255"
@@ -41371,7 +41378,7 @@ apply(request: Request)
     
     <rectangle name="Fig3.0"
       x="0"
-      y="400"
+      y="368"
       width="304"
       height="352"
       fill="0"
@@ -41387,9 +41394,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="303"
-              y="400" />
+              y="368" />
       <lineto x="303"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig3.2"
       description="org.tigris.gef.presentation.FigLine"
@@ -41399,9 +41406,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="0"
-              y="400" />
+              y="368" />
       <lineto x="0"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig3.3"
       description="org.tigris.gef.presentation.FigLine"
@@ -41411,9 +41418,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="0"
-              y="400" />
+              y="368" />
       <lineto x="303"
-              y="400" />
+              y="368" />
     </path>
     <path name="Fig3.4"
       description="org.tigris.gef.presentation.FigLine"
@@ -41423,13 +41430,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="0"
-              y="752" />
+              y="720" />
       <lineto x="303"
-              y="752" />
+              y="720" />
     </path>
     <text name="Fig3.5"
       x="0"
-      y="400"
+      y="368"
       width="304"
       height="25"
       fill="0"
@@ -41451,13 +41458,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="0"
-              y="425" />
+              y="393" />
       <lineto x="303"
-              y="425" />
+              y="393" />
     </path>
   </group>
   <group name="Fig4"
-       description="org.argouml.uml.diagram.activity.ui.FigPartition[304, 400, 304, 352]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigPartition[304, 368, 304, 352]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DCA"
        fill="0"
        fillcolor="255 0 255"
@@ -41469,7 +41476,7 @@ apply(request: Request)
     
     <rectangle name="Fig4.0"
       x="304"
-      y="400"
+      y="368"
       width="304"
       height="352"
       fill="0"
@@ -41485,9 +41492,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="607"
-              y="400" />
+              y="368" />
       <lineto x="607"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig4.2"
       description="org.tigris.gef.presentation.FigLine"
@@ -41498,9 +41505,9 @@ apply(request: Request)
       visibility="0"
     >
       <moveto x="304"
-              y="400" />
+              y="368" />
       <lineto x="304"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig4.3"
       description="org.tigris.gef.presentation.FigLine"
@@ -41510,9 +41517,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="304"
-              y="400" />
+              y="368" />
       <lineto x="607"
-              y="400" />
+              y="368" />
     </path>
     <path name="Fig4.4"
       description="org.tigris.gef.presentation.FigLine"
@@ -41522,13 +41529,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="304"
-              y="752" />
+              y="720" />
       <lineto x="607"
-              y="752" />
+              y="720" />
     </path>
     <text name="Fig4.5"
       x="304"
-      y="400"
+      y="368"
       width="304"
       height="25"
       fill="0"
@@ -41550,13 +41557,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="304"
-              y="425" />
+              y="393" />
       <lineto x="607"
-              y="425" />
+              y="393" />
     </path>
   </group>
   <group name="Fig5"
-       description="org.argouml.uml.diagram.activity.ui.FigPartition[608, 400, 312, 352]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigPartition[608, 368, 312, 352]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DCB"
        fill="0"
        fillcolor="255 0 255"
@@ -41568,7 +41575,7 @@ apply(request: Request)
     
     <rectangle name="Fig5.0"
       x="608"
-      y="400"
+      y="368"
       width="312"
       height="352"
       fill="0"
@@ -41584,9 +41591,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="919"
-              y="400" />
+              y="368" />
       <lineto x="919"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig5.2"
       description="org.tigris.gef.presentation.FigLine"
@@ -41597,9 +41604,9 @@ apply(request: Request)
       visibility="0"
     >
       <moveto x="608"
-              y="400" />
+              y="368" />
       <lineto x="608"
-              y="752" />
+              y="720" />
     </path>
     <path name="Fig5.3"
       description="org.tigris.gef.presentation.FigLine"
@@ -41609,9 +41616,9 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="608"
-              y="400" />
+              y="368" />
       <lineto x="919"
-              y="400" />
+              y="368" />
     </path>
     <path name="Fig5.4"
       description="org.tigris.gef.presentation.FigLine"
@@ -41621,13 +41628,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="608"
-              y="752" />
+              y="720" />
       <lineto x="919"
-              y="752" />
+              y="720" />
     </path>
     <text name="Fig5.5"
       x="608"
-      y="400"
+      y="368"
       width="312"
       height="25"
       fill="0"
@@ -41649,13 +41656,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="608"
-              y="425" />
+              y="393" />
       <lineto x="919"
-              y="425" />
+              y="393" />
     </path>
   </group>
   <group name="Fig6"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 160, 156, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 128, 156, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD1"
        fill="1"
        fillcolor="white"
@@ -41667,7 +41674,7 @@ apply(request: Request)
     
     <rectangle name="Fig6.0"
       x="329"
-      y="161"
+      y="129"
       width="154"
       height="50"
       fill="1"
@@ -41678,7 +41685,7 @@ apply(request: Request)
     />
     <rectangle name="Fig6.1"
       x="328"
-      y="160"
+      y="128"
       width="156"
       height="52"
       fill="1"
@@ -41688,7 +41695,7 @@ apply(request: Request)
       rounding="52"
     />
     <group name="Fig6.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 160, 140, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 128, 140, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD1"
          fill="0"
          fillcolor="white"
@@ -41700,7 +41707,7 @@ apply(request: Request)
       
       <rectangle name="Fig6.2.0"
         x="336"
-        y="160"
+        y="128"
         width="140"
         height="0"
         fill="0"
@@ -41711,7 +41718,7 @@ apply(request: Request)
     </group>
     <text name="Fig6.3"
       x="336"
-      y="160"
+      y="128"
       width="140"
       height="46"
       fill="0"
@@ -41752,10 +41759,10 @@ apply(request: Request)</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="408"
-              y="136" />
-      <lineto x="408"
-              y="161" />
+      <moveto x="407"
+              y="103" />
+      <lineto x="407"
+              y="129" />
     </path>
   </group>
   <group name="Fig8"
@@ -41784,13 +41791,13 @@ apply(request: Request)</text>
       strokecolor="51 51 153"
     >
       <moveto x="370"
-              y="97" />
+              y="65" />
       <lineto x="370"
-              y="161" />
+              y="129" />
     </path>
   </group>
   <group name="Fig9"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 232, 159, 68]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 200, 159, 68]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD6"
        fill="1"
        fillcolor="white"
@@ -41802,7 +41809,7 @@ apply(request: Request)</text>
     
     <rectangle name="Fig9.0"
       x="329"
-      y="233"
+      y="201"
       width="157"
       height="66"
       fill="1"
@@ -41813,7 +41820,7 @@ apply(request: Request)</text>
     />
     <rectangle name="Fig9.1"
       x="328"
-      y="232"
+      y="200"
       width="159"
       height="68"
       fill="1"
@@ -41823,7 +41830,7 @@ apply(request: Request)</text>
       rounding="68"
     />
     <group name="Fig9.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 232, 143, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 200, 143, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DD6"
          fill="0"
          fillcolor="white"
@@ -41835,7 +41842,7 @@ apply(request: Request)</text>
       
       <rectangle name="Fig9.2.0"
         x="336"
-        y="232"
+        y="200"
         width="143"
         height="0"
         fill="0"
@@ -41846,7 +41853,7 @@ apply(request: Request)</text>
     </group>
     <text name="Fig9.3"
       x="336"
-      y="232"
+      y="200"
       width="143"
       height="62"
       fill="0"
@@ -41889,13 +41896,13 @@ apply(request: Request)
       strokecolor="51 51 153"
     >
       <moveto x="406"
-              y="210" />
+              y="178" />
       <lineto x="406"
-              y="233" />
+              y="201" />
     </path>
   </group>
   <group name="Fig11"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 320, 156, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[328, 288, 156, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DDB"
        fill="1"
        fillcolor="white"
@@ -41907,7 +41914,7 @@ apply(request: Request)
     
     <rectangle name="Fig11.0"
       x="329"
-      y="321"
+      y="289"
       width="154"
       height="50"
       fill="1"
@@ -41918,7 +41925,7 @@ apply(request: Request)
     />
     <rectangle name="Fig11.1"
       x="328"
-      y="320"
+      y="288"
       width="156"
       height="52"
       fill="1"
@@ -41928,7 +41935,7 @@ apply(request: Request)
       rounding="52"
     />
     <group name="Fig11.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 320, 140, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[336, 288, 140, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DDB"
          fill="0"
          fillcolor="white"
@@ -41940,7 +41947,7 @@ apply(request: Request)
       
       <rectangle name="Fig11.2.0"
         x="336"
-        y="320"
+        y="288"
         width="140"
         height="0"
         fill="0"
@@ -41951,7 +41958,7 @@ apply(request: Request)
     </group>
     <text name="Fig11.3"
       x="336"
-      y="320"
+      y="288"
       width="140"
       height="46"
       fill="0"
@@ -41993,13 +42000,13 @@ startThreads(List[Critic])</text>
       strokecolor="51 51 153"
     >
       <moveto x="407"
-              y="298" />
+              y="266" />
       <lineto x="407"
-              y="321" />
+              y="289" />
     </path>
   </group>
   <group name="Fig13"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[128, 440, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[128, 408, 16, 16]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DE0"
        fill="1"
        fillcolor="black"
@@ -42012,7 +42019,7 @@ startThreads(List[Critic])</text>
     
     <ellipse name="Fig13.0"
       x="136"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="0"
@@ -42022,7 +42029,7 @@ startThreads(List[Critic])</text>
     />
     <ellipse name="Fig13.1"
       x="136"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="1"
@@ -42032,7 +42039,7 @@ startThreads(List[Critic])</text>
     />
   </group>
   <group name="Fig14"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[8, 568, 275, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[8, 536, 275, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DEC"
        fill="1"
        fillcolor="white"
@@ -42045,7 +42052,7 @@ startThreads(List[Critic])</text>
     
     <rectangle name="Fig14.0"
       x="9"
-      y="569"
+      y="537"
       width="273"
       height="50"
       fill="1"
@@ -42056,7 +42063,7 @@ startThreads(List[Critic])</text>
     />
     <rectangle name="Fig14.1"
       x="8"
-      y="568"
+      y="536"
       width="275"
       height="52"
       fill="1"
@@ -42066,7 +42073,7 @@ startThreads(List[Critic])</text>
       rounding="52"
     />
     <group name="Fig14.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[16, 568, 259, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[16, 536, 259, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DEC"
          fill="0"
          fillcolor="white"
@@ -42078,7 +42085,7 @@ startThreads(List[Critic])</text>
       
       <rectangle name="Fig14.2.0"
         x="16"
-        y="568"
+        y="536"
         width="259"
         height="0"
         fill="0"
@@ -42089,7 +42096,7 @@ startThreads(List[Critic])</text>
     </group>
     <text name="Fig14.3"
       x="16"
-      y="568"
+      y="536"
       width="259"
       height="46"
       fill="0"
@@ -42106,7 +42113,7 @@ startThreads(List[Critic])</text>
 apply(criticResult: ActionProbabilityRuleTriple)</text>
   </group>
   <group name="Fig15"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[48, 640, 173, 36]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[48, 608, 173, 36]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF0"
        fill="1"
        fillcolor="white"
@@ -42119,7 +42126,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <rectangle name="Fig15.0"
       x="49"
-      y="641"
+      y="609"
       width="171"
       height="34"
       fill="1"
@@ -42130,7 +42137,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <rectangle name="Fig15.1"
       x="48"
-      y="640"
+      y="608"
       width="173"
       height="36"
       fill="1"
@@ -42140,7 +42147,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       rounding="36"
     />
     <group name="Fig15.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[56, 640, 157, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[56, 608, 157, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF0"
          fill="0"
          fillcolor="white"
@@ -42152,7 +42159,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       
       <rectangle name="Fig15.2.0"
         x="56"
-        y="640"
+        y="608"
         width="157"
         height="0"
         fill="0"
@@ -42163,7 +42170,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     </group>
     <text name="Fig15.3"
       x="56"
-      y="640"
+      y="608"
       width="157"
       height="30"
       fill="0"
@@ -42204,13 +42211,13 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       strokecolor="black"
     >
       <moveto x="136"
-              y="619" />
+              y="587" />
       <lineto x="136"
-              y="640" />
+              y="608" />
     </path>
   </group>
   <group name="Fig17"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[120, 696, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[120, 664, 24, 24]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF5"
        fill="1"
        fillcolor="white"
@@ -42223,7 +42230,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <ellipse name="Fig17.0"
       x="132"
-      y="708"
+      y="676"
       rx="12"
       ry="12"
       fill="0"
@@ -42233,7 +42240,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig17.1"
       x="132"
-      y="708"
+      y="676"
       rx="12"
       ry="12"
       fill="1"
@@ -42243,7 +42250,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig17.2"
       x="131"
-      y="707"
+      y="675"
       rx="7"
       ry="7"
       fill="1"
@@ -42277,14 +42284,14 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="132"
-              y="674" />
-      <lineto x="132"
-              y="696" />
+      <moveto x="131"
+              y="642" />
+      <lineto x="131"
+              y="664" />
     </path>
   </group>
   <group name="Fig19"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[440, 440, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[440, 408, 16, 16]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF8"
        fill="1"
        fillcolor="black"
@@ -42297,7 +42304,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <ellipse name="Fig19.0"
       x="448"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="0"
@@ -42307,7 +42314,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig19.1"
       x="448"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="1"
@@ -42317,7 +42324,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
   </group>
   <group name="Fig20"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[376, 472, 156, 68]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[376, 440, 156, 68]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF9"
        fill="1"
        fillcolor="white"
@@ -42330,7 +42337,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <rectangle name="Fig20.0"
       x="377"
-      y="473"
+      y="441"
       width="154"
       height="66"
       fill="1"
@@ -42341,7 +42348,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <rectangle name="Fig20.1"
       x="376"
-      y="472"
+      y="440"
       width="156"
       height="68"
       fill="1"
@@ -42351,7 +42358,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       rounding="68"
     />
     <group name="Fig20.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[384, 472, 140, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[384, 440, 140, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DF9"
          fill="0"
          fillcolor="white"
@@ -42363,7 +42370,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       
       <rectangle name="Fig20.2.0"
         x="384"
-        y="472"
+        y="440"
         width="140"
         height="0"
         fill="0"
@@ -42374,7 +42381,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     </group>
     <text name="Fig20.3"
       x="384"
-      y="472"
+      y="440"
       width="140"
       height="62"
       fill="0"
@@ -42417,13 +42424,13 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="448"
-              y="457" />
+              y="425" />
       <lineto x="448"
-              y="472" />
+              y="440" />
     </path>
   </group>
   <group name="Fig22"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[320, 568, 275, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[320, 536, 275, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E08"
        fill="1"
        fillcolor="white"
@@ -42436,7 +42443,7 @@ apply(request: Request)
     
     <rectangle name="Fig22.0"
       x="321"
-      y="569"
+      y="537"
       width="273"
       height="50"
       fill="1"
@@ -42447,7 +42454,7 @@ apply(request: Request)
     />
     <rectangle name="Fig22.1"
       x="320"
-      y="568"
+      y="536"
       width="275"
       height="52"
       fill="1"
@@ -42457,7 +42464,7 @@ apply(request: Request)
       rounding="52"
     />
     <group name="Fig22.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[328, 568, 259, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[328, 536, 259, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E08"
          fill="0"
          fillcolor="white"
@@ -42469,7 +42476,7 @@ apply(request: Request)
       
       <rectangle name="Fig22.2.0"
         x="328"
-        y="568"
+        y="536"
         width="259"
         height="0"
         fill="0"
@@ -42480,7 +42487,7 @@ apply(request: Request)
     </group>
     <text name="Fig22.3"
       x="328"
-      y="568"
+      y="536"
       width="259"
       height="46"
       fill="0"
@@ -42522,13 +42529,13 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       strokecolor="black"
     >
       <moveto x="456"
-              y="539" />
+              y="507" />
       <lineto x="456"
-              y="568" />
+              y="536" />
     </path>
   </group>
   <group name="Fig24"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[360, 640, 205, 36]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[360, 608, 205, 36]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E0F"
        fill="1"
        fillcolor="white"
@@ -42541,7 +42548,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <rectangle name="Fig24.0"
       x="361"
-      y="641"
+      y="609"
       width="203"
       height="34"
       fill="1"
@@ -42552,7 +42559,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <rectangle name="Fig24.1"
       x="360"
-      y="640"
+      y="608"
       width="205"
       height="36"
       fill="1"
@@ -42562,7 +42569,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       rounding="36"
     />
     <group name="Fig24.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[368, 640, 189, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[368, 608, 189, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E0F"
          fill="0"
          fillcolor="white"
@@ -42574,7 +42581,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       
       <rectangle name="Fig24.2.0"
         x="368"
-        y="640"
+        y="608"
         width="189"
         height="0"
         fill="0"
@@ -42585,7 +42592,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     </group>
     <text name="Fig24.3"
       x="368"
-      y="640"
+      y="608"
       width="189"
       height="30"
       fill="0"
@@ -42626,13 +42633,13 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       strokecolor="51 51 153"
     >
       <moveto x="454"
-              y="618" />
+              y="586" />
       <lineto x="454"
-              y="641" />
+              y="609" />
     </path>
   </group>
   <group name="Fig26"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[440, 696, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[440, 664, 24, 24]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E13"
        fill="1"
        fillcolor="white"
@@ -42645,7 +42652,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <ellipse name="Fig26.0"
       x="452"
-      y="708"
+      y="676"
       rx="12"
       ry="12"
       fill="0"
@@ -42655,7 +42662,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig26.1"
       x="452"
-      y="708"
+      y="676"
       rx="12"
       ry="12"
       fill="1"
@@ -42665,7 +42672,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig26.2"
       x="451"
-      y="707"
+      y="675"
       rx="7"
       ry="7"
       fill="1"
@@ -42699,14 +42706,14 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="452"
-              y="674" />
-      <lineto x="452"
-              y="696" />
+      <moveto x="451"
+              y="642" />
+      <lineto x="451"
+              y="664" />
     </path>
   </group>
   <group name="Fig28"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[752, 440, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[752, 408, 16, 16]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E16"
        fill="1"
        fillcolor="black"
@@ -42719,7 +42726,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <ellipse name="Fig28.0"
       x="760"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="0"
@@ -42729,7 +42736,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <ellipse name="Fig28.1"
       x="760"
-      y="448"
+      y="416"
       rx="8"
       ry="8"
       fill="1"
@@ -42739,7 +42746,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
   </group>
   <group name="Fig29"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[680, 480, 156, 68]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[680, 448, 156, 68]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E17"
        fill="1"
        fillcolor="white"
@@ -42752,7 +42759,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <rectangle name="Fig29.0"
       x="681"
-      y="481"
+      y="449"
       width="154"
       height="66"
       fill="1"
@@ -42763,7 +42770,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <rectangle name="Fig29.1"
       x="680"
-      y="480"
+      y="448"
       width="156"
       height="68"
       fill="1"
@@ -42773,7 +42780,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       rounding="68"
     />
     <group name="Fig29.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[688, 480, 140, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[688, 448, 140, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E17"
          fill="0"
          fillcolor="white"
@@ -42785,7 +42792,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       
       <rectangle name="Fig29.2.0"
         x="688"
-        y="480"
+        y="448"
         width="140"
         height="0"
         fill="0"
@@ -42796,7 +42803,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     </group>
     <text name="Fig29.3"
       x="688"
-      y="480"
+      y="448"
       width="140"
       height="62"
       fill="0"
@@ -42839,17 +42846,17 @@ apply(request: Request)
       strokecolor="black"
     >
       <moveto x="760"
-              y="457" />
+              y="425" />
       <lineto x="760"
-              y="480" />
+              y="448" />
       <lineto x="760"
-              y="457" />
+              y="425" />
       <lineto x="760"
-              y="480" />
+              y="448" />
     </path>
   </group>
   <group name="Fig31"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[624, 568, 275, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[624, 536, 275, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E1D"
        fill="1"
        fillcolor="white"
@@ -42862,7 +42869,7 @@ apply(request: Request)
     
     <rectangle name="Fig31.0"
       x="625"
-      y="569"
+      y="537"
       width="273"
       height="50"
       fill="1"
@@ -42873,7 +42880,7 @@ apply(request: Request)
     />
     <rectangle name="Fig31.1"
       x="624"
-      y="568"
+      y="536"
       width="275"
       height="52"
       fill="1"
@@ -42883,7 +42890,7 @@ apply(request: Request)
       rounding="52"
     />
     <group name="Fig31.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[632, 568, 259, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[632, 536, 259, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E1D"
          fill="0"
          fillcolor="white"
@@ -42895,7 +42902,7 @@ apply(request: Request)
       
       <rectangle name="Fig31.2.0"
         x="632"
-        y="568"
+        y="536"
         width="259"
         height="0"
         fill="0"
@@ -42906,7 +42913,7 @@ apply(request: Request)
     </group>
     <text name="Fig31.3"
       x="632"
-      y="568"
+      y="536"
       width="259"
       height="46"
       fill="0"
@@ -42948,13 +42955,13 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       strokecolor="51 51 153"
     >
       <moveto x="758"
-              y="546" />
+              y="514" />
       <lineto x="758"
-              y="569" />
+              y="537" />
     </path>
   </group>
   <group name="Fig33"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[656, 640, 179, 52]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[656, 608, 179, 52]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22"
        fill="1"
        fillcolor="white"
@@ -42967,7 +42974,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     
     <rectangle name="Fig33.0"
       x="657"
-      y="641"
+      y="609"
       width="177"
       height="50"
       fill="1"
@@ -42978,7 +42985,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     />
     <rectangle name="Fig33.1"
       x="656"
-      y="640"
+      y="608"
       width="179"
       height="52"
       fill="1"
@@ -42988,7 +42995,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       rounding="52"
     />
     <group name="Fig33.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[664, 640, 163, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[664, 608, 163, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E22"
          fill="0"
          fillcolor="white"
@@ -43000,7 +43007,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
       
       <rectangle name="Fig33.2.0"
         x="664"
-        y="640"
+        y="608"
         width="163"
         height="0"
         fill="0"
@@ -43011,7 +43018,7 @@ apply(criticResult: ActionProbabilityRuleTriple)</text>
     </group>
     <text name="Fig33.3"
       x="664"
-      y="640"
+      y="608"
       width="163"
       height="46"
       fill="0"
@@ -43053,13 +43060,13 @@ add EmotionState to Context</text>
       strokecolor="black"
     >
       <moveto x="758"
-              y="619" />
+              y="587" />
       <lineto x="758"
-              y="640" />
+              y="608" />
     </path>
   </group>
   <group name="Fig35"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[744, 720, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[744, 688, 24, 24]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E26"
        fill="1"
        fillcolor="white"
@@ -43072,7 +43079,7 @@ add EmotionState to Context</text>
     
     <ellipse name="Fig35.0"
       x="756"
-      y="732"
+      y="700"
       rx="12"
       ry="12"
       fill="0"
@@ -43082,7 +43089,7 @@ add EmotionState to Context</text>
     />
     <ellipse name="Fig35.1"
       x="756"
-      y="732"
+      y="700"
       rx="12"
       ry="12"
       fill="1"
@@ -43092,7 +43099,7 @@ add EmotionState to Context</text>
     />
     <ellipse name="Fig35.2"
       x="755"
-      y="731"
+      y="699"
       rx="7"
       ry="7"
       fill="1"
@@ -43103,19 +43110,19 @@ add EmotionState to Context</text>
   </group>
   <group name="Fig36"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E27"
+       href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E28"
        stroke="1"
        strokecolor="51 51 153"
   >
     <private>
-      sourcePortFig="Fig33.0"
-      destPortFig="Fig35.0"
-      sourceFigNode="Fig33"
-      destFigNode="Fig35"
+      sourcePortFig="Fig11.0"
+      destPortFig="Fig20.0"
+      sourceFigNode="Fig11"
+      destFigNode="Fig20"
       <argouml:pathitem figname="Fig36.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E27"
+                        ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E28"
                         angle="270.0"
                         offset="10" />
     </private>
@@ -43126,48 +43133,13 @@ add EmotionState to Context</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="753"
-              y="690" />
-      <lineto x="753"
-              y="719" />
-      <lineto x="756"
-              y="690" />
-      <lineto x="756"
-              y="720" />
+      <moveto x="406"
+              y="338" />
+      <lineto x="406"
+              y="441" />
     </path>
   </group>
   <group name="Fig37"
-       description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E28"
-       stroke="1"
-       strokecolor="51 51 153"
-  >
-    <private>
-      sourcePortFig="Fig11.0"
-      destPortFig="Fig20.0"
-      sourceFigNode="Fig11"
-      destFigNode="Fig20"
-      <argouml:pathitem figname="Fig37.1"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E28"
-                        angle="270.0"
-                        offset="10" />
-    </private>
-    <path name="Fig37.0"
-      description="org.argouml.gefext.ArgoFigPoly"
-      fill="0"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="51 51 153"
-    >
-      <moveto x="406"
-              y="370" />
-      <lineto x="406"
-              y="473" />
-    </path>
-  </group>
-  <group name="Fig38"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E29"
        stroke="1"
@@ -43178,14 +43150,14 @@ add EmotionState to Context</text>
       destPortFig="Fig29.0"
       sourceFigNode="Fig11"
       destFigNode="Fig29"
-      <argouml:pathitem figname="Fig38.1"
+      <argouml:pathitem figname="Fig37.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E29"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig38.0"
+    <path name="Fig37.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -43193,13 +43165,13 @@ add EmotionState to Context</text>
       strokecolor="51 51 153"
     >
       <moveto x="482"
-              y="370" />
+              y="338" />
       <lineto x="681"
-              y="481" />
+              y="449" />
     </path>
   </group>
-  <group name="Fig39"
-       description="org.argouml.uml.diagram.activity.ui.FigActionState[56, 480, 156, 68]pathVisible=false;stereotypeView=0;"
+  <group name="Fig38"
+       description="org.argouml.uml.diagram.activity.ui.FigActionState[56, 448, 156, 68]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E34"
        fill="1"
        fillcolor="white"
@@ -43210,9 +43182,9 @@ add EmotionState to Context</text>
       enclosingFig="Fig2"
     </private>
     
-    <rectangle name="Fig39.0"
+    <rectangle name="Fig38.0"
       x="57"
-      y="481"
+      y="449"
       width="154"
       height="66"
       fill="1"
@@ -43221,9 +43193,9 @@ add EmotionState to Context</text>
       strokecolor="255 0 255"
       rounding="68"
     />
-    <rectangle name="Fig39.1"
+    <rectangle name="Fig38.1"
       x="56"
-      y="480"
+      y="448"
       width="156"
       height="68"
       fill="1"
@@ -43232,8 +43204,8 @@ add EmotionState to Context</text>
       strokecolor="black"
       rounding="68"
     />
-    <group name="Fig39.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[64, 480, 140, 0]"
+    <group name="Fig38.2"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[64, 448, 140, 0]"
          href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E34"
          fill="0"
          fillcolor="white"
@@ -43243,9 +43215,9 @@ add EmotionState to Context</text>
       <private>
       </private>
       
-      <rectangle name="Fig39.2.0"
+      <rectangle name="Fig38.2.0"
         x="64"
-        y="480"
+        y="448"
         width="140"
         height="0"
         fill="0"
@@ -43254,9 +43226,9 @@ add EmotionState to Context</text>
         strokecolor="black"
       />
     </group>
-    <text name="Fig39.3"
+    <text name="Fig38.3"
       x="64"
-      y="480"
+      y="448"
       width="140"
       height="62"
       fill="0"
@@ -43273,7 +43245,7 @@ add EmotionState to Context</text>
 apply(request: Request)
 =&gt;SetupGoal</text>
   </group>
-  <group name="Fig40"
+  <group name="Fig39"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
        href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E37"
        stroke="1"
@@ -43281,13 +43253,48 @@ apply(request: Request)
   >
     <private>
       sourcePortFig="Fig11.0"
-      destPortFig="Fig39.0"
+      destPortFig="Fig38.0"
       sourceFigNode="Fig11"
-      destFigNode="Fig39"
-      <argouml:pathitem figname="Fig40.1"
+      destFigNode="Fig38"
+      <argouml:pathitem figname="Fig39.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E37"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig39.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="51 51 153"
+    >
+      <moveto x="329"
+              y="338" />
+      <lineto x="211"
+              y="448" />
+      <lineto x="329"
+              y="338" />
+      <lineto x="210"
+              y="449" />
+    </path>
+  </group>
+  <group name="Fig40"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E38"
+       stroke="1"
+       strokecolor="51 51 153"
+  >
+    <private>
+      sourcePortFig="Fig13.0"
+      destPortFig="Fig38.0"
+      sourceFigNode="Fig13"
+      destFigNode="Fig38"
+      <argouml:pathitem figname="Fig40.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E38"
                         angle="270.0"
                         offset="10" />
     </private>
@@ -43298,31 +43305,27 @@ apply(request: Request)
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="329"
-              y="370" />
-      <lineto x="211"
-              y="480" />
-      <lineto x="329"
-              y="370" />
-      <lineto x="210"
-              y="481" />
+      <moveto x="135"
+              y="423" />
+      <lineto x="135"
+              y="449" />
     </path>
   </group>
   <group name="Fig41"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E38"
+       href="89-27-9--3--568b1bed:1357dc1df75:-8000:0000000000000DFA"
        stroke="1"
        strokecolor="51 51 153"
   >
     <private>
-      sourcePortFig="Fig13.0"
-      destPortFig="Fig39.0"
-      sourceFigNode="Fig13"
-      destFigNode="Fig39"
+      sourcePortFig="Fig38.0"
+      destPortFig="Fig14.0"
+      sourceFigNode="Fig38"
+      destFigNode="Fig14"
       <argouml:pathitem figname="Fig41.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000E38"
+                        ownerhref="89-27-9--3--568b1bed:1357dc1df75:-8000:0000000000000DFA"
                         angle="270.0"
                         offset="10" />
     </private>
@@ -43333,41 +43336,41 @@ apply(request: Request)
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="136"
-              y="456" />
-      <lineto x="136"
-              y="481" />
+      <moveto x="134"
+              y="514" />
+      <lineto x="134"
+              y="537" />
     </path>
   </group>
   <group name="Fig42"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="89-27-9--3--568b1bed:1357dc1df75:-8000:0000000000000DFA"
+       href="-115--64--119-110-199c1f9e:135870ea3a9:-8000:0000000000000E71"
        stroke="1"
        strokecolor="51 51 153"
   >
     <private>
-      sourcePortFig="Fig39.0"
-      destPortFig="Fig14.0"
-      sourceFigNode="Fig39"
-      destFigNode="Fig14"
+      sourcePortFig="Fig33.0"
+      destPortFig="Fig35.0"
+      sourceFigNode="Fig33"
+      destFigNode="Fig35"
       <argouml:pathitem figname="Fig42.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="89-27-9--3--568b1bed:1357dc1df75:-8000:0000000000000DFA"
+                        ownerhref="-115--64--119-110-199c1f9e:135870ea3a9:-8000:0000000000000E71"
                         angle="270.0"
                         offset="10" />
     </private>
     <path name="Fig42.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="134"
-              y="546" />
-      <lineto x="134"
-              y="569" />
+      <moveto x="755"
+              y="658" />
+      <lineto x="755"
+              y="688" />
     </path>
   </group>
 </pgml>
@@ -47303,7 +47306,7 @@ find Critics in KLine specified</text>
                         offset="10" />
     </private>
     <path name="Fig3.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -47334,7 +47337,7 @@ find Critics in KLine specified</text>
                         offset="10" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -47439,7 +47442,7 @@ apply(KLineRequest)
                         offset="16" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -47543,7 +47546,7 @@ returns List[Critic]</text>
                         offset="10" />
     </private>
     <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -47616,7 +47619,7 @@ returns List[Critic]</text>
                         offset="10" />
     </private>
     <path name="Fig10.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
