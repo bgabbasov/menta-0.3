@@ -16,7 +16,13 @@ Selector is main component to switch Critics -> Way2Think pair.
 
 ![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applygoalGoalActionActivity.png)
 
-## Classification Workflow
+### apply(criticResult : ActionProbabilityRulePair) : Action
+
+![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applycriticResultActionProbabilityRulePairActionActivity.png)
+
+## Selector context Activity diagrams
+
+### Classification Workflow
 
  1. [ThinkingLifeCycle](thinking-lifeCycle.md) starts inbound [Critics](critics.md) in parallel.
  1. As Critics returns their ActionProbabilityRuleTriple, Selector
@@ -28,13 +34,13 @@ Selector is main component to switch Critics -> Way2Think pair.
    2. If Reflective Critics realises that current Way2Think does not leads to expected result.
    2. If User is not satisfied with the results.
 
-## Start Request processing activity
+### Start Request processing activity
 
 ![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestprocessingactivity.png)
 
 Actions are started by ThinkingLifeCycle in parallel in different threads.
 
-## Classify incident activity
+### Classify incident activity
 
 ![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/classifyIncidentActivity.png)
 
