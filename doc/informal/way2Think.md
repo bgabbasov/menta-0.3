@@ -1,5 +1,8 @@
 # Way2Think design specification.
 
+Way2Think is main operating unit of the [Critic](critics.md) -> [Selector](selector.md) -> Way2Think triple.
+Way2Think is widely used to: update, transform, add knowledge in the system, and even Cry4Help.
+
 ## Inbound data
 
  1. Context:[SemanticNetwork with KLine](knowledge.md#KnowledgeBase_annotation) or

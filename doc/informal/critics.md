@@ -1,16 +1,20 @@
-# Critics design specification
+# Critic design specification
+
+Critic is main analysis element in the triple Critic -> [Selector](selector.md) -> [Way2Think](way2Think.md).
+Critic is used to: choose way2Think, classify inbound information, reflection, self-analysis and so on.
 
 ## Inbound data
 
  1. Incident description: SemanticNetwork with KLine-s or
  1. Simulation Way2Think result: SemanticNetwork
 
-## Outbound data
+## Outbound data: Triple
 
- 1. Way2Think
+ 1. [Action](selector.md#action)
  1. Probability: Double
+ 1. Rule = the logical predicate triggered
 
-## Class diagram
+## Critic interface
 
 ![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/criticClass.png)
 

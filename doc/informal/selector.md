@@ -7,7 +7,7 @@ Selector is used to retrieve proper Actions from KBServer according to the inbou
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/SelectorInterface.png)
 
-## Action class
+## <a name="action">Action class</a>
 
 ![Action class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
 
