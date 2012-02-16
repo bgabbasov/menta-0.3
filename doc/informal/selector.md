@@ -49,13 +49,13 @@ Selector is used to retrieve proper Actions from KBServer according to the inbou
    2. If Reflective Critics realises that current Way2Think does not leads to expected result.
    2. If User is not satisfied with the results.
 
-### Start Request processing activity
+### <a name="request_processing">Start Request processing activity</a>
 
 ![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestprocessingactivity.png)
 
 Actions are started by ThinkingLifeCycle in parallel in different threads.
 
-### Classify incident activity
+### <a name="classify_incident">Classify incident activity</a>
 
 ![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/classifyIncidentActivity.png)
 
