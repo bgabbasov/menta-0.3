@@ -15,6 +15,10 @@ RelEx did not recognized most of issues.
 
 #Statistic
 
+Recal ~= 6/17 ( ttp://en.wikipedia.org/wiki/Recall_(information_retrieval) )
+
+Detailed statistic:
+
     121: Ok
     221: Ok. But "user" word was excluded from "Mapping of shared drive W:\ fails, user is using...", parser recognized it as mistake.
     321: Don't recognized.
@@ -79,5 +83,7 @@ RelEx uses LinkGrammar notation in the tree output, which can be found [here](ht
 # Comments
 
 Have you used WordNet?
+
+Renat: No.
 
 Please add statistical analysis: Precision, Recall, F-measure http://en.wikipedia.org/wiki/Recall_(information_retrieval)
