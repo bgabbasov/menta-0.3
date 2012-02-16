@@ -34,8 +34,8 @@ Selector is main component to switch Critics -> Way2Think pair.
 ### Classification Workflow
 
  1. [ThinkingLifeCycle](thinking-lifeCycle.md) starts inbound [Critics](critics.md) in parallel.
- 1. As Critics returns their ActionProbabilityRuleTriple, Selector
- starts [GetMostProbableWay2Think](design-specification.md#Activity_diagram) that takes in account following aspects:
+ 1. When Critics returns their ActionProbabilityRuleTriple, ThinkingLifeCycle starts one Selector with the List of results.
+ 1. Selector starts [GetMostProbableWay2Think](design-specification.md#Activity_diagram) that takes in account following aspects:
    2. One Critic is the part of another.
    2. One Critic if triggered is more probable than another.
  1. Encapsulating KnowingHow of current Selector could trigger the Selector to choose less probable variant,
