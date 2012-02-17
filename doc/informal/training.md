@@ -91,13 +91,6 @@ _Please note that all data linked via Goal's KLine_
  1. ParentNode -reference to Parent Training Node 
 
 
-## Main cycle integration
-
-Activity:
- 1. Check all training data accroding to found goal
- 1. If many found - run Classify critic - check second level in taining data
- 1. Continue until one training tree found
-
 ## Example
 
 ### Domain Concept Training
