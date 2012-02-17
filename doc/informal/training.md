@@ -13,7 +13,25 @@ Please assist
  1. SubGoal = Resolve incident
    2. SubGoal = ParseIncidentDescription, Way2Think = ProcessText: KnowingHow, SemanticNetWorkWithKLines =
 {
-TODO: Add processed example here.
+nsubj(received-3, User-1)
+aux(received-3, had-2)
+root(ROOT-0, received-3)
+amod(application-5, wrong-4)
+dobj(received-3, application-5)
+
+advmod(received-3, However-1)
+nsubj(received-3, user-2)
+ccomp(received-8, received-3)
+amod(version-5, wrong-4)
+dobj(received-3, version-5)
+nsubj(received-8, user-7)
+root(ROOT-0, received-8)
+nn(Tehcnical-10, Wordfinder-9)
+dobj(received-8, Tehcnical-10)
+advmod(of-12, instead-11)
+prep(Tehcnical-10, of-12)
+nn(Economical-14, Business-13)
+pobj(of-12, Economical-14)
 }
    2. SubGoal = UnderstandIncidentType, Critics = Deliberative, Type = ProblemDescription with DesiredState
      3. SubGoal = ModelCurrentSituation using ProjectDomain Model, Way2Think = Simulate, Model =
