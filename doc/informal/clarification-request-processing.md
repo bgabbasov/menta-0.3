@@ -17,3 +17,7 @@ System creates the Clarification Request and sends it to a User. Clarification R
 User creates Clarification Request Response.
 
 System runs Annotation process over the Clarification Response, then tries to match SemanticNetwork of Clarification Response with the SemanticNetwork of clarification request subject reference via Simulation Way2Think.
+
+If inbound Response matches expected clarification request subject, System updates Incident description SemanticNetwork.
+
+If inbound Response does not match System rises Clarification Request over Clarification Response.
