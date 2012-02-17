@@ -184,7 +184,9 @@ solve the issue.Can you please assist?
 
 ```
 
-Extract goals
+After main cycle processing we have a goals structure for each incident from above. Also goals can be entered manually. Below an example of goals.
+
+Example
 
 1. ResolveIncident
   2. Missing backup link
@@ -195,7 +197,10 @@ Extract goals
     3. VPN
 
 
-Goals has solution KLines. For example for CorruptedSoftware
+Goals has solution KLines. For example for second incident and goals:
+
+1. ResolveIncident
+  2. CorruptedSoftware
 
 ```
 Solution:{
