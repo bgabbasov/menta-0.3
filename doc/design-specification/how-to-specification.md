@@ -1,5 +1,5 @@
 # How-to specification
-![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/HowTo.png)
+![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/HowTo.png)
 
 # Idea
 There are 2 types of HowTo:

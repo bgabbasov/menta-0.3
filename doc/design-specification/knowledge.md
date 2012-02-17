@@ -2,7 +2,7 @@
 
 Based on [Marvin Minsky: Emotion Machine: Hierarchy of Representations](http://web.media.mit.edu/~minsky/E8/eb8.html#_Toc518305131)
 
-![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/knowledgeClass.png)
+![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/knowledgeClass.png)
 
 ## Microneme
 Then the present state of your micronemes could represent much of your current mental context—and the states of those fibers are changed, your far-reaching bundle of micronemes will broadcast that information to many other mental resources—so that this will change some of your attitudes, outlooks, and states of mind.
@@ -21,7 +21,7 @@ Is the KLine with named Resource-s, first element is Request.
 
 ### Goal
 
-![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalTraining.png)
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/GoalTraining.png)
 
 Implements SemanticTreeNode and KLine, thus is organised in Goal-s three and contains context(Critics, Way2Think and their results regarding this Goal).
 

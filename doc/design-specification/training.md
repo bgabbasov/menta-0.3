@@ -62,7 +62,7 @@ DesiredState = Soft.installed(Wordfinder Business Economical), Soft.unInstalled(
 
 ### Goals tree
 
-![Goal](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/GoalConceptClass.png)
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/GoalConceptClass.png)
 
 Goals could be infered from:
 
@@ -103,7 +103,7 @@ _Please note that all data linked via Goal's KLine_
 
 ## Class description
 
-![Goal](https://github.com/menta/menta-0.3/blob/master/doc/informal/uml/images/Training.png?raw=true)
+![Goal](https://github.com/menta/menta-0.3/blob/master/doc/design-specification/uml/images/Training.png?raw=true)
 
  1. goal - link to goal assiciated with this training node
  1. ParentNode -reference to Parent Training Node 

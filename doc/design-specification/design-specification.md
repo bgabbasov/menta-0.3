@@ -3,14 +3,14 @@
 ## <a name="Use_cases">Use cases</a>
 
 ### Training use case
-![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
+![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/UseCaseTrain.png)
 
 ### Production use case
-![Production use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
+![Production use case](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/UseCaseProduction.png)
 
 ## <a name="Component_diagram">Component diagram</a>
 
-![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/Component.png)
 
 ### Components list
 
@@ -28,4 +28,4 @@
 [Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/informal/knowledge.md)
 
 ## <a name="Activity_diagram">Activity diagram</a>
-![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/LifecycleActivity.png)
+![Training use case](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/LifecycleActivity.png)

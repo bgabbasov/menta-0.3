@@ -5,34 +5,34 @@ Selector is used to retrieve proper Actions from KBServer according to the inbou
 
 ## Interface
 
-![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/SelectorInterface.png)
+![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/SelectorInterface.png)
 
 ## <a name="action">Action class</a>
 
-![Action class](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/ActionClass.png)
+![Action class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ActionClass.png)
 
 
 ## Workflow
 
 ### apply(request : Request) : Action
 
-![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applyrequestRequestActionActivity.png)
+![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applyrequestRequestActionActivity.png)
 
 ### apply(goal: Goal): Action
 
-![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applygoalGoalActionActivity.png)
+![apply(request : Request) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applygoalGoalActionActivity.png)
 
 ### apply(criticResult : ActionProbabilityRule) : Action
 
-![apply(criticResult : ActionProbabilityRule) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applycriticResultActionProbabilityRulePairActionActivity.png)
+![apply(criticResult : ActionProbabilityRule) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applycriticResultActionProbabilityRulePairActionActivity.png)
 
 ### apply(criticResults : List[ActionProbabilityPair]) : Action
 
-![apply(criticResults : List[ActionProbabilityPair]) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applycriticResultsListofActionProbabilityRulePairActionactivity.png)
+![apply(criticResults : List[ActionProbabilityPair]) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applycriticResultsListofActionProbabilityRulePairActionactivity.png)
 
 ### apply(criteria : KLine) : Action
 
-![apply(criteria: KLine) : Action](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/applycriteriaKLineActionActivity.png)
+![apply(criteria: KLine) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applycriteriaKLineActionActivity.png)
 
 
 ## Selector context Activity diagrams
@@ -51,13 +51,13 @@ Selector is used to retrieve proper Actions from KBServer according to the inbou
 
 ### <a name="request_processing">Start Request processing activity</a>
 
-![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/startRequestprocessingactivity.png)
+![start Request processing activity](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/startRequestprocessingactivity.png)
 
 Actions are started by ThinkingLifeCycle in parallel in different threads.
 
 ### <a name="classify_incident">Classify incident activity</a>
 
-![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/classifyIncidentActivity.png)
+![Classify incident activity](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/classifyIncidentActivity.png)
 
 ThinkingLifeCycle start Critics in parallel with join and collect their results to process them by one Selector.
 
