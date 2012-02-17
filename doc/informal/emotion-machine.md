@@ -34,13 +34,13 @@ Solution is based on Marvin Minsky [Emotion machine/7. Thinking chapter.](http:/
 
 ### Training
 
-![Train](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseTrain.png)
+![Train](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/UseCaseTrain.png)
 
 Train mainly is supervised automatic with the Request and Solution pairs provided by TSS. After some essential learning
 TSS monitors the Solution-s of the system.
 
 ### Production
-![Production](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/UseCaseProduction.png)
+![Production](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/UseCaseProduction.png)
 System supports the dialog with a customer starting with Request then through the clarifications/confirmations to Solution
 applied to the target environment.
 
@@ -54,7 +54,7 @@ Critics are applied sequentially and selects proper Selector(Way to Think).
 
 ### Component diagram
 
-![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/EmotionMachineComponent.png)
+![Component](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/EmotionMachineComponent.png)
 
  1. Simplest case is the direct instruction processing.
 The Learned Reactive Critics is activated and retrieve the Knowing How way of thinking.

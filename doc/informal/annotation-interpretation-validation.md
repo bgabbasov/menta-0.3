@@ -13,7 +13,7 @@ See https://github.com/menta/menta-0.3/blob/master/doc/informal/emotion-machine.
 
 ### Collaboration diagram
 
-![Collaboration](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/AIVCollaboration.png)
+![Collaboration](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/AIVCollaboration.png)
 
  1. TextProcessor (one of Lexical parsers) creates the structure of the text as a links of words. Inbound: Text, outbound Word links tree.
  1. Preliminary Annotator adds using data of the TextProcessor adds the annotation to the inbound Text to indicate the sentence structure. Inbound: Text, outbound AnnotatedText.
@@ -27,7 +27,7 @@ Interpreter and Validator could be expressed via Emotion Machine Solution [see s
 
 ### <a name="Component_diagram">Component diagram</a>
 
-![Component](https://github.com/menta/menta-0.3/raw/master/doc/informal/uml/images/Component.png)
+![Component](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/Component.png)
 
 Component diagram is supplemental to the Collaboration diagram.
 
