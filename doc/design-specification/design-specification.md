@@ -22,7 +22,7 @@
  1. KnowledgeBaseAnnotator
 
 ## Knowledge data model
-[Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/informal/knowledge.md)
+[Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/design-specification/knowledge.md)
 
 ## <a name="Activity_diagram">Activity diagram</a>
 

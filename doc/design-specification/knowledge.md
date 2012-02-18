@@ -13,8 +13,8 @@ We could interpret Microneme as the domain.
 ## Data structures
 
 Taking in account the main [Perceiving workflow](perceiving-modelling.md#Approximate_workflow). When the Incident comes in the System,
-System crates KLine for the Conversation, Narrative to store each step of processing for machine learning and analysis.
-Data structures listed below are parts of the Conversation KLine.
+System crates KLine for the Conversation(Incident Context), Narrative(SolutionWorkflow) to store each step of processing for machine learning and
+analysis. Data structures listed below are parts of the Conversation KLine.
 
 ### Incident Context
 Is the KLine with named Resource-s, first element is Request.
@@ -53,3 +53,6 @@ TransFrame in case of the UserProblem
 
 ### SolutionGeneration Way2Think
 SemanticNetwork of HowTo-s
+
+## Controlled Common Knowledge.
+_TBD_
