@@ -20,6 +20,7 @@
  1. [Way2Think](way2Think.md)
  1. PreliminaryAnnotator
  1. KnowledgeBaseAnnotator
+ 1. KnowledgeBase
 
 ## Knowledge data model
 [Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/design-specification/knowledge.md)
