@@ -30,3 +30,11 @@
 
 ![Life cycle activity](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/LifecycleActivity.png)
 
+## Main processes(Triplets Critic -> Selector -> Action[Critic|Way2Think]).
+
+ 1. Request description preprocessing.
+ 1. Incident classification.
+ 1. Solution generation.
+ 1. [Clarification request processing.](clarification-request-processing.md)
+ 1. Understood SemanticNetwork making sense analysis.
+
