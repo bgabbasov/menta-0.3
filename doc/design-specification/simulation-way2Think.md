@@ -20,3 +20,8 @@ Domain SemanticNetwork simulating current situation from Incident description.
 
 For each node in inbound Incident description SemanticNetwork find the map to node in the Domain SemanticNetwork via(through) concepts
 of the KnowledgeBase.
+
+
+## OWL example
+
+[Example in OWL](/owl/SemanticNetwork_UserReceivedWrongApplication.owl)
