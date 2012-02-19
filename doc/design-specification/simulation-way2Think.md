@@ -24,4 +24,4 @@ of the KnowledgeBase.
 
 ## OWL example
 
-[Example in OWL](/owl/SemanticNetwork_UserReceivedWrongApplication.owl)
+[Example in OWL](https://raw.github.com/menta/menta-0.3/master/doc/design-specification/owl/SemanticNetwork_UserReceivedWrongApplication.owl)
