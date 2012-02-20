@@ -14,7 +14,7 @@ Domain model of Incident description, partly or completely is created.
 
 ## Output
 
-Domain SemanticNetwork simulating current situation from Incident description.
+Domain SemanticNetwork that models current situation from Incident description.
 
 ## Workflow
 

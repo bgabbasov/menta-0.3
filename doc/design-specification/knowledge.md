@@ -13,7 +13,12 @@ In other words, this system could switch you into other, different ways to think
 I think that this concept of micronemes could help to replace many old and vague ideas about ‘association of ideas.’
 We could interpret Microneme as the domain.
 
-## Data structures
+## Controlled Common Knowledge.
+Implemented via Probability class and Reflective Critics.
+When some Knowledge is produced by Way2Think it has zero confidence. Then some Reflective Critics (MakeSenseAnalyser) checks the Knowledge and
+assigns confidence property of probability Class of checked Knowledge instances.
+
+## Processes Data structures(should be placed in processes description)
 
 Taking in account the main [Perceiving workflow](perceiving-modelling.md#Approximate_workflow). When the Incident comes in the System,
 System crates KLine for the Conversation(Incident Context), Narrative(SolutionWorkflow) to store each step of processing for machine learning and
@@ -48,14 +53,8 @@ SemanticNetwork of the Incident description.
 ### <a name="KnowledgeBase_annotation"> KnowledgeBase annotation</a>
 SemanticNetwork of the Incident description with KLine-s that links to KnowledgeBase resources.
 
-### <a name="Simulation_Way2Think">Simulation Way2Think</a>
-SemanticNetwork that models the situation of the Incident description.
-
 ### <a name="Reformulation_Way2Think">Reformulation Way2Think = Formalisation result</a>
 TransFrame in case of the UserProblem
 
 ### SolutionGeneration Way2Think
 SemanticNetwork of HowTo-s
-
-## Controlled Common Knowledge.
-_TBD_
