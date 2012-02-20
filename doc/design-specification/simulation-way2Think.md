@@ -22,6 +22,6 @@ For each node in inbound Incident description SemanticNetwork find the map to no
 of the KnowledgeBase.
 
 
-## OWL example
+## OWL example, see Simulation section
 
 [Example in OWL](https://raw.github.com/menta/menta-0.3/master/doc/design-specification/owl/SemanticNetwork_UserReceivedWrongApplication.owl)

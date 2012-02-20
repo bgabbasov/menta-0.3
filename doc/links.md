@@ -28,3 +28,7 @@
  1. [MontyLingua](http://en.wikipedia.org/wiki/MontyLingua)
  1. [GATE NLP experiments GUI](http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering)
  1. [UIMA Unstructured Information Management Architecture NLP framework](http://en.wikipedia.org/wiki/Unstructured_Information_Management_Architecture)
+
+## OWL(Web ontology language)
+
+ 1. [Protege](http://protege.stanford.edu/)
