@@ -5,6 +5,7 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Inbound data
 
+ 1. Rules.
  1. Incident description: SemanticNetwork with KLine-s or
  1. Simulation Way2Think result: SemanticNetwork
 
