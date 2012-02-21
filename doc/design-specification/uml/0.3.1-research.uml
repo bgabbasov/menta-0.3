@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>ThinkingLifeCycleOverview</activediagram>
+      <activediagram>knowledge Class</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -127,7 +127,7 @@
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="apply(criteria : KLine) : Action Activity" />
       <member type="pgml"
-              name="0.3.1-research_ClassDiagram.pgml"
+              name="0.3.1-research_ThinkingLifeCycleOverview.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="ThinkingLifeCycleOverview" />
       <member type="todo"
@@ -146,7 +146,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Feb 21 17:13:25 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Feb 21 18:59:28 EET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2499,6 +2499,112 @@
                     <UML:Class xmi.idref = '89-27-9--3-2d3eaf45:1359c82ef50:-8000:00000000000011A4'/>
                   </UML:Comment.annotatedElement>
                 </UML:Comment>
+                <UML:Generalization xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C8'
+                  isSpecification = 'false'>
+                  <UML:Generalization.child>
+                    <UML:Class xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7'/>
+                  </UML:Generalization.child>
+                  <UML:Generalization.parent>
+                    <UML:Class xmi.idref = '-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18'/>
+                  </UML:Generalization.parent>
+                </UML:Generalization>
+                <UML:Package xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C9'
+                  name = 'panalogy' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+                  isAbstract = 'false'>
+                  <UML:Namespace.ownedElement>
+                    <UML:Class xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7'
+                      name = 'Panalogy' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+                      isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+                      <UML:GeneralizableElement.generalization>
+                        <UML:Generalization xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C8'/>
+                      </UML:GeneralizableElement.generalization>
+                      <UML:Classifier.feature>
+                        <UML:Attribute xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011D9'
+                          name = 'resources' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                          changeability = 'changeable' targetScope = 'instance'>
+                          <UML:StructuralFeature.multiplicity>
+                            <UML:Multiplicity xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DA'>
+                              <UML:Multiplicity.range>
+                                <UML:MultiplicityRange xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DB'
+                                  lower = '1' upper = '1'/>
+                              </UML:Multiplicity.range>
+                            </UML:Multiplicity>
+                          </UML:StructuralFeature.multiplicity>
+                          <UML:StructuralFeature.type>
+                            <UML:Class xmi.idref = '89-27-9--3-2a4539c3:1356d745f80:-8000:00000000000010DF'/>
+                          </UML:StructuralFeature.type>
+                        </UML:Attribute>
+                      </UML:Classifier.feature>
+                    </UML:Class>
+                    <UML:Class xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC'
+                      name = 'PanalogyNode' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+                      isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+                      <UML:GeneralizableElement.generalization>
+                        <UML:Generalization xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CD'/>
+                      </UML:GeneralizableElement.generalization>
+                      <UML:Classifier.feature>
+                        <UML:Attribute xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CE'
+                          name = 'resource' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                          changeability = 'changeable' targetScope = 'instance'>
+                          <UML:StructuralFeature.multiplicity>
+                            <UML:Multiplicity xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CF'>
+                              <UML:Multiplicity.range>
+                                <UML:MultiplicityRange xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011D0'
+                                  lower = '1' upper = '1'/>
+                              </UML:Multiplicity.range>
+                            </UML:Multiplicity>
+                          </UML:StructuralFeature.multiplicity>
+                          <UML:StructuralFeature.type>
+                            <UML:Interface xmi.idref = '-64--88-121--124--71206377:1350f30b9c4:-8000:0000000000000BB1'/>
+                          </UML:StructuralFeature.type>
+                        </UML:Attribute>
+                        <UML:Attribute xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011D1'
+                          name = 'microneme' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                          changeability = 'changeable' targetScope = 'instance'>
+                          <UML:StructuralFeature.multiplicity>
+                            <UML:Multiplicity xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011D2'>
+                              <UML:Multiplicity.range>
+                                <UML:MultiplicityRange xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011D3'
+                                  lower = '1' upper = '1'/>
+                              </UML:Multiplicity.range>
+                            </UML:Multiplicity>
+                          </UML:StructuralFeature.multiplicity>
+                          <UML:StructuralFeature.type>
+                            <UML:Class xmi.idref = '-64--88-121--124--71206377:1350f30b9c4:-8000:0000000000000C07'/>
+                          </UML:StructuralFeature.type>
+                        </UML:Attribute>
+                      </UML:Classifier.feature>
+                    </UML:Class>
+                    <UML:Generalization xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CD'
+                      isSpecification = 'false'>
+                      <UML:Generalization.child>
+                        <UML:Class xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC'/>
+                      </UML:Generalization.child>
+                      <UML:Generalization.parent>
+                        <UML:Class xmi.idref = '-64--88-121--124--71206377:1350f30b9c4:-8000:0000000000000BE9'/>
+                      </UML:Generalization.parent>
+                    </UML:Generalization>
+                    <UML:Association xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DC'
+                      name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+                      <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DD'
+                          visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                          aggregation = 'aggregate' targetScope = 'instance' changeability = 'changeable'>
+                          <UML:AssociationEnd.participant>
+                            <UML:Class xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7'/>
+                          </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DE'
+                          visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                          aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+                          <UML:AssociationEnd.participant>
+                            <UML:Class xmi.idref = '-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC'/>
+                          </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                      </UML:Association.connection>
+                    </UML:Association>
+                  </UML:Namespace.ownedElement>
+                </UML:Package>
               </UML:Namespace.ownedElement>
             </UML:Package>
           </UML:Namespace.ownedElement>
@@ -22376,7 +22482,7 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[872, 912, 152, 71]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[872, 912, 152, 75]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
        fill="1"
        fillcolor="white"
@@ -22390,7 +22496,7 @@ A robot must protect its own existence as long as such protection does not confl
       x="872"
       y="912"
       width="152"
-      height="71"
+      height="75"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -22446,7 +22552,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig3.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[873, 937, 150, 25]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[873, 937, 150, 26]"
          href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
          fill="0"
          fillcolor="white"
@@ -22460,7 +22566,7 @@ A robot must protect its own existence as long as such protection does not confl
         x="873"
         y="937"
         width="150"
-        height="25"
+        height="26"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -22485,7 +22591,7 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
     <rectangle name="Fig3.5"
       x="872"
-      y="961"
+      y="963"
       width="152"
       height="1"
       fill="1"
@@ -22494,7 +22600,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig3.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[873, 962, 150, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[873, 964, 150, 22]"
          href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
          fill="0"
          fillcolor="white"
@@ -22506,9 +22612,9 @@ A robot must protect its own existence as long as such protection does not confl
       
       <rectangle name="Fig3.6.0"
         x="873"
-        y="962"
+        y="964"
         width="150"
-        height="21"
+        height="22"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -23967,7 +24073,7 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
   </group>
   <group name="Fig19"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[584, 1152, 183, 173]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[584, 1152, 179, 88]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
        fill="1"
        fillcolor="white"
@@ -23981,8 +24087,8 @@ A robot must protect its own existence as long as such protection does not confl
     <rectangle name="Fig19.0"
       x="584"
       y="1152"
-      width="183"
-      height="173"
+      width="179"
+      height="88"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -23991,7 +24097,7 @@ A robot must protect its own existence as long as such protection does not confl
     <text name="Fig19.1"
       x="585"
       y="1153"
-      width="181"
+      width="177"
       height="23"
       fill="0"
       fillcolor="white"
@@ -24030,7 +24136,7 @@ A robot must protect its own existence as long as such protection does not confl
     <rectangle name="Fig19.3"
       x="584"
       y="1176"
-      width="183"
+      width="179"
       height="1"
       fill="1"
       fillcolor="black"
@@ -24038,7 +24144,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig19.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[585, 1177, 181, 83]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[585, 1177, 177, 42]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -24051,8 +24157,8 @@ A robot must protect its own existence as long as such protection does not confl
       <rectangle name="Fig19.4.0"
         x="585"
         y="1177"
-        width="181"
-        height="83"
+        width="177"
+        height="42"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -24061,7 +24167,7 @@ A robot must protect its own existence as long as such protection does not confl
       <text name="Fig19.4.1"
         x="585"
         y="1177"
-        width="181"
+        width="177"
         height="17"
         fill="0"
         fillcolor="white"
@@ -24077,7 +24183,7 @@ A robot must protect its own existence as long as such protection does not confl
       <text name="Fig19.4.2"
         x="585"
         y="1194"
-        width="181"
+        width="177"
         height="23"
         fill="0"
         fillcolor="white"
@@ -24093,8 +24199,8 @@ A robot must protect its own existence as long as such protection does not confl
     </group>
     <rectangle name="Fig19.5"
       x="584"
-      y="1260"
-      width="183"
+      y="1218"
+      width="179"
       height="1"
       fill="1"
       fillcolor="black"
@@ -24102,7 +24208,7 @@ A robot must protect its own existence as long as such protection does not confl
       strokecolor="black"
     />
     <group name="Fig19.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[585, 1261, 181, 62]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[585, 1219, 177, 21]"
          href="-64--88-121--120-4afe6979:13557f023fe:-8000:0000000000000D64"
          fill="0"
          fillcolor="white"
@@ -24114,9 +24220,9 @@ A robot must protect its own existence as long as such protection does not confl
       
       <rectangle name="Fig19.6.0"
         x="585"
-        y="1261"
-        width="181"
-        height="62"
+        y="1219"
+        width="177"
+        height="21"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -24149,14 +24255,14 @@ A robot must protect its own existence as long as such protection does not confl
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="766"
+      <moveto x="762"
               y="1152" />
       <lineto x="872"
-              y="982" />
+              y="986" />
     </path>
   </group>
   <group name="Fig21"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[1064, 824, 123, 70]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[1032, 800, 123, 70]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3-2a4539c3:1356d745f80:-8000:00000000000010E2"
        fill="1"
        fillcolor="white"
@@ -24167,8 +24273,8 @@ A robot must protect its own existence as long as such protection does not confl
     </private>
     
     <rectangle name="Fig21.0"
-      x="1064"
-      y="824"
+      x="1032"
+      y="800"
       width="123"
       height="70"
       fill="0"
@@ -24183,18 +24289,18 @@ A robot must protect its own existence as long as such protection does not confl
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1064"
-              y="824" />
-      <lineto x="1176"
-              y="824" />
-      <lineto x="1186"
-              y="834" />
-      <lineto x="1186"
-              y="893" />
-      <lineto x="1064"
-              y="893" />
-      <lineto x="1064"
-              y="824" />
+      <moveto x="1032"
+              y="800" />
+      <lineto x="1144"
+              y="800" />
+      <lineto x="1154"
+              y="810" />
+      <lineto x="1154"
+              y="869" />
+      <lineto x="1032"
+              y="869" />
+      <lineto x="1032"
+              y="800" />
     </path>
     <path name="Fig21.2"
       description="org.tigris.gef.presentation.FigPoly"
@@ -24203,17 +24309,17 @@ A robot must protect its own existence as long as such protection does not confl
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1176"
-              y="824" />
-      <lineto x="1186"
-              y="834" />
-      <lineto x="1176"
-              y="834" />
-      <lineto x="1176"
-              y="824" />
+      <moveto x="1144"
+              y="800" />
+      <lineto x="1154"
+              y="810" />
+      <lineto x="1144"
+              y="810" />
+      <lineto x="1144"
+              y="800" />
     </path>
     <group name="Fig21.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1066, 826, 109, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1034, 802, 109, 0]"
          href="89-27-9--3-2a4539c3:1356d745f80:-8000:00000000000010E2"
          fill="0"
          fillcolor="white"
@@ -24225,8 +24331,8 @@ A robot must protect its own existence as long as such protection does not confl
       </private>
       
       <rectangle name="Fig21.3.0"
-        x="1066"
-        y="826"
+        x="1034"
+        y="802"
         width="109"
         height="0"
         fill="0"
@@ -24236,8 +24342,8 @@ A robot must protect its own existence as long as such protection does not confl
       />
     </group>
     <text name="Fig21.4"
-      x="1066"
-      y="826"
+      x="1034"
+      y="802"
       width="109"
       height="66"
       fill="0"
@@ -24273,8 +24379,8 @@ named Resource-s</text>
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1064"
-              y="894" />
+      <moveto x="1032"
+              y="870" />
       <lineto x="1023"
               y="912" />
     </path>
@@ -24409,7 +24515,7 @@ handy</text>
       <moveto x="872"
               y="1152" />
       <lineto x="872"
-              y="982" />
+              y="986" />
     </path>
   </group>
   <group name="Fig25"
@@ -27495,7 +27601,7 @@ Resource interface</text>
       <moveto x="960"
               y="1152" />
       <lineto x="960"
-              y="982" />
+              y="986" />
     </path>
   </group>
   <group name="Fig59"
@@ -27685,7 +27791,7 @@ Resource interface</text>
       <moveto x="505"
               y="1248" />
       <lineto x="872"
-              y="982" />
+              y="986" />
     </path>
   </group>
   <group name="Fig62"
@@ -28025,6 +28131,526 @@ Reflective Critics plausibility</text>
               y="49" />
       <lineto x="224"
               y="49" />
+    </path>
+  </group>
+  <group name="Fig66"
+       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[1160, 880, 304, 144]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C9"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig66.0"
+      x="1160"
+      y="880"
+      width="304"
+      height="144"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig66.1"
+      description="org.argouml.uml.diagram.static_structure.ui.FigPackage$PackageBackground"
+      fill="1"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    >
+      <moveto x="1160"
+              y="880" />
+      <lineto x="1414"
+              y="880" />
+      <lineto x="1414"
+              y="904" />
+      <lineto x="1463"
+              y="904" />
+      <lineto x="1463"
+              y="1023" />
+      <lineto x="1160"
+              y="1023" />
+      <lineto x="1160"
+              y="880" />
+    </path>
+    <text name="Fig66.2"
+      x="1160"
+      y="880"
+      width="255"
+      height="25"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >panalogy</text>
+    <group name="Fig66.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1160, 880, 254, 1]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C9"
+         fill="1"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig66.3.0"
+        x="1160"
+        y="880"
+        width="254"
+        height="1"
+        fill="1"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig66.4"
+      x="1160"
+      y="904"
+      width="304"
+      height="120"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig67"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1168, 912, 96, 71]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      enclosingFig="Fig66"
+    </private>
+    
+    <rectangle name="Fig67.0"
+      x="1168"
+      y="912"
+      width="96"
+      height="71"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig67.1"
+      x="1169"
+      y="913"
+      width="94"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Panalogy</text>
+    <group name="Fig67.2"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1169, 913, 64, 0]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig67.2.0"
+        x="1169"
+        y="913"
+        width="64"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <rectangle name="Fig67.3"
+      x="1168"
+      y="936"
+      width="96"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig67.4"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1169, 937, 94, 25]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig67.4.0"
+        x="1169"
+        y="937"
+        width="94"
+        height="25"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+      <text name="Fig67.4.1"
+        x="1169"
+        y="937"
+        width="94"
+        height="23"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >resources : Map</text>
+    </group>
+    <rectangle name="Fig67.5"
+      x="1168"
+      y="961"
+      width="96"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig67.6"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1169, 962, 94, 21]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C7"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig67.6.0"
+        x="1169"
+        y="962"
+        width="94"
+        height="21"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+  </group>
+  <group name="Fig68"
+       description="org.argouml.uml.diagram.ui.FigGeneralization"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C8"
+       stroke="1"
+       strokecolor="51 51 153"
+  >
+    <private>
+      sourcePortFig="Fig67.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig67"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig68.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011C8"
+                        angle="270.0"
+                        offset="-10" />
+    </private>
+    <path name="Fig68.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="51 51 153"
+    >
+      <moveto x="1168"
+              y="936" />
+      <lineto x="1023"
+              y="936" />
+    </path>
+  </group>
+  <group name="Fig69"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1312, 912, 143, 92]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      enclosingFig="Fig66"
+    </private>
+    
+    <rectangle name="Fig69.0"
+      x="1312"
+      y="912"
+      width="143"
+      height="92"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig69.1"
+      x="1313"
+      y="913"
+      width="141"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >PanalogyNode</text>
+    <group name="Fig69.2"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1313, 913, 64, 0]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig69.2.0"
+        x="1313"
+        y="913"
+        width="64"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <rectangle name="Fig69.3"
+      x="1312"
+      y="936"
+      width="143"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig69.4"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1313, 937, 141, 43]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig69.4.0"
+        x="1313"
+        y="937"
+        width="141"
+        height="43"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+      <text name="Fig69.4.1"
+        x="1313"
+        y="937"
+        width="141"
+        height="17"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >resource : Resource</text>
+      <text name="Fig69.4.2"
+        x="1313"
+        y="954"
+        width="141"
+        height="23"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >microneme : MicroNeme</text>
+    </group>
+    <rectangle name="Fig69.5"
+      x="1312"
+      y="980"
+      width="143"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig69.6"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1313, 981, 141, 22]"
+         href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CC"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig69.6.0"
+        x="1313"
+        y="981"
+        width="141"
+        height="22"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+  </group>
+  <group name="Fig70"
+       description="org.argouml.uml.diagram.ui.FigGeneralization"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CD"
+       stroke="1"
+       strokecolor="51 51 153"
+  >
+    <private>
+      sourcePortFig="Fig69.0"
+      destPortFig="Fig37.0"
+      sourceFigNode="Fig69"
+      destFigNode="Fig37"
+      <argouml:pathitem figname="Fig70.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011CD"
+                        angle="270.0"
+                        offset="-10" />
+    </private>
+    <path name="Fig70.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="51 51 153"
+    >
+      <moveto x="1312"
+              y="912" />
+      <lineto x="1248"
+              y="712" />
+      <lineto x="859"
+              y="532" />
+    </path>
+  </group>
+  <group name="Fig71"
+       description="org.argouml.uml.diagram.ui.FigAssociation"
+       href="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DC"
+       sourceConnector="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DD"
+       destConnector="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DE"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig67"
+      destPortFig="Fig69"
+      sourceFigNode="Fig67"
+      destFigNode="Fig69"
+      <argouml:pathitem figname="Fig71.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DC"
+                        angle="270.0"
+                        offset="25" />
+      <argouml:pathitem figname="Fig71.2"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DD"
+                        angle="315.0"
+                        offset="5" />
+      <argouml:pathitem figname="Fig71.3"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DD"
+                        angle="45.0"
+                        offset="5" />
+      <argouml:pathitem figname="Fig71.4"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DE"
+                        angle="225.0"
+                        offset="5" />
+      <argouml:pathitem figname="Fig71.5"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
+                        ownerhref="-115--64--119-110--2cd1effe:135a0cf0918:-8000:00000000000011DE"
+                        angle="135.0"
+                        offset="5" />
+    </private>
+    <path name="Fig71.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1263"
+              y="960" />
+      <lineto x="1312"
+              y="960" />
     </path>
   </group>
 </pgml>
@@ -29441,7 +30067,7 @@ Reflective Critics plausibility</text>
       name="AIV Sequence"
 >
   <group name="Fig0"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 150, 472]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 150, 470]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
        fill="1"
        fillcolor="white"
@@ -29455,7 +30081,7 @@ Reflective Critics plausibility</text>
       x="528"
       y="86"
       width="150"
-      height="472"
+      height="470"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29473,7 +30099,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig0.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 150, 277]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 150, 275]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
          fill="1"
          fillcolor="white"
@@ -29487,7 +30113,7 @@ Reflective Critics plausibility</text>
         x="528"
         y="280"
         width="150"
-        height="277"
+        height="275"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29503,10 +30129,10 @@ Reflective Critics plausibility</text>
         <moveto x="603"
                 y="280" />
         <lineto x="603"
-                y="557" />
+                y="555" />
       </path>
       <group name="Fig0.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[593, 280, 20, 277]"
+           description="org.argouml.sequence2.diagram.FigActivation[593, 280, 20, 275]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
            fill="1"
            fillcolor="white"
@@ -29520,7 +30146,7 @@ Reflective Critics plausibility</text>
           x="593"
           y="280"
           width="20"
-          height="277"
+          height="275"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29590,7 +30216,7 @@ Reflective Critics plausibility</text>
     </group>
   </group>
   <group name="Fig1"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 474]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 472]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
        fill="1"
        fillcolor="white"
@@ -29604,7 +30230,7 @@ Reflective Critics plausibility</text>
       x="0"
       y="86"
       width="150"
-      height="474"
+      height="472"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29622,7 +30248,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig1.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 424]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 422]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
          fill="1"
          fillcolor="white"
@@ -29636,7 +30262,7 @@ Reflective Critics plausibility</text>
         x="0"
         y="135"
         width="150"
-        height="424"
+        height="422"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29652,10 +30278,10 @@ Reflective Critics plausibility</text>
         <moveto x="75"
                 y="135" />
         <lineto x="75"
-                y="559" />
+                y="557" />
       </path>
       <group name="Fig1.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 424]"
+           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 422]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
            fill="1"
            fillcolor="white"
@@ -29669,7 +30295,7 @@ Reflective Critics plausibility</text>
           x="65"
           y="135"
           width="20"
-          height="424"
+          height="422"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29739,7 +30365,7 @@ Reflective Critics plausibility</text>
     </group>
   </group>
   <group name="Fig2"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 470]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 468]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
        fill="1"
        fillcolor="white"
@@ -29753,7 +30379,7 @@ Reflective Critics plausibility</text>
       x="208"
       y="86"
       width="151"
-      height="470"
+      height="468"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29771,7 +30397,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig2.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 420]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 418]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
          fill="1"
          fillcolor="white"
@@ -29785,7 +30411,7 @@ Reflective Critics plausibility</text>
         x="208"
         y="135"
         width="151"
-        height="420"
+        height="418"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29801,10 +30427,10 @@ Reflective Critics plausibility</text>
         <moveto x="283"
                 y="135" />
         <lineto x="283"
-                y="555" />
+                y="553" />
       </path>
       <group name="Fig2.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 420]"
+           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 418]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
            fill="1"
            fillcolor="white"
@@ -29818,7 +30444,7 @@ Reflective Critics plausibility</text>
           x="273"
           y="135"
           width="20"
-          height="420"
+          height="418"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -29919,7 +30545,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig4"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 473]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 471]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
        fill="1"
        fillcolor="white"
@@ -29933,7 +30559,7 @@ Reflective Critics plausibility</text>
       x="376"
       y="86"
       width="150"
-      height="473"
+      height="471"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -29951,7 +30577,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig4.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 423]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 421]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
          fill="1"
          fillcolor="white"
@@ -29965,7 +30591,7 @@ Reflective Critics plausibility</text>
         x="376"
         y="135"
         width="150"
-        height="423"
+        height="421"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -29981,7 +30607,7 @@ Reflective Critics plausibility</text>
         <moveto x="451"
                 y="135" />
         <lineto x="451"
-                y="558" />
+                y="556" />
       </path>
       <group name="Fig4.2.2"
            description="org.argouml.sequence2.diagram.FigActivation[441, 180, 20, 50]"
@@ -30183,7 +30809,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig8"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 151, 472]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 151, 470]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
        fill="1"
        fillcolor="white"
@@ -30197,7 +30823,7 @@ Reflective Critics plausibility</text>
       x="800"
       y="86"
       width="151"
-      height="472"
+      height="470"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -30215,7 +30841,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig8.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 151, 237]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 151, 235]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
          fill="1"
          fillcolor="white"
@@ -30229,7 +30855,7 @@ Reflective Critics plausibility</text>
         x="800"
         y="320"
         width="151"
-        height="237"
+        height="235"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -30245,10 +30871,10 @@ Reflective Critics plausibility</text>
         <moveto x="875"
                 y="320" />
         <lineto x="875"
-                y="557" />
+                y="555" />
       </path>
       <group name="Fig8.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[865, 320, 20, 237]"
+           description="org.argouml.sequence2.diagram.FigActivation[865, 320, 20, 235]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
            fill="1"
            fillcolor="white"
@@ -30262,7 +30888,7 @@ Reflective Critics plausibility</text>
           x="865"
           y="320"
           width="20"
-          height="237"
+          height="235"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -30425,7 +31051,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig12"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 179, 476]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 179, 474]pathVisible=false;stereotypeView=0;"
        href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
        fill="1"
        fillcolor="white"
@@ -30439,7 +31065,7 @@ Reflective Critics plausibility</text>
       x="984"
       y="86"
       width="179"
-      height="476"
+      height="474"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -30457,7 +31083,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig12.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 179, 117]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 179, 115]"
          href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
          fill="1"
          fillcolor="white"
@@ -30471,7 +31097,7 @@ Reflective Critics plausibility</text>
         x="984"
         y="444"
         width="179"
-        height="117"
+        height="115"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -30487,10 +31113,10 @@ Reflective Critics plausibility</text>
         <moveto x="1073"
                 y="444" />
         <lineto x="1073"
-                y="561" />
+                y="559" />
       </path>
       <group name="Fig12.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1063, 444, 20, 117]"
+           description="org.argouml.sequence2.diagram.FigActivation[1063, 444, 20, 115]"
            href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
            fill="1"
            fillcolor="white"
@@ -30504,7 +31130,7 @@ Reflective Critics plausibility</text>
           x="1063"
           y="444"
           width="20"
-          height="117"
+          height="115"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -40153,9 +40779,9 @@ apply =&gt; StoreProbability</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="656"
-              y="2440" />
-      <lineto x="656"
+      <moveto x="655"
+              y="2439" />
+      <lineto x="655"
               y="2465" />
     </path>
   </group>
@@ -40655,7 +41281,7 @@ apply(request: Request)
     </group>
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[65, 48, 96, 72]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[65, 48, 96, 75]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
        fill="1"
        fillcolor="white"
@@ -40669,7 +41295,7 @@ apply(request: Request)
       x="65"
       y="48"
       width="96"
-      height="72"
+      height="75"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -40725,7 +41351,7 @@ apply(request: Request)
       strokecolor="black"
     />
     <group name="Fig1.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[66, 73, 94, 25]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[66, 73, 94, 26]"
          href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
          fill="0"
          fillcolor="white"
@@ -40739,7 +41365,7 @@ apply(request: Request)
         x="66"
         y="73"
         width="94"
-        height="25"
+        height="26"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -40764,7 +41390,7 @@ apply(request: Request)
     </group>
     <rectangle name="Fig1.5"
       x="65"
-      y="97"
+      y="99"
       width="96"
       height="1"
       fill="1"
@@ -40773,7 +41399,7 @@ apply(request: Request)
       strokecolor="black"
     />
     <group name="Fig1.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[66, 98, 94, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[66, 100, 94, 22]"
          href="-64--88-121--124-49a69c64:1351013cb6a:-8000:0000000000000C18"
          fill="0"
          fillcolor="white"
@@ -40785,9 +41411,9 @@ apply(request: Request)
       
       <rectangle name="Fig1.6.0"
         x="66"
-        y="98"
+        y="100"
         width="94"
-        height="21"
+        height="22"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -40823,7 +41449,7 @@ apply(request: Request)
       <moveto x="120"
               y="240" />
       <lineto x="120"
-              y="119" />
+              y="122" />
     </path>
   </group>
   <group name="Fig3"
@@ -48409,7 +49035,7 @@ returns List[Critic]</text>
     ></text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[255, 408, 166, 96]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
+       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[255, 408, 168, 96]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
        href="-64--88-121--120-77a7c760:1359fc51a94:-8000:000000000000107F"
        fill="1"
        fillcolor="white"
@@ -48422,7 +49048,7 @@ returns List[Critic]</text>
     <rectangle name="Fig2.0"
       x="255"
       y="408"
-      width="166"
+      width="168"
       height="96"
       fill="0"
       fillcolor="white"
@@ -48438,13 +49064,13 @@ returns List[Critic]</text>
     >
       <moveto x="255"
               y="408" />
-      <lineto x="371"
+      <lineto x="373"
               y="408" />
-      <lineto x="371"
+      <lineto x="373"
               y="432" />
-      <lineto x="420"
+      <lineto x="422"
               y="432" />
-      <lineto x="420"
+      <lineto x="422"
               y="503" />
       <lineto x="255"
               y="503" />
@@ -48454,7 +49080,7 @@ returns List[Critic]</text>
     <text name="Fig2.2"
       x="255"
       y="408"
-      width="117"
+      width="119"
       height="25"
       fill="0"
       fillcolor="white"
@@ -48468,7 +49094,7 @@ returns List[Critic]</text>
       justification="Left"
     >MentaCoreServices</text>
     <group name="Fig2.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[255, 408, 116, 1]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[255, 408, 118, 1]"
          href="-64--88-121--120-77a7c760:1359fc51a94:-8000:000000000000107F"
          fill="1"
          fillcolor="white"
@@ -48482,7 +49108,7 @@ returns List[Critic]</text>
       <rectangle name="Fig2.3.0"
         x="255"
         y="408"
-        width="116"
+        width="118"
         height="1"
         fill="1"
         fillcolor="white"
@@ -48493,7 +49119,7 @@ returns List[Critic]</text>
     <text name="Fig2.4"
       x="255"
       y="432"
-      width="166"
+      width="168"
       height="72"
       fill="0"
       fillcolor="white"
@@ -48526,7 +49152,7 @@ returns List[Critic]</text>
                         offset="74" />
     </private>
     <path name="Fig3.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -48557,7 +49183,7 @@ returns List[Critic]</text>
                         offset="25" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -48786,7 +49412,7 @@ returns List[Critic]</text>
                         offset="25" />
     </private>
     <path name="Fig7.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -48817,7 +49443,7 @@ returns List[Critic]</text>
                         offset="25" />
     </private>
     <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -48848,13 +49474,13 @@ returns List[Critic]</text>
                         offset="25" />
     </private>
     <path name="Fig9.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="421"
+      <moveto x="423"
               y="492" />
       <lineto x="672"
               y="492" />

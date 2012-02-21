@@ -5,9 +5,10 @@ Based on [Marvin Minsky: Emotion Machine: Hierarchy of Representations](http://w
 ![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/knowledgeClass.png)
 
 ## Panalogy
-TBD
+Panalogy is used to draw cross domains analogies, parallel analogies. See [The concept of a ‘Panalogy.’](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc446663337)
+![Panalogy from the Emotion machine book](http://web.media.mit.edu/~minsky/E6/eb6_files/image005.png)
 
-## Microneme
+## Microneme(Domain)
 Then the present state of your micronemes could represent much of your current mental context—and the states of those fibers are changed, your far-reaching bundle of micronemes will broadcast that information to many other mental resources—so that this will change some of your attitudes, outlooks, and states of mind.
 In other words, this system could switch you into other, different ways to think.
 I think that this concept of micronemes could help to replace many old and vague ideas about ‘association of ideas.’
