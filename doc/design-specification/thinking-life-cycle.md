@@ -7,6 +7,7 @@ In general ThinkingLifeCycle represents factory of Scala Actors (http://www.scal
 Generally this is Service or Daemon (http://wrapper.tanukisoftware.com/doc/english/index.html) with Web Service  access point (http://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/2.0/tutorial/doc/)
 
 Service requirements:
+
 1. Scalability
 1. Stability
 
@@ -28,11 +29,11 @@ Represents Web Service that server User requests. Requests contain subscription 
 3rd party component, that support messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
 
 ## MentaCoreService
-Workers that hold functionality of system
+Workers that hold functionality of system. Based on PubSub template. Using Scala Actor. When Request came from Message Bus create a chain of actors according to workflow. Run different selectors and wait while processing finished.
 
 ## MentaDataService
 Database services that will be shared across different instances
 
 ## ClientAgents
-Software for service machines, that have access for different locations and hold some amounts of scripts
+Software for service machines, that have access for different locations and hold some amounts of scripts. Contains Executor
 
