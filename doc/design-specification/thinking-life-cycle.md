@@ -12,7 +12,9 @@ Service requirements:
 
 ## Common Overview
 ![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleOverview.png)
+
 There are 5 main components:
+
 1. MentaWebService - entry point for client requests
 1. MessageBus - perform message processing between different instances
 1. MentaCoreService - services or daemons on different machines
