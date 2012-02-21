@@ -26,10 +26,11 @@ There are 5 main components:
 Represents Web Service that server User requests. Requests contain subscription information (callbacks) of clients. All work will be processed by MentaCoresService
 
 ## MessageBus
-3rd party component, that support messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
+3rd party component, that supports messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
 
 ## MentaCoreService
 Workers that hold functionality of system. Based on PubSub template. Using Scala Actor. When Request came from Message Bus create a chain of actors according to workflow. Run different selectors and wait while processing finished.
+
 
 ## MentaDataService
 Database services that will be shared across different instances
