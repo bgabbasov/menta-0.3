@@ -5,7 +5,8 @@ Based on [Marvin Minsky: Emotion Machine: Hierarchy of Representations](http://w
 ![Knowledge structure](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/knowledgeClass.png)
 
 ## Panalogy
-Panalogy is used to draw cross domains analogies, parallel analogies. See [The concept of a ‘Panalogy.’](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc446663337)
+Panalogy is used to draw cross domains analogies, parallel analogies.
+See [The concept of a ‘Panalogy.’ from Emotion Machine of Marvin Minsky](http://web.media.mit.edu/~minsky/E6/eb6.html#_Toc446663337)
 ![Panalogy from the Emotion machine book](http://web.media.mit.edu/~minsky/E6/eb6_files/image005.png)
 
 ## Microneme(Domain)
