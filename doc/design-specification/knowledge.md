@@ -32,7 +32,7 @@ Is the KLine with named Resource-s, first element is Request.
 
 ### Goal
 
-![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/GoalTraining.png)
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/Training.png)
 
 Implements SemanticTreeNode and KLine, thus is organised in Goal-s three and contains context(Critics, Way2Think and their results regarding this Goal).
 
