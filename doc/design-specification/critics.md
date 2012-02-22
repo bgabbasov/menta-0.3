@@ -17,7 +17,7 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Critic interface
 
-![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/criticInterface.png)
+![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticInterface.png)
 
 ## Main Critics links types.
 
