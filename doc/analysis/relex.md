@@ -31,7 +31,7 @@ Sentences were parsed correct (or semi correct) for 7 issues from 18:
 
     F-measure=0,56.
 
-RelEx evaluates "parse confidence" for each sentence, it belongs in [0..1] inteval. 
+RelEx evaluates "parse confidence" for each sentence, it belongs [0..1] range. 
 Let use "parse confidence" of issue as average of issue's sentences.
 Let use 0,2 of RelEx "parse confidence" as limit for well recognized issues text, RelEx estimate it itself.
 
