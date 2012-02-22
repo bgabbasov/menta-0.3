@@ -114,6 +114,6 @@ RelEx uses LinkGrammar notation in the tree output, which can be found [here](ht
 # Comments
 
 Have you used WordNet? 
-Renat: Yes, Wordnet v1.4.1 were used.
+Renat: Yes, Wordnet v1.4.1 was used.
 
 Please add statistical analysis: Precision, Recall, F-measure http://en.wikipedia.org/wiki/Recall_(information_retrieval)
