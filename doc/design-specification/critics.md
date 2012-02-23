@@ -6,14 +6,14 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 ## Inbound data
 
  1. Critic Rules(see below).
- 1. Incident description: SemanticNetwork with KLine-s or
- 1. Simulation Way2Think result: SemanticNetwork
+ 1. Incident description: SemanticNetwork with KLine-s.
+ 1. Simulation Way2Think result: SemanticNetwork.
 
 ## Outbound data: Triple
 
- 1. [Action](selector.md#action)
- 1. Probability: Double
- 1. Rule = the logical predicate triggered
+ 1. [Action](selector.md#action).
+ 1. [Probability](knowledge.md).
+ 1. Critic Rule = the logical predicate triggered(see below).
 
 ## Critic interface
 
