@@ -5,7 +5,7 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Inbound data
 
- 1. Rules.
+ 1. Critic Rules(see below).
  1. Incident description: SemanticNetwork with KLine-s or
  1. Simulation Way2Think result: SemanticNetwork
 
@@ -18,6 +18,10 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 ## Critic interface
 
 ![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/criticInterface.png)
+
+## Critic rules
+
+![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
 ## Main Critics links types.
 
