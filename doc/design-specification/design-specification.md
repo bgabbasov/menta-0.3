@@ -37,5 +37,5 @@
  1. Incident classification.
  1. Solution generation.
  1. [Clarification request processing.](clarification-request-processing.md)
- 1. Understood SemanticNetwork making sense analysis.
+ 1. [SemanticNetwork making sense analysis.](making-sense-analysis.md)
 
