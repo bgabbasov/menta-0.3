@@ -61,3 +61,7 @@ TransFrame in case of the UserProblem
 
 ### SolutionGeneration Way2Think
 SemanticNetwork of HowTo-s
+
+## Domain knowledge
+
+![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/domainClass.png)
