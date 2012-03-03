@@ -18,10 +18,10 @@ Domain SemanticNetwork that models current situation from Incident description.
 
 ## Workflow
 
-For each node in inbound Incident description SemanticNetwork find the map to node in the Domain SemanticNetwork via(through) concepts
-of the KnowledgeBase.
+Each node of inbound Incident description [SemanticNetwork] mapped to a node in the [Domain](knowledge.md#Domain) SemanticNetwork via(through)
+concepts of the KnowledgeBase, modeling current situation described in Incident via Domain terms.
+Default values are set using Domain concepts, and then clarified/confirmed via [Clarification process](clarification-process.md)
 
-
-## OWL example, see Simulation section
+## OWL example, see Simulation concept
 
 [Example in OWL](https://raw.github.com/menta/menta-0.3/master/doc/design-specification/owl/SemanticNetwork_UserReceivedWrongApplication.owl)

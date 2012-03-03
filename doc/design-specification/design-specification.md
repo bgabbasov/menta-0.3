@@ -51,8 +51,8 @@
  1. Inbound description preprocessing.
  1. Cry4Help.
  1. Store less probable Way2Think.
- 1. Simulate.
- 1. Reformulate.
+ 1. [Simulate.](simulation-way2Think.md)
+ 1. [Reformulate.](reformulate-way2Think.md)
  1. Extensive search.
  1. Return learned HowTo.
  1. Communicate to user.
