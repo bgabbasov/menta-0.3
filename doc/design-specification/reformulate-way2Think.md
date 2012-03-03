@@ -2,7 +2,7 @@
 
 ## Entry criteria
 
-DirectInstruction, ProblemWithDesiredState, ProblemWODesiredState [Critics](critics.md) returned [Selector](selector.md) Reformulation Way2Think.
+DirectInstruction, ProblemWithDesiredState, ProblemWODesiredState [Critics](critics.md) returned [Selector Request](selector.md) for Reformulation Way2Think.
 
 ## Exit criteria
 

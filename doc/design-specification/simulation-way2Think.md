@@ -2,7 +2,8 @@
 
 ## Entry criteria
 
-DirectInstruction, ProblemWithDesiredState, ProblemWODesiredState [Critics](critics.md) returned Simulation Way2Think.
+DirectInstruction, ProblemWithDesiredState, ProblemWODesiredState [Critics](critics.md) returned [Selector Request](selector.md)
+for Simulation Way2Think.
 
 ## Exit criteria
 
