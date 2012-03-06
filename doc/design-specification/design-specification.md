@@ -36,7 +36,7 @@
  1. Reflective:
    2. Goal manager.
    2. Energy control.
-   2. Making sense analyser.
+   2. [Making sense analyser.](making-sense-analyser.md)
  1. SelfReflective:
    2. Context manager.
    2. Time control.
