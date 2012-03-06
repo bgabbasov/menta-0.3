@@ -42,6 +42,7 @@
    2. Time control.
    2. "Do not understand" State Manager.
  1. SelfConscious:
+   2. Emotional state manager.
 
 ## Main Way2Think
 
