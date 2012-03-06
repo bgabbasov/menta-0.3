@@ -79,6 +79,6 @@
    2. Context management.
    2. Do not understand.
  1. Self conscious:
-   2 Emotional state control.
+   2. Emotional state control.
  1. [Clarification request processing.](clarification-request-processing.md)
 
