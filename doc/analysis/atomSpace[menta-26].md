@@ -1,15 +1,15 @@
 This page is related to JIRA task [Menta 26](https://menta-project.atlassian.net/browse/MENTA-26)
 
 ## Summary
-The following quiestions were asked from OpenCog guru and **waiting their answer** about
+The following questions were asked from OpenCog guru and **waiting their answer** about
 
-* transcation policy for concurrent access to storage
-* serialized objects in currect implementation
+* transaction policy for concurrent access to storage
+* serialized objects in current implementation
 * Data access
 
 [Answers](http://groups.google.com/group/opencog/browse_thread/thread/be3f37e079020357)
 
-Object serialization could not be performed via currect OpenCog architecture.
+Object serialization could not be performed via current OpenCog architecture.
 
 XML and SCM file formats is used by default.
 
