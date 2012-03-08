@@ -62,6 +62,9 @@ TransFrame in case of the UserProblem
 ### SolutionGeneration Way2Think
 SemanticNetwork of HowTo-s
 
-## Domain knowledge
+## <a name="domain">Domain knowledge</a>
 
-![Goal](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/domainClass.png)
+![Domain class diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/domainClass.png)
+
+Everything in the domain is concept. Instantiating an concept system creates copy with properties specified in Specialiser.
+Concepts are organized in hierarchy with specialisations and generalisations links.

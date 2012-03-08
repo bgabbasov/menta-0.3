@@ -36,7 +36,7 @@ Could the project be used in:
 
  1. Deliberate Critics.
  1. ReasoningByAnalogy Way2Think.
- 1. Planing Way2Think.
+ 1. Planning Way2Think.
  1. Simplification Way2Think.
  1. Elevation Way2Think.
  1. Reformulation Way2Think.

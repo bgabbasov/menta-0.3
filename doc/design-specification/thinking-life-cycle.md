@@ -29,8 +29,32 @@ Represents Web Service that server User requests. Requests contain subscription 
 3rd party component, that supports messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
 
 ## MentaCoreService
-Workers that hold functionality of system. Based on PubSub template. Using Scala Actor. When Request came from Message Bus create a chain of actors according to workflow. Run different selectors and wait while processing finished.
+Workers that hold functionality of system. Based on PubSub template.Using Scala Actor.
 
+### Description
+Objects that represents working threads used Scala Actor pattern.
+
+1. ThinkingLifeCycle
+1. SelectorImpl
+1. CriticImpl
+
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycle.png)
+
+
+### Activity overview
+_Rephrase it please_ When application starts it initialize thinking life cycle and all selectors and critics. Which run initialize Scala Actors
+The same action when application stops.
+
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleInit.png)
+
+### Communication
+Every actor communicate with each other using messages
+#### Messages Overview
+
+#### Sample
+TBD
+#### Statistics
+TBD
 
 ## MentaDataService
 Database services that will be shared across different instances
