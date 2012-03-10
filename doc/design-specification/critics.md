@@ -3,16 +3,23 @@
 Critic is main analysis element in the triple Critic -> [Selector](selector.md) -> [Way2Think](way2Think.md).
 Critic is used to: choose way2Think, classify inbound information, reflection, self-analysis and so on.
 
-## Inbound data
+## Entry criteria
+
+[ThinkingLifeCycle](thinking-life-cycle.md) starts Critics according to [Goal](goal.md).
+
+## Exit criteria
+
+Critic generates [Selector](selector.md) request: SelectorRequest.
+
+## Input
 
  1. Critic Rules(see below).
- 1. Incident description: SemanticNetwork with KLine-s.
- 1. Simulation Way2Think result: SemanticNetwork.
+ 1. Incident description: [DomainModel](knowledge.md#domain) with KLine-s.
+ 1. Simulation Way2Think result: [DomainModel](knowledge.md#domain).
 
-## Outbound data: Triple
+## Output: Pair
 
- 1. [Action](selector.md#action).
- 1. [Probability](knowledge.md).
+ 1. [SelectorRequest](selector.md#action).
  1. Critic Rule = the logical predicate triggered(see below).
 
 ## Critic interface
