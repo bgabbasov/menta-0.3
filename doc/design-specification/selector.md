@@ -3,6 +3,14 @@
 Selector is main component to retrieve Actions in  [Critics](critics.md) -> Selector -> [Way2Think](way2Think.md) triple.
 Selector is used to retrieve proper Actions from KBServer according to the inbound parameters that are treated as Selector request.
 
+## Entry criteria
+
+[ThinkingLifeCycle](thinking-life-cycle.md) starts Selector with different parameters, see below.
+
+## Exit criteria
+
+Selector retrieves Action descendants: [Way2Think](way2Think.md) or [Critic](critics.md).
+
 ## Interface
 
 ![Selector interface](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/SelectorInterface.png)
