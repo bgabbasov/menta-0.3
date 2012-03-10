@@ -1,7 +1,9 @@
 package fi.neter;
 
 import java.util.List;
+import java.util.Set;
 
+import fi.neter.opencog.atomspace.Handle;
 import fi.neter.opencog.reasoning.pln.Atom;
 
 public class JNIPLN {
@@ -29,7 +31,7 @@ public class JNIPLN {
 	 * void VariableMPforms(const atom& src, std::set<atom, lessatom_ignoreVarNameDifferences>& res,
 	 *                      std::set<subst>* forbiddenBindings);
 	 */
-	public static native Set<Atom> VariableMPforms(Atom src, res, Set<Subst> forbiddenBindings);
+	public static native Set<Atom> VariableMPforms(Atom src, Set<Subst> forbiddenBindings);
 	
 	/**
 	 * bool getLargestIntersection2(const std::set<atom,lessatom>& keyelem_set,
@@ -63,12 +65,10 @@ public class JNIPLN {
 	 */
 	public static native Handle execBV(List<BoundVertex> hs);
 	
-	
 	public static void main(String[] args)
 	{
-		new HelloWorld().print();
 	}
 	static{
-		System.loadLibrary("HelloWorld");
+		System.loadLibrary("jni_pln");
 	}
 }

@@ -1,5 +1,9 @@
 package fi.neter.opencog.reasoning.pln;
 
+import java.util.List;
+
+import fi.neter.opencog.atomspace.Handle;
+
 /**
  * From file PLNEvaluator.h
  * @author tero

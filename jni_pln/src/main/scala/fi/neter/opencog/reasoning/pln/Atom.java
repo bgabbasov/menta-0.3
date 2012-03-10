@@ -3,6 +3,8 @@ package fi.neter.opencog.reasoning.pln;
 import java.util.List;
 import java.util.Map;
 
+import fi.neter.opencog.atomspace.Handle;
+
 
 /**
  * From PLNAtom.h
