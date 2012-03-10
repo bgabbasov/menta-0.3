@@ -1,5 +1,9 @@
 package fi.neter;
 
+import java.util.List;
+
+import fi.neter.opencog.reasoning.pln.Atom;
+
 public class JNIPLN {
 	// PLNAtom.h
 	/**
@@ -37,6 +41,28 @@ public class JNIPLN {
 	 * atom* neBoundVertexWithNewType(Handle h, Type T);
 	 */
 	public static native Atom neBoundVertexWithNewType(Handle h, Type t);
+	
+	/**
+	 * From file: PLNEvaluator.h
+	 * 
+	 * Handle exec(Handle* hs, const int N);
+	 */
+	public static native Handle exec(Handle hs, int n);
+	
+	/**
+	 * From file: PLNEvaluator.h
+	 * 
+	 * Handle exec(std::vector<Handle>& hs);
+	 */
+	public static native Handle exec(List<Handle> hs);
+
+	/**
+	 * From file: PLNEvaluator.h
+	 * 
+	 * Handle exec(const std::vector<BoundVertex>& hs);
+	 */
+	public static native Handle execBV(List<BoundVertex> hs);
+	
 	
 	public static void main(String[] args)
 	{
