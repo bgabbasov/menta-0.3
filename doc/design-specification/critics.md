@@ -21,9 +21,16 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Critic rules
 
-![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
+![Critic Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
-## Main Critics links types.
+## Main Critic types
+
+ 1. Manager - most simple type of critic, works as [Goal](goal.md) trigger to start [Way2Think](way2Think.md), ex.: GoalManager, PreprocessManager.
+ 1. Control - listener that monitors some event: time exceeds, energy exceeds etc, usually starts [Cry4Help](cry4Help.md) [Way2Think](way2Think.md), ex.: TimeControl, EnergyControl.
+ 1. Analyser - most complex critic, exploits extensive analysis of the previous Actions results, usually used in classification:
+ DirectInstructionAnalyser, ProblemWODesiredStateAnalyser, GetMostProbableActionAnalyser.
+
+## Main Critic links types.
 
  1. Include = One Critics include another, this way the enclosing Critics if triggered is more probable than the one included.
  1. Exclude = One Critics if triggered excludes another; If two mutually excluding Critics are triggered then Selector should
