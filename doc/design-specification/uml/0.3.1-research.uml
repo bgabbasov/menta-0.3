@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>Life cycle Activity</activediagram>
+      <activediagram>apply(criticResults : ListofActionProbabilityRulePair) : Action activity</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -158,7 +158,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Mar 10 23:19:47 MSK 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Mar 10 23:51:03 MSK 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.32.2(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -4312,7 +4312,7 @@
               </UML:Classifier.feature>
             </UML:Interface>
             <UML:Class xmi.id = '89-27-9--3-b8bab6c:13578beb3f6:-8000:0000000000000DBC'
-              name = 'ListofActionProbabilityRulePair' visibility = 'public' isSpecification = 'false'
+              name = 'List[SelectorRequestRulePair]' visibility = 'public' isSpecification = 'false'
               isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
             <UML:ActivityGraph xmi.id = '89-27-9--3-3efef15c:1357a2a1146:-8000:0000000000000DBF'
               name = 'start Request processing activity' isSpecification = 'false'>
@@ -5499,6 +5499,9 @@
                       <UML:StateVertex.incoming>
                         <UML:Transition xmi.idref = '89-27-9--3--5812e151:135847cc616:-8000:0000000000000E52'/>
                       </UML:StateVertex.incoming>
+                      <UML:ObjectFlowState.type>
+                        <UML:Class xmi.idref = '89-27-9--3--7facf982:1357804d35d:-8000:00000000000010DE'/>
+                      </UML:ObjectFlowState.type>
                     </UML:ObjectFlowState>
                     <UML:FinalState xmi.id = '89-27-9--3--5812e151:135847cc616:-8000:0000000000000E5B'
                       isSpecification = 'false'>
@@ -5591,7 +5594,7 @@
                         <UML:Transition xmi.idref = '89-27-9--3--384b8f00:13584a1244d:-8000:0000000000000E60'/>
                       </UML:StateVertex.incoming>
                       <UML:ObjectFlowState.type>
-                        <UML:Class xmi.idref = '89-27-9--3--384b8f00:13584a1244d:-8000:0000000000000E61'/>
+                        <UML:Class xmi.idref = '89-27-9--3-b8bab6c:13578beb3f6:-8000:0000000000000DBC'/>
                       </UML:ObjectFlowState.type>
                     </UML:ObjectFlowState>
                     <UML:FinalState xmi.id = '89-27-9--3--384b8f00:13584a1244d:-8000:0000000000000E66'
@@ -5634,7 +5637,7 @@
               </UML:StateMachine.transitions>
             </UML:ActivityGraph>
             <UML:Class xmi.id = '89-27-9--3--384b8f00:13584a1244d:-8000:0000000000000E61'
-              name = 'ListOfActionProbabilityPair' visibility = 'public' isSpecification = 'false'
+              name = 'List[ActionProbabilityPair]' visibility = 'public' isSpecification = 'false'
               isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
             <UML:ActivityGraph xmi.id = '-115--64--119-110--87de4ae:13586f79da4:-8000:0000000000000E68'
               name = 'apply(criteria : KLine) : Action' isSpecification = 'false'>
@@ -32490,7 +32493,7 @@ Reflective Critics plausibility</text>
       name="AIV Sequence"
 >
   <group name="Fig0"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 161, 448]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[528, 86, 161, 446]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
        fill="1"
        fillcolor="white"
@@ -32504,7 +32507,7 @@ Reflective Critics plausibility</text>
       x="528"
       y="86"
       width="161"
-      height="448"
+      height="446"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -32522,7 +32525,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig0.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 161, 253]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[528, 280, 161, 251]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
          fill="1"
          fillcolor="white"
@@ -32536,7 +32539,7 @@ Reflective Critics plausibility</text>
         x="528"
         y="280"
         width="161"
-        height="253"
+        height="251"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -32552,10 +32555,10 @@ Reflective Critics plausibility</text>
         <moveto x="608"
                 y="280" />
         <lineto x="608"
-                y="533" />
+                y="531" />
       </path>
       <group name="Fig0.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[598, 280, 20, 253]"
+           description="org.argouml.sequence2.diagram.FigActivation[598, 280, 20, 251]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000DFB"
            fill="1"
            fillcolor="white"
@@ -32569,7 +32572,7 @@ Reflective Critics plausibility</text>
           x="598"
           y="280"
           width="20"
-          height="253"
+          height="251"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -32639,7 +32642,7 @@ Reflective Critics plausibility</text>
     </group>
   </group>
   <group name="Fig1"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 450]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[0, 86, 150, 448]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
        fill="1"
        fillcolor="white"
@@ -32653,7 +32656,7 @@ Reflective Critics plausibility</text>
       x="0"
       y="86"
       width="150"
-      height="450"
+      height="448"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -32671,7 +32674,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig1.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 400]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[0, 135, 150, 398]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
          fill="1"
          fillcolor="white"
@@ -32685,7 +32688,7 @@ Reflective Critics plausibility</text>
         x="0"
         y="135"
         width="150"
-        height="400"
+        height="398"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -32701,10 +32704,10 @@ Reflective Critics plausibility</text>
         <moveto x="75"
                 y="135" />
         <lineto x="75"
-                y="535" />
+                y="533" />
       </path>
       <group name="Fig1.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 400]"
+           description="org.argouml.sequence2.diagram.FigActivation[65, 135, 20, 398]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E0D"
            fill="1"
            fillcolor="white"
@@ -32718,7 +32721,7 @@ Reflective Critics plausibility</text>
           x="65"
           y="135"
           width="20"
-          height="400"
+          height="398"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -32788,7 +32791,7 @@ Reflective Critics plausibility</text>
     </group>
   </group>
   <group name="Fig2"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 446]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[208, 86, 151, 444]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
        fill="1"
        fillcolor="white"
@@ -32802,7 +32805,7 @@ Reflective Critics plausibility</text>
       x="208"
       y="86"
       width="151"
-      height="446"
+      height="444"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -32820,7 +32823,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig2.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 396]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[208, 135, 151, 394]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
          fill="1"
          fillcolor="white"
@@ -32834,7 +32837,7 @@ Reflective Critics plausibility</text>
         x="208"
         y="135"
         width="151"
-        height="396"
+        height="394"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -32850,10 +32853,10 @@ Reflective Critics plausibility</text>
         <moveto x="283"
                 y="135" />
         <lineto x="283"
-                y="531" />
+                y="529" />
       </path>
       <group name="Fig2.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 396]"
+           description="org.argouml.sequence2.diagram.FigActivation[273, 135, 20, 394]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E10"
            fill="1"
            fillcolor="white"
@@ -32867,7 +32870,7 @@ Reflective Critics plausibility</text>
           x="273"
           y="135"
           width="20"
-          height="396"
+          height="394"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -32968,7 +32971,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig4"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 449]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[376, 86, 150, 447]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
        fill="1"
        fillcolor="white"
@@ -32982,7 +32985,7 @@ Reflective Critics plausibility</text>
       x="376"
       y="86"
       width="150"
-      height="449"
+      height="447"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -33000,7 +33003,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig4.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 399]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[376, 135, 150, 397]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E21"
          fill="1"
          fillcolor="white"
@@ -33014,7 +33017,7 @@ Reflective Critics plausibility</text>
         x="376"
         y="135"
         width="150"
-        height="399"
+        height="397"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -33030,7 +33033,7 @@ Reflective Critics plausibility</text>
         <moveto x="451"
                 y="135" />
         <lineto x="451"
-                y="534" />
+                y="532" />
       </path>
       <group name="Fig4.2.2"
            description="org.argouml.sequence2.diagram.FigActivation[441, 180, 20, 50]"
@@ -33232,7 +33235,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig8"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 170, 448]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[800, 86, 170, 446]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
        fill="1"
        fillcolor="white"
@@ -33246,7 +33249,7 @@ Reflective Critics plausibility</text>
       x="800"
       y="86"
       width="170"
-      height="448"
+      height="446"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -33264,7 +33267,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig8.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 170, 213]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[800, 320, 170, 211]"
          href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
          fill="1"
          fillcolor="white"
@@ -33278,7 +33281,7 @@ Reflective Critics plausibility</text>
         x="800"
         y="320"
         width="170"
-        height="213"
+        height="211"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -33294,10 +33297,10 @@ Reflective Critics plausibility</text>
         <moveto x="885"
                 y="320" />
         <lineto x="885"
-                y="533" />
+                y="531" />
       </path>
       <group name="Fig8.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[875, 320, 20, 213]"
+           description="org.argouml.sequence2.diagram.FigActivation[875, 320, 20, 211]"
            href="89-27-9--3--19e44426:1353f79a7e1:-8000:0000000000000E5D"
            fill="1"
            fillcolor="white"
@@ -33311,7 +33314,7 @@ Reflective Critics plausibility</text>
           x="875"
           y="320"
           width="20"
-          height="213"
+          height="211"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -33474,7 +33477,7 @@ Reflective Critics plausibility</text>
     </path>
   </group>
   <group name="Fig12"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 195, 452]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[984, 86, 195, 450]pathVisible=false;stereotypeView=0;"
        href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
        fill="1"
        fillcolor="white"
@@ -33488,7 +33491,7 @@ Reflective Critics plausibility</text>
       x="984"
       y="86"
       width="195"
-      height="452"
+      height="450"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -33506,7 +33509,7 @@ Reflective Critics plausibility</text>
       strokecolor="black"
     />
     <group name="Fig12.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 195, 93]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[984, 444, 195, 91]"
          href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
          fill="1"
          fillcolor="white"
@@ -33520,7 +33523,7 @@ Reflective Critics plausibility</text>
         x="984"
         y="444"
         width="195"
-        height="93"
+        height="91"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -33536,10 +33539,10 @@ Reflective Critics plausibility</text>
         <moveto x="1081"
                 y="444" />
         <lineto x="1081"
-                y="537" />
+                y="535" />
       </path>
       <group name="Fig12.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1071, 444, 20, 93]"
+           description="org.argouml.sequence2.diagram.FigActivation[1071, 444, 20, 91]"
            href="-64--88--75-1--465aec30:13541bbff69:-8000:0000000000000C47"
            fill="1"
            fillcolor="white"
@@ -33553,7 +33556,7 @@ Reflective Critics plausibility</text>
           x="1071"
           y="444"
           width="20"
-          height="93"
+          height="91"
           fill="1"
           fillcolor="white"
           stroke="1"
@@ -43854,7 +43857,11 @@ apply=&gt;DoNotUnderstand</text>
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="1192"
+      <moveto x="1210"
+              y="2361" />
+      <lineto x="1252"
+              y="1220" />
+      <lineto x="1192"
               y="2361" />
       <lineto x="1192"
               y="1248" />
@@ -44804,7 +44811,7 @@ description</text>
                         offset="10" />
     </private>
     <path name="Fig205.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -45117,7 +45124,7 @@ description</text>
         bold="false"
         textsize="12"
         justification="Left"
-      >apply(criticResults : ListofActionProbabilityRulePair) : Action</text>
+      >apply(criticResults : List[SelectorRequestRulePair]) : Action</text>
       <text name="Fig0.4.5"
         x="1"
         y="107"
@@ -47252,6 +47259,8 @@ apply(request: Request)
       <lineto x="760"
               y="448" />
       <lineto x="760"
+              y="448" />
+      <lineto x="760"
               y="425" />
       <lineto x="760"
               y="448" />
@@ -47779,6 +47788,8 @@ apply(request: Request)
     >
       <moveto x="756"
               y="659" />
+      <lineto x="756"
+              y="687" />
       <lineto x="756"
               y="688" />
     </path>
@@ -50428,7 +50439,7 @@ find it</text>
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[24, 56, 162, 66]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[24, 56, 179, 66]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--5812e151:135847cc616:-8000:0000000000000E58"
        fill="1"
        fillcolor="white"
@@ -50441,7 +50452,7 @@ find it</text>
     <rectangle name="Fig3.0"
       x="24"
       y="56"
-      width="162"
+      width="179"
       height="66"
       fill="1"
       fillcolor="255 0 255"
@@ -50451,7 +50462,7 @@ find it</text>
     <rectangle name="Fig3.1"
       x="24"
       y="56"
-      width="162"
+      width="179"
       height="66"
       fill="1"
       fillcolor="white"
@@ -50461,7 +50472,7 @@ find it</text>
     <text name="Fig3.2"
       x="32"
       y="65"
-      width="146"
+      width="163"
       height="23"
       fill="0"
       fillcolor="white"
@@ -50473,11 +50484,11 @@ find it</text>
       bold="false"
       textsize="12"
       justification="Center"
-    ></text>
+    >SelectorRequestRulePair</text>
     <text name="Fig3.3"
       x="32"
       y="96"
-      width="146"
+      width="163"
       height="17"
       fill="0"
       fillcolor="white"
@@ -50952,7 +50963,7 @@ Implementation.</text>
     >
       <moveto x="280"
               y="121" />
-      <lineto x="186"
+      <lineto x="203"
               y="121" />
     </path>
   </group>
@@ -51116,7 +51127,7 @@ to find the Critics
 in Abstract List KLine</text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[72, 56, 186, 66]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[40, 56, 210, 66]pathVisible=false;stereotypeView=0;"
        href="89-27-9--3--384b8f00:13584a1244d:-8000:0000000000000E5F"
        fill="1"
        fillcolor="white"
@@ -51127,9 +51138,9 @@ in Abstract List KLine</text>
     </private>
     
     <rectangle name="Fig2.0"
-      x="72"
+      x="40"
       y="56"
-      width="186"
+      width="210"
       height="66"
       fill="1"
       fillcolor="255 0 255"
@@ -51137,9 +51148,9 @@ in Abstract List KLine</text>
       strokecolor="255 0 255"
     />
     <rectangle name="Fig2.1"
-      x="72"
+      x="40"
       y="56"
-      width="186"
+      width="210"
       height="66"
       fill="1"
       fillcolor="white"
@@ -51147,9 +51158,9 @@ in Abstract List KLine</text>
       strokecolor="black"
     />
     <text name="Fig2.2"
-      x="80"
+      x="48"
       y="65"
-      width="170"
+      width="194"
       height="23"
       fill="0"
       fillcolor="white"
@@ -51161,11 +51172,11 @@ in Abstract List KLine</text>
       bold="false"
       textsize="12"
       justification="Center"
-    >ListOfActionProbabilityPair</text>
+    >List[SelectorRequestRulePair]</text>
     <text name="Fig2.3"
-      x="80"
+      x="48"
       y="96"
-      width="170"
+      width="194"
       height="17"
       fill="0"
       fillcolor="white"
@@ -57401,7 +57412,7 @@ returns List[Critic]</text>
         bold="false"
         textsize="12"
         justification="Left"
-      >apply(criticResults : ListofActionProbabilityRulePair) : Action</text>
+      >apply(criticResults : List[SelectorRequestRulePair]) : Action</text>
       <text name="Fig3.4.5"
         x="417"
         y="390"
