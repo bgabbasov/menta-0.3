@@ -3,16 +3,23 @@
 Critic is main analysis element in the triple Critic -> [Selector](selector.md) -> [Way2Think](way2Think.md).
 Critic is used to: choose way2Think, classify inbound information, reflection, self-analysis and so on.
 
-## Inbound data
+## Entry criteria
+
+[ThinkingLifeCycle](thinking-life-cycle.md) starts Critics according to [Goal](goal.md).
+
+## Exit criteria
+
+Critic generates [Selector](selector.md) request: SelectorRequest.
+
+## Input
 
  1. Critic Rules(see below).
- 1. Incident description: SemanticNetwork with KLine-s.
- 1. Simulation Way2Think result: SemanticNetwork.
+ 1. Incident description: [DomainModel](knowledge.md#domain) with KLine-s.
+ 1. Simulation Way2Think result: [DomainModel](knowledge.md#domain).
 
-## Outbound data: Triple
+## Output: Pair
 
- 1. [Action](selector.md#action).
- 1. [Probability](knowledge.md).
+ 1. [SelectorRequest](selector.md#action).
  1. Critic Rule = the logical predicate triggered(see below).
 
 ## Critic interface
@@ -21,9 +28,16 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Critic rules
 
-![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
+![Critic Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
-## Main Critics links types.
+## Main Critic types
+
+ 1. Manager - most simple type of critic, works as [Goal](goal.md) trigger to start [Way2Think](way2Think.md), ex.: GoalManager, PreprocessManager.
+ 1. Control - listener that monitors some event: time exceeds, energy exceeds etc, usually starts [Cry4Help](cry4Help.md) [Way2Think](way2Think.md), ex.: TimeControl, EnergyControl.
+ 1. Analyser - most complex critic, exploits extensive analysis of the previous Actions results, usually used in classification:
+ DirectInstructionAnalyser, ProblemWODesiredStateAnalyser, GetMostProbableActionAnalyser.
+
+## Main Critic links types.
 
  1. Include = One Critics include another, this way the enclosing Critics if triggered is more probable than the one included.
  1. Exclude = One Critics if triggered excludes another; If two mutually excluding Critics are triggered then Selector should

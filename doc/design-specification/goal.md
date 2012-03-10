@@ -1,7 +1,7 @@
 # Goal
 Class Goal is a SemanticNode that represent goal of current learning node. 
 
-Goal is a part of TrainingAlgorithm. Actually represent concreate goal in resolving curve. See Example in #Goal exmaple section 
+Goal is a part of TrainingAlgorithm. Actually represent concrete goal in resolving curve. See Example in #Goal exmaple section
 
 
 
