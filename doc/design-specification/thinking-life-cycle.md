@@ -52,7 +52,8 @@ Every actor communicate with each other using messages
 #### Messages Overview
 
 #### Sample
-TBD
+When request come from bus it will take by Thinking lifecycle and will be processed accroding to wrokflow.
+
 #### Statistics
 TBD
 
