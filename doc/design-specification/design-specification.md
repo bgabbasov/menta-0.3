@@ -1,6 +1,6 @@
 # Menta-0.3research Design Specification.
 
-## Common Overview
+## Infrastructure Overview
 ![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleOverview.png)
 
 There are 5 main components:
