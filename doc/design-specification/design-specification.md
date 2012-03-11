@@ -18,7 +18,7 @@ Represents Web Service that server User requests. Requests contain subscription 
 3rd party component, that supports messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
 
 ## MentaCoreService
-![MentaCoreService]
+![MentaCoreService](thinking-life-cycle.md)
 
 ## MentaDataService
 Database services that will be shared across different instances
