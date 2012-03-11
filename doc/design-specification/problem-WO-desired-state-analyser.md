@@ -1,0 +1,1 @@
+# ProblemWODesiredStateAnalyser design specification.

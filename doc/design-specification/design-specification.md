@@ -1,5 +1,32 @@
 # Menta-0.3research Design Specification.
 
+## Infrastructure Overview
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleOverview.png)
+
+There are 5 main components:
+
+1. MentaWebService - entry point for client requests
+1. MessageBus - perform message processing between different instances
+1. MentaCoreService - services or daemons on different machines (different Menta instances)
+1. MentaDataService - Database for Menta
+1. ClientAgents - utilities where executors will be running
+
+## MentaWebService
+Represents Web Service that server User requests. Requests contain subscription information (callbacks) of clients. All work will be processed by MentaCoresService
+
+## MessageBus
+3rd party component, that supports messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
+
+## MentaCoreService
+[MentaCoreService](thinking-life-cycle.md)
+
+## MentaDataService
+Database services that will be shared across different instances
+
+## ClientAgents
+Software for service machines, that have access for different locations and hold some amounts of scripts. Contains Executor
+
+
 ## <a name="Use_cases">Use cases</a>
 
 ### Training use case
@@ -24,25 +51,6 @@
 
 ## Knowledge data model
 [Knowledge model](https://github.com/menta/menta-0.3/blob/master/doc/design-specification/knowledge.md)
-
-## Main Critics
-
- 1. Learned:
-   2. Preprocess manager.
-   2. Incident classifier.
-   2. Solution classifier.
- 1. Deliberative:
-   2. Most probable selection analyser.
- 1. Reflective:
-   2. Goal manager.
-   2. Energy control.
-   2. [Making sense analyser.](making-sense-analyser.md)
- 1. SelfReflective:
-   2. Context manager.
-   2. Time control.
-   2. "Do not understand" State Manager.
- 1. SelfConscious:
-   2. Emotional state manager.
 
 ## Main Way2Think
 

@@ -42,7 +42,6 @@ Selector retrieves Action descendants: [Way2Think](way2Think.md) or [Critic](cri
 
 ![apply(criteria: KLine) : Action](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/applycriteriaKLineActionActivity.png)
 
-
 ## Selector context Activity diagrams
 
 ### Classification Workflow

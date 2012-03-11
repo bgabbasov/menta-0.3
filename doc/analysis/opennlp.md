@@ -1,3 +1,10 @@
+#summary
+
+True: bad estimate - 13, real estimate less then 13
+False: 5
+Precision = need recheck.
+
+
 Following feature may be interesting (for example to detect software names):
 
 http://incubator.apache.org/opennlp/documentation/1.5.2-incubating/manual/opennlp.html#tools.namefind
@@ -166,7 +173,20 @@ User is unable to access external pages when connected via VPN , IE just stops r
 
 (TOP (NP (NP (NNP Flash) (NNP Player)) (: -) (NP (NP (NN User) (NNS reports)) (SBAR (S (NP (NP (NNS problems)) (PP (IN with) (NP (NP (PRP$ his) (JJ current) (NN version)) (PP (IN of) (NP (NN flash) (NN player.User)))))) (VP (VBZ reports) (SBAR (IN that) (S (NP (PRP he)) (VP (VBZ has) (NP (NP (CD two) (NNS computers)) (, ,) (NP (NP (CD one)) (PP (IN with) (NP (NP (DT a) (NN working)) (PRN (-LRB- -LRB-) (CC and) (NP (JJR newer)) (-RRB- -RRB-)) (NN flash) (NN player))) (SBAR (IN that) (S (S (NP (PRP he)) (VP (VBZ uses) (S (VP (TO to) (VP (VB work) (PP (IN with))))))) (CC and) (S (NP (DT the) (JJ other) (NN computer)) (VP (VBZ seems) (S (VP (TO to) (VP (VB have) (NP (NP (DT a) (JJR older) (NN flash) (NN version)) (SBAR (WHNP (WDT which)) (S (VP (VBZ does) (RB not) (VP (VB work) (ADVP (RB properly)) (VP (VBN .Could) (S (NP (PRP you)) (VP (VP (VB take) (NP (NP (DT a) (NN look)) (PP (IN at) (NP (DT this))))) (CC and) (VP (VB see) (SBAR (IN if) (S (NP (EX there)) (VP (VBZ is) (NP (NP (DT any) (NN flash) (NN update)) (SBAR (WHNP (WDT that)) (S (VP (MD can) (PRN (-LRB- -LRB-) (NP (NN re)) (-RRB- -RRB-)) (VP (VBD sent) (PP (TO to) (NP (PRP$ his) (NN computer)))))))))))))))))))))))))))))))))))) (. ?)))
 
-(TOP (S (NP (NNP User)) (VP (VBZ is) (ADJP (JJ uanble) (S (VP (TO to) (VP (VP (VB start) (NP (NNP KDP) (NN web))) (, ,) (VP (VB please) (NP (NN reinstall) (NNP Java)))))))) (. .)))
+(TOP 
+  (S 
+    (NP 
+      (NNP User)
+    )
+    (VP (VBZ is) 
+        (ADJP 
+          (JJ uanble)
+          (S (VP (TO to) 
+             (VP 
+                (VP 
+                   (VB start) 
+                   (NP (NNP KDP) (NN web))
+                ) (, ,) (VP (VB please) (NP (NN reinstall) (NNP Java)))))))) (. .)))
 
 (TOP (S (NP (NNP Hi) (NNP NAS) (NNP Admin,Please)) (VP (VBP connect) (NP (VBG following) (NNS groups)) (PP (TO to) (NP (NP (DT the) (VBN shared) (NN disk)) (VP (VBN listed) (PP (IN below) (NP (DT and) (NN configure) (NN security) (NNS permissions))))))) (. .)))
 
@@ -187,7 +207,20 @@ User is unable to access external pages when connected via VPN , IE just stops r
 
 (TOP (S (NP (NN user)) (VP (VBZ is) (RB not) (ADJP (JJ able) (S (VP (TO to) (VP (VB use) (NP (DT the) (NN wirelsess) (NN function)) (PP (IN on) (NP (PRP$ his) (NN laptop)))))))) (. .)))
 
-(TOP (S (NP (NP (NNP User)) (PP (IN cannot) (NP (NN access) (JJ external) (NNS sites)))) (, ,) (VP (VB please) (NP (NN change) (NN proxy) (NNS settings))) (. .)))
+(TOP 
+   (S 
+      (NP 
+        (NP (NNP User)) 
+        (PP (IN cannot) 
+            (NP (NN access) 
+                (JJ external) 
+                (NNS sites)
+            )
+        )
+      ) 
+      (, ,) 
+      (VP (VB please) 
+          (NP (NN change) (NN proxy) (NNS settings))) (. .)))
 
 (TOP (S (S (S (S (NP (NNP User)) (VP (VBZ is) (ADJP (JJ unable) (S (VP (TO to) (VP (VB access) (NP (JJ external) (NNS pages)) (SBAR (WHADVP (WRB when)) (S (VP (VBN connected) (PP (IN via) (NP (NNP VPN)))))))))))) (, ,) (NP (NNP IE)) (ADVP (RB just)) (VP (VBZ stops) (NP (NP (JJ responding.Confirmed) (NN proxy) (NNS settings)) (, ,) (SBAR (WHNP (WDT which)) (S (VP (VBD seemed) (NP (ADJP (JJ correct) (CC and) (JJ cleared)) (NN cookies/temp) (NN internet) (NNS files)))))))) (, ,) (CC but) (S (NP (NN problem) (NNS persists)) (ADVP (RB .Also)) (VP (VBD tried) (S (VP (TO to) (VP (VB check) (RB "automatically) (VP (VB detect) (NP (NNS settings)) (ADVP (RB "))))))))) (, ,) (CC but) (S (NP (PRP it)) (VP (VBD did) (RB n't) (VP (VB solve) (NP (DT the) (NN issue)) (SBAR (IN .Can) (S (NP (PRP you)) (VP (VB please) (VP (VB assist)))))))) (. ?)))
 
