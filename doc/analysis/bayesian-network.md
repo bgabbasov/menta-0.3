@@ -1,5 +1,4 @@
-
-We will use '''ci-bayes''' implementation.  https://github.com/jottinger/ci-bayes
+We will use **ci-bayes** implementation.  https://github.com/jottinger/ci-bayes
 
 It have pom-file and can be simple included to our project.
 
