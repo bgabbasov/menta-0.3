@@ -44,4 +44,27 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
  mark this situation and return most probable if Critics are weighted or random if weights are equal if the check of
  Perceiving Way2Think invokes the reset() method should switch to the opposite Critic.
 
+## Main Critics
 
+ 1. Learned:
+   2. Preprocess manager.
+   2. Incident classifier:
+     3. DirectInstructionAnalyser.
+     3. ProblemWithDesiredStateAnalyser.
+     3. ProblemWODesiredStateAnalyser.
+   2. SolutionCompletenessManager.
+ 1. Deliberative:
+   2. Most probable selection analyser.
+ 1. Reflective:
+   2. Goal manager.
+   2. Energy control.
+   2. [Making sense analyser.](making-sense-analyser.md)
+     3. Word2ConceptLinksAnalyser.
+     3. SituationConsistencyAnalyser.
+     3. ProblemConsistencyAnalyser.
+ 1. SelfReflective:
+   2. Context manager.
+   2. Time control.
+   2. DoNotUnderstandManager.
+ 1. SelfConscious:
+   2. Emotional state manager.
