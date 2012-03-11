@@ -9,7 +9,8 @@ Selector is used to retrieve proper Actions from KBServer according to the inbou
 
 ## Exit criteria
 
-Selector retrieves Action descendants: [Way2Think](way2Think.md) or [Critic](critics.md).
+ 1. Selector retrieves Action descendants: [Way2Think](way2Think.md) or [Critic](critics.md).
+ 1. [ThinkingLifeCycle](thinking-life-cycle.md) invokes stop method.
 
 ## Interface
 

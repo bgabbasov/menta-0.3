@@ -9,7 +9,8 @@ Critic is used to: choose way2Think, classify inbound information, reflection, s
 
 ## Exit criteria
 
-Critic generates [Selector](selector.md) request: SelectorRequest.
+ 1. Critic generates [Selector](selector.md) request: SelectorRequest.
+ 1. [ThinkingLifeCycle](thinking-life-cycle.md) invokes stop method.
 
 ## Input
 
