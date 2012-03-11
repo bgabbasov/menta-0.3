@@ -42,7 +42,7 @@ Objects that represents working threads used Scala Actor pattern.
 
 
 ### Activity overview
-When application starts it initialize thinking life cycle and all selectors as a SCALA's actors.
+When application starts it initialize thinking life cycle and all critics as SCALA's actors.
 When application stops it shuwtdowns all selectors and thinking life cycle.  
 
 ![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleInit.png)
@@ -55,7 +55,7 @@ Every actor communicate with each other using messages
 When request come from bus it will take by Thinking lifecycle and will be processed accroding to wrokflow.
 
 #### Statistics
-TBD
+Statistics is a special critic that runs after request coming and threat SLA and other counters.
 
 ## MentaDataService
 Database services that will be shared across different instances
