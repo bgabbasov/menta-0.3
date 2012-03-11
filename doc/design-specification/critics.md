@@ -26,7 +26,7 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
 
 ![Critics Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticInterface.png)
 
-## Critic rules
+## <a name="rule">Critic rules</a>
 
 ![Critic Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
@@ -50,7 +50,7 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
    2. Preprocess manager.
    2. Incident classifier:
      3. DirectInstructionAnalyser.
-     3. ProblemWithDesiredStateAnalyser.
+     3. [ProblemWithDesiredStateAnalyser.](problem-WO-desired-state-analyser.md)
      3. ProblemWODesiredStateAnalyser.
    2. SolutionCompletenessManager.
  1. Deliberative:
