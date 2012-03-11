@@ -42,8 +42,8 @@ Objects that represents working threads used Scala Actor pattern.
 
 
 ### Activity overview
-_Rephrase it please_ When application starts it initialize thinking life cycle and all selectors and critics. Which run initialize Scala Actors
-The same action when application stops.
+When application starts it initialize thinking life cycle and all selectors as a SCALA's actors.
+When application stops it shuwtdowns all selectors and thinking life cycle.  
 
 ![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleInit.png)
 
