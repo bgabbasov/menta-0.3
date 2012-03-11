@@ -1,7 +1,14 @@
 [RelEx](http://wiki.opencog.org/w/RelEx) 
 =======
 
+#summary
+
 RelEx is an English-language semantic dependency relationship extractor. 
+
+True: 7
+False: 11
+Precision = 0,39.
+
 
 #Issues parsing result
 

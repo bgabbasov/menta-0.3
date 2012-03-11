@@ -3,6 +3,9 @@
 it is not helping in real sentences. It not understand context, can't decide what comma separate two parts of sentence,
 and of course can not att comma or point if user skip it.
 
+True: 6
+False: 11
+Precision = 0,35.
 
 # statistic
 
