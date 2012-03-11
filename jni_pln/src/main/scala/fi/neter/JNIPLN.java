@@ -5,6 +5,7 @@ import java.util.Set;
 
 import fi.neter.opencog.atomspace.Handle;
 import fi.neter.opencog.reasoning.pln.Atom;
+import fi.neter.opencog.reasoning.pln.BoundVertex;
 
 public class JNIPLN {
 	// PLNAtom.h

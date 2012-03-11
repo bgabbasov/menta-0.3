@@ -1,14 +1,13 @@
 package fi.neter.opencog.reasoning.pln;
 
-import java.util.HashSet;
-
 import fi.neter.opencog.atomspace.Vertex;
+import fi.neter.opencog.util.Tree;
 
 /**
- * From file: PLNUtils.h
+ * From file: PLN.h
  * @author tero
  *
  */
-public class BasicVertexSet extends HashSet<Vertex> {
+public class VTree extends Tree<Vertex> {
 
 }

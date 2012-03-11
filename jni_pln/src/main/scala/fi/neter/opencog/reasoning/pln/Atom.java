@@ -2,8 +2,12 @@ package fi.neter.opencog.reasoning.pln;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import fi.neter.opencog.atomspace.Handle;
+import fi.neter.opencog.atomspace.Type;
+import fi.neter.opencog.util.Tree;
+import fi.neter.opencog.util.Tree.Iterator;
 
 
 /**
@@ -39,7 +43,7 @@ public class Atom {
 	 * Type T;
 	 */
 	public native Type getT();
-	public native setT(Type t);
+	public native void setT(Type t);
 	
     /**
      * int arity;
@@ -74,60 +78,60 @@ public class Atom {
 	 * bool operator!=(const atom& rhs) const { return (*this)<rhs || rhs<(*this); }
 	 * @param h
 	 */
-	public boolean ne(Atom rhs);
+	public native boolean ne(Atom rhs);
 
 	
     /**
      * explicit atom(pHandle h);
      */
-	public native Atom(Handle h);
+	public static native Atom construct(Handle h);
     
 	/**
 	 * atom();
 	 */
-	public native Atom();
+	public static native Atom construct();
     
 	/**
 	 * atom(const atom& rhs);
 	 * @param _T
 	 */
-	public native Atom(Atom rhs);
+	public static native Atom construct(Atom rhs);
     
 	/**
 	 * atom(Type _T, std::string _name);
 	 * @param _T
 	 * @param _arity
 	 */
-	public native Atom(Type T, String name);
+	public static native Atom construct(Type T, String name);
     
 	/**
 	 * atom(Type _T, int _arity, ...);
 	 * @param _T
 	 */
-	public native Atom(Type T, int arity);
+	public static native Atom construct(Type T, int arity);
 	
 	/**
 	 * atom(Type _T, std::vector<boost::shared_ptr<atom> > hs);
 	 */
-	public native Atom(Type T, List<Atom> hs);
+	public static native Atom construct(Type T, List<Atom> hs);
     
 	/**
 	 * atom(const tree<boost::shared_ptr<atom> >& a,
 	 *      tree<boost::shared_ptr<atom> >::iterator parent_node,
 	 *      bool root = true);
 	 */
-	public native Atom(Tree<Atom> a, Iterator<Tree<Atom>> parentNode, boolean root);
+	public static native Atom construct(Tree<Atom> a, Iterator<Tree<Atom>> parentNode, boolean root);
        
     /**
      * atom(const vtree& a, vtree::iterator parent_node, bool root = true);
      */
-	public native Atom(VTree a, Iterator<VTree> parentNode, boolean root);
+	public static native Atom construct(VTree a, Iterator<VTree> parentNode, boolean root);
 
     /**
      * ~atom();
      * @return
      */
-	public native destroy();
+	public native void destroy();
 
     /**
      * bool well_formed() const;
@@ -168,13 +172,13 @@ public class Atom {
      * MetaPredicate* getMeta() const;
      * @return
      */
-	public native MetaPredicate getMeta();
+	public native Atom getMeta();
     
     /**
      * bool operator==(const atom& rhs) const;
      * @return
      */
-	public native equals(Atom rhs);
+	public native boolean equals(Atom rhs);
 	
     /**
      * Type execType() const;
@@ -247,7 +251,7 @@ public class Atom {
     /**
      * void substitute(pHandle dest, atom src);
      */
-    public native void substitute(PHandle rhs, String varName);
+    public native void substitute(PHandle rhs, Atom src);
 	
     /**
      * void substitute(const atom& dest, const atom& src);
@@ -280,7 +284,7 @@ public class Atom {
 	/**
 	 * pHandle bindHandle(iAtomSpaceWrapper* table) const;
 	 */
-    public native Handle bindHandle(IAtomSpaceWrapper);
+    public native Handle bindHandle(IAtomSpaceWrapper table);
 
     /**
      * void extractVars(std::set<std::string>& vars) const;
