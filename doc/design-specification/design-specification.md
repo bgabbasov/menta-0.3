@@ -1,5 +1,32 @@
 # Menta-0.3research Design Specification.
 
+## Common Overview
+![Component diagram](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/ThinkingLifeCycleOverview.png)
+
+There are 5 main components:
+
+1. MentaWebService - entry point for client requests
+1. MessageBus - perform message processing between different instances
+1. MentaCoreService - services or daemons on different machines (different Menta instances)
+1. MentaDataService - Database for Menta
+1. ClientAgents - utilities where executors will be running
+
+## MentaWebService
+Represents Web Service that server User requests. Requests contain subscription information (callbacks) of clients. All work will be processed by MentaCoresService
+
+## MessageBus
+3rd party component, that supports messaging functionality. (MSMQ for example in Windows and http://qpid.apache.org/ for Linux)
+
+## MentaCoreService
+![MentaCoreService]
+
+## MentaDataService
+Database services that will be shared across different instances
+
+## ClientAgents
+Software for service machines, that have access for different locations and hold some amounts of scripts. Contains Executor
+
+
 ## <a name="Use_cases">Use cases</a>
 
 ### Training use case
