@@ -50,8 +50,8 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
    2. Preprocess manager.
    2. Incident classifier:
      3. DirectInstructionAnalyser.
-     3. [ProblemWithDesiredStateAnalyser.](problem-WO-desired-state-analyser.md)
-     3. ProblemWODesiredStateAnalyser.
+     3. [ProblemWODesiredStateAnalyser.](problem-WO-desired-state-analyser.md)
+     3. ProblemWithDesiredStateAnalyser.
    2. SolutionCompletenessManager.
  1. Deliberative:
    2. Most probable selection analyser.
