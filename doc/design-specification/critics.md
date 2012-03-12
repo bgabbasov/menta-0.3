@@ -31,6 +31,7 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
 ![Critic Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
 Rules syntax is based on:
+
  1. [Neo4j Cypher Query Language](http://docs.neo4j.org/chunked/stable/cypher-query-lang.html)
  1. Logical operators:
    2. Implication.
