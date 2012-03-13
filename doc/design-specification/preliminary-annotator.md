@@ -1,0 +1,1 @@
+# Preliminary Annotator design specification.

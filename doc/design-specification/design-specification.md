@@ -14,18 +14,18 @@
 
 ### Components list
 
-1. [MentaWebService](menta-web-service.md)
-1. MentaCoreService
- 2. [ThinkingLifeCycle](thinking-life-cycle.md)
- 2. [Selector](selector.md)
- 2. [Critics](critics.md)
- 2. [Way2Think](way2Think.md)
- 2. PreliminaryAnnotator
- 2. KnowledgeBaseAnnotator
-1. MentaDataService
- 2. KnowledgeBase
-1. [ClientAgent](client-agent.md)
-1. [MessageBus](message-bus.md)
+ 1. [MentaWebService](menta-web-service.md)
+ 1. CoreService
+   2. [ThinkingLifeCycle](thinking-life-cycle.md)
+   2. [Selector](selector.md)
+   2. [Critics](critics.md)
+   2. [Way2Think](way2Think.md)
+   2. [PreliminaryAnnotator](preliminary-annotator.md)
+   2. [KnowledgeBaseAnnotator](knowledge-base-annotator.md)
+ 1. DataService
+   2. [KnowledgeBase](knowledge-base.md)
+ 1. [ClientAgent](client-agent.md)
+ 1. [MessageBus](message-bus.md)
 
 
 ## Knowledge data model

@@ -1,0 +1,1 @@
+# KnowledgeBase server design specification.
