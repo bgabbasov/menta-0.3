@@ -30,6 +30,20 @@ Critic generates [Selector](selector.md) request: SelectorRequest.
 
 ![Critic Class](https://github.com/menta/menta-0.3/raw/master/doc/design-specification/uml/images/CriticRuleClass.png)
 
+Rules syntax is based on:
+
+ 1. [Neo4j Cypher Query Language](http://docs.neo4j.org/chunked/stable/cypher-query-lang.html)
+ 1. Logical operators:
+   2. Implication.
+   2. Negation.
+   2. Conjunction.
+   2. Comparison:
+     3. Less.
+     3. Equals.
+     3. Greater
+     3. LessEquals
+     3. GreaterEquals
+
 ## Main Critic types
 
  1. Manager - most simple type of critic, works as [Goal](goal.md) trigger to start [Way2Think](way2Think.md), ex.: GoalManager, PreprocessManager.

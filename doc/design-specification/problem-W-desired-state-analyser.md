@@ -1,4 +1,4 @@
-# ProblemWODesiredStateAnalyser design specification.
+# ProblemWDesiredStateAnalyser design specification.
 
 Is subclass of [Critic](critics.md)
 
@@ -26,5 +26,5 @@ Approximate example:
 }
 `
 
-### HasNoDesiredState
-Should check that there is no indication of desired state.
+### HasNoDesiredStateNegation
+Should check that there is indication of desired state. Use HasNoDesiredState with Negation. See [Problem without desired state description](problem-WO-desired-state-analyser.md)
