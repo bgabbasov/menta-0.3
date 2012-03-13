@@ -15,7 +15,7 @@
 ### Components list
 
 1. [MentaWebService](menta-web-service.md)
-1. [MentaCoreService](menta-core-service.md)
+1. MentaCoreService
  2. [ThinkingLifeCycle](thinking-life-cycle.md)
  2. [Selector](selector.md)
  2. [Critics](critics.md)
