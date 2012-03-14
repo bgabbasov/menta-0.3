@@ -16,15 +16,16 @@ Goal = ClassifyIncident
 Should check if there is indication that some peace of software is wrong or works in improper way.
 Ex.: contains: software is wrongly installed, no internet connection, etc
 
-Approximate example:
+### HasNoDesiredState
+Should check that there is no indication of desired state.
 
-`
+
+### Approximate formal example
+```
 {
  START IncidentDescription
  MATCH subject -[:negative]-> action
+ WHERE  not(subject -[:should] -> X) or not(subject -[:must] -> X)
  RETURN true
 }
-`
-
-### HasNoDesiredState
-Should check that there is no indication of desired state.
+```
