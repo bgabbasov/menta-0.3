@@ -66,7 +66,7 @@ Rules syntax is based on:
      3. DirectInstructionAnalyser.
      3. [ProblemWODesiredStateAnalyser.](problem-WO-desired-state-analyser.md)
      3. ProblemWithDesiredStateAnalyser.
-   2. SolutionCompletenessManager.
+   2. [SolutionCompletenessManager.](solution-completeness-manager.md)
  1. Deliberative:
    2. Most probable selection analyser.
  1. Reflective:
