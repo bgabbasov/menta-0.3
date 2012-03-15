@@ -25,7 +25,7 @@ Should check that there is no indication of desired state.
 {
  START IncidentDescription
  MATCH subject -[:negative]-> action
- WHERE  not(subject -[:should] -> X) or not(subject -[:must] -> X)
+ WHERE  not(subject -[:should] -> X or subject -[:must] -> X)
  RETURN true
 }
 ```
