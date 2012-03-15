@@ -24,10 +24,17 @@ Should check that there is indication of desired state. Use HasNoDesiredState wi
 ## Approximate example:
 
 ```
+Ancedent:
 {
  START IncidentDescription
  MATCH subject -[:negative]-> action
  WHERE  subject -[:should] -> X or subject -[:must] -> X
  RETURN true
+}
+Consequent:
+{
+ START DomainModel.WayToThink
+ WHERE Name = SimulateAndReformulate 
+
 }
 ```
