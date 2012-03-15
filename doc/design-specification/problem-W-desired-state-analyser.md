@@ -34,7 +34,6 @@ Ancedent:
 Consequent:
 {
  START DomainModel.WayToThink
- WHERE Name = SimulateAndReformulate 
-
+ WHERE Name = SimulateAndReformulate
 }
 ```

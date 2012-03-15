@@ -27,5 +27,8 @@ Should check that there is no indication of desired state.
  MATCH subject -[:negative]-> action
  WHERE  not(subject -[:should] -> X or subject -[:must] -> X)
  RETURN true
+} => {
+ START DomainModel.WayToThink
+ WHERE Name = SimulateAndReformulate
 }
 ```
